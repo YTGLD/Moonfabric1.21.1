@@ -1,0 +1,19 @@
+{
+  "name": "Nano cube",
+  "icon": "moonfabric:nanocube",
+  "category": "moonfabric:nano",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l)I don't know......."
+    },
+    {
+      "type": "spotlight",
+      "item": "moonfabric:nanocube",
+      "title": "-cube-",
+      "text": "$(l)recipe"
+    }
+  ]
+}

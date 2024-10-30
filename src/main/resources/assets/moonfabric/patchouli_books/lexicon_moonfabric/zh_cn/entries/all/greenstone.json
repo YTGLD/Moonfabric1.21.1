@@ -1,0 +1,25 @@
+{
+  "name": "生命符石",
+  "icon": "moonfabric:greenstone",
+  "category": "moonfabric:all",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l)我是绿色的, 我象征着自然"
+    },
+    {
+      "type": "image",
+      "border": true,
+      "title": "-[ 生命符石 ]- ",
+      "images": ["moonfabric:textures/imgimg/greenstone.png"]
+    },
+    {
+      "type": "spotlight",
+      "item": "moonfabric:greenstone",
+      "title": "-生命符石-",
+      "text": "$(l)地牢(概率: 3.3%)"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "远古的纳米果实",
+  "icon": "moonfabric:nanofruit",
+  "category": "moonfabric:nano",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l)我不可以吃"
+    },
+    {
+      "type": "spotlight",
+      "item": "moonfabric:nanofruit",
+      "title": "-果实-",
+      "text": "$(l)发现在古城,概率:2%"
+    }
+  ]
+}

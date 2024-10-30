@@ -1,0 +1,7 @@
+{
+  "name": "饰品",
+  "description": "可以发现的饰品",
+  "icon": "moonfabric:abook",
+  "sortnum": 0,
+  "secret": false
+}

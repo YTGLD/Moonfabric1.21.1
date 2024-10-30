@@ -1,0 +1,24 @@
+{
+  "name": "§6原始纹章",
+  "icon": "moonfabric:glodstone",
+  "category": "moonfabric:all",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l)成分复杂"
+    },
+    {
+      "type": "image",
+      "border": true,
+      "title": "-[ §6原始纹章 ]- ",
+      "images": ["moonfabric:textures/imgimg/glodstone.png"]
+    },
+    {
+      "type": "crafting",
+      "recipe": "moonfabric:glodstone",
+      "text": "除此之外，没有获取途径了"
+    }
+  ]
+}

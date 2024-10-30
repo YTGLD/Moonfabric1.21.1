@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:moonfabric/pain_candle",
+  "criteria": {
+    "pain_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:pain_stone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "pain stone",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:pain_stone"
+    },
+    "title": "When the wind blows through its hole, it makes a sharp sound"
+  },
+  "requirements": [
+    [
+      "pain_stone"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

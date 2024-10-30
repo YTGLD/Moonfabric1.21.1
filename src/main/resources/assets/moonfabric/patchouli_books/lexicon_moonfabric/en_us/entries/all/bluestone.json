@@ -1,0 +1,25 @@
+{
+  "name": "Blue Stone",
+  "icon": "moonfabric:bluestone",
+  "category": "moonfabric:all",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l)I am green, I symbolize peace"
+    },
+    {
+      "type": "image",
+      "border": true,
+      "title": "-[ Blue Stone ]- ",
+      "images": ["moonfabric:textures/imgimg/bluestone.png"]
+    },
+    {
+      "type": "spotlight",
+      "item": "moonfabric:bluestone",
+      "title": "-Blue Stone-",
+      "text": "$(l)This item was discovered in the dungeon(Probability: 3.3%)"
+    }
+  ]
+}

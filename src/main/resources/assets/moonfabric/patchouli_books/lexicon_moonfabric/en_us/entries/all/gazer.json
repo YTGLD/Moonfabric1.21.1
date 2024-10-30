@@ -1,0 +1,25 @@
+{
+  "name": "A steadfast eye",
+  "icon": "moonfabric:gazer",
+  "category": "moonfabric:all",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l)Calm and composed"
+    },
+    {
+      "type": "image",
+      "border": true,
+      "title": "-[ A steadfast eye ]- ",
+      "images": ["moonfabric:textures/imgimg/gazer.png"]
+    },
+    {
+      "type": "spotlight",
+      "item": "moonfabric:gazer",
+      "title": "-A steadfast eye-",
+      "text": "$(l)This item was discovered in the dungeon(Probability: 3.3%)"
+    }
+  ]
+}

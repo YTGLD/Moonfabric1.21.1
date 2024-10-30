@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:moonfabric/redstone",
+  "criteria": {
+    "goldheart": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:goldheart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "gold heart",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:goldheart"
+    },
+    "title": "gold heart"
+  },
+  "requirements": [
+    [
+      "goldheart"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

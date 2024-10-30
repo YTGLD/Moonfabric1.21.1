@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "moonfabric:firehead",
+    "moonfabric:curseeye",
+    "moonfabric:twistedorb",
+    "moonfabric:cube",
+    "moonfabric:candle",
+    "moonfabric:origincube",
+    "moonfabric:gazer",
+    "moonfabric:nanoeye",
+
+    "moonfabric:nanocube",
+    "moonfabric:sevensword",
+    "moonfabric:pain_candle"
+  ]
+}

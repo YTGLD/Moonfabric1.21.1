@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:moonfabric/cube",
+  "criteria": {
+    "stonecottoncandy": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:stonecottoncandy"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "I am greater than water ",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:stonecottoncandy"
+    },
+    "title": "stone cotton candy"
+  },
+  "requirements": [
+    [
+      "stonecottoncandy"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

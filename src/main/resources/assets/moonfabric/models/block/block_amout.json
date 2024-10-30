@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "moonfabric:block/block_amout",
+    "side": "moonfabric:block/block_amout",
+    "top": "moonfabric:block/block_amout"
+  }
+}

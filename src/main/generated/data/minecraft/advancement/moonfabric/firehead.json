@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:moonfabric/blackhead",
+  "criteria": {
+    "firehead": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:firehead"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Is this the price of flames?",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:firehead"
+    },
+    "title": "fire head"
+  },
+  "requirements": [
+    [
+      "firehead"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

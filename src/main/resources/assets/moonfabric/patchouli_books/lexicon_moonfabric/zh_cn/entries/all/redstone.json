@@ -1,0 +1,25 @@
+{
+  "name": "战争符石",
+  "icon": "moonfabric:redstone",
+  "category": "moonfabric:all",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l)我是红色的，我象征着热爱"
+    },
+    {
+      "type": "image",
+      "border": true,
+      "title": "-[ 战争符石 ]- ",
+      "images": ["moonfabric:textures/imgimg/redstone.png"]
+    },
+    {
+      "type": "spotlight",
+      "item": "moonfabric:redstone",
+      "title": "-战争符石-",
+      "text": "$(l)地牢(概率: 3.3%)"
+    }
+  ]
+}

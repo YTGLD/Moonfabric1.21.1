@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:moonfabric/root",
+  "criteria": {
+    "bluestone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:bluestone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "I will watch it forever ",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:bluestone"
+    },
+    "title": "blue stone"
+  },
+  "requirements": [
+    [
+      "bluestone"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

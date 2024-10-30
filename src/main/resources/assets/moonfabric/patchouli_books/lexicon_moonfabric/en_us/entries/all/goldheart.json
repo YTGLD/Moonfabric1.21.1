@@ -1,0 +1,25 @@
+{
+  "name": "Gold Heart",
+  "icon": "moonfabric:goldheart",
+  "category": "moonfabric:all",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l)Don't be discouraged, believe that your smile will bring spring flowers everywhere"
+    },
+    {
+      "type": "image",
+      "border": true,
+      "title": "-[ Gold Heart ]- ",
+      "images": ["moonfabric:textures/imgimg/light.png"]
+    },
+    {
+      "type": "spotlight",
+      "item": "moonfabric:goldheart",
+      "title": "-Gold Heart-",
+      "text": "$(l)This item was discovered in the ancient city(Probability: 3.3%)"
+    }
+  ]
+}

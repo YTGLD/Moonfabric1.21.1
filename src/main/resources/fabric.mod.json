@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "moonfabric",
+	"version": "1.21-1.1.0",
+	"name": "moonfabric mod",
+	"description": "Thank you for playing. I am YTGLD and I am determined to bring joy to everyone",
+	"authors": [
+		"YTGLD"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/moonfabric"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/moonfabric/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-datagen": [
+			"com.moonfabric.MoonFabricModGeneration"
+		],
+		"main": [
+			"com.moonfabric.MoonFabricMod"
+		],
+		"client": [
+			"com.moonfabric.MoonFabricModClient"
+		]
+	},
+	"mixins": [
+		"moonfabric.mixins.json",
+		{
+			"config": "moonfabric.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

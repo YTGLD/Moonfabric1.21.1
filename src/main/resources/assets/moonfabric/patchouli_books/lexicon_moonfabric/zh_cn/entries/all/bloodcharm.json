@@ -1,0 +1,25 @@
+{
+  "name": "血怒纹章",
+  "icon": "moonfabric:bloodcharm",
+  "category": "moonfabric:all",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l)死亡的真理是什么?"
+    },
+    {
+      "type": "image",
+      "border": true,
+      "title": "-[ 血怒纹章 ]- ",
+      "images": ["moonfabric:textures/imgimg/bloodcharm.png"]
+    },
+    {
+      "type": "spotlight",
+      "item": "moonfabric:bloodcharm",
+      "title": "-血怒纹章-",
+      "text": "$(l)地牢(概率： 2%)"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "moonfabric:moonstone",
+    "moonfabric:fallstone",
+    "moonfabric:waterstone",
+
+    "moonfabric:cursecandle",
+    "moonfabric:doomtreasure",
+
+    "moonfabric:grail",
+
+    "moonfabric:goldcottoncandy",
+    "moonfabric:woodcottoncandy",
+    "moonfabric:stonecottoncandy",
+    "moonfabric:watercottoncandy",
+    "moonfabric:firecottoncandy",
+
+    "moonfabric:bloodcharm",
+    "moonfabric:pain_box",
+    "moonfabric:pain_carrot"
+  ]
+}

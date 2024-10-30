@@ -1,0 +1,19 @@
+{
+  "name": "Nano eye",
+  "icon": "moonfabric:nanoheart",
+  "category": "moonfabric:nano",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l)hear......."
+    },
+    {
+      "type": "spotlight",
+      "item": "moonfabric:nanoheart",
+      "title": "-heart-",
+      "text": "$(l)This item was discovered in the ancient city(Probability: 2%)"
+    }
+  ]
+}

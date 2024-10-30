@@ -1,0 +1,19 @@
+{
+  "name": "古遗眼眸",
+  "icon": "moonfabric:nanoeye",
+  "category": "moonfabric:nano",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l)我不知道你们会怎么认为我,但我永远爱着她"
+    },
+    {
+      "type": "spotlight",
+      "item": "moonfabric:nanoeye",
+      "title": "-眼睛-",
+      "text": "$(l)发现在古城,概率:2%"
+    }
+  ]
+}

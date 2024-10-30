@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.moonfabric.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "LivingEntityRendererMixin",
+    "RenderLayersMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

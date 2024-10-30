@@ -1,0 +1,336 @@
+{
+  "tab.moonfabric_tab": "Moonfabric",
+
+  "item.moonfabric.moonstone": "月之石",
+  "moonfabric.tooltip.moonstone.1": "·+6 护甲",
+  "moonfabric.tooltip.moonstone.2": "发现于：远古城市",
+
+  "item.moonfabric.goldheart": "黄金之心",
+  "moonfabric.tooltip.goldheart.1": "·+55% 挖掘速度",
+  "moonfabric.tooltip.goldheart.2": "发现于：远古城市",
+
+  "item.moonfabric.firehead": "火焰头颅",
+  "moonfabric.tooltip.firehead.1": "·防火",
+  "moonfabric.tooltip.firehead.2": "发现于：猪灵堡垒",
+
+  "item.moonfabric.grassstone": "自然石",
+  "moonfabric.tooltip.grassstone.1": "·+0.2 生命回复",
+  "moonfabric.tooltip.grassstone.2": "发现于：地牢，丛林神庙",
+
+  "item.moonfabric.fallstone": "羽落石",
+  "moonfabric.tooltip.fallstone.1": "·+30% 速度",
+  "moonfabric.tooltip.fallstone.2": "发现于：沙漠神殿",
+
+
+  "item.moonfabric.waterstone": "碧水之石",
+  "moonfabric.tooltip.waterstone.1": "·潮涌能量",
+  "moonfabric.tooltip.waterstone.2": "发现于：海洋遗迹",
+
+  "item.moonfabric.rageorb": "狂暴珍珠",
+  "moonfabric.tooltip.rageorb.1": "·+2 附魔产物的附魔等级",
+  "moonfabric.tooltip.rageorb.2": "·+1 饰品槽位",
+  "moonfabric.tooltip.rageorb.3": "发现于：末地城",
+
+  "item.moonfabric.rageapple": "狂暴果实",
+  "moonfabric.tooltip.rageapple.1": "·你的附魔等级决定你的属性",
+  "moonfabric.tooltip.rageapple.2": "·这些属性会增加移速，伤害，生命值，攻速，护甲",
+  "moonfabric.tooltip.rageapple.3": "·当前：",
+  "moonfabric.tooltip.rageapple.4": "发现于：末地城",
+
+  "item.moonfabric.doomfruit": "末日果实",
+  "moonfabric.tooltip.doomfruit.1": "·食用后将永久+1 戒指槽位",
+  "moonfabric.tooltip.doomfruit.2": "·100s 饥饿效果",
+  "moonfabric.tooltip.doomfruit.3": "发现于：末地城",
+
+
+  "item.moonfabric.doomstone": "末日结石",
+  "moonfabric.tooltip.doomstone.1": "·+1 固定伤害抗性",
+  "moonfabric.tooltip.doomstone.2": "·受到的任何伤害都会免疫，但是有1.2s的冷却",
+  "moonfabric.tooltip.doomstone.3": "·+300% 受到伤害 ,  +2 戒指槽位",
+  "moonfabric.tooltip.doomstone.4": "发现于：末地城",
+
+  "item.moonfabric.doomsoul": "末日幽灵球",
+  "moonfabric.tooltip.doomsoul.1": "·如果你被杀死，并且目标生物的生命值不大于30%",
+  "moonfabric.tooltip.doomsoul.2": "·则该生物将受到29%最大生命值的伤害",
+  "moonfabric.tooltip.doomsoul.3": "·并高亮显示",
+  "moonfabric.tooltip.doomsoul.4": "·又如果目标的生命值大于30%",
+  "moonfabric.tooltip.doomsoul.5": "·ta将获得3分钟的虚弱和缓慢",
+
+  "item.moonfabric.cursecandle": "诅咒蜡烛",
+  "moonfabric.tooltip.cursecandle.1": "·熔岩行者",
+  "moonfabric.tooltip.cursecandle.2": "发现于：猪灵堡垒",
+
+  "item.moonfabric.curseeye": "被诅咒的眼睛",
+  "moonfabric.tooltip.curseeye.1": "·半径10格内的生物会发光",
+  "moonfabric.tooltip.curseeye.2": "发现于：沙漠神殿",
+
+  "item.moonfabric.doomcharm": "末日方尖碑",
+  "moonfabric.tooltip.doomcharm.1": "·以你身上的负面药水等级总和来增加属性",
+  "moonfabric.tooltip.doomcharm.2": "·每一级:",
+  "moonfabric.tooltip.doomcharm.3": "· + 8.0% 速度",
+  "moonfabric.tooltip.doomcharm.4": "· + 7.0% 护甲",
+  "moonfabric.tooltip.doomcharm.5": "· + 5.0% 伤害",
+  "moonfabric.tooltip.doomcharm.6": "· + 6.0% 攻速",
+  "moonfabric.tooltip.doomcharm.7": "发现于：末地城",
+
+
+  "item.moonfabric.doomtreasure": "末日之遗",
+  "moonfabric.tooltip.doomtreasure.1": "·杀死生物掉落额外资源",
+  "moonfabric.tooltip.doomtreasure.2": "·33% 的概率掉落绿宝石",
+  "moonfabric.tooltip.doomtreasure.3": "发现于：末地城",
+
+  "item.moonfabric.curseshield": "·诅咒之盾",
+  "moonfabric.tooltip.curseshield.1": "·当你被破盾时",
+  "moonfabric.tooltip.curseshield.2": "·发生一次爆炸并对周围生物造成严重的负面效果",
+  "moonfabric.tooltip.curseshield.3": "发现于：林地府邸",
+
+  "item.moonfabric.redstone": "·红色符石",
+  "moonfabric.tooltip.redstone.1": "·造成暴击伤害时，造成力量效果",
+  "moonfabric.tooltip.redstone.2": "发现于：地牢",
+
+  "item.moonfabric.bluestone": "蓝色符石",
+  "moonfabric.tooltip.bluestone.1": "·造成暴击伤害时，对目标造成虚弱",
+  "moonfabric.tooltip.bluestone.2": "·发现于：地牢",
+
+  "item.moonfabric.whiteorb": "白魔球",
+  "moonfabric.tooltip.whiteorb.1": "·+15% 攻速",
+  "moonfabric.tooltip.whiteorb.2": "发现于：地牢",
+
+  "item.moonfabric.blackorb": "黑魔球",
+  "moonfabric.tooltip.blackorb.1": "·+15% 伤害, +100% 白魔球属性",
+  "moonfabric.tooltip.blackorb.2": "发现于：地牢",
+
+
+  "item.moonfabric.blackhead": "巫术法球",
+  "moonfabric.tooltip.blackhead.1": "·+100% 黑魔球属性",
+  "moonfabric.tooltip.blackhead.2": "·受到伤害将免疫（7秒冷却）",
+  "moonfabric.tooltip.blackhead.3": "·并将攻击者击飞，并对它造成20%最大生命值的伤害",
+  "moonfabric.tooltip.blackhead.4": "发现于：地牢",
+
+  "item.moonfabric.necora": "Necora 病毒",
+
+  "item.moonfabric.goldbox": "死者的宝箱",
+  "moonfabric.tooltip.goldbox.1": "杀死生物会根据其血量来为此物品添加能量",
+  "moonfabric.tooltip.goldbox.2": "当能量饱满时",
+  "moonfabric.tooltip.goldbox.3": "将给予你一个附魔金苹果和三个普通金苹果",
+
+
+  "item.moonfabric.grail": "死灵圣杯",
+  "moonfabric.tooltip.grail.1": "食用食物获得增益BUFF",
+
+  "item.moonfabric.candle": "死灵之烛",
+  "moonfabric.tooltip.candle.1": "·生命值越低，伤害越高",
+  "moonfabric.tooltip.candle.2": "·生命值越高，防御越高",
+
+  "item.moonfabric.book": "死灵之书",
+  "moonfabric.tooltip.book.1": "·佩戴的饰品越少，伤害越高",
+
+
+  "item.moonfabric.twistedorb": "不死者法球",
+  "moonfabric.tooltip.twistedorb.1": "·杀死生物会生成一块特殊的石头",
+  "moonfabric.tooltip.twistedorb.2": "·拾取将获得短暂的增强",
+
+  "item.moonfabric.twistedsoul": "不死者的灵魂",
+  "moonfabric.tooltip.twistedsoul.1": "·你可以在任何方块上进行灵魂疾行",
+  "moonfabric.tooltip.twistedsoul.2": "·但你的速度会降低10%",
+
+
+  "item.moonfabric.twistedstone": "不朽纹章",
+  "moonfabric.tooltip.twistedstone.2": "·免疫: 魔法伤害, 火焰伤害, 坠落伤害",
+  "moonfabric.tooltip.twistedstone.1": "·+100% 受到伤害",
+
+  "item.moonfabric.cube": "被诅咒的神秘魔方",
+  "moonfabric.tooltip.cube.1": "“凝视生命的凋零 !”",
+
+  "item.moonfabric.cincinnasitecharm": "辛辛那金护符",
+  "moonfabric.tooltip.cincinnasitecharm.1": "你可以食用辛辛那金锭",
+
+
+  "item.moonfabric.goldcottoncandy": "金·棉花糖",
+  "moonfabric.tooltip.goldcottoncandy.1": "·使用斧头作为武器时：+80%攻击伤害",
+  "moonfabric.tooltip.goldcottoncandy.2": "·造成暴击伤害时有20%的概削弱目标",
+  "moonfabric.tooltip.goldcottoncandy.3": "·攻击禁用目标的 木头棉花糖，并额外造成50%的伤害`",
+  "moonfabric.tooltip.goldcottoncandy.4": "·受到的火焰伤害增加100%",
+  "moonfabric.tooltip.goldcottoncandy.5": "·着火时：-50%伤害和速度,以及增加50%的受到伤害",
+  "moonfabric.tooltip.goldcottoncandy.6": "·只能佩戴这一种棉花糖",
+
+
+  "item.moonfabric.woodcottoncandy": "木·棉花糖",
+  "moonfabric.tooltip.woodcottoncandy.1": "·增加100%生命恢复速度",
+  "moonfabric.tooltip.woodcottoncandy.2": "·在阳光下：+35%速度，生命恢复，护甲",
+  "moonfabric.tooltip.woodcottoncandy.3": "·攻击禁用目标的 石头棉花糖，并额外造成50%的伤害",
+  "moonfabric.tooltip.woodcottoncandy.4": "·受到伤害增加50% ",
+  "moonfabric.tooltip.woodcottoncandy.5": "·受到武器的伤害增加30%",
+  "moonfabric.tooltip.woodcottoncandy.6": "·只能佩戴这一种棉花糖",
+
+
+  "item.moonfabric.stonecottoncandy": "石头·棉花糖",
+  "moonfabric.tooltip.stonecottoncandy.1": "·增加20%伤害，速度和30%抗性以及100%的击退抗性",
+  "moonfabric.tooltip.stonecottoncandy.2": "·攻击禁用目标的 海洋棉花糖，并额外造成50%的伤害",
+  "moonfabric.tooltip.stonecottoncandy.3": "·-35% 攻速",
+  "moonfabric.tooltip.stonecottoncandy.4": "·受到木剑或木斧的伤害增加500%",
+  "moonfabric.tooltip.stonecottoncandy.5": "·只能佩戴这一种棉花糖",
+
+
+
+  "item.moonfabric.watercottoncandy": "水·棉花糖",
+  "moonfabric.tooltip.watercottoncandy.1": "·增加35%在水中或雨中的伤害和护甲并获得增益BUFF",
+  "moonfabric.tooltip.watercottoncandy.2": "·免疫火焰伤害和魔法伤害",
+  "moonfabric.tooltip.watercottoncandy.3": "·攻击禁用目标的 火焰棉花糖，并额外造成50%的伤害",
+  "moonfabric.tooltip.watercottoncandy.5": "·在陆地减少50%伤害,移速并增加100%受到伤害",
+  "moonfabric.tooltip.watercottoncandy.6": "·只能佩戴这一种棉花糖",
+
+
+  "item.moonfabric.firecottoncandy": "火·棉花糖",
+  "moonfabric.tooltip.firecottoncandy.1": "·目标的护甲越高，你造成的伤害越多",
+  "moonfabric.tooltip.firecottoncandy.2": "·你附近的生物会减速并虚弱，并且你火焰免疫",
+  "moonfabric.tooltip.firecottoncandy.3": "·在岩浆中：+50% 挖掘速度,速度,伤害,护甲",
+  "moonfabric.tooltip.firecottoncandy.5": "·攻击禁用目标的 金棉花糖，并额外造成50%的伤害",
+  "moonfabric.tooltip.firecottoncandy.6": "·在水里或在雨中：-70%挖掘速度,速度,伤害,护甲",
+  "moonfabric.tooltip.firecottoncandy.7": "·只能佩戴这一种棉花糖",
+
+  "item.moonfabric.snail": "黄金蜗牛壳",
+  "moonfabric.tooltip.snail.1": "·Shift + 右键绑定信标",
+  "moonfabric.tooltip.snail.2": "·然后你可以长按右键回到那个地方",
+
+  "item.moonfabric.dnabook": "基因手册",
+
+  "item.moonfabric.atp": "基因片段 : ATP高能量",
+  "moonfabric.tooltip.atp.1": "· +1 Belt Slot",
+
+  "item.moonfabric.creationism": "基因片段 : 神创论",
+  "moonfabric.tooltip.creationism.1": "·杀死生物获得下面任意一种属性",
+  "moonfabric.tooltip.creationism.2": "·饱和, 力量, 速度, 抗性 ,生命恢复,(等级:1)",
+
+  "item.moonfabric.catalystswitch": "基因片段 : 催化剂开关",
+  "moonfabric.tooltip.catalystswitch.1": "· +15% : 速度, 伤害, 生命值",
+
+
+  "item.moonfabric.darwinism": "基因片段 : 达尔文主义",
+  "moonfabric.tooltip.darwinism.1": "·杀死生物获得下面任意一种属性",
+  "moonfabric.tooltip.darwinism.2": "·饱和, 速度, 抗性 ,生命恢复,(等级:2)",
+  "moonfabric.tooltip.darwinism.3": "·和: 饥饿, 反胃, 缓慢, 黑暗 (等级:1)",
+
+
+  "item.moonfabric.rapidmetabolism": "基因片段 : 急速代谢",
+  "moonfabric.tooltip.rapidmetabolism.1": "· +1 食物的饥饿值",
+
+
+  "item.moonfabric.cytochromeburst": "基因片段 : 细胞色素爆发",
+  "moonfabric.tooltip.cytochromeburst.1": "· +5 护甲",
+
+  "item.moonfabric.gazer": "坚定之眼",
+  "moonfabric.tooltip.gazer.1": "·如果单次受到的伤害大于最大生命值的33%",
+  "moonfabric.tooltip.gazer.2": "·则减少70%受到伤害",
+
+  "item.moonfabric.bloodcharm": "§c血怒纹章",
+  "moonfabric.tooltip.bloodcharm.1": "·单次受到的伤害大于50%最大生命值时：",
+  "moonfabric.tooltip.bloodcharm.2": "·此物品将进入冷却时间，并且伤害和抗性提高30%，持续十秒",
+  "moonfabric.tooltip.bloodcharm.3": "·但在非冷却时间内，受到的伤害提高40%",
+
+  "item.moonfabric.furybloodpearl": "§c狂怒血明珠",
+  "moonfabric.tooltip.furybloodpearl.1": "·受到的伤害增加1点",
+  "moonfabric.tooltip.furybloodpearl.2": "·受到的伤害增加60%",
+  "moonfabric.tooltip.furybloodpearl.3": "·每次受伤都有概率触发血之爆发",
+  "moonfabric.tooltip.furybloodpearl.4": "·对附近的生物造成20%最大生命值的伤害",
+  "moonfabric.tooltip.furybloodpearl.5": "·并且在接下来的20秒内，这些生物将减少50%的护甲和最大生命值",
+
+  "item.moonfabric.glodstone": "§6原始纹章",
+  "moonfabric.tooltip.glodstone.1": "·造成暴击时削弱此生物，,",
+  "moonfabric.tooltip.glodstone.2": "·并窃取它的血量以及获得力量Buff",
+  "moonfabric.tooltip.glodstone.3": "·受到伤害后有概率反击此生物，",
+  "moonfabric.tooltip.glodstone.4": "·并获得抗性提升和伤害吸收Buff",
+  "moonfabric.tooltip.glodstone.5": "·受到的伤害大于自身50%最大生命值时：",
+  "moonfabric.tooltip.glodstone.6": "·减少80%的伤害并恢复4点生命值",
+
+
+  "item.moonfabric.fissionreactor": "裂变反应炉",
+  "moonfabric.tooltip.fissionreactor.1": "·杀死生物获得能量",
+  "moonfabric.tooltip.fissionreactor.2": "·能量会自动修复背包物品的耐久",
+  "moonfabric.tooltip.fissionreactor.3": "·同时产生一定量的辐射，这将影响你的速度和生命值",
+  "moonfabric.tooltip.fissionreactor.4": "·因此你必须偶尔取下此物品并长按右键来处理辐射",
+
+  "item.moonfabric.bloodorb": "§c罪恶心眸",
+  "moonfabric.tooltip.bloodorb.1": "·增加40%生命值",
+  "moonfabric.tooltip.bloodorb.2": "·永不饥饿",
+  "moonfabric.tooltip.bloodorb.3": "·增加10点护甲",
+  "moonfabric.tooltip.bloodorb.4": "·每3秒恢复1点生命值，不受加成影响",
+  "moonfabric.tooltip.bloodorb.5": "·你和你身边的生物将持续受到血之暴怒的效果",
+
+  "effect.moonfabric.blood": "血之狂怒",
+
+  "item.moonfabric.nanoheart": "古老的循声心脏",
+  "moonfabric.tooltip.nanoheart.1": "·使你和坚守者的属性相似",
+  "moonfabric.tooltip.nanoheart.2": "·失明和黑暗将诅咒着你",
+  "moonfabric.tooltip.nanoheart.3": "·使附近的生物发光",
+  "moonfabric.tooltip.nanoheart.4": "·并且你注视它们时，你将增加100%的速度",
+  "item.moonfabric.nanofruit": "远古的纳米果实",
+  "moonfabric.tooltip.nanofruit.1": "·坚守者将与你保持绝对友好",
+  "moonfabric.tooltip.nanofruit.2": "·免疫发光",
+  "item.moonfabric.nanoeye": "古遗眼眸",
+  "moonfabric.tooltip.nanoeye.1": "·自动锁定并攻击附近的生物",
+
+  "item.moonfabric.nanocube": "天启魔方",
+
+  "moonfabric.tooltip.nanocube.1": "·反击攻击你的生物",
+  "moonfabric.tooltip.nanocube.2": "·+50% 受到伤害",
+
+  "item.moonfabric.nanocottoncandy": "纳米棉花糖",
+  "moonfabric.tooltip.nanocottoncandy.1": "·第一次受到伤害将有免疫",
+  "moonfabric.tooltip.nanocottoncandy.2": "·第二次概率是50%",
+  "moonfabric.tooltip.nanocottoncandy.3": "·第三次概率是25%",
+  "moonfabric.tooltip.nanocottoncandy.4": "·以此类推",
+  "moonfabric.tooltip.nanocottoncandy.5": "·当你免疫失败后, 你将受到50%额外伤害",
+  "moonfabric.tooltip.nanocottoncandy.6": "·之后此物品将进入10秒的冷却时间",
+
+  "item.moonfabric.bloodeye": "血灵之戒",
+  "moonfabric.tooltip.bloodeye.1": "·佩戴后每隔30秒会生成一只血灵",
+  "moonfabric.tooltip.bloodeye.2": "·血灵会周期性的对周围生物造成伤害",
+  "moonfabric.tooltip.bloodeye.3": "·血灵最多存活30秒",
+
+  "item.moonfabric.bloodtime": "血河怀表",
+  "moonfabric.tooltip.bloodtime.1": "·+30% 受伤无敌时间",
+  "moonfabric.tooltip.bloodtime.2": "·如果你装备了血灵之戒, 那么召唤血灵的时间减少66%",
+
+  "item.moonfabric.sevensword": "无极七剑",
+  "moonfabric.tooltip.sevensword.1": "·受伤召唤7把飞剑",
+
+  "item.moonfabric.pain_box": "痛苦魔盒",
+  "moonfabric.tooltip.pain_box.1": "·+1 背饰",
+  "moonfabric.tooltip.pain_box.2": "·+2 腰带",
+  "moonfabric.tooltip.pain_box.3": "·-6 生命",
+
+
+  "item.moonfabric.pain_carrot": "痛苦金帽菇",
+  "moonfabric.tooltip.pain_carrot.1": "·吃下食物获得10%的力量提升",
+  "moonfabric.tooltip.pain_carrot.2": "·在满饥饿值时清除",
+  "moonfabric.tooltip.pain_carrot.3": "·+1食物恢复的饥饿值",
+
+  "item.moonfabric.pain_heart": "痛苦起搏者",
+  "moonfabric.tooltip.pain_heart.2": "·每次受伤都会使你的抗性-3.3%，在满血清除",
+  "moonfabric.tooltip.pain_heart.1": "·+120%治疗",
+
+  "item.moonfabric.pain_book": "痛苦食谱",
+  "moonfabric.tooltip.pain_book.1": "·你可以食用铜块和铜锭",
+  "moonfabric.tooltip.pain_book.2": "·铜块：力量II，急迫II，生命恢复II（30秒）",
+  "moonfabric.tooltip.pain_book.3": "·铜锭：速度II，抗性I（10秒）",
+  "moonfabric.tooltip.pain_book.4": "·+33%吃东西的速度",
+  "moonfabric.tooltip.pain_book.5": "·越吃越饿",
+
+  "item.moonfabric.pain_ring": "痛苦魔戒",
+  "moonfabric.tooltip.pain_ring.1": "·-10 护甲",
+  "moonfabric.tooltip.pain_ring.2": "·1 护甲 = 0.25 伤害",
+
+  "item.moonfabric.pain_stone": "痛苦石头",
+  "moonfabric.tooltip.pain_stone.1": "·+35% 速度",
+  "moonfabric.tooltip.pain_stone.2": "·+17% 跳跃力量",
+
+
+    "item.moonfabric.blood_amout": "血符",
+  "moonfabric.tooltip.blood_amout": "·受伤召唤血灵之线",
+
+
+  "item.moonfabric.pain_candle": "痛苦蜡烛",
+  "moonfabric.tooltip.pain_candle.1": "·在满生命值时+66%抗性",
+  "moonfabric.tooltip.pain_candle.2": "·在不是满生命值时-10%抗性"
+}

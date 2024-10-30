@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "moonfabric:block/cursecandleblockc",
+    "up": "moonfabric:block/cursecandleblockup",
+    "north": "moonfabric:block/cursecandleblock",
+    "east": "moonfabric:block/cursecandleblockc",
+    "south": "moonfabric:block/cursecandleblockc",
+    "west": "moonfabric:block/cursecandleblockc",
+    "particle": "moonfabric:block/cursecandleblockc"
+  },
+  "render_type": "solid"
+}

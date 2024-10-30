@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:moonfabric/goldbox",
+  "criteria": {
+    "grail": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:grail"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "dirk ",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:grail"
+    },
+    "title": "grail"
+  },
+  "requirements": [
+    [
+      "grail"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

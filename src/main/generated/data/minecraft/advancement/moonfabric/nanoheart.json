@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:moonfabric/blackhead",
+  "criteria": {
+    "nanoheart": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:nanoheart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "nano heart",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:nanoheart"
+    },
+    "title": "Nanos"
+  },
+  "requirements": [
+    [
+      "nanoheart"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

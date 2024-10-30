@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:moonfabric/furybloodpearl",
+  "criteria": {
+    "bloodorb": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:bloodorb"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "§6Sinful and disgusting",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:bloodorb"
+    },
+    "title": "§6Your Heart Eye"
+  },
+  "requirements": [
+    [
+      "bloodorb"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

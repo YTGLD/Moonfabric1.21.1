@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "moonfabric:doomcharm",
+    "moonfabric:book",
+    "moonfabric:twistedsoul",
+    "moonfabric:twistedstone",
+    "moonfabric:furybloodpearl",
+
+    "moonfabric:glodstone",
+    "moonfabric:bloodorb",
+    "moonfabric:nanofruit",
+    "moonfabric:nanocottoncandy",
+    "moonfabric:pain_heart",
+    "moonfabric:blood_amout"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:moonfabric/root",
+  "criteria": {
+    "origincube": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:origincube"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "The Mysterious Magic Cube of the Creator",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:origincube"
+    },
+    "title": "origin cube"
+  },
+  "requirements": [
+    [
+      "origincube"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

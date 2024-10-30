@@ -1,0 +1,25 @@
+{
+  "name": "Grass Stone",
+  "icon": "moonfabric:grassstone",
+  "category": "moonfabric:all",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l)the beauty of nature"
+    },
+    {
+      "type": "image",
+      "border": true,
+      "title": "-[ Grass Stone ]- ",
+      "images": ["moonfabric:textures/imgimg/tree.png"]
+    },
+    {
+      "type": "spotlight",
+      "item": "moonfabric:grassstone",
+      "title": "-Grass Stone-",
+      "text": "$(l)This item was discovered in the dungeon and jungle temple dispenser(Probability: 3.3%)"
+    }
+  ]
+}

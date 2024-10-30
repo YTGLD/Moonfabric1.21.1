@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "moonfabric:rageorb",
+
+    "moonfabric:doomstone",
+    "moonfabric:doomsoul",
+    "moonfabric:whiteorb",
+    "moonfabric:blackorb",
+    "moonfabric:blackhead",
+    "moonfabric:bloodeye",
+    "moonfabric:bloodtime",
+    "moonfabric:pain_ring"
+  ]
+}

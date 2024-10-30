@@ -1,0 +1,9 @@
+{
+  "name": "The Lexicon Book",
+  "landing_text": "Welcome to Moonfabric",
+  "version": 1,
+  "book_texture": "moonfabric:textures/img.png",
+  "crafting_texture": "moonfabric:textures/img_1.png",
+  "creative_tab": "minecraft:tools_and_utilities",
+  "use_resource_pack": true
+}

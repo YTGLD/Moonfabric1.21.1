@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "com.moonfabric.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "LivingEvent",
+    "common.EnchantmentHelperMixin",
+    "common.ItemMixin",
+    "common.ItemStackMixin",
+    "common.LivingEntityMixin",
+    "common.LootableContainerBlockEntityMixin",
+    "common.PlayerEntityMixin",
+    "common.WardenMixin",
+    "TickMixin.TickMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

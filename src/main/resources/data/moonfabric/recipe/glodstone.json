@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moonfabric:bluestone"
+    },
+    {
+      "item": "moonfabric:greenstone"
+    },
+    {
+      "item": "moonfabric:redstone"
+    },
+    {
+      "item": "moonfabric:gazer"
+    }
+  ],
+  "result": {
+    "id": "moonfabric:glodstone",
+    "count": 1
+  }
+}
