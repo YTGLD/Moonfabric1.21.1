@@ -30,10 +30,9 @@ public class Handler {
                 .normal(0, 0, 1);
     }
 
-    public static void renderLine(MatrixStack poseStack, VertexConsumerProvider bufferSource, Vec3d start, Vec3d end, float a, RenderLayer renderType) {
+    public static void renderLine(MatrixStack poseStack, VertexConsumerProvider bufferSource, Vec3d start, Vec3d end, float a, RenderLayer renderType, float radius) {
         VertexConsumer vertexConsumer = bufferSource.getBuffer(renderType);
 
-        float radius = 0.05f; // 半径
         int segmentCount = 16; // 圆柱横向细分数
 
         for (int i = 0; i < segmentCount; i++) {

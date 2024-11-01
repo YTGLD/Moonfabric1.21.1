@@ -1,6 +1,5 @@
-package com.moonfabric.mixin;
+package com.moonfabric.mixin.TickMixin;
 
-import com.moonfabric.Ievent.IHealEvent;
 import com.moonfabric.Ievent.IHurtSizeEvent;
 import com.moonfabric.Ievent.IeventAttack;
 import com.moonfabric.item.common.Blood.blood_amout;
@@ -10,7 +9,6 @@ import net.minecraft.entity.damage.DamageSource;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(LivingEntity.class)
 public class LivingEvent {
@@ -19,6 +17,8 @@ public class LivingEvent {
         LivingEntity livingEntity = (LivingEntity) (Object) this;
 
         blood_amout.Hurt(livingEntity,source);
+
+
 
 
         TrinketsApi.getTrinketComponent(livingEntity).ifPresent((trinketComponent) -> {
@@ -35,14 +35,5 @@ public class LivingEvent {
                 });
             });
         }
-    }
-    @Inject(method = "heal", at = @At(value = "RETURN"))
-    private void mf$modifyAppliedDamage_m(float amount, CallbackInfo ci){
-        LivingEntity livingEntity = (LivingEntity) (Object) this;
-        TrinketsApi.getTrinketComponent(livingEntity).ifPresent((trinketComponent) -> {
-            trinketComponent.forEach((slotReference, itemStack) -> {
-                IHealEvent.ON_HURT.invoker().hurt(livingEntity, amount, itemStack);
-            });
-        });
     }
 }

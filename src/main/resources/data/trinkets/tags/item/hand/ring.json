@@ -10,6 +10,13 @@
     "moonfabric:blackhead",
     "moonfabric:bloodeye",
     "moonfabric:bloodtime",
-    "moonfabric:pain_ring"
+    "moonfabric:pain_ring",
+
+    "moonfabric:nightmareanchor",
+    "moonfabric:nightmarecharm",
+    "moonfabric:nightmareeye",
+    "moonfabric:nightmarerotten",
+    "moonfabric:nightmarestone"
+
   ]
 }

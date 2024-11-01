@@ -1,7 +1,9 @@
 package com.moonfabric;
 
+import com.moonfabric.EntiyMl.AttackBloodRender;
 import com.moonfabric.EntiyMl.FlyEntityRenderer;
 import com.moonfabric.EntiyMl.LineRender;
+import com.moonfabric.EntiyMl.OwnerBloodRender;
 import com.moonfabric.PAT.*;
 import com.moonfabric.init.InItEntity;
 import com.moonfabric.init.init;
@@ -19,6 +21,8 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.CoreShaderRegistrationCallback;
+import net.minecraft.client.render.VertexFormat;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.util.Identifier;
 
@@ -31,6 +35,8 @@ public class MoonFabricModClient implements ClientModInitializer {
 
 		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.Fly ,FlyEntityRenderer::new);
 		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.Line , LineRender::new);
+		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.ATTACK_BLOOD_ENTITY_TYPEttack_blood , AttackBloodRender::new);
+		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.OWNER_BLOOD_ENTITY_TYPE , OwnerBloodRender::new);
 
 
 
@@ -52,8 +58,10 @@ public class MoonFabricModClient implements ClientModInitializer {
 		TrinketRendererRegistry.registerRenderer(init.origincube, new oR());
 		TrinketRendererRegistry.registerRenderer(init.furybloodpearl, new BloodR());
 
-
-
+		CoreShaderRegistrationCallback.EVENT.register(Identifier.of(MoonFabricMod.MODID,"blood"),
+				(context)->{
+					context.register(Identifier.of(MoonFabricMod.MODID,"blood"), VertexFormat.builder().build(), MRender::setRenderTypeEndPortalProgram);
+				});
 
 	}
 }

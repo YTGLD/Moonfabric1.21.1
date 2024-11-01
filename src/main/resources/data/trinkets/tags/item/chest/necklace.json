@@ -12,6 +12,13 @@
     "moonfabric:nanofruit",
     "moonfabric:nanocottoncandy",
     "moonfabric:pain_heart",
-    "moonfabric:blood_amout"
+    "moonfabric:blood_amout",
+
+    "moonfabric:ectoplasmapple",
+    "moonfabric:ectoplasmbattery",
+    "moonfabric:ectoplasmhorseshoe",
+    "moonfabric:ectoplasmshild",
+    "moonfabric:ectoplasmstar"
+
   ]
 }

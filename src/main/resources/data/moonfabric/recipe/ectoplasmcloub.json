@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moonfabric:soulcloub"
+    },
+    {
+      "item": "moonfabric:soulcloub"
+    },
+    {
+      "item": "moonfabric:soulcloub"
+    },
+    {
+      "item": "moonfabric:soulcloub"
+    }
+  ],
+  "result": {
+    "id": "moonfabric:ectoplasmcloub",
+    "count": 1
+  }
+}

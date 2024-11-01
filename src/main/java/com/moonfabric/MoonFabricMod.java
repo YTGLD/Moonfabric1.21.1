@@ -32,6 +32,8 @@ public class MoonFabricMod implements ModInitializer {
 
 
 
+		new AttReg();
+
 		new Data();
 
 		Registry.register(Registries.BLOCK, Identifier.of("moonfabric", "blockbloodorb"), init.blockbloodorb);
@@ -117,6 +119,26 @@ public class MoonFabricMod implements ModInitializer {
 
 		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "blood_amout"), init.blood_amout);
 
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmareanchor"), init.nightmareanchor);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmarecharm"), init.nightmarecharm);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmareeye"), init.nightmareeye);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmarerotten"), init.nightmarerotten);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmarestone"), init.nightmarestone);
+
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "blood_candle"), init.blood_candle);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "greedcrystal"), init.greedcrystal);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "mblock"), init.mblock);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "meye"), init.meye);
+
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "ectoplasmapple"), init.ectoplasmapple);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "ectoplasmball"), init.ectoplasmball);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "ectoplasmbattery"), init.ectoplasmbattery);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "ectoplasmcloub"), init.ectoplasmcloub);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "ectoplasmcube"), init.ectoplasmcube);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "ectoplasmhorseshoe"), init.ectoplasmhorseshoe);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "ectoplasmprism"), init.ectoplasmprism);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "ectoplasmshild"), init.ectoplasmshild);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "ectoplasmstar"), init.ectoplasmstar);
 
 
 		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "pain_box"), init.pain_box);
@@ -127,6 +149,9 @@ public class MoonFabricMod implements ModInitializer {
 
 		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "flysword"), InItEntity.Fly);
 		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "line"), InItEntity.Line);
+
+		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "owner_blood"), InItEntity.OWNER_BLOOD_ENTITY_TYPE);
+		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "attack_blood"), InItEntity.ATTACK_BLOOD_ENTITY_TYPEttack_blood);
 
 
 		Registry.register(Registries.ITEM_GROUP, Identifier.of("moonfabric", "moonfabric_tab"), aaa.Moon_Fabric_Tab);

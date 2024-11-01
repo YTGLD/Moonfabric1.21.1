@@ -134,7 +134,8 @@
   "moonfabric.tooltip.woodcottoncandy.6": "·Only this type of cotton candy can be worn",
   "item.moonfabric.stonecottoncandy": "Stone · Cotton Candy",
   "moonfabric.tooltip.stonecottoncandy.1": "·Increase damage,  speed,resistance by 40%, and 100% knock back resistance",
-  "moonfabric.tooltip.stonecottoncandy.2": "·-35% attack speed",
+  "moonfabric.tooltip.stonecottoncandy.2": "·+35% attack speed",
+  "moonfabric.tooltip.stonecottoncandy.6": "·-100% heal",
   "moonfabric.tooltip.stonecottoncandy.3": "·Hurt Damage from wooden sword or wooden axe increased by 500%",
   "moonfabric.tooltip.stonecottoncandy.4": "·Attack the disabled target's Ocean Cotton Candy and deal an additional 50% damage",
   "moonfabric.tooltip.stonecottoncandy.5": "·Only this type of cotton candy can be worn",
@@ -204,6 +205,63 @@
 
   "item.moonfabric.regenerative": "Necroa DNA Paper : Regenerative Activation",
   "moonfabric.tooltip.regenerative.1": "·+20% Health Regenerative",
+
+  "item.nightmareanchor.tool.string": "Died while wearing it.",
+  "item.nightmareanchor.tool.string.1": "Record the location of this death.",
+  "item.nightmareanchor.tool.string.2": "Right click to teleport to the previous record point",
+  "item.nightmareanchor.tool.string.3": "But you have to be in the same dimension",
+  "item.nightmareanchor.tool.string.4": "while wearing:",
+  "item.nightmareanchor.tool.string.5": "Reduces curse from the Nightmare by 5%",
+  "item.nightmareanchor.tool.string.6": "Only those who bear the fear of the Nightmare",
+  "item.nightmareanchor.tool.string.7": "To be eligible to use this prop",
+
+
+  "item.nightmarecharm.tool.string": "Reduces curses from Nightmare-eye by 15%",
+  "item.nightmarecharm.tool.string.1": "*overlay calculation",
+  "item.nightmarecharm.tool.string.2": "+1 curios slot",
+  "item.nightmarecharm.tool.string.3": "Only those who bear the fear of the Nightmare",
+  "item.nightmarecharm.tool.string.4": "To be eligible to use this prop",
+
+
+  "item.nightmareeye.tool.string": "Increase damage taken by 33%",
+  "item.nightmareeye.tool.string.1": "Most of your attributes will be reduced by 25%",
+  "item.nightmareeye.tool.string.2": "Can Un equip plague",
+
+
+  "item.nightmaremoai.tool.string": "+2 Enchantment level of the enchanted product",
+  "item.nightmaremoai.tool.string.1": "Only those who bear the fear of the Nightmare",
+  "item.nightmaremoai.tool.string.2": "To be eligible to use this prop",
+
+
+  "item.nightmarerotten.tool.string": "+33％ All Attributes",
+  "item.nightmarerotten.tool.string.1": "But for every additional 1 attribute",
+  "item.nightmarerotten.tool.string.2": "Curses from the Nightmare will increase by 1.1%",
+  "item.nightmarerotten.tool.string.3": "Only those who bear the fear of the Nightmare",
+  "item.nightmarerotten.tool.string.4": "To be eligible to use this prop",
+
+
+  "item.nightmarestone.tool.string": "For each debuff that exists on you:",
+  "item.nightmarestone.tool.string.1": "+4％ Damage, Speed, Armor",
+  "item.nightmarestone.tool.string.2": "+7％ Regeneration, Knockback Resistance",
+  "item.nightmarestone.tool.string.3": "+10％Breaking speed、Experience Drops",
+  "item.nightmarestone.tool.string.4": " Damage, Speed, Armor",
+  "item.nightmarestone.tool.string.5": " Life Restoration, Knockback Resistance",
+  "item.nightmarestone.tool.string.6": " Breaking speed、Experience Drops",
+  "item.nightmarestone.tool.string.7": "Double the duration of any debuffs on you",
+  "item.nightmarestone.tool.string.8": "Taking damage from any source gains a random debuff",
+  "item.nightmarestone.tool.string.9": "Only those who bear the fear of the Nightmare",
+  "item.nightmarestone.tool.string.10": "To be eligible to use this prop",
+
+
+
+  "item.nightmaretreasure.tool.string": "Reduces damage dealt by 50%",
+  "item.nightmaretreasure.tool.string.1": "Loot gained from kills has a 33% chance of getting triple",
+  "item.nightmaretreasure.tool.string.2": "Each increase of 1 in luck increases the probability by 3%",
+  "item.nightmaretreasure.tool.string.3": "Maximum 66%",
+  "item.nightmaretreasure.tool.string.4": "Only those who bear the fear of the Nightmare",
+  "item.nightmaretreasure.tool.string.5": "To be eligible to use this prop",
+  "item.nightmaretreasure.tool.string.6": "-33% looting",
+
 
 
   "item.moonfabric.liquefactive": "Necroa DNA Paper : Liquefactive Resistance",
@@ -351,7 +409,7 @@
   "moonfabric.tooltip.pain_carrot.3": "·+1. Hunger value for food recovery",
 
   "item.moonfabric.pain_heart": "pain heart",
-  "moonfabric.tooltip.pain_heart.1": "+120% treatment",
+  "moonfabric.tooltip.pain_heart.1": "+33% treatment",
   "moonfabric.tooltip.pain_heart.2": "·Every injury will increase your resistance by 3.3%,cleared with full health",
 
   "item.moonfabric.pain_ring": "pain ring",
@@ -362,14 +420,59 @@
   "moonfabric.tooltip.pain_stone.1": "·+35% all speed",
   "moonfabric.tooltip.pain_stone.2": "·+17% jump power",
 
+  "item.moonfabric.blood_candle": "blood candle",
+  "moonfabric.tooltip.blood_candle":   "Summon a giant Blood Spirit Hyperplasia to assist you in battle,",
+  "moonfabric.tooltip.blood_candle.1": "If lost/missing, please wear this item again,",
+  "moonfabric.tooltip.blood_candle.2": "The attack of Blood Spirit Hyperplasia will cause damage based on your maximum health,",
 
+  "entity.moonfabric.attack_blood": "attack blood",
+  "entity.moonfabric.flysword": "flysword",
+  "entity.moonfabric.line": "line",
+  "entity.moonfabric.owner_blood": "owner blood",
 
   "item.moonfabric.blood_amout": "blood amout",
   "moonfabric.tooltip.blood_amout": "·Injured Summon Blood Spirit",
 
+  "item.moonfabric.greedcrystal": "greed crystal",
+  "moonfabric.tooltip.greedcrystal": "·+2 block luck",
+
+  "item.moonfabric.mblock": "m block",
+  "moonfabric.tooltip.mblock": "·+1 block luck and looting",
+
+  "item.moonfabric.meye": "m eye",
+  "moonfabric.tooltip.meye": "·Weakened spirits nearby",
 
 
+  "item.moonfabric.ectoplasmapple": "ectoplasm apple",
+  "item.ectoplasmapple.tool.string": "·Injury causes 2% maximum health damage to nearby organisms",
 
+  "item.moonfabric.ectoplasmshild": "ectoplasm shild",
+  "item.ectoplasmshild.tool.string": "·-20% hurt damage",
+  "item.ectoplasmshild.tool.string.1": "Every time you receive 5 injuries, you will be immune once",
+
+  "item.moonfabric.ectoplasmstar": "ectoplasm star",
+  "item.ectoplasmstar.tool.string": "·+20%luck",
+  
+  "item.ectoplasmstar.tool.string.1": "Lucky for every 1 point:+1% attack speed,+0.5% damage",
+  "item.moonfabric.ectoplasmcloub": "ectoplasm cloub",
+
+  "item.moonfabric.nightmareanchor": "nightmare anchors",
+  "item.moonfabric.nightmarecharm": "nightmare amulet",
+  "item.moonfabric.nightmareeye": "nightmare eye",
+  "item.moonfabric.nightmaremoai": "nightmare stone ball",
+  "item.moonfabric.nightmarerotten": "nightmare rotten Heart",
+  "item.moonfabric.nightmarestone": "nightmare stone",
+  "item.moonfabric.nightmaretreasure": "nightmare treasure",
+  "item.moonfabric.nightmarewater": "nightmare chalice",
+
+  "moonfabric.heal.attribute": "heal",
+  "item.moonfabric.ectoplasmball": "ectoplasm ball",
+
+  "item.moonfabric.ectoplasmhorseshoe": "ectoplasm horseshoe",
+  "item.ectoplasmhorseshoe.tool.string": "·-90% fall damage",
+  "item.moonfabric.ectoplasmbattery": "ectoplasm battery",
+  "item.moonfabric.ectoplasmcube": "ectoplasm cube",
+  "item.moonfabric.ectoplasmprism": "ectoplasm prism",
   "item.moonfabric.pain_candle": "pain candle",
   "moonfabric.tooltip.pain_candle.1": "·+66% resistance at full health",
   "moonfabric.tooltip.pain_candle.2": "·-10% resistance when not at full health"

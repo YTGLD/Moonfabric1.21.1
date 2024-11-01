@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BAB",
+    "ABA"
+  ],
+  "key":
+  {
+    "A":
+    {
+      "item": "moonfabric:ectoplasmprism"
+    },
+    "B":
+    {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "id": "moonfabric:ectoplasmstar",
+    "count": 1
+  }
+}

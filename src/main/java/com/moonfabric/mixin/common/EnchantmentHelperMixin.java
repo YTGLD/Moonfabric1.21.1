@@ -47,6 +47,7 @@ public abstract class EnchantmentHelperMixin {
 
                     if (!list.isEmpty()) {
                         player.applyEnchantmentCosts(itemStack, id + 1);
+
                         for (EnchantmentLevelEntry levelEntry : list) {
                             itemStack3.addEnchantment(levelEntry.enchantment, levelEntry.level + 2);
                         }

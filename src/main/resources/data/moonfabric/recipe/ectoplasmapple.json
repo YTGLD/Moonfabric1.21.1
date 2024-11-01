@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "CBC",
+    "AAA"
+  ],
+  "key":
+  {
+    "A":
+    {
+      "item": "moonfabric:ectoplasmcloub"
+    },
+    "B":
+    {
+      "item": "minecraft:apple"
+    },
+    "C":
+    {
+      "item": "moonfabric:ectoplasmcube"
+    }
+  },
+  "result": {
+    "id": "moonfabric:ectoplasmapple",
+    "count": 1
+  }
+}

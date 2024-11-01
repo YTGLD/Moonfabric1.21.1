@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moonfabric:ectoplasmcube"
+    },
+    {
+      "item": "moonfabric:ectoplasmcube"
+    },
+    {
+      "item": "moonfabric:ectoplasmcube"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "id": "moonfabric:ectoplasmprism",
+    "count": 1
+  }
+}

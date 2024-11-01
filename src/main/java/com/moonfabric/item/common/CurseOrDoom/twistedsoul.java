@@ -26,7 +26,7 @@ public class twistedsoul extends ItemTir {
     @Override
     public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, Identifier slotIdentifier){
         Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> modifierMultimap = HashMultimap.create();
-        modifierMultimap.put(EntityAttributes.GENERIC_MOVEMENT_SPEED,new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),-0.1, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        modifierMultimap.put(EntityAttributes.GENERIC_MOVEMENT_SPEED,new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),-0.1, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         return modifierMultimap;
     }
 

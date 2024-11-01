@@ -109,12 +109,12 @@ public class rageapple extends rage {
         Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> modifierMultimap = HashMultimap.create();
 
 
-        modifierMultimap.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),stack.get(Data.CUSTOM_DATA).getFloat(lvl) / 100, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-        modifierMultimap.put(EntityAttributes.GENERIC_ARMOR, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),stack.get(Data.CUSTOM_DATA).getFloat(lvl) / 100, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-        modifierMultimap.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),stack.get(Data.CUSTOM_DATA).getFloat(lvl) / 100, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-        modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),stack.get(Data.CUSTOM_DATA).getFloat(lvl) / 100, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        modifierMultimap.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),stack.get(Data.CUSTOM_DATA).getFloat(lvl) / 100, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        modifierMultimap.put(EntityAttributes.GENERIC_ARMOR, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),stack.get(Data.CUSTOM_DATA).getFloat(lvl) / 100, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        modifierMultimap.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),stack.get(Data.CUSTOM_DATA).getFloat(lvl) / 100, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),stack.get(Data.CUSTOM_DATA).getFloat(lvl) / 100, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
-        modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),stack.get(Data.CUSTOM_DATA).getFloat(lvl) / 100, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),stack.get(Data.CUSTOM_DATA).getFloat(lvl) / 100, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
         return modifierMultimap;
     }

@@ -19,8 +19,8 @@ public class pain_stone  extends ItemTir {
     @Override
     public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, Identifier slotIdentifier){
         var modifiers = super.getModifiers(stack, slot, entity, slotIdentifier);
-        modifiers.put(EntityAttributes.GENERIC_JUMP_STRENGTH,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),0.42, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-        modifiers.put(EntityAttributes.GENERIC_SAFE_FALL_DISTANCE,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),0.5, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        modifiers.put(EntityAttributes.GENERIC_JUMP_STRENGTH,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),0.42, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        modifiers.put(EntityAttributes.GENERIC_SAFE_FALL_DISTANCE,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),0.5, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         return modifiers;
     }
     @Override

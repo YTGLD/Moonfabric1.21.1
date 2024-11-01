@@ -7,6 +7,12 @@ import net.minecraft.text.Text;
 
 public class aaa {
     public static final ItemGroup Moon_Fabric_Tab = FabricItemGroup.builder().displayName(Text.translatable("tab.moonfabric_tab")).icon(()->new ItemStack(init.goldbox)).entries((a, c)->{
+        c.add(new ItemStack(init.firecottoncandy));
+        c.add(new ItemStack(init.goldcottoncandy));
+        c.add(new ItemStack(init.stonecottoncandy));
+        c.add(new ItemStack(init.watercottoncandy));
+        c.add(new ItemStack(init.woodcottoncandy));
+
         c.add(new ItemStack(init.abook));
         c.add(new ItemStack(init.Moonstone));
         c.add(new ItemStack(init.goldheart));
@@ -67,6 +73,30 @@ public class aaa {
 
         c.add(new ItemStack(init.pain_carrot));
         c.add(new ItemStack(init.pain_book));
+
+
+        c.add(new ItemStack(init.blood_amout));
+        c.add(new ItemStack(init.blood_candle));
+        c.add(new ItemStack(init.greedcrystal));
+        c.add(new ItemStack(init.mblock));
+        c.add(new ItemStack(init.meye));
+
+        c.add(new ItemStack(init.ectoplasmapple));
+        c.add(new ItemStack(init.ectoplasmball));
+        c.add(new ItemStack(init.ectoplasmbattery));
+        c.add(new ItemStack(init.ectoplasmcloub));
+        c.add(new ItemStack(init.ectoplasmcube));
+        c.add(new ItemStack(init.ectoplasmhorseshoe));
+        c.add(new ItemStack(init.ectoplasmprism));
+        c.add(new ItemStack(init.ectoplasmshild));
+        c.add(new ItemStack(init.ectoplasmstar));
+
+        c.add(new ItemStack(init.nightmareanchor));
+        c.add(new ItemStack(init.nightmarecharm));
+        c.add(new ItemStack(init.nightmareeye));
+        c.add(new ItemStack(init.nightmarerotten));
+        c.add(new ItemStack(init.nightmarestone));
+
     }).build();
 
 }

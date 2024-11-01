@@ -83,10 +83,10 @@ public class doomcharm extends doom {
     public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> getMap(ItemStack stack) {
         Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> modifierMultimap = HashMultimap.create();
         float a = stack.get(Data.CUSTOM_DATA).getFloat(lvl);
-        modifierMultimap.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),a / 25 * 2, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-        modifierMultimap.put(EntityAttributes.GENERIC_ARMOR, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),a / 14 / 2* 2, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-        modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),a / 20 / 2* 2, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-        modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),a / 30* 2, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        modifierMultimap.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),a / 25 * 2, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        modifierMultimap.put(EntityAttributes.GENERIC_ARMOR, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),a / 14 / 2* 2, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),a / 20 / 2* 2, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),a / 30* 2, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
         return modifierMultimap;
     }

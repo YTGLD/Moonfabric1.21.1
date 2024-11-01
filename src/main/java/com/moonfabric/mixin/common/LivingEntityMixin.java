@@ -108,24 +108,6 @@ public abstract class LivingEntityMixin {
         }
     }
 
-    @Inject(method = "heal", at = @At("RETURN"), cancellable = true)
-    private void moon$heal(float amount, CallbackInfo ci) {
-        LivingEntity livingEntity = (LivingEntity) (Object) this;
-        if (livingEntity instanceof PlayerEntity player){
-            if (player .isAlive()) {
-                if (hasCurio.has(init.woodcottoncandy, player)) {
-                    if (!player.getItemCooldownManager().isCoolingDown(init.woodcottoncandy)) {
-                        //增加100%生命恢复速度
-                        player.setHealth(player.getHealth() + (amount * (2f)));
-                        //在阳光下：+35%速度，生命恢复，护甲
-                        if (player.getWorld().isSkyVisible(player.getBlockPos()) || player.getWorld().isDay()) {
-                            player.setHealth(player.getHealth() + (amount * (1.35f)));
-                        }
-                    }
-                }
-            }
-        }
-    }
 
     @Inject(method = "damage", at = @At(value = "INVOKE", target = "net/minecraft/entity/LivingEntity.isSleeping()Z"), cancellable = true)
     private void mf$damage(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
@@ -631,8 +613,8 @@ public abstract class LivingEntityMixin {
     @Unique
     public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> get() {
         Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> modifierMultimap = HashMultimap.create();
-        modifierMultimap.put(EntityAttributes.GENERIC_ARMOR, new EntityAttributeModifier(Identifier.of("generic_armor"),-0.5, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-        modifierMultimap.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(Identifier.of("generic_armor_a"),-0.5, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        modifierMultimap.put(EntityAttributes.GENERIC_ARMOR, new EntityAttributeModifier(Identifier.of("generic_armor"),-0.5, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        modifierMultimap.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(Identifier.of("generic_armor_a"),-0.5, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         return modifierMultimap;
     }
     @Inject(method = "tick", at = @At(value = "RETURN"), cancellable = true)

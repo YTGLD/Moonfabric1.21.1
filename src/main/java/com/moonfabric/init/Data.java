@@ -10,6 +10,7 @@ import java.util.function.UnaryOperator;
 
 public class Data {
     public static final Registry<ComponentType<?>> REGISTRY = Registries.DATA_COMPONENT_TYPE;
+
     public static final ComponentType<NbtCompound> CUSTOM_DATA = reg((builder -> builder.codec(NbtCompound.CODEC)));
     public Data(){
         Registry.register(REGISTRY, Identifier.of("moonfabric","string"),CUSTOM_DATA);

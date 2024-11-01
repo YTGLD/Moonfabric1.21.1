@@ -10,8 +10,13 @@ import com.moonfabric.item.common.Mise.*;
 import com.moonfabric.item.common.NaNo.exc.thedoomeye_ui;
 import com.moonfabric.item.common.NaNo.exc.thedoomeye_ui1;
 import com.moonfabric.item.common.NaNo.*;
+import com.moonfabric.item.common.greedcrystal;
 import com.moonfabric.item.common.max.glodstone;
+import com.moonfabric.item.common.mblock;
+import com.moonfabric.item.common.meye;
 import com.moonfabric.item.common.pain.*;
+import com.moonfabric.item.ectoplasm.*;
+import com.moonfabric.item.nightmare.*;
 import com.moonfabric.item.sevensword;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -88,8 +93,27 @@ public class init  {
     public static final Item pain_carrot = new pain_carrot();
     public static final Item blood_amout = new blood_amout();
 
+    public static final Item blood_candle = new blood_candle();
+    public static final Item greedcrystal = new greedcrystal();
+    public static final Item mblock = new mblock();
+    public static final Item meye = new meye();
 
+    public static final Item ectoplasmapple = new ectoplasmapple();
+    public static final Item ectoplasmball = new ectoplasmball();
+    public static final Item ectoplasmbattery = new ectoplasmbattery();
+    public static final Item ectoplasmcloub = new ectoplasmcloub();
+    public static final Item ectoplasmcube = new ectoplasmcube();
+    public static final Item ectoplasmhorseshoe = new ectoplasmhorseshoe();
+    public static final Item ectoplasmprism = new ectoplasmprism();
+    public static final Item ectoplasmshild = new ectoplasmshild();
 
+    public static final Item ectoplasmstar = new ectoplasmstar();
+
+    public static final Item nightmareanchor = new nightmareanchor();
+    public static final Item nightmarecharm = new nightmarecharm();
+    public static final Item nightmareeye = new nightmareeye();
+    public static final Item nightmarerotten = new nightmarerotten();
+    public static final Item nightmarestone = new nightmarestone();
 
 
 

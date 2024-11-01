@@ -308,7 +308,7 @@
 
   "item.moonfabric.pain_heart": "痛苦起搏者",
   "moonfabric.tooltip.pain_heart.2": "·每次受伤都会使你的抗性-3.3%，在满血清除",
-  "moonfabric.tooltip.pain_heart.1": "·+120%治疗",
+  "moonfabric.tooltip.pain_heart.1": "·+33%治疗",
 
   "item.moonfabric.pain_book": "痛苦食谱",
   "moonfabric.tooltip.pain_book.1": "·你可以食用铜块和铜锭",
@@ -325,9 +325,118 @@
   "moonfabric.tooltip.pain_stone.1": "·+35% 速度",
   "moonfabric.tooltip.pain_stone.2": "·+17% 跳跃力量",
 
+  "item.moonfabric.blood_candle": "封魔烛台",
+
+  "moonfabric.tooltip.blood_candle": "召唤一个巨型血灵增生体协助你作战",
+  "moonfabric.tooltip.blood_candle.1": "如果丢失/失踪，请重新佩戴此物品",
+  "moonfabric.tooltip.blood_candle.2": "血灵增生体的攻击会造成基于你最大生命值的伤害",
+
+  "entity.moonfabric.attack_blood": "小血球",
+  "entity.moonfabric.flysword": "飞剑",
+  "entity.moonfabric.line": "血线",
+  "entity.moonfabric.owner_blood": "血灵增生体",
 
     "item.moonfabric.blood_amout": "血符",
   "moonfabric.tooltip.blood_amout": "·受伤召唤血灵之线",
+
+  "item.moonfabric.mblock": "莫里斯方块",
+  "moonfabric.tooltip.mblock": "·+1 时运和抢夺",
+
+  "item.moonfabric.meye": "莫里斯眼睛",
+  "moonfabric.tooltip.meye": "·虚弱附近的亡灵",
+
+  "moonfabric.heal.attribute": "治疗",
+  "item.moonfabric.ectoplasmball": "灵质球",
+
+
+  "item.moonfabric.ectoplasmapple": "灵质果",
+  "item.ectoplasmapple.tool.string": "·受伤对附近生物造成2%最大生命值的伤害",
+
+  "item.moonfabric.ectoplasmshild": "灵质盾牌",
+  "item.ectoplasmshild.tool.string": "·抗性",
+  "item.ectoplasmshild.tool.string.1": "每受到5次伤害，都会免疫一次",
+
+  "item.moonfabric.ectoplasmstar": "灵质幸运星",
+  "item.ectoplasmstar.tool.string": "·+20%幸运",
+  "item.ectoplasmstar.tool.string.1": "每1点幸运：+1%攻速，+0.5%伤害",
+  "item.moonfabric.ectoplasmcloub": "灵质云",
+  "moonfabric.tooltip.stonecottoncandy.6": "·-100% 治疗",
+
+  "item.moonfabric.ectoplasmhorseshoe": "灵质马蹄",
+  "item.ectoplasmhorseshoe.tool.string": "·减少90%摔落伤害",
+  "item.moonfabric.ectoplasmbattery": "灵质电池",
+  "item.moonfabric.ectoplasmcube": "灵质立方",
+  "item.moonfabric.ectoplasmprism": "灵质棱镜",
+  "item.moonfabric.greedcrystal": "贪婪水晶",
+  "moonfabric.tooltip.greedcrystal": "·+2 时运",
+
+
+  "item.moonfabric.nightmareanchor": "虚伪锚",
+  "item.moonfabric.nightmarecharm": "深渊护符",
+  "item.moonfabric.nightmareeye": "深渊之眼",
+  "item.moonfabric.nightmaremoai": "深渊石球",
+  "item.moonfabric.nightmarerotten": "万腐之心",
+  "item.moonfabric.nightmarestone": "深渊方尖碑",
+  "item.moonfabric.nightmaretreasure": "魔鬼的财宝",
+  "item.moonfabric.nightmarewater": "卑微之酿",
+
+
+  "item.nightmaretreasure.tool.string.6": "-33% 抢夺等级",
+
+  "item.nightmareanchor.tool.string": "佩戴它并死亡",
+  "item.nightmareanchor.tool.string.1": "可记录这一次的死亡地点",
+  "item.nightmareanchor.tool.string.2": "右键传送到上个记录点",
+  "item.nightmareanchor.tool.string.3": "但你必须在同一维度内",
+  "item.nightmareanchor.tool.string.4": "佩戴时:",
+  "item.nightmareanchor.tool.string.5": "减少5％来自深渊的诅咒",
+  "item.nightmareanchor.tool.string.6": "唯有承受深渊之恐的人",
+  "item.nightmareanchor.tool.string.7": "才有资格使用此道具",
+
+
+  "item.nightmarecharm.tool.string": "减少15％来自深渊之眼的诅咒",
+  "item.nightmarecharm.tool.string.1": "加法计算",
+  "item.nightmarecharm.tool.string.2": "+1饰品槽位",
+  "item.nightmarecharm.tool.string.3": "唯有承受深渊之恐的人",
+  "item.nightmarecharm.tool.string.4": "才有资格使用此道具",
+
+
+  "item.nightmareeye.tool.string": "受到伤害增加33％",
+  "item.nightmareeye.tool.string.1": "你大部分属性都会降低25%",
+  "item.nightmareeye.tool.string.2": "可以取下亚特格拉德病毒",
+
+
+  "item.nightmaremoai.tool.string": "+2 附魔产物的附魔等级",
+  "item.nightmaremoai.tool.string.1": "唯有承受深渊之恐的人",
+  "item.nightmaremoai.tool.string.2": "才有资格使用此道具",
+
+
+  "item.nightmarerotten.tool.string": "+33％ 所有属性",
+  "item.nightmarerotten.tool.string.1": "但是每增加1种属性",
+  "item.nightmarerotten.tool.string.2": "来自深渊的诅咒都会增加1.1％",
+  "item.nightmarerotten.tool.string.3": "唯有承受深渊之恐的人",
+  "item.nightmarerotten.tool.string.4": "才有资格使用此道具",
+
+
+  "item.nightmarestone.tool.string": "你的身上每存在一个负面效果：",
+  "item.nightmarestone.tool.string.1": "+4％伤害、移速、护甲",
+  "item.nightmarestone.tool.string.2": "+7％生命回复、击退抗性",
+  "item.nightmarestone.tool.string.3": "+10％挖掘速度、经验掉落",
+  "item.nightmarestone.tool.string.4": "伤害、移速、护甲",
+  "item.nightmarestone.tool.string.5": "生命回复、击退抗性",
+  "item.nightmarestone.tool.string.6": "挖掘速度、经验掉落",
+  "item.nightmarestone.tool.string.7": "你身上的任何负面效果时长翻倍",
+  "item.nightmarestone.tool.string.8": "受到任何来源的伤害都会获得一个随机负面效果",
+  "item.nightmarestone.tool.string.9": "唯有承受深渊之恐的人",
+  "item.nightmarestone.tool.string.10": "才有资格使用此道具",
+
+
+
+  "item.nightmaretreasure.tool.string": "你造成的伤害降低50％",
+  "item.nightmaretreasure.tool.string.1": "击杀获得的战利品有1/3的概率获取三倍",
+  "item.nightmaretreasure.tool.string.2": "每增加1的幸运，都会提高3％的概率",
+  "item.nightmaretreasure.tool.string.3": "不超过66％",
+  "item.nightmaretreasure.tool.string.4": "唯有承受深渊之恐的人",
+  "item.nightmaretreasure.tool.string.5": "才有资格使用此道具",
 
 
   "item.moonfabric.pain_candle": "痛苦蜡烛",

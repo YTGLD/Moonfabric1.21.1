@@ -11,8 +11,8 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.predicate.entity.EntityPredicates;
 import net.minecraft.registry.Registries;
-import net.minecraft.registry.RegistryKey;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
@@ -20,7 +20,6 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 public class line extends TameableEntity {
@@ -32,8 +31,8 @@ public class line extends TameableEntity {
     }
 
     private int cloudTime = 0;
+    private int time  = 0;
 
-  private   int time  = 0;
     public void tick() {
         super.tick();
         time++;
@@ -53,6 +52,12 @@ public class line extends TameableEntity {
         int range = 1;
         List<LivingEntity> entities = this.getWorld().getEntitiesByClass(LivingEntity.class, new Box(playerPos.x - range, playerPos.y - range, playerPos.z - range, playerPos.x + range, playerPos.y + range, playerPos.z + range), EntityPredicates.EXCEPT_SPECTATOR);
 
+        if (this.target!=null){
+            Identifier entitys = Registries.ENTITY_TYPE.getId(target.getType());
+            if (entitys.getNamespace().equals(MoonFabricMod.MODID)){
+                this.target=null;
+            }
+        }
 
         if (this.getOwner()!=null
                 && this.getOwner() instanceof PlayerEntity player) {
@@ -129,6 +134,7 @@ public class line extends TameableEntity {
         return false;
     }
 
+
     @Nullable
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
@@ -140,7 +146,7 @@ public class line extends TameableEntity {
                 line.setTamed(true, true);
             }
         }
-        return null;
+        return line;
     }
 }
 

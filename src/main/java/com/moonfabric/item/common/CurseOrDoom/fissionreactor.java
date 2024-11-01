@@ -116,8 +116,8 @@ public class fissionreactor extends doom {
         a /= 10;//100
         a /=2;//50
         a /= 100;//0.5
-        modifierMultimap.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),-a/2, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-        modifierMultimap.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),-a, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        modifierMultimap.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),-a/2, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        modifierMultimap.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),-a, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         return modifierMultimap;
     }
 }

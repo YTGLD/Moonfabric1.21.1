@@ -1,9 +1,9 @@
 package com.moonfabric.item.common.pain;
 
 import com.google.common.collect.Multimap;
-import com.moonfabric.Ievent.IHealEvent;
 import com.moonfabric.Ievent.IHurtSizeEvent;
 import com.moonfabric.hasCurio;
+import com.moonfabric.init.AttReg;
 import com.moonfabric.init.Data;
 import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.extend.ItemTir;
@@ -34,15 +34,6 @@ public class pain_heart extends ItemTir {
     }
 
     public static void  pain(){
-
-        IHealEvent.ON_HURT.register(((living, size, stack) -> {
-            if (living .isAlive()) {
-                if (stack.isOf(init.pain_heart) && hasCurio.has(init.pain_heart, living)) {
-                    living.setHealth(living.getHealth() + size * 1.2f);
-                }
-            }
-        }));
-
         IHurtSizeEvent.ON_HURT.register((living, source, size,stack) -> {
             if (stack.isOf(init.pain_heart)&& hasCurio.has(init.pain_heart,living)){
                 if (stack.get(Data.CUSTOM_DATA) != null) {
@@ -58,6 +49,7 @@ public class pain_heart extends ItemTir {
     public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, Identifier slotIdentifier){
         var modifiers = super.getModifiers(stack, slot, entity, slotIdentifier);
         modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),10, EntityAttributeModifier.Operation.ADD_VALUE));
+        modifiers.put(AttReg.heal,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),0.33, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         return modifiers;
     }
     @Override

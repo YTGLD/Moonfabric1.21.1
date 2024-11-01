@@ -16,7 +16,7 @@ public class pain_box extends ItemTir {
     @Override
     public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, Identifier slotIdentifier){
         var modifiers = super.getModifiers(stack, slot, entity, slotIdentifier);
-        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),-0.25, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),-0.25, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         SlotAttributes.addSlotModifier(modifiers,"chest/back",Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),1, EntityAttributeModifier.Operation.ADD_VALUE);
         SlotAttributes.addSlotModifier(modifiers,"legs/belt",Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),2, EntityAttributeModifier.Operation.ADD_VALUE);
         return modifiers;

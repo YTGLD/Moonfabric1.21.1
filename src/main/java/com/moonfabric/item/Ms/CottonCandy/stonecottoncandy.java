@@ -3,6 +3,7 @@ package com.moonfabric.item.Ms.CottonCandy;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import com.moonfabric.hasCurio;
+import com.moonfabric.init.AttReg;
 import com.moonfabric.init.Data;
 import com.moonfabric.init.init;
 import dev.emi.trinkets.api.SlotReference;
@@ -62,9 +63,10 @@ public class stonecottoncandy extends CottonCandy{
         Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier>modifierMultimap = HashMultimap.create();
         UUID uuid = UUID.fromString("2dc91382-bdf7-3364-b2ee-09532f57b948");
         modifierMultimap.put(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),999, EntityAttributeModifier.Operation.ADD_VALUE));
-        modifierMultimap.put(EntityAttributes.GENERIC_MOVEMENT_SPEED,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),0.4, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-        modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_DAMAGE,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),0.4, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
-        modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_SPEED,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),-0.35, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        modifierMultimap.put(EntityAttributes.GENERIC_MOVEMENT_SPEED,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),0.4, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_DAMAGE,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),0.4, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_SPEED,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),0.35, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+        modifierMultimap.put(AttReg.heal,new EntityAttributeModifier(Identifier.of("moonfabric"+this.getOrCreateTranslationKey()),-1, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         return modifierMultimap;
     }
 
@@ -73,6 +75,7 @@ public class stonecottoncandy extends CottonCandy{
         tooltip.add(Text.translatable(""));
         tooltip.add(Text.translatable("moonfabric.tooltip.stonecottoncandy.1").formatted(Formatting.GRAY));//
         tooltip.add(Text.translatable("moonfabric.tooltip.stonecottoncandy.2").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("moonfabric.tooltip.stonecottoncandy.6").formatted(Formatting.GRAY));
         tooltip.add(Text.translatable(""));
         tooltip.add(Text.translatable("moonfabric.tooltip.stonecottoncandy.4").formatted(Formatting.GRAY));
         tooltip.add(Text.translatable("moonfabric.tooltip.stonecottoncandy.3").formatted(Formatting.GRAY));

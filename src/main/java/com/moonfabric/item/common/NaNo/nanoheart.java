@@ -85,7 +85,7 @@ public class nanoheart extends doom {
         Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> modifierMultimap = HashMultimap.create();
 
         modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_DAMAGE,new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),10, EntityAttributeModifier.Operation.ADD_VALUE));
-        modifierMultimap.put(EntityAttributes.GENERIC_MOVEMENT_SPEED,new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),-0.4, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        modifierMultimap.put(EntityAttributes.GENERIC_MOVEMENT_SPEED,new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),-0.4, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         modifierMultimap.put(EntityAttributes.GENERIC_MAX_HEALTH,new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),20, EntityAttributeModifier.Operation.ADD_VALUE));
 
 

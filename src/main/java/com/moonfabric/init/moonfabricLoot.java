@@ -48,37 +48,49 @@ public class moonfabricLoot {
 
     public static void onLootTableLoad(RegistryKey<LootTable> id, LootTable.Builder supplier) {
 
+        if (LOOTTABLES.contains(id)
+                || GRASS.contains(id)
+                ||ABANDONED_MINESHAFT_CHEST.contains(id)){
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmball).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.09f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmcloub).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.06f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmcube).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmhorseshoe).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.01f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmapple).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.01f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmshild).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.01f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmbattery).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.01f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmstar).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.01f)))));
+        }
 
 
         if (TRIAL_CHAMBERS.contains(id)){
             supplier.pool(LootPool.builder()
                     .bonusRolls(ConstantLootNumberProvider.create(1.0f))
                     .with(ItemEntry.builder(init.pain_box)
-                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
+                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.005f)))));
             supplier.pool(LootPool.builder()
                     .bonusRolls(ConstantLootNumberProvider.create(1.0f))
                     .with(ItemEntry.builder(init.pain_heart)
-                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
+                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.005f)))));
             supplier.pool(LootPool.builder()
                     .bonusRolls(ConstantLootNumberProvider.create(1.0f))
                     .with(ItemEntry.builder(init.pain_ring)
-                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
+                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.005f)))));
             supplier.pool(LootPool.builder()
                     .bonusRolls(ConstantLootNumberProvider.create(1.0f))
                     .with(ItemEntry.builder(init.pain_stone)
-                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
+                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.005f)))));
             supplier.pool(LootPool.builder()
                     .bonusRolls(ConstantLootNumberProvider.create(1.0f))
                     .with(ItemEntry.builder(init.pain_candle)
-                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
+                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.005f)))));
             supplier.pool(LootPool.builder()
                     .bonusRolls(ConstantLootNumberProvider.create(1.0f))
                     .with(ItemEntry.builder(init.pain_carrot)
-                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
+                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.005f)))));
             supplier.pool(LootPool.builder()
                     .bonusRolls(ConstantLootNumberProvider.create(1.0f))
                     .with(ItemEntry.builder(init.pain_book)
-                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
+                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.005f)))));
 
         }
 
@@ -314,6 +326,16 @@ public class moonfabricLoot {
                     .bonusRolls(ConstantLootNumberProvider.create(1.0f))
                     .with(ItemEntry.builder(init.snail)
                             .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
+
+            supplier.pool(LootPool.builder()
+                    .bonusRolls(ConstantLootNumberProvider.create(1.0f))
+                    .with(ItemEntry.builder(init.blood_amout)
+                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
+            supplier.pool(LootPool.builder()
+                    .bonusRolls(ConstantLootNumberProvider.create(1.0f))
+                    .with(ItemEntry.builder(init.blood_candle)
+                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
+
 
         }
         if (

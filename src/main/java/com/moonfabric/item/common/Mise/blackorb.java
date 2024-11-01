@@ -51,7 +51,7 @@ public class blackorb extends ItemTir {
                 a *= 2;
             }
         }
-        modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_DAMAGE,new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),a, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+        modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_DAMAGE,new EntityAttributeModifier(Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),a, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         return modifierMultimap;
     }
 
