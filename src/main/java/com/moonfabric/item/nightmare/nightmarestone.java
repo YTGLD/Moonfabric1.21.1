@@ -11,12 +11,14 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.registry.Registries;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
@@ -30,16 +32,32 @@ import java.util.List;
 public class nightmarestone extends nightmare {
 
 
-    public static void hurt(LivingEntity entity){
+    public static void hurt(LivingEntity entity, DamageSource source){
         if (hasCurio.has(init.nightmarestone,entity)){
-            switch (MathHelper.nextInt(Random.create(),1,5)){
-                case 1:entity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 100,0));
-                case 2:entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 100,0));
-                case 3:entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 100,0));
-                case 4:entity.addStatusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 100,0));
-                case 5:entity.addStatusEffect(new StatusEffectInstance(StatusEffects.UNLUCK, 100,0));
+            if (source.getSource() != null) {
+                switch (MathHelper.nextInt(Random.create(), 1, 5)) {
+                    case 1:
+                        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 100, 0));
+                    case 2:
+                        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 100, 0));
+                    case 3:
+                        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 100, 0));
+                    case 4:
+                        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 100, 0));
+                    case 5:
+                        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.UNLUCK, 100, 0));
+                }
             }
         }
+    }
+    @Override
+    public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
+        if (entity instanceof PlayerEntity player){
+            if (hasCurio.has(init.nightmareeye,player)){
+                return true;
+            }
+        }
+        return false;
     }
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
@@ -55,7 +73,7 @@ public class nightmarestone extends nightmare {
                         int lvl = mobEffectInstance.getAmplifier();
                         int time = mobEffectInstance.getDuration();
 
-                        player.addStatusEffect(new StatusEffectInstance(RegistryEntry.of(mobEffect), time + 10, lvl));
+                        player.addStatusEffect(new StatusEffectInstance(Registries.STATUS_EFFECT.getEntry(mobEffect), time + 10, lvl));
 
                     }
                 }

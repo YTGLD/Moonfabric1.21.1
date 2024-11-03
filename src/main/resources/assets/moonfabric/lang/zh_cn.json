@@ -1,5 +1,6 @@
 {
   "tab.moonfabric_tab": "Moonfabric",
+  "tab.moonfabric_tab.dna": "Moonfabric:DNA",
 
   "item.moonfabric.moonstone": "月之石",
   "moonfabric.tooltip.moonstone.1": "·+6 护甲",
@@ -389,32 +390,32 @@
   "item.nightmareanchor.tool.string.3": "但你必须在同一维度内",
   "item.nightmareanchor.tool.string.4": "佩戴时:",
   "item.nightmareanchor.tool.string.5": "减少5％来自深渊的诅咒",
-  "item.nightmareanchor.tool.string.6": "唯有承受深渊之恐的人",
-  "item.nightmareanchor.tool.string.7": "才有资格使用此道具",
+  "item.nightmareanchor.tool.string.6": "唯有承受深渊之眼诅咒的人",
+  "item.nightmareanchor.tool.string.7": "才有资格发现并使用此道具",
 
 
   "item.nightmarecharm.tool.string": "减少15％来自深渊之眼的诅咒",
   "item.nightmarecharm.tool.string.1": "加法计算",
   "item.nightmarecharm.tool.string.2": "+1饰品槽位",
-  "item.nightmarecharm.tool.string.3": "唯有承受深渊之恐的人",
-  "item.nightmarecharm.tool.string.4": "才有资格使用此道具",
+  "item.nightmarecharm.tool.string.3": "唯有承受深渊之眼诅咒的人",
+  "item.nightmarecharm.tool.string.4": "才有资格发现并使用此道具",
 
 
   "item.nightmareeye.tool.string": "受到伤害增加33％",
   "item.nightmareeye.tool.string.1": "你大部分属性都会降低25%",
-  "item.nightmareeye.tool.string.2": "可以取下亚特格拉德病毒",
+  "item.nightmareeye.tool.string.2": "你需要佩戴这个物品才可以发现和使用深渊物品",
 
 
   "item.nightmaremoai.tool.string": "+2 附魔产物的附魔等级",
-  "item.nightmaremoai.tool.string.1": "唯有承受深渊之恐的人",
-  "item.nightmaremoai.tool.string.2": "才有资格使用此道具",
+  "item.nightmaremoai.tool.string.1": "唯有承受深渊之眼诅咒的人",
+  "item.nightmaremoai.tool.string.2": "才有资格发现并使用此道具",
 
 
   "item.nightmarerotten.tool.string": "+33％ 所有属性",
   "item.nightmarerotten.tool.string.1": "但是每增加1种属性",
   "item.nightmarerotten.tool.string.2": "来自深渊的诅咒都会增加1.1％",
-  "item.nightmarerotten.tool.string.3": "唯有承受深渊之恐的人",
-  "item.nightmarerotten.tool.string.4": "才有资格使用此道具",
+  "item.nightmarerotten.tool.string.3": "唯有承受深渊之眼诅咒的人",
+  "item.nightmarerotten.tool.string.4": "才有资格发现并使用此道具",
 
 
   "item.nightmarestone.tool.string": "你的身上每存在一个负面效果：",
@@ -426,18 +427,56 @@
   "item.nightmarestone.tool.string.6": "挖掘速度、经验掉落",
   "item.nightmarestone.tool.string.7": "你身上的任何负面效果时长翻倍",
   "item.nightmarestone.tool.string.8": "受到任何来源的伤害都会获得一个随机负面效果",
-  "item.nightmarestone.tool.string.9": "唯有承受深渊之恐的人",
-  "item.nightmarestone.tool.string.10": "才有资格使用此道具",
+  "item.nightmarestone.tool.string.9": "唯有承受深渊之眼诅咒的人",
+  "item.nightmarestone.tool.string.10": "才有资格发现并使用此道具",
+
+  "item.moonfabric.dna": "DNA存储器",
+
+  "moonfabric.cit.attribute": "暴击伤害",
+  "moonfabric.swiming.attribute": "游泳速度",
+  "item.moonfabric.atp_height": "ATP高能量",
+  "item.moonfabric.cell_god": "神创论",
+  "item.moonfabric.cell_ground": "大地亲和性",
+  "item.moonfabric.cell_inheritance": "模拟遗传基因",
+  "item.moonfabric.cell_oxygen": "碱性氧化",
+  "item.moonfabric.cell_big_boom": "细胞色素爆发",
+  "item.moonfabric.cell_break_down_water": "碱性水解",
+  "item.moonfabric.cell_darwin": "达尔文主义",
+  "item.moonfabric.cell_disorder": "代谢紊乱",
+  "item.moonfabric.cell_in_air": "大气亲和性",
+  "item.moonfabric.cell_in_water": "海洋亲和性",
+  "item.moonfabric.cell_off_on": "催化剂开关",
+  "item.moonfabric.speed_metabolism": "极速代谢",
 
 
+  "item.moonfabric.cell_necrosis":"液化性坏死",
+  "item.moonfabric.cell_digestion":"表皮消化",
+  "item.moonfabric.cell_acid":"酸性液体逆流",
+  "item.moonfabric.cell_eyes":"眼镜蛇式锁定",
+  "item.moonfabric.cell_bone_add":"骨骼结构异化",
+  "item.moonfabric.cell_sense":"感官系统强化",
 
+  "item.moonfabric.cell_cranial":"脑组织转移",
+  "item.moonfabric.cell_dna_suppression":"神经递质抑制",
+  "item.moonfabric.cell_putrefactive":"热分解抑制",
+  "item.moonfabric.cell_synthesis":"肽合成增强",
+
+
+  "item.moonfabric.cell_compress":"致命基因压缩",
+  "item.moonfabric.cell_preferential":"择优进化论",
+  "item.moonfabric.cell_flu":"病毒性流感",
+  "item.moonfabric.cell_constant":"常量因子激增",
+  "item.moonfabric.cell_chromosome":"染色体结构变异",
   "item.nightmaretreasure.tool.string": "你造成的伤害降低50％",
   "item.nightmaretreasure.tool.string.1": "击杀获得的战利品有1/3的概率获取三倍",
   "item.nightmaretreasure.tool.string.2": "每增加1的幸运，都会提高3％的概率",
   "item.nightmaretreasure.tool.string.3": "不超过66％",
-  "item.nightmaretreasure.tool.string.4": "唯有承受深渊之恐的人",
-  "item.nightmaretreasure.tool.string.5": "才有资格使用此道具",
+  "item.nightmaretreasure.tool.string.4": "唯有承受深渊之眼诅咒的人",
+  "item.nightmaretreasure.tool.string.5": "才有资格发现并使用此道具",
 
+
+  "moonfabric.tooltip.dna.1": "右键存入DNA，最多存入320个",
+  "moonfabric.tooltip.dna.2": "你必须配搭这个物品才能发现DNA",
 
   "item.moonfabric.pain_candle": "痛苦蜡烛",
   "moonfabric.tooltip.pain_candle.1": "·在满生命值时+66%抗性",

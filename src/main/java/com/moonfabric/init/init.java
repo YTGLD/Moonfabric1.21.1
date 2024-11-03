@@ -15,6 +15,7 @@ import com.moonfabric.item.common.max.glodstone;
 import com.moonfabric.item.common.mblock;
 import com.moonfabric.item.common.meye;
 import com.moonfabric.item.common.pain.*;
+import com.moonfabric.item.dna.dna;
 import com.moonfabric.item.ectoplasm.*;
 import com.moonfabric.item.nightmare.*;
 import com.moonfabric.item.sevensword;
@@ -114,6 +115,7 @@ public class init  {
     public static final Item nightmareeye = new nightmareeye();
     public static final Item nightmarerotten = new nightmarerotten();
     public static final Item nightmarestone = new nightmarestone();
+    public static final Item dna = new dna();
 
 
 

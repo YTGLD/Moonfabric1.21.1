@@ -28,4 +28,21 @@ public class LootTableEvent {
         }
         return ItemStack.EMPTY.getItem();
     }
+    public static ItemStack addLootDNA(LootContext context,
+                                       List<Item> itemList,
+                                       int gLvl,
+                                       Item mustHas,
+                                       int size) {
+        if (context.get(LootContextParameters.THIS_ENTITY) != null
+                && context.get(LootContextParameters.THIS_ENTITY)  instanceof PlayerEntity player) {
+            if (hasCurio.has(mustHas,player)) {
+                Random random = new Random();
+                int i = random.nextInt(itemList.size());
+                if (MathHelper.nextInt(net.minecraft.util.math.random.Random.create(), 1, 100) <= gLvl) {
+                    return new ItemStack(itemList.get(i),size);
+                }
+            }
+        }
+        return ItemStack.EMPTY;
+    }
 }

@@ -1,0 +1,15 @@
+{
+  "name": "眼镜蛇式锁定",
+  "icon": "moonfabric:cell_eyes",
+  "category": "moonfabric:dna",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "moonfabric:cell_eyes",
+      "title": "-眼镜蛇式锁定-",
+      "text":"你必须在佩戴培养皿的情况下开取战利品箱子获取右键存入培养皿内$(br2)使附近的生物发光，其效果取决于培养皿内部的进化基因数量"
+    }
+  ]
+}

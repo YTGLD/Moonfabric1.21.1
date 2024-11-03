@@ -1,5 +1,6 @@
 package com.moonfabric.mixin;
 
+import com.moonfabric.init.DNAItems;
 import com.moonfabric.init.LootTableEvent;
 import com.moonfabric.init.init;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
@@ -10,6 +11,8 @@ import net.minecraft.loot.context.LootContext;
 import net.minecraft.loot.context.LootContextType;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.random.Random;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -33,7 +36,50 @@ public abstract class LootTableMixin {
 
         if (this.randomSequenceId.isPresent()){
 
-            if (this.randomSequenceId.get().getPath().contains("dungeon")){
+            if (this.randomSequenceId.get().toString().contains("chests")&&
+                    this.randomSequenceId.get().toString().contains("dungeon")||
+                    this.randomSequenceId.get().toString().contains("treasure")||
+                    this.randomSequenceId.get().toString().contains("underwater")||
+                    this.randomSequenceId.get().toString().contains("desert")||
+                    this.randomSequenceId.get().toString().contains("city")||
+                    this.randomSequenceId.get().toString().contains("stronghold")||
+                    this.randomSequenceId.get().toString().contains("village")||
+                    this.randomSequenceId.get().toString().contains("mineshaft")){
+
+                objectArrayList.add(LootTableEvent.addLootDNA(context,List.of(
+                        DNAItems.atp_height,
+                        DNAItems.cell_acid,
+                        DNAItems.cell_big_boom,
+                        DNAItems.cell_bone_add,
+                        DNAItems.cell_break_down_water,
+                        DNAItems.cell_chromosome,
+                        DNAItems.cell_compress,
+                        DNAItems.cell_constant,
+                        DNAItems.cell_cranial,
+                        DNAItems.cell_darwin,
+                        DNAItems.cell_digestion,
+                        DNAItems.cell_disorder,
+                        DNAItems.cell_dna_suppression,
+                        DNAItems.cell_eyes,
+                        DNAItems.cell_flu,
+                        DNAItems.cell_god,
+                        DNAItems.cell_ground,
+                        DNAItems.cell_in_air,
+                        DNAItems.cell_in_water,
+                        DNAItems.cell_inheritance,
+                        DNAItems.cell_necrosis,
+                        DNAItems.cell_off_on,
+                        DNAItems.cell_oxygen,
+                        DNAItems.cell_preferential,
+                        DNAItems.cell_putrefactive,
+                        DNAItems.cell_sense,
+                        DNAItems.cell_synthesis,
+                        DNAItems.speed_metabolism
+
+
+
+                        ),50,init.dna, MathHelper.nextInt(Random.create(),4,12)));
+
 
                 objectArrayList.add(LootTableEvent.addLoot(context,List.of(
 
@@ -42,7 +88,7 @@ public abstract class LootTableMixin {
                         init.nightmarerotten ,
                         init.nightmarestone
 
-                ),100,init.nightmareeye).getDefaultStack());
+                ),10,init.nightmareeye).getDefaultStack());
             }
         }
 

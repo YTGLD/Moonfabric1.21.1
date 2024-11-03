@@ -13,10 +13,20 @@ public class AttReg {
             reg(new ClampedEntityAttribute(
                     "moonfabric.heal.attribute",1,-1024,1024)
                     .setTracked(true),"heal");
+    public static final RegistryEntry<EntityAttribute> cit =
+            reg(new ClampedEntityAttribute(
+                    "moonfabric.cit.attribute",1,-1024,1024)
+                    .setTracked(true),"cit");
+    public static final RegistryEntry<EntityAttribute> swiming =
+            reg(new ClampedEntityAttribute(
+                    "moonfabric.swiming.attribute",1,-1024,1024)
+                    .setTracked(true),"swiming");
 
 
     public AttReg(){
         Registry.register(Registries.ATTRIBUTE,Identifier.of(MoonFabricMod.MODID,"heal"),heal.value());
+        Registry.register(Registries.ATTRIBUTE,Identifier.of(MoonFabricMod.MODID,"swiming"),swiming.value());
+        Registry.register(Registries.ATTRIBUTE,Identifier.of(MoonFabricMod.MODID,"cit"),cit.value());
     }
 
     private static RegistryEntry<EntityAttribute> reg(EntityAttribute entityAttribute, String name) {

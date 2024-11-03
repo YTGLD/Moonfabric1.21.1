@@ -2,12 +2,15 @@ package com.moonfabric.item.nightmare;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
+import com.moonfabric.hasCurio;
 import com.moonfabric.init.Data;
+import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.nightmare;
 import dev.emi.trinkets.api.SlotReference;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.nbt.NbtCompound;
@@ -28,7 +31,7 @@ public class nightmarerotten extends nightmare {
         Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> modifierMultimap = HashMultimap.create();
 
         for(EntityAttribute entityAttribute : Registries.ATTRIBUTE) {
-            modifierMultimap.put(RegistryEntry.of(entityAttribute),new EntityAttributeModifier(Identifier.of("base_attack_damage"+this.getTranslationKey()),0.33, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+            modifierMultimap.put(Registries.ATTRIBUTE.getEntry(entityAttribute),new EntityAttributeModifier(Identifier.of("base_attack_damage"+this.getTranslationKey()),0.33, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE));
         }
 
         return modifierMultimap;
@@ -44,7 +47,15 @@ public class nightmarerotten extends nightmare {
             stack.get(Data.CUSTOM_DATA).putInt(nightmarerotten,s);
         }
     }
-
+    @Override
+    public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
+        if (entity instanceof PlayerEntity player){
+            if (hasCurio.has(init.nightmareeye,player)){
+                return true;
+            }
+        }
+        return false;
+    }
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         entity.getAttributes().removeModifiers(this.getModifiers(entity));

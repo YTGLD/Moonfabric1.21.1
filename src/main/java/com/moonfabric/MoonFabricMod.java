@@ -2,6 +2,7 @@ package com.moonfabric;
 
 import com.moonfabric.Effects.initEffect;
 import com.moonfabric.init.*;
+import com.moonfabric.item.dna.DNAItem;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.minecraft.entity.effect.StatusEffect;
@@ -147,6 +148,47 @@ public class MoonFabricMod implements ModInitializer {
 		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "pain_stone"), init.pain_stone);
 		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "pain_candle"), init.pain_candle);
 
+
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "atp_height"), DNAItems.atp_height);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_acid"), DNAItems.cell_acid);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_big_boom"), DNAItems.cell_big_boom);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_bone_add"), DNAItems.cell_bone_add);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_break_down_water"), DNAItems.cell_break_down_water);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_chromosome"), DNAItems.cell_chromosome);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_compress"), DNAItems.cell_compress);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_constant"), DNAItems.cell_constant);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_cranial"), DNAItems.cell_cranial);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_darwin"), DNAItems.cell_darwin);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_digestion"), DNAItems.cell_digestion);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_disorder"), DNAItems.cell_disorder);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_dna_suppression"), DNAItems.cell_dna_suppression);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_eyes"), DNAItems.cell_eyes);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_flu"), DNAItems.cell_flu);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_god"), DNAItems.cell_god);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_ground"), DNAItems.cell_ground);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_in_air"), DNAItems.cell_in_air);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_in_water"), DNAItems.cell_in_water);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_inheritance"), DNAItems.cell_inheritance);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_necrosis"), DNAItems.cell_necrosis);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_off_on"), DNAItems.cell_off_on);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_oxygen"), DNAItems.cell_oxygen);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_preferential"), DNAItems.cell_preferential);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_putrefactive"), DNAItems.cell_putrefactive);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_sense"), DNAItems.cell_sense);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_synthesis"), DNAItems.cell_synthesis);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "speed_metabolism"), DNAItems.speed_metabolism);
+
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "dna"), init.dna);
+
+
+
+
+
+
+
+
+
+
 		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "flysword"), InItEntity.Fly);
 		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "line"), InItEntity.Line);
 
@@ -155,6 +197,7 @@ public class MoonFabricMod implements ModInitializer {
 
 
 		Registry.register(Registries.ITEM_GROUP, Identifier.of("moonfabric", "moonfabric_tab"), aaa.Moon_Fabric_Tab);
+		Registry.register(Registries.ITEM_GROUP, Identifier.of("moonfabric", "moonfabric_tab_dna"), aaa.DNA);
 
 		Registry.register(Registries.STATUS_EFFECT, Identifier.of("moonfabric", "blood"), initEffect.blood);
 	}

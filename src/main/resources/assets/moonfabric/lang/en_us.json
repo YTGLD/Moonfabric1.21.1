@@ -1,6 +1,6 @@
 {
   "tab.moonfabric_tab": "Moonfabric",
-
+  "tab.moonfabric_tab.dna": "Moonfabric:DNA",
   "item.moonfabric.moonstone": "moonstone",
   "moonfabric.tooltip.moonstone.1": "·+6 Armor",
   "moonfabric.tooltip.moonstone.2": "Discovered in the Ancient cities",
@@ -442,6 +442,8 @@
   "item.moonfabric.meye": "m eye",
   "moonfabric.tooltip.meye": "·Weakened spirits nearby",
 
+  "moonfabric.tooltip.dna.1": "Right click to store DNA, up to 320 can be stored",
+  "moonfabric.tooltip.dna.2": "You must pair this item to discover DNA",
 
   "item.moonfabric.ectoplasmapple": "ectoplasm apple",
   "item.ectoplasmapple.tool.string": "·Injury causes 2% maximum health damage to nearby organisms",
@@ -464,6 +466,42 @@
   "item.moonfabric.nightmarestone": "nightmare stone",
   "item.moonfabric.nightmaretreasure": "nightmare treasure",
   "item.moonfabric.nightmarewater": "nightmare chalice",
+
+  "item.moonfabric.dna": "DNA",
+  "moonfabric.cit.attribute": "cit",
+  "moonfabric.swiming.attribute": "swiming",
+  "item.moonfabric.atp_height": "ATP高能量",
+  "item.moonfabric.cell_god": "神创论",
+  "item.moonfabric.cell_ground": "大地亲和性",
+  "item.moonfabric.cell_inheritance": "模拟遗传基因",
+  "item.moonfabric.cell_oxygen": "碱性氧化",
+  "item.moonfabric.cell_big_boom": "细胞色素爆发",
+  "item.moonfabric.cell_break_down_water": "碱性水解",
+  "item.moonfabric.cell_darwin": "达尔文主义",
+  "item.moonfabric.cell_disorder": "代谢紊乱",
+  "item.moonfabric.cell_in_air": "大气亲和性",
+  "item.moonfabric.cell_in_water": "海洋亲和性",
+  "item.moonfabric.cell_off_on": "催化剂开关",
+  "item.moonfabric.speed_metabolism": "极速代谢",
+
+
+  "item.moonfabric.cell_compress":"致命基因压缩",
+  "item.moonfabric.cell_preferential":"择优进化论",
+  "item.moonfabric.cell_flu":"病毒性流感",
+  "item.moonfabric.cell_constant":"常量因子激增",
+  "item.moonfabric.cell_chromosome":"染色体结构变异",
+  "item.moonfabric.cell_necrosis":"液化性坏死",
+  "item.moonfabric.cell_digestion":"表皮消化",
+  "item.moonfabric.cell_acid":"酸性液体逆流",
+  "item.moonfabric.cell_eyes":"眼镜蛇式锁定",
+  "item.moonfabric.cell_bone_add":"骨骼结构异化",
+  "item.moonfabric.cell_sense":"感官系统强化",
+
+  "item.moonfabric.cell_cranial":"脑组织转移",
+  "item.moonfabric.cell_dna_suppression":"神经递质抑制",
+  "item.moonfabric.cell_putrefactive":"热分解抑制",
+  "item.moonfabric.cell_synthesis":"肽合成增强",
+
 
   "moonfabric.heal.attribute": "heal",
   "item.moonfabric.ectoplasmball": "ectoplasm ball",

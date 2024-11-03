@@ -3,6 +3,7 @@ package com.moonfabric.item.Ms;
 import com.moonfabric.hasCurio;
 import com.moonfabric.init.Data;
 import dev.emi.trinkets.api.SlotReference;
+import dev.emi.trinkets.api.TrinketEnums;
 import dev.emi.trinkets.api.TrinketItem;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -24,6 +25,16 @@ public class nightmare  extends TrinketItem {
             }
         }
         return true;
+    }
+
+    @Override
+    public TrinketEnums.DropRule getDropRule(ItemStack stack, SlotReference slot, LivingEntity entity) {
+        return TrinketEnums.DropRule.KEEP;
+    }
+
+    @Override
+    public boolean canEquipFromUse(ItemStack stack, LivingEntity entity) {
+        return false;
     }
 
     @Override

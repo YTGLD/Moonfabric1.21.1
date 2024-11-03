@@ -1,0 +1,15 @@
+{
+  "name": "病毒性流感",
+  "icon": "moonfabric:cell_flu",
+  "category": "moonfabric:dna",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "moonfabric:cell_flu",
+      "title": "-病毒性流感-",
+      "text":"你必须在佩戴培养皿的情况下开取战利品箱子获取$(br2)右键存入培养皿内$(br2)附近生物获得负面BUFF，其效果取决于培养皿内部的进化基因数量"
+    }
+  ]
+}

@@ -98,5 +98,40 @@ public class aaa {
         c.add(new ItemStack(init.nightmarestone));
 
     }).build();
+    public static final ItemGroup DNA = FabricItemGroup.builder().displayName(Text.translatable("tab.moonfabric_tab.dna")).icon(()->new ItemStack(init.abook)).entries((a, c)->{
 
+        c.add(new ItemStack(init.abook));
+        c.add(new ItemStack(init.dna));
+
+
+        c.add(new ItemStack(DNAItems.atp_height));
+        c.add(new ItemStack(DNAItems.cell_acid));
+        c.add(new ItemStack(DNAItems.cell_big_boom));
+        c.add(new ItemStack(DNAItems.cell_bone_add));
+        c.add(new ItemStack(DNAItems.cell_break_down_water));
+        c.add(new ItemStack(DNAItems.cell_chromosome));
+        c.add(new ItemStack(DNAItems.cell_compress));
+        c.add(new ItemStack(DNAItems.cell_constant));
+        c.add(new ItemStack(DNAItems.cell_cranial));
+        c.add(new ItemStack(DNAItems.cell_darwin));
+        c.add(new ItemStack(DNAItems.cell_digestion));
+        c.add(new ItemStack(DNAItems.cell_disorder));
+        c.add(new ItemStack(DNAItems.cell_dna_suppression));
+        c.add(new ItemStack(DNAItems.cell_eyes));
+        c.add(new ItemStack(DNAItems.cell_flu));
+        c.add(new ItemStack(DNAItems.cell_god));
+        c.add(new ItemStack(DNAItems.cell_ground));
+        c.add(new ItemStack(DNAItems.cell_in_air));
+        c.add(new ItemStack(DNAItems.cell_in_water));
+        c.add(new ItemStack(DNAItems.cell_inheritance));
+        c.add(new ItemStack(DNAItems.cell_necrosis));
+        c.add(new ItemStack(DNAItems.cell_off_on));
+        c.add(new ItemStack(DNAItems.cell_oxygen));
+        c.add(new ItemStack(DNAItems.cell_preferential));
+        c.add(new ItemStack(DNAItems.cell_putrefactive));
+        c.add(new ItemStack(DNAItems.cell_sense));
+        c.add(new ItemStack(DNAItems.cell_synthesis));
+        c.add(new ItemStack(DNAItems.speed_metabolism));
+
+    }).build();
 }

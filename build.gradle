@@ -11,6 +11,7 @@ base {
 }
 
 repositories {
+	maven { url 'https://maven.blamejared.com' }
 	maven {
 		name = "TerraformersMC"
 		url = "https://maven.terraformersmc.com/"
@@ -39,6 +40,7 @@ fabricApi {
 
 dependencies {
 	modImplementation "dev.emi:trinkets:3.10.0"
+	modImplementation "vazkii.patchouli:Patchouli:1.21-87-FABRIC"
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"

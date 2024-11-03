@@ -6,6 +6,7 @@ import com.moonfabric.hasCurio;
 import com.moonfabric.init.Data;
 import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.nightmare;
+import dev.emi.trinkets.api.SlotAttributes;
 import dev.emi.trinkets.api.SlotReference;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -38,6 +39,7 @@ public class nightmareeye extends nightmare {
         entity.getAttributes().removeModifiers(un_un_pla(entity,stack));
     }
 
+
     @Override
     public boolean canUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity instanceof PlayerEntity player){
@@ -46,6 +48,14 @@ public class nightmareeye extends nightmare {
             }
         }
         return false;
+    }
+    @Override
+    public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, Identifier slotIdentifier){
+        var modifiers = super.getModifiers(stack, slot, entity, slotIdentifier);
+
+        SlotAttributes.addSlotModifier(modifiers,"hand/ring",Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),2, EntityAttributeModifier.Operation.ADD_VALUE);
+
+        return modifiers;
     }
 
     public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> un_un_pla(LivingEntity player, ItemStack stack) {
@@ -82,10 +92,10 @@ public class nightmareeye extends nightmare {
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         tooltip.add(Text.literal(""));
-        tooltip.add(Text.translatable("item.nightmareeye.tool.string").formatted(Formatting.GOLD));
+        tooltip.add(Text.translatable("item.nightmareeye.tool.string").formatted(Formatting.GRAY));
         tooltip.add(Text.literal(""));
-        tooltip.add(Text.translatable("item.nightmareeye.tool.string.1").formatted(Formatting.GOLD));
-        tooltip.add(Text.translatable("item.nightmareeye.tool.string.2").formatted(Formatting.GOLD));
+        tooltip.add(Text.translatable("item.nightmareeye.tool.string.1").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.nightmareeye.tool.string.2").formatted(Formatting.GRAY));
 
     }
 

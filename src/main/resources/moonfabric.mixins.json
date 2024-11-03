@@ -5,6 +5,7 @@
   "mixins": [
     "ApplyBonusLootFunctionMixin",
     "EnchantedCountIncreaseLootFunctionMixin",
+    "ItemStackMixin",
     "LivingEntityMixinAll",
     "LootTableMixin",
     "PlayerMixin",
