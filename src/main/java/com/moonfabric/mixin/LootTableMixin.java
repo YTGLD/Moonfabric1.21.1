@@ -89,6 +89,49 @@ public abstract class LootTableMixin {
                         init.nightmarestone
 
                 ),10,init.nightmareeye).getDefaultStack());
+
+
+                objectArrayList.add(LootTableEvent.addLoot(context,List.of(
+                        init.ambush,
+                        init.atpoverdose,
+                        init.autolytic,
+                        init.fermentation,
+                        init.putrefactive,
+                        init.regenerative
+
+
+                ),15,init.necora).getDefaultStack());
+
+                objectArrayList.add(LootTableEvent.addLootNecora(context,List.of(
+                        init.cell
+                ),35,init.necora, init.cell).getDefaultStack());
+
+                objectArrayList.add(LootTableEvent.addLootNecora(context,List.of(
+                        init.giant
+                ),35,init.necora,init.giant).getDefaultStack());
+
+                objectArrayList.add(LootTableEvent.addLoot(context,List.of(
+
+                        init.cell_mummy,
+                        init.cell_boom,
+                        init.cell_calcification,
+                        init.cell_blood,
+                        init.adrenaline
+
+                ),20,init.cell).getDefaultStack());
+
+                objectArrayList.add(LootTableEvent.addLoot(context,List.of(
+
+                        init.giant_nightmare,
+                        init.anaerobic_cell,
+                        init.giant_boom_cell,
+                        init.subspace_cell,
+                        init.parasitic_cell,
+                        init.mother_cell,
+                        init.disgusting_cells,
+                        init.bone_cell
+
+                ),15,init.giant).getDefaultStack());
             }
         }
 

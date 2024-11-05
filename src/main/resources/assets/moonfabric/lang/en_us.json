@@ -1,9 +1,939 @@
 {
+
+  "curios.modifiers.necora": "when necora",
+  "key.moonfabric.category": "Moonstone",
+  "key.moonfabric.desc": "Skill",
+  "key.moonfabric.y": "skill",
+  "itemGroup.tabmoonfabric.blood": "Moonstone : Blood",
+  "key.categories.moonfabric.moonfabric_category": "Moonstone",
+  "moonfabric.book.error": "you need patchouli mod",
+  "itemGroup.tabmoonfabric": "Moonstone",
+  "itemGroup.tabmoonfabric.dna": "Moonstone:DNA",
+  "itemGroup.tabmoonfabric.necora": "Moon Stone:DNA",
+  "moonfabric.attribute.name.ectoplasm": "ectoplasm",
+  "moonfabric.attribute.name.nano": "nano",
+  "moonfabric.attribute.name.meet": "meet",
+  "moonfabric.attribute.name.mysterious": "mysterious",
+  "moonfabric.attribute.name.reality": "reality",
+  "moonfabric.attribute.name.twisted": "twisted",
+  "item.moonfabric.ectoplasmslate": "ectoplasm slate",
+  "item.moonfabric.ectoplasmbadge": "ectoplasm badge",
+  "item.moonfabric.ectoplasmstone": "ectoplasm stone",
+  "item.moonfabric.ectoplasmfood": "ectoplasm food",
+  "item.moonfabric.ectoplasmcharm": "ectoplasm charm",
+  "item.moonfabric.ectoplasmcharmstone": "ectoplasm charm stone",
+
+  "item.moonfabric.badgeofthedead": "badge of the dead",
+  "item.moonfabric.battery": "battery",
+  "item.moonfabric.biggreedcrystal": "big greed crystal",
+  "item.moonfabric.bigwarcrystal": "big war crystal",
+  "item.moonfabric.blackeorb": "black orb",
+  "item.moonfabric.blueamout": "blue amout",
+  "item.moonfabric.greedamout": "greed amout",
+  "item.moonfabric.redamout": "red amout",
+  "item.moonfabric.warcrystal": "war crystal",
+  "item.moonfabric.mbattery": "Morris's battery",
+  "item.moonfabric.mbottle": "Morris's drug",
+  "item.moonfabric.mbox": "Morris's box",
+  "item.moonfabric.mkidney": "Morris's kidney stone",
+  "item.moonfabric.morb": "Morris's coral",
+  "item.moonfabric.mring": "Morris's ring",
+  "item.moonfabric.mshell": "Morris's conch",
+
+  "item.ectoplasmshild.tool.string.2": "Reduces damage from explosions by 30%",
+  "item.ectoplasmshild.tool.string.3": "Every fifth hit of damage will immunize you from the next attack",
+
+
+  "item.mbattery.tool.string": "Zombies are afraid of you！！！",
+  "item.mbattery.tool.string.1": "Attacking zombies deals an additional 50% more damage",
+  "item.mbattery.tool.string.2": "+2 Fortune",
+  "item.mbattery.tool.string.3": "+2 Looting",
+
+  "item.mblock.tool.string": "+1 Fortune",
+  "item.mblock.tool.string.1": "+1 Looting",
+
+  "item.mbottle.tool.string": "When you're in Weakness：",
+  "item.mbottle.tool.string.1": "+2 Looting",
+  "item.mbottle.tool.string.2": "When you're in Mining Fatigue",
+  "item.mbottle.tool.string.3": "+2 Fortune",
+
+
+  "item.meye.tool.string": "Make undead creatures in a 10 square radius glow.",
+
+
+  "item.mkidney.tool.string": "Probability of not taking this damage when injured",
+  "item.mkidney.tool.string.1": "First 100%, second 50%, third 25%.",
+  "item.mkidney.tool.string.2": "And so on",
+  "item.mkidney.tool.string.3": "If immunity to damage fails, you take an additional 33% of your maximum life damage",
+  "item.mkidney.tool.string.4": "At the same time this item will go on a 10 second cooldown",
+
+
+  "item.morb.tool.string": "+1 Experience drop",
+  "item.morb.tool.string.1": "+50% Extra experience drops",
+
+
+  "item.mring.tool.string": "+100% Knockback distance",
+  "item.mring.tool.string.1": "+40% Healing capacity",
+
+  "item.mshell.tool.string": "-25% Damage from undead creatures",
+  "item.mshell.tool.string.1": "-10% Damage",
+
+
+  "item.moonfabric.magiceye": "The Magical Mechanical Eye",
+  "item.moonfabric.magicstone": "The Magical Mechanical Stone",
+  "item.moonfabric.nanorobot": "Nano-robot",
+  "item.moonfabric.thedoomstone": "Ancient core stone",
+  "item.moonfabric.thefruit": "Paleo-fruit",
+  "item.moonfabric.diemug": "Death Cask",
+  "item.moonfabric.evilcandle": "Evil Candle",
+  "item.moonfabric.evilmug": "Evil Cask",
+  "item.moonfabric.obsidianring": "Obsidian Ring",
+
+  "item.nightmarewater.tool.string": "Defeat...Frailty ......",
+  "item.nightmarewater.tool.string.1": "Nightmare…Eternity……",
+
+  "item.moonfabric.soulbattery": "Soul-battery",
+  "item.moonfabric.soulcube": "Soul-cube",
+
+
+  "item.magiceye.tool.string": "The Magical Mechanical Eye",
+  "item.magiceye.tool.string.1": "Will take 50% ranged damage",
+
+  "item.nanocube.tool.string": "Repair 30 durability points of your armor every 45 seconds.",
+  "item.nanocube.tool.string.1": "*cooldown reduced by 15 seconds when wearing batteries",
+
+  "item.nanorobot.tool.string": "Restore 30 durability points to main handheld items every 30 seconds",
+  "item.nanorobot.tool.string.1": "*cooldown reduced by 15 seconds when wearing batteries",
+
+  "item.thedoomstone.tool.string": "Your attacks will have a Blindness debuff.",
+  "item.thedoomstone.tool.string.1": "Will center on the attacking creature and inflict a sonic boom attack on creatures with the blindness debuff present",
+  "item.thedoomstone.tool.string.2": "Creatures attacked by Sonic Boom will continue to be affected by negative effects",
+
+
+  "item.thefruit.tool.string": "After eating:",
+  "item.thefruit.tool.string.1": "Not subject to luminous effects",
+  "item.thefruit.tool.string.2": "The Warden feels close to you!",
+  "item.thefruit.tool.string.3": "-99% attack of Warden damage",
+
+  "item.badgeofthedead.tool.string": "25% more damage against undead creatures",
+
+  "item.biggreedcrystal.tool.string": "+2 Fortune",
+
+  "item.greedcrystal.tool.string": "+1 Fortune",
+
+  "item.blueamout.tool.string": "Attacks have a chance to weaken enemies",
+  "item.blueamout.tool.string.1": "Probability of getting Resistance II when injured",
+
+  "item.greedamout.tool.string": "Attacks have a chance to draw life",
+  "item.greedamout.tool.string.1": "Probability of getting Absorption when injured",
+
+
+  "item.redamout.tool.string": "Attacks have a chance to send enemies flying",
+  "item.redamout.tool.string.1": "Probability of getting Strength II when injured",
+
+  "curios.identifier.medicine": "medicine",
+  "curios.identifier.necora": "DNA",
+  "curios.identifier.ncrdna": "ncr dna",
+  "curios.identifier.dna": "dna",
+  "curios.modifiers.ncrdna": "necora",
+  "curios.modifiers.dna": "DNA",
+  "curios.modifiers.medicine": "medicine",
+
+  "item.moonfabric.germ": "germ",
+  "item.moonfabric.fungus": "fungus",
+  "item.moonfabric.parasite": "parasite",
+  "item.moonfabric.virus": "virus",
+
+  "item.fungus.tool.string": "Gain a life Restoration bonus based on the number of pets around you",
+  "item.fungus.tool.string.1": "Each pet boosts this bonus by 25%",
+  "item.fungus.tool.string.2": "Maximum 150%",
+  "item.fungus.tool.string.3": "Convert the Grass cubes under your feet",
+  "item.fungus.tool.string.4": "Gain life restoration on Mycelium cubes",
+  "item.fungus.tool.string.5": "Unaffected by effects including Wither, Weakness, Slowness, Poison generation",
+  "item.fungus.tool.string.6": "You burn in the sun, even if you wear a hat.",
+  "item.fungus.tool.string.7": "Strengthen nearby pets",
+
+
+  "item.germ.tool.string": "Increases the adaptation value of Germ when digging cubes:",
+  "item.germ.tool.string.1": "Additional attributes can be gained from Germ for every 250 points of adaptation value",
+
+
+  "item.parasite.tool.string": "Elevated Parasite activity based on the nutritional value of the food",
+  "item.parasite.tool.string.1": "The more active the Parasite, the stronger your attributes.",
+  "item.parasite.tool.string.2": "The higher the Parasite activity, the less activity can be increased",
+  "item.parasite.tool.string.3": "As the Parasites become more active, it will become increasingly difficult for you to get enough to eat",
+  "item.parasite.tool.string.4": "In moments of necessity, parasites will sacrifice activity to preserve their host!",
+  "item.parasite.tool.string.5": "You become weak when your Hunger Value is less than 50%.",
+
+
+  "item.virus.tool.string": "Killing creatures to take their DNA!",
+  "item.virus.tool.string.1": "Every 10 points of DNA taken deals an additional 2.5% damage to this type of creature.",
+  "item.virus.tool.string.2": "Maximum 50%",
+
+
+  "item.botton.tool.string": "*If you find some unspecified gene...",
+  "item.botton.tool.string.1": "*That way I can build you a whole new body.",
+  "item.botton.tool.string.2": "Wearing this item and opening loot boxes in Mordor may reveal some genomes",
+
+
+  "item.catalyzer.tool.string": "Right-click to use to infect some special items",
+
+
+  "item.batskill.tool.string": "Attacks have a 15% chance of summoning 3 bats",
+  "item.batskill.tool.string.1": "And within a radius of 12 squares",
+  "item.batskill.tool.string.2": "For each bat present, your damage is reduced by 5%.",
+  "item.batskill.tool.string.3": "Maximum 80%",
+  "item.batskill.tool.string.4": "Surrounding bats lose 10% of their life every 1 second.",
+  "item.batskill.tool.string.5": "Can be implanted in Bloodvirus",
+
+
+  "item.batgene.tool.string": "Bats in your vicinity take 60% less damage",
+  "item.batgene.tool.string.1": "For each bat present, you deal 10% more damage.",
+  "item.batgene.tool.string.2": "10% Damage reduction",
+
+
+  "item.flygene.tool.string": "13% increase in speed while flying",
+  "item.flygene.tool.string.1": "When gliding, use the arrow keys to accelerate or decelerate in the air.",
+
+
+  "item.ragegene.tool.string": "When your Attack Stamina Bar is at 100 percent",
+  "item.ragegene.tool.string.1": "Increases damage by 5% with each attack",
+  "item.ragegene.tool.string.2": "Maximum 100%",
+  "item.ragegene.tool.string.3": "Recalculated after taking damage",
+
+
+  "item.sleepgene.tool.string": "Doesn't get negative effects during the day",
+  "item.sleepgene.tool.string.1": "Can't get gain effects at night",
+
+
+  "item.medicinebox.tool.string": "If you find some good pills…",
+  "item.medicinebox.tool.string.1": "*That way I can build you a whole new body.",
+  "item.medicinebox.tool.string.2": "Wearing this item allows you to obtain pills in certain ways",
+  "item.medicinebox.tool.string.3": "You can choose to fuse the found pills or just wear the",
+  "item.medicinebox.tool.string.4": "This item must be worn in order to discover the pill!",
+  "item.medicinebox.tool.string.5": "",
+  "item.medicinebox.tool.string.6": "",
+  "item.medicinebox.tool.string.8": "Can eat",
+  "item.medicinebox.tool.string.9": "Random effect",
+  "item.calcification.tool.string": "*Calcifies the experimenter's skin and enhances the experimenter's ability to fight",
+  "item.calcification.tool.string.1": "Increases damage resistance by 11",
+  "item.calcification.tool.string.2": "Suffer 350 damage attempts",
+  "item.medicinebox.tool.string.eat": "you: +1 slot",
+
+  "item.masticatory.tool.string": "*Strengthening of the experimenter's occlusal muscles to the point of enhancing the experimenter's chewing ability",
+  "item.masticatory.tool.string.1": "50% reduction in eating time",
+  "item.masticatory.tool.string.2": "eat 8 gold apple",
+  "item.polyphagia.tool.string": "eat enchanted gold apple",
+  "item.polyphagia.tool.string.1": "when eat food you will heal 10% max health",
+
+
+  "item.quadriceps.tool.string": "*Strengthening of the experimenter's quadriceps muscles to the point of enhancing the experimenter's locomotor ability",
+  "item.quadriceps.tool.string.1": "Increases movement speed by 20%",
+  "item.quadriceps.tool.string.2": "Increases jump height by 50%",
+  "item.quadriceps.tool.string.3": "jump 500",
+
+
+  "item.reanimation.tool.string": "*Activate the experimenter's cells to the point of enhancing the experimenter's ability to regenerate cells",
+  "item.reanimation.tool.string.1": "Simultaneous restoration of basic functions of vital organs",
+  "item.reanimation.tool.string.2": "Resurrect！",
+  "item.reanimation.tool.string.3": "300 seconds cooldown",
+  "item.reanimation.tool.string.4": "die",
+
+
+  "item.autolytic.tool.string": "Suppresses the swimming speed reduction effect from the Necora virus",
+
+
+  "item.fermentation.tool.string": "10 seconds cooldown",
+  "item.fermentation.tool.string.1": "During cooldown, damage is reduced by 70%",
+  "item.fermentation.tool.string.2": "Increases damage by 300% after cooldown",
+  "item.fermentation.tool.string.3": "*Pathogens still retain their hunting instincts, which allows them to wait patiently and deliver the killing blow!",
+
+
+  "item.putrefactive.tool.string": "Increases the effect caused by carrion",
+
+
+  "item.regenerative.tool.string": "Restores 1 life point every 1.5 seconds",
+  "item.regenerative.tool.string.1": "*The cells of pathogens are more vibrant than in the past",
+
+
+  "item.bloodvirus.tool.string": "Increases damage against non-undead creatures by 25",
+  "item.bloodvirus.tool.string.1": "Increase speed at night by 17%",
+  "item.bloodvirus.tool.string.2": "When gliding, you can use the forward button to sprint",
+  "item.bloodvirus.tool.string.3": "In the dark, you'll get Night vision",
+  "item.bloodvirus.tool.string.4": "Increases life steal by 10%",
+  "item.bloodvirus.tool.string.5": "*feed on souls",
+  "item.bloodvirus.tool.string.6": "Reduces life restoration effects from any source by 30%",
+  "item.bloodvirus.tool.string.7": "You will burn in the sun and become extremely weak!",
+  "item.bloodvirus.tool.string.8": "Increases knockback distance by 100%",
+  "item.bloodvirus.tool.string.9": "Reduces life cap by 25%",
+  "item.bloodvirus.tool.string.10": "You can only eat meat.",
+  "item.bloodvirus.tool.string.11": "*Mutagenic parasites with sensory abilities which stimulate bloodlust in their hosts!",
+  "item.bloodvirus.tool.string.12": "It can also be implanted:",
+
+
+  "item.necora.tool.string": "5 curses that come with zombification:",
+  "item.necora.tool.string.1": "*You are terrified of the water; swimming speed is drastically reduced",
+  "item.necora.tool.string.2": "*You'll burn in the sun; maybe wearing something on your head will solve the problem for a while",
+  "item.necora.tool.string.3": "*Your body gradually reeks of rot; Human Villagers fear you, and Iron golems see you as an enemy.",
+  "item.necora.tool.string.4": "*Ability to recognize one's own kind; damage dealt to undead reduced by 20 percent",
+  "item.necora.tool.string.5": "*Once the virus is implanted, there will be no turning back!",
+  "item.necora.tool.string.6": "5 enhancements from zombification:",
+  "item.necora.tool.string.7": "*Your body is harder; damage increased by 3 points, armor value increased by 4 points",
+  "item.necora.tool.string.8": "*Difficult to be affected by the elements; 70% less magical damage taken",
+  "item.necora.tool.string.9": "*Any creature will be torn to carrion by you, eat them and you will gain additional effects!",
+  "item.necora.tool.string.10": "*You are considered a lord by your own kind; reduces damage dealt to you by undead creatures by 50%",
+  "item.necora.tool.string.11": "*Significant increase in cellular activity; 50% increase in life recovery",
+  "item.necora.tool.string.12": "The pathogen has not been classified",
+  "item.necora.tool.string.13": "and early medical reports indicate that it has",
+  "item.necora.tool.string.14": "Strong regeneration and an unending need to eat",
+  "item.necora.tool.string.15": "But much of its genetic structure remains an unsolved mystery...",
+
+
+
+  "item.moonfabric.atpoverdose": "atpoverdose",
+  "item.moonfabric.apple": "apple",
+  "item.moonfabric.fermentation": "fermentation",
+  "item.moonfabric.botton": "botton",
+  "item.moonfabric.catalyzer": "catalyzer",
+
+  "item.moonfabric.batskill": "batskill",
+
+
+  "item.moonfabric.batgene": "batgene",
+  "item.moonfabric.bloodgene": "bloodgene",
+  "item.moonfabric.flygene": "flygene",
+  "item.moonfabric.heathgene": "heathgene",
+  "item.moonfabric.ragegene": "ragegene",
+  "item.moonfabric.sleepgene": "sleepgene",
+  "item.soulbattery.tool.string": "+25％ Critical Damage",
+
+  "item.moonfabric.calcification": "calcification",
+  "item.moonfabric.masticatory": "masticatory",
+  "item.moonfabric.polyphagia": "polyphagia",
+  "item.moonfabric.quadriceps": "quadriceps",
+  "item.moonfabric.reanimation": "reanimation",
+
+  "item.blackeorb.tool.string": "+ Wither orb Modifiers",
+
+  "item.moonfabric.medicinebox": "medicine box",
+  "item.moonfabric.maxamout": "max amout",
+  "item.moonfabric.bloodvirus": "blood virus",
+
+  "item.diemug.tool.string": "Right click on this Holy Grail with the potion",
+  "item.diemug.tool.string.1": "ou can store the effect of the potion (there can be 8 types)",
+  "item.diemug.tool.string.2": "Obtain all medicinal effects after drinking",
+
+
+
+  "item.evilcandle.tool.string": "Lava Walker",
+  "item.evilcandle.tool.string.1": "Resists 80% lava damage",
+  "item.evilcandle.tool.string.2": "Quickly extinguish the flames on your body",
+
+
+  "item.evilmug.tool.string": "Empty",
+  "item.evilmug.tool.string.1": "Replenish the fresh blood in the barrel (secondary hand) from the damage caused during the attack",
+  "item.evilmug.tool.string.2": "And you can extract your own blood",
+  "item.evilmug.tool.string.3": "Drink！",
+  "item.heathgene.tool.string": "+10 heath",
+
+  "item.maxamout.tool.string": "Attacks weaken enemies",
+  "item.maxamout.tool.string.1": "Reduce damage taken by 15%",
+  "item.maxamout.tool.string.2": "There is a probability of obtaining damage absorption when injured",
+  "item.maxamout.tool.string.3": "Increase Vampire by 5%",
+  "item.maxamout.tool.string.4": "There is a probability that during an attack, the enemy will be knocked away and slowed down.",
+  "item.maxamout.tool.string.5": "And obtain the power effect",
+  "item.maxamout.tool.string.6": "After taking damage, 20% will be returned to the attacker.",
+  "item.maxamout.tool.string.7": "Immune mining fatigue effect",
+  "item.maxamout.tool.string.8": "Increase swimming speed by 75%",
+
+  "allevent.moonfabric.virus": "DNA has been collected : ",
+
+  "item.bloodgene.tool.string": "Basic damage, reduced attack speed by 50% ",
+  "item.bloodgene.tool.string.1": "Every time you take damage, you will receive an improvement",
+  "item.bloodgene.tool.string.2": "The maximum is 200% of the original",
+  "item.bloodgene.tool.string.3": "Increase damage taken by 10%",
+  "item.ambush.tool.string": "Can walk on liquid surfaces",
+
+  "item.fortunecrystal.tool.string": "+3 fortune",
+  "item.moonfabric.fortunecrystal": "fortune crystal",
+  "item.moonfabric.mayhemcrystal": "mayhem crystal",
+
+  "item.moonfabric.flyeye": "fly eye",
+  "item.flyeye.tool.string": "+300% repelled",
+  "item.flyeye.tool.string.1": "+25% Invincible Frame",
+  "item.flyeye.tool.string.2": "Cause damage to surrounding creatures during invincibility",
+
+  "item.moonfabric.plague": "plague",
+  "item.plague.tool.string": "Research progress",
+  "item.plague.tool.string.un": "use nightmare eye Can Un equip plague",
+
+  "item.plague.tool.string.1": "Virus progress",
+  "item.plague.tool.string.2": "Reverse research progress",
+
+  "item.plague.tool.string.3": "Kill creatures to obtain points",
+  "item.plague.tool.string.4": "You must study the points to 100%",
+  "item.plague.tool.string.5": "The number of points affects the attributes, and it is best to complete it within the specified time",
+  "item.plague.tool.string.6": "Can you dominate the world?",
+
+  "item.plague.tool.string.8": "+50% MAX_HEALTH",
+  "item.plague.tool.string.9": "+25% MOVEMENT_SPEED",
+  "item.plague.tool.string.10": "+66% ARMOR",
+  "item.plague.tool.string.11": "+90% KNOCKBACK_RESISTANCE",
+  "item.plague.tool.string.12": "+70% ATTACK_SPEED",
+  "item.plague.tool.string.13": "+70% ATTACK_DAMAGE",
+  "item.plague.tool.string.14": "+70% SWIM_SPEED",
+
+  "item.plague.tool.string.15": "+100% MOB DAMAGE",
+  "item.plague.tool.string.16": "+150% BOSS DAMAGE",
+  "item.plague.tool.string.17": "+100% HEAL",
+  "item.plague.tool.string.18": "+70% DIG SPEED",
+
+
+
+  "item.moonfabric.doomeye": "eye of 7 sword",
+  "item.doomeye.tool.string": "Summon 7 flying swords to attack enemies when injured",
+
+
+  "item.moonfabric.doomswoud": "rain sword",
+  "item.doomswoud.tool.string": "Hitting creatures causes 2 flying swords",
+  "item.doomswoud.tool.string.1": "Add 1 flying sword for every 20% increase in speed",
+  "item.doomswoud.tool.string.2": "Kill the creature and immediately summon 4 flying swords",
+
+  "item.moonfabric.wind": "strong wind and swift rain",
+  "item.wind.tool.string": "Continuous running increases speed",
+
+  "item.moonfabric.wind_and_rain": "wind and rain",
+  "item.wind_and_rain.tool.string": "Drag this item and right-click on sword weapons to enchant souls",
+  "item.wind_and_rain.tool.string.1": "Afterwards, use the soul possessed weapon and long press the right button to summon the flying sword",
+  "item.wind_and_rain.tool.string.2": "But each summon has a 1.5% chance of entering an 8-second cooldown",
+  "item.wind_and_rain.tool.string.3": "And it will consume durability",
+  "item.wind_and_rain.tool.string.4": "ou must possess both the Heart of Seven Swords and the Rain to use it properly",
+
+
+  "advancements.tooltip.ectoplasmstone.hand": "ectoplasm",
+  "advancements.tooltip.ectoplasmstone.text": "Obtain the stone at the beginning of the game",
+
+  "advancements.tooltip.twistedstone.hand": "twisted",
+  "advancements.tooltip.twistedstone.text": "Obtain the stone at the beginning of the game\"",
+
+
+  "advancements.tooltip.ectoplasmball.hand": "ectoplasm ball",
+  "advancements.tooltip.ectoplasmball.text": "KILL SOME MOB",
+
+
+  "advancements.tooltip.ectoplasmcloub.hand": "ectoplasm cloub",
+  "advancements.tooltip.ectoplasmcloub.text": "The die of monsters",
+
+
+  "advancements.tooltip.ectoplasmprism.hand": "ectoplasm prism",
+  "advancements.tooltip.ectoplasmprism.text": "A prism formed by the accumulation of corpses in the mountains",
+
+
+  "advancements.tooltip.ectoplasmcube.hand": "ectoplasm cube",
+  "advancements.tooltip.ectoplasmcube.text": "A cube formed by the accumulation of corpses",
+
+
+  "advancements.tooltip.maxamout.hand": "max amout",
+  "advancements.tooltip.maxamout.text": "Kill the Ancient Guardians while possessing red, blue, and green stones",
+
+  "advancements.tooltip.wind_and_rain.hand": "wind and rain",
+  "advancements.tooltip.wind_and_rain.text": "Open the box of the ancient city while possessing the Heart of the Seven Swords Shura and a sudden rain!",
+
+
+
+  "advancements.tooltip.nightmareeye.hand": "nightmare eye",
+  "advancements.tooltip.nightmareeye.text": "Open dungeons, mines, and ancient city boxes while wearing the Eye of the Abyss to obtain future items...",
+
+
+
+  "advancements.tooltip.medicinebox.hand": " medicine box",
+  "advancements.tooltip.medicinebox.text": "Complete some boring tasks while wearing this item",
+
+  "advancements.tooltip.calcification.hand": "calcification",
+  "advancements.tooltip.calcification.text": "Suffer 350 damage attempts",
+
+  "advancements.tooltip.masticatory.hand": "masticatory",
+  "advancements.tooltip.masticatory.text": "eat 8 gold apple",
+
+  "advancements.tooltip.polyphagia.hand": "masticatory",
+  "advancements.tooltip.polyphagia.text": "eat enchanted gold apple",
+
+  "advancements.tooltip.quadriceps.hand": "quadriceps",
+  "advancements.tooltip.quadriceps.text": "jump:500",
+
+  "advancements.tooltip.reanimation.hand": "reanimation",
+  "advancements.tooltip.reanimation.text": "die",
+
+  "advancements.tooltip.necora.hand": "necora",
+  "advancements.tooltip.necora.text": "Open the dungeon box while wearing this item",
+
+  "advancements.tooltip.botton.hand": "botton",
+  "advancements.tooltip.botton.text": "Use Shadow Plague Right Click Medicine Box",
+
+  "advancements.tooltip.catalyzer.hand": "catalyzer",
+  "advancements.tooltip.catalyzer.text": "Kill the Last Shadow Dragon after completing all the tasks of the medicine box",
+
+  "advancements.tooltip.bloodvirus.hand": "blood virus",
+  "advancements.tooltip.bloodvirus.text": "Use Shadow Plague Right Click necora",
+
+
+  "advancements.tooltip.ectoplasmstar.hand": "ectoplasm star",
+  "advancements.tooltip.ectoplasmstar.text": "do not eat",
+
+  "item.moonfabric.ectoplasmsoul": "ectoplasm soul",
+  "advancements.tooltip.ectoplasmsoul.hand": "ectoplasm soul",
+  "advancements.tooltip.ectoplasmsoul.text": "look",
+
+  "item.moonfabric.ectoplasmtree": "ectoplasm tree",
+  "advancements.tooltip.ectoplasmtree.hand": "ectoplasm tree",
+  "advancements.tooltip.ectoplasmtree.text": "Heart Tree",
+
+
+  "item.moonfabric.brain": "love brain",
+  "item.brain.tool.string": "The effect is to deal 2.25 times magic damage on the sixth attack after attacking a creature 5 times",
+  "advancements.tooltip.brain.hand": "love brain",
+  "advancements.tooltip.brain.text": "I think you should love me",
+
+
+  "item.moonfabric.beacon": "nano beacon",
+  "item.beacon.tool.string": "Every 30 seconds, clear all the effects of your own potion and synchronously add the potion effects to all creatures within the surrounding 5 grid range.",
+  "item.beacon.tool.string.1": "and synchronously add the potion effects to all creatures within the surrounding 5 grid range.",
+  "advancements.tooltip.beacon.hand": "nano beacon",
+  "advancements.tooltip.beacon.text": "Now, we truly share weal and woe.",
+
+
+  "item.moonfabric.mhead": "m head",
+  "item.mhead.tool.string": "Causing fear towards a wide range of creatures after killing them",
+  "item.mhead.tool.string.1": "Target speed increases and recovers after taking your damage",
+  "advancements.tooltip.mhead.hand": "m head",
+  "advancements.tooltip.mhead.text": "fear",
+
+  "item.moonfabric.cell": "cell",
+  "item.moonfabric.adrenaline": "adrenaline",
+  "item.cell.tool.string": "Kill creatures to summon zombies",
+  "item.adrenaline.tool.string": "Summoned zombies inherit your attack power",
+  "item.adrenaline.tool.string.1": "And movement speed",
+  "advancements.tooltip.cell.all.text": "Treasure loot",
+  "advancements.tooltip.nightmare.all.text": "Treasure loot",
+  "advancements.tooltip.necora.all.text": "Treasure loot",
+
+
+  "item.moonfabric.cell_mummy": "cell mummy",
+  "item.cell_mummy.tool.string": "Effectively reducing the decay rate of generated zombies",
+
+  "item.moonfabric.cell_boom": "cell boom",
+  "item.cell_boom.tool.string": "You and the zombies will experience a violent explosion after death",
+
+  "item.moonfabric.cell_calcification": "cell calcification",
+  "item.cell_calcification.tool.string": "Zombies receive 50% armor and health bonus from you",
+
+  "item.moonfabric.cell_blood": "cell blood",
+  "item.cell_blood.tool.string": "Zombies gain the ability to suck blood and each attack prolongs their lifespan",
+
+  "item.motor.tool.string": "Increase by 15% in air, underwater, and land",
+
+  "item.moonfabric.air": "air",
+  "item.air.tool.string": "Increase resistance by 20% while in the air",
+
+  "item.moonfabric.watergen": "water",
+  "item.watergen.tool.string": "Increase resistance by 15% in water",
+
+  "item.moonfabric.giant": "giant cell",
+  "item.moonfabric.slime": "slime",
+  "item.giant.tool.string": "Kill creatures to summon cell zombie (5%)",
+
+  "item.slime.tool.string": "Kill creatures to summon slime zombie (33%)",
+  "advancements.tooltip.giant.text": "Wearing NECORA virus, killing Warden",
+  "entity.moonfabric.cell_giant": "cell giant",
+  "entity.moonfabric.cell_zombie": "cell zombie",
+  "entity.moonfabric.nightmare_entity": "nightmare entity",
+  "entity.moonfabric.nightmare_giant": "nightmare giant",
+  "entity.moonfabric.cell_slime": "cell slime",
+  "entity.moonfabric.sun": "sun",
+  "entity.moonfabric.blood_bat": "blood bat",
+  "entity.moonfabric.sword_soul": "sword soul",
+  "item.doomeye.tool.string.1": "+33% damage when hit",
+
+  "entity.moonfabric.snake": "snake",
+  "entity.moonfabric.suddenrain": "sudden rain",
+
+  "item.moonfabric.gorillacake": "gorilla cake",
+  "item.moonfabric.gorilladna": "gorilla dna",
+  "item.gorillacake.tool.string": "",
+
+  "item.gorilladna.tool.string": "Enable pathogens to modify chimpanzee genes and significantly improve their intelligence",
+  "item.gorilladna.tool.string.1": "And make the iris of the gorilla's eyes appear green without triggering any immune response\n",
+  "item.gorilladna.tool.string.2": "  This is the time when chimpanzees are rising!",
+  "advancements.tooltip.dna.text": "dna?",
+
+  "advancements.tooltip.germ.text": "Wear a culture dish and find it in the AncientCity",
+
+  "advancements.tooltip.fungus.text": "Kill mushroom cattle while wearing a culture dish and having a weak effect,",
+  "advancements.tooltip.virus.text": "When wearing a culture dish and experiencing weak effects, being hit by a withered skull",
+  "advancements.tooltip.parasite.text": "Wear a petri dish and eat: raw cod, raw salmon, raw beef, raw mutton, raw pork, raw rabbit meat, tropical fish, chicken, and eat any food",
+
+
+  "item.the_heart.tool.string": "Right click on the item to store in the heart, which can store up to 4 items",
+  "item.the_heart.tool.string.1": "If the dropped object is one of the items in the heart",
+  "item.the_heart.tool.string.2": "So multiply the number of dropped objects by 3",
+  "item.the_heart.tool.string.3": "can not remove",
+  "advancements.tooltip.the_heart.text": "treasure item",
+  "item.moonfabric.the_heart": "the heart",
+  "item.moonfabric.nightmare_orb": "nightmare_orb",
+  "item.moonfabric.nightmare_heart": "nightmare heart",
+  "item.nightmare_heart.tool.string": "Kill creatures and summon the Abyss Cube",
+
+  "item.nightmare_orb.tool.string": "When your health is below 33%",
+  "item.nightmare_orb.tool.string.1": "All curses from the Abyss will be reversed into gains for you",
+  "item.nightmare_orb.tool.string.2": "But deal 1% maximum health damage per second",
+  "item.nightmare_orb.tool.string.3": "And unable to receive treatment during this period",
+  "item.moonfabric.nightmare_head": "nightmare orb",
+  "item.moonfabric.nightmare_cube": "nightmare cube",
+
+  "item.moonfabric.giant_nightmare": "giant nightmare",
+  "item.giant_nightmare.tool.string": "Killing creatures has a chance to summon the Nightmare Giant",
+  "item.giant_nightmare.tool.string.1": "Increase cooling time",
+
+  "item.moonfabric.speed_seed": "speed seed",
+  "item.speed_seed.tool.string": "Fixed speed to 120% of normal value",
+
+  "item.moonfabric.sword_amout": "sword amout",
+  "item.sword_amout.tool.string": "Your attack speed will increase with the number of slashes, but it will not exceed 100%",
+  "item.sword_amout.tool.string.1": "But your damage will gradually decrease, at most to 33% of its original level",
+  "item.sword_amout.tool.string.2": "When attacking with full force, it will not cause invincible frame protection",
+  "item.sword_amout.tool.string.3": "When your slash count reaches 10, each attack will cause a range effect",
+
+  "item.moonfabric.light_amout": "light amout",
+  "item.light_amout.tool.string": "If the distance of a single fall is greater than 2",
+  "item.light_amout.tool.string.1": "So the next all-out strike will be accompanied by a large-scale lightning attack",
+  "item.light_amout.tool.string.2": "The damage of lightning will increase with the increase of its own attack damage and fall distance",
+  "item.light_amout.tool.string.3": "For every additional grid, there will be a 10% increase in damage",
+  "item.nano_box.tool.string": "in shift ， you will summon light bolt",
+  "item.moonfabric.nano_box": "light nano box",
+  "item.nano_box.tool.string.1": "Can be retrofitted with batteries",
+
+
+  "item.moonfabric.anaerobic_cell": "anaerobic cell",
+  "item.anaerobic_cell.tool.string": "Nightmare Giant's Survival Time Increases by 50%",
+  "item.moonfabric.giant_boom_cell": "giant boom cell",
+  "item.giant_boom_cell.tool.string": "Nightmare giant's death leads to devastating explosion",
+  "item.moonfabric.not_blood_cell": "not blood cell",
+  "item.not_blood_cell.tool.string": " Nightmare Giant's ranged attacks will not cause damage to summoners",
+  "item.moonfabric.subspace_cell": "subspace cell",
+  "item.subspace_cell.tool.string": "Summon Nightmare Giant to no longer consume health points",
+
+  "item.moonfabric.bone_cell": "bone cell",
+  "item.bone_cell.tool.string": "Giant cell zombies will receive 70% of the summoner's armor value when summoned",
+
+  "item.moonfabric.parasitic_cell": "parasitic cell",
+  "item.parasitic_cell.tool.string": "Giant cell zombies give birth to 5 cell zombies after death",
+
+  "item.moonfabric.mother_cell": "mother cell",
+  "item.mother_cell.tool.string": "Giant cell zombies will generate an additional 2 cell zombies when summoned, with a 50% chance of summoning another giant zombie",
+
+  "item.moonfabric.disgusting_cells": "disgusting cells",
+  "item.disgusting_cells.tool.string": "The survival time of giant cell zombies is increased by 100%",
+
+  "item.moonfabric.bat_cell": "bat cell",
+  "item.bat_cell.tool.string": "Summon a Shadow Bat with 15% health loss",
+  "item.bat_cell.tool.string.1": "Reduce current health by 15% after summoning",
+  "item.bat_cell.tool.string.2": "The more health points lost, the higher the damage dealt by the Shadow Bat",
+
+  "item.moonfabric.cell_doctor": "cell doctor",
+  "item.cell_doctor.tool.string": "You and the Shadow Bat will gain 20% of their bloodsucking ability",
+
+  "item.moonfabric.cell_desecrate": "cell desecrate",
+  "item.cell_desecrate.tool.string": "You and Shadow Bat deal 40% more damage to non undead creatures",
+
+  "item.moonfabric.cell_harvest": "cell harvest",
+  "item.cell_harvest.tool.string": "The probability of summoning Shadow Bat increases by 35%, but the cooldown time doubles",
+
+  "item.moonfabric.cell_scientist": "cell scientist",
+  "item.cell_scientist.tool.string": "When summoning the Shadow Bat, the amount of blood sacrificed doubles, and the Shadow Bat's health and attack power increase according to the amount of blood sacrificed",
+
+
+  "item.moonfabric.cell_immortal": "cell Immortal",
+  "item.cell_immortal.tool.string": "Your and Shadow Bat's armor value increases by 10 points",
+
+
+  "item.moonfabric.cell_rage": "cell rage",
+  "item.cell_rage.tool.string": "Your attack damage increases by 25%, and Shadow Bat's damage is halved",
+
+  "item.moonfabric.cell_blood_attack": "cell blood attack",
+  "item.cell_blood_attack.tool.string": "The Shadow Bat will restore 10% of the Sacrifice's health based on the damage it causes",
+
+
+  "item.moonfabric.cell_fear": "cell fear",
+  "item.cell_fear.tool.string": "Increase the survival time of Shadow Bat by 50%",
+
+  "item.moonfabric.cell_not_do": "cell not do",
+  "item.cell_not_do.tool.string": "Shadow bats no longer need to sacrifice health points",
+
+  "item.moonfabric.the_pain_stone": "the pain stone",
+  "item.the_pain_stone.tool.string.1": "After killing a creature, convert 50% of its maximum health to the next additional attack damage",
+  "item.the_pain_stone.tool.string.2": "If the next damage caused exceeds the maximum health of the creature",
+  "item.the_pain_stone.tool.string.3": "So the additional damage will proportionally restore one's own health",
+  "item.the_pain_stone.tool.string.4": "-15% of any damage",
+  "item.the_pain_stone.tool.string.5": "next",
+
+  "item.pain_candle.tool.string": "When restoring health,+1% of damage is taken",
+  "item.pain_candle.tool.string.1": "Until it returns to full health status",
+  "item.pain_candle.tool.string.2": "+1. Life recovery",
+  "item.pain_candle.tool.string.3": "+33% Life Recovery",
+  "item.pain_candle.tool.string.4": "Hurt",
+
+
+  "item.pain_ring.tool.string": "When restoring health, increase damage by 1% (not exceeding 100%)",
+  "item.pain_ring.tool.string.1": "Until it returns to full health status",
+  "item.pain_ring.tool.string.2": "-50% heal",
+
+  "item.moonfabric.max_sword": "max sword",
+  "effect.moonfabric.rage": "rage",
+  "effect.moonfabric.fear": "fear",
+  "effect.moonfabric.pain": "pain",
+
+
+  "item.max_sword.tool.string": "Each attack has a probability of generating a blood cell to rotate around you",
+  "item.max_sword.tool.string.1": "When the number of blood cells exceeds 8,",
+  "item.max_sword.tool.string.2": "The next slash will deal triple damage",
+  "item.max_sword.tool.string.3": "Blood cells will be absorbed by you over time",
+  "item.max_sword.tool.string.4": "Each absorption will restore a certain percentage of health",
+  "item.max_sword.tool.string.5": "Each blood cell provides a 5% damage bonus",
+  "item.max_sword.tool.string.6": "Blood cell explosion causes bleeding effect on organisms within 3 cells",
+  "item.max_sword.tool.string.7": "Kill the creature and obtain 1-3 blood cells",
+
+
+  "item.moonfabric.max_blood_eye": "max blood eye",
+  "item.max_blood_eye.tool.string": "Every time you strike with all your might, you will experience bleeding",
+  "item.max_blood_eye.tool.string.1": "When the number of bleeding organisms in the vicinity exceeds 3",
+  "item.max_blood_eye.tool.string.2": "Generate a blood explosion and cause damage based on the number of organisms",
+  "item.max_blood_eye.tool.string.3": "The affected person will bleed, and if the condition already exists, it will be converted to serious injury",
+  "item.max_blood_eye.tool.string.4": "Cooling time 5 seconds",
+
+  "item.moonfabric.max_eye": "max eye",
+  "item.max_eye.tool.string": "Killing organisms to obtain blood",
+  "item.max_eye.tool.string.1": "Up to 4 points can be stored",
+  "item.max_eye.tool.string.2": "When you have blood, you will reduce damage by 90%",
+  "item.max_eye.tool.string.3": "But every time you get hurt, you lose a drop of blood",
+  "item.max_eye.tool.string.4": "Over time, your health will also be absorbed and restored to 10% of your maximum health",
+
+
+  "item.moonfabric.tooltip.battery": "Can be retrofitted with Nano",
+  "item.medicinebox.tool.string.7": "",
+  "moonfabric.string.cooling": "time:",
+  "tool.string.ectoplasmball": "",
+  "tool.string.ectoplasmball.1": "",
+  "tool.string.ectoplasmball.2": "",
+  "tool.string.ectoplasmball.3": "",
+  "item.nightmare_cube.tool.string": "You can press Shift while approaching the creature and release the dark dye thread",
+
+  "advancements.tooltip.max_eye.hand": "with no chink in one's armour！",
+  "advancements.tooltip.max_eye.text": "The blood eye",
+
+  "advancements.tooltip.max_sword.hand": "Eat me an axe！",
+  "advancements.tooltip.max_sword.text": "Max Sword",
+
+  "advancements.tooltip.blood_snake.hand": "blood snake",
+  "advancements.tooltip.blood_snake.text": "sweet snake",
+
+  "advancements.tooltip.max_blood_eye.hand": "max blood eye",
+  "advancements.tooltip.max_blood_eye.text": "out",
+  "item.nightmare_head.tool.string": "Immune to all non biological injuries",
+  "item.nightmare_head.tool.string.1": "Damage reduction from any source is ineffective and the damage taken is fixed at 1 point, with a maximum health value fixed at 10 points",
+  "item.nightmare_head.tool.string.2": "Restores 0.2 health point per second, unaffected by any bonuses",
+  "item.nightmare_head.tool.string.3": "Bounce 200% penetration damage to the attacker",
+  "item.nightmare_head.tool.string.4": "And every time you wear this item and die, it will reduce your health by 10% and cause the item to fall off",
+  "item.nightmare_head.tool.string.5": "Maximum health restored after wearing",
+  "item.nightmare_head.tool.string.6": "Reduce the curse of the abyss by 100%",
+  "item.nightmare_head.tool.string.7": "Unable to remove normally",
+  "item.nightmare_head.tool.string.8": "And there will always be a ratio between your health and maximum health",
+
+  "item.moonfabric.the_prison_of_sin": "the prison of sin",
+  "item.the_prison_of_sin.tool.string": "Since wearing it, you have killed:",
+  "item.the_prison_of_sin.tool.string.1": "+50% of all attributes",
+  "item.the_prison_of_sin.tool.string.2": "-90% life limit",
+  "item.the_prison_of_sin.tool.string.3": "But for every different creature killed, this punishment will be reduced by 1%",
+  "item.the_prison_of_sin.tool.string.4": "Unable to remove",
+  "item.the_prison_of_sin.tool.string.5": "",
+  "item.the_prison_of_sin.tool.string.6": "",
+  "item.the_prison_of_sin.tool.string.7": "",
+  "item.the_prison_of_sin.tool.string.8": "",
+
+  "advancements.tooltip.the_prison_of_sin.hand": "Sin",
+  "advancements.tooltip.the_prison_of_sin.text": "",
+
+  "item.blood_amout.tool.string": "Injured Summon Blood Spirit",
+
+  "item.moonfabric.blood_snake": "blood amout",
+  "item.blood_snake.tool.string": "Kill the creature and launch 3 blood snakes",
+  "item.blood_snake.tool.string.1": "The number of blood snakes increases with the maximum health of the organism",
+  "item.blood_snake.tool.string.2": "But not exceeding 10",
+  "item.blood_snake.tool.string.3": "-20% Damage",
+
+  "advancements.tooltip.max_blood_cube.hand": "see me！",
+  "advancements.tooltip.max_blood_cube.text": "max blood cube",
+
+  "item.moonfabric.max_blood_cube": "max blood cube",
+  "item.max_blood_cube.tool.string": "Aim at the creature and stealth, then long press and right-click to release the skill",
+  "item.max_blood_cube.tool.string.1": "Cannot attack during skill period",
+
+  "item.moonfabric.blood_magic_box": "blood magic box",
+  "item.moonfabric.blood": "blood",
+  "item.blood_magic_box.tool.string": "Kill mob , Now!",
+
+  "item.blood_candle.tool.string.1": "",
+
+  "item.moonfabric.the_blood_book": "Sealing Record",
+  "item.the_blood_book.tool.string": "It can be ignited twice ",
+  "item.blood.tool.string.evil": "evil",
+  "item.blood.tool.string.evil.1": "There is a 33% chance that killing a creature will regenerate into a blood cell",
+  "item.blood.tool.string.evil.2": "Harvest blood cells to restore 4 health points",
+  "item.blood.tool.string.evil.3": "If you wear Shadow Plague, the health value restored by Evil Mind Demon will be changed to percentage form",
+
+  "item.blood.tool.string.sword.1": "Summon 1 Flying Sword for every 10% loss of health",
+  "item.blood.tool.string.sword.2": " If you wear the Seven Swords of Asura Heart or Sudden Rain, you will lose 50% of your health",
+  "item.blood.tool.string.sword": "sword",
+  "item.blood_candle.tool.string.2": "",
+
+
+  "item.blood_candle.tool.string": "Summon a giant blood spirit growth body to assist you in battle",
+
+
+
+
+  "attribute.name.moonfabric.allattack": "all damage",
+  "attribute.name.moonfabric.cit": "cit damage",
+  "attribute.name.moonfabric.heal": "heal",
+
+
+
+
+  "item.moonfabric.evil_blood": "evil blood",
+  "item.evil_blood.tool.string": "Summon a ？ to assist you in battle",
+
+  "advancements.tooltip.evil_blood.text": "evil blood",
+  "entity.moonfabric.blood_orb_owner": "blood orb owner",
+
+
+
+
+  "item.moonfabric.evil_mob": "evil mob",
+  "item.moonfabric.god_lead": "god lead",
+  "item.moonfabric.malice_die": "malice die",
+  "item.evil_mob.tool.string.1": "Allow you to use and discover corresponding items without wearing Abyss Eye or Necrora virus",
+  "item.evil_mob.tool.string.2": "null",
+  "item.evil_mob.tool.string.3": "null",
+  "item.god_lead.tool.string.1": "When fatally injured, the damage is transferred to nearby creatures (cool down for 10 seconds)",
+  "item.god_lead.tool.string.2": "If this organism dies, then cool it down and clear it",
+  "item.god_lead.tool.string.3": "+150% injured",
+
+  "item.malice_die.tool.string.1": "If the target of nearby creatures' attacks is you, then for every additional creature:",
+  "item.malice_die.tool.string.2": "+10% damage",
+  "item.malice_die.tool.string.3": "+9% Life Recovery",
+  "item.malice_die.tool.string.4": "+8% speed",
+  "item.malice_die.tool.string.5": "+7% attack speed",
+  "item.malice_die.tool.string.6": "+6% Armor",
+  "item.malice_die.tool.string.7": "+5% cit value",
+  "item.malice_die.tool.string.8": "Attacking will cause creatures within an 8-grid radius of the target to actively attack you",
+  "item.malice_die.tool.string.9": "-30% all damage",
+  "item.malice_die.tool.string.10": "If the number of targets is less than 3, the damage you cause will be reduced by 35%",
+
+
+  "item.moonfabric.deceased_contract": "deceased contract",
+  "item.moonfabric.blood_sun": "blood sun",
+  "item.blood_sun.tool.string": "kill the mob",
+  "item.moonfabric.blood_jelly": "blood jelly",
+  "item.moonfabric.dna_box": "dna box",
+  "item.moonfabric.medicinebox.tool.2": "",
+
+  "error.moonfabric.dna_box": "",
+  "advancements.tooltip.blood.hand": "",
+  "advancements.tooltip.blood.text": "=",
+
+  "advancements.tooltip.blood_magic_box.hand": "",
+  "advancements.tooltip.blood_magic_box.text": "",
+
+  "advancements.tooltip.blood_sun.hand": "",
+  "advancements.tooltip.blood_sun.text": "",
+  "item.moonfabric.medicinebox.tool": "",
+  "moonfabric.difficulty.name.all": " DNA",
+
+  "moonfabric.curse.name.all.this": "this item is",
+  "moonfabric.curse.name.meet": "meet",
+  "moonfabric.curse.name.all": "curse",
+
+  "moonfabric.difficulty.name.peaceful": "peaceful",
+  "moonfabric.difficulty.name.easy": "easy",
+  "moonfabric.difficulty.name.normal": "normal",
+  "moonfabric.difficulty.name.hard": "hard",
+  "moonfabric.difficulty.name.god_loot_a": "",
+  "moonfabric.difficulty.name.god_loot_b": "",
+  "moonfabric.difficulty.name.god_loot_c": "",
+
+  "moonfabric.curse.name.die": "die",
+  "moonfabric.curse.name.doctor": "doctor",
+  "moonfabric.curse.name.cell_cell": "cell ",
+  "moonfabric.curse.name.chromosome": "chromosome",
+  "item.deceased_contract.tool.string": "you can find in curse item",
+
+  "moonfabric.curse.name.bone": "bone",
+  "moonfabric.curse.name.die_body": "die body",
+  "moonfabric.difficulty.name.god": "god",
+
+  "item.blood.tool.string.winds.1": "5% speed bonus converted to attack damage",
+  "item.blood.tool.string.winds.2": "If you wear a nightmare item, the damage doubles",
+  "item.blood.tool.string.winds": "winds",
+  "item.moonfabric.body_stone":"body stone",
+
+  "item.probability.tool.string.1":"Your attack damage will fluctuate between 10% and 400%,",
+  "item.probability.tool.string.2": "The damage you receive will fluctuate between 25% and 200%,",
+  "item.probability.tool.string.3": "Every bit of luck adds 1% to the minimum value,",
+  "item.probability.tool.string.4": "For the Wanmo Stone,",
+  "item.probability.tool.string.5": "Add 400% to the maximum and minimum values of the curse attribute obtained,",
+  "item.probability.tool.string.6": "Every bit of luck adds 5% to the maximum and minimum values,",
+
+  "item.body_stone.tool.string": "This item will curse all the accessories in the box",
+  "item.body_stone.tool.string.1": "And randomly add 1-2 negative enchantments",
+  "item.body_stone.tool.string.2": "As compensation, every item with negative enchantments will receive powerful gains",
+  "item.body_stone.tool.string.3": "Each level of enchantment:",
+  "item.body_stone.tool.string.4": "+0.1 damage, critical strike, maximum life",
+  "item.body_stone.tool.string.5": "+0.002 treatment",
+  "item.body_stone.tool.string.6": "+2% excavation speed",
+  "item.body_stone.tool.string.7": "+3% resistance and retreat",
+  "item.body_stone.tool.string.8": "+0.4% speed, melee damage, attack speed",
+  "attribute.name.moonfabric.dig": "dig",
+
+  "item.moonfabric.luck_ring":"luck ring",
+  "item.luck_ring.tool.string.1":"when 5 exp level:",
+  "item.luck_ring.tool.string.2": "+1 luck",
+
+  "item.moonfabric.moon_stone":"moon stone",
+  "item.moon_stone.tool.string.1": "Hit the creature and immediately trigger all killing effects, cool down for 20 seconds",
+
+  "item.moonfabric.luck_stone":"luck stone",
+  "item.luck_stone.tool.string.1":"when 10 luck:",
+  "item.luck_stone.tool.string.2": "+1 looting and fortune",
+
+
+
+
+
+  "item.moonfabric.necora_baby":"necora baby",
+  "item.necora_baby.tool.string":"Summon a corrupt soul",
+  "item.necora_baby.tool.string.1":"You can implant gene fragments into it",
+  "item.necora_baby.tool.string.2":"If the Soul of Corruption dies/is lost, you can re equip this item",
+  "item.necora_baby.tool.string.3":"The soul of corruption will also teleport items to your side after death",
+
+
+  "enchantment.moonfabric.terror": "terror",
+  "enchantment.moonfabric.malice": "malice",
+  "enchantment.moonfabric.threat": "threat",
+  "item.moonfabric.probability":"probability stone",
   "tab.moonfabric_tab": "Moonfabric",
   "tab.moonfabric_tab.dna": "Moonfabric:DNA",
-  "item.moonfabric.moonstone": "moonstone",
-  "moonfabric.tooltip.moonstone.1": "·+6 Armor",
-  "moonfabric.tooltip.moonstone.2": "Discovered in the Ancient cities",
+  "item.moonfabric.moonstone": "moonfabric",
+  "moonfabric.tooltip.moonfabric.1": "·+6 Armor",
+  "moonfabric.tooltip.moonfabric.2": "Discovered in the Ancient cities",
   "item.moonfabric.goldheart": "gold heart",
   "moonfabric.tooltip.goldheart.1": "·+55% Break Speed",
   "moonfabric.tooltip.goldheart.2": "Discovered in the Ancient cities",
@@ -307,7 +1237,7 @@
   "moonfabric.tooltip.synthesis.1": "·+30% Health Regenerative",
 
 
-  "item.moonfabric.abook": "a Book",
+  "item.moonfabric.abook": "Module Guide Book",
 
   "item.moonfabric.gazer": "A steadfast eye",
   "moonfabric.tooltip.gazer.1": "·If the single damage received is greater than 33% of the maximum health value",
@@ -501,7 +1431,7 @@
   "item.moonfabric.cell_dna_suppression":"神经递质抑制",
   "item.moonfabric.cell_putrefactive":"热分解抑制",
   "item.moonfabric.cell_synthesis":"肽合成增强",
-
+  "moonfabric.tooltip.necora": "You must refer to the 'Module Guide Book' to understand the settings",
 
   "moonfabric.heal.attribute": "heal",
   "item.moonfabric.ectoplasmball": "ectoplasm ball",

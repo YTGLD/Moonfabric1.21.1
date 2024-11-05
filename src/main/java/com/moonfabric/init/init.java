@@ -4,6 +4,7 @@ import com.moonfabric.item.Ms.ABook;
 import com.moonfabric.item.Ms.CottonCandy.*;
 import com.moonfabric.item.Ms.block.*;
 import com.moonfabric.item.Ms.origincube;
+import com.moonfabric.item.TheNecora.*;
 import com.moonfabric.item.common.Blood.*;
 import com.moonfabric.item.common.CurseOrDoom.*;
 import com.moonfabric.item.common.Mise.*;
@@ -17,6 +18,7 @@ import com.moonfabric.item.common.meye;
 import com.moonfabric.item.common.pain.*;
 import com.moonfabric.item.dna.dna;
 import com.moonfabric.item.ectoplasm.*;
+import com.moonfabric.item.necora;
 import com.moonfabric.item.nightmare.*;
 import com.moonfabric.item.sevensword;
 import net.minecraft.block.Block;
@@ -116,6 +118,29 @@ public class init  {
     public static final Item nightmarerotten = new nightmarerotten();
     public static final Item nightmarestone = new nightmarestone();
     public static final Item dna = new dna();
+
+    public static final Item ambush = new ambush();
+    public static final Item atpoverdose = new atpoverdose();
+    public static final Item autolytic = new autolytic();
+    public static final Item fermentation = new fermentation();
+    public static final Item putrefactive = new putrefactive();
+    public static final Item regenerative = new regenerative();
+    public static final Item necora = new necora();
+    public static final Item adrenaline = new adrenaline();
+    public static final Item anaerobic_cell = new anaerobic_cell();
+    public static final Item bone_cell = new bone_cell();
+    public static final Item cell = new cell();
+    public static final Item cell_blood = new cell_blood();
+    public static final Item cell_boom = new cell_boom();
+    public static final Item cell_calcification = new cell_calcification();
+    public static final Item cell_mummy = new cell_mummy();
+    public static final Item disgusting_cells = new disgusting_cells();
+    public static final Item giant = new giant();
+    public static final Item giant_boom_cell = new giant_boom_cell();
+    public static final Item giant_nightmare = new giant_nightmare();
+    public static final Item mother_cell = new mother_cell();
+    public static final Item parasitic_cell = new parasitic_cell();
+    public static final Item subspace_cell = new subspace_cell();
 
 
 

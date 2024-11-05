@@ -1,12 +1,11 @@
 package com.moonfabric.init;
 
-import com.moonfabric.Entity.attack_blood;
-import com.moonfabric.Entity.flysword;
-import com.moonfabric.Entity.line;
-import com.moonfabric.Entity.owner_blood;
+import com.moonfabric.Entity.*;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.mob.WardenBrain;
+import net.minecraft.entity.mob.WardenEntity;
 import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.entity.passive.IronGolemEntity;
 
@@ -38,5 +37,36 @@ public class InItEntity {
                     .trackRangeBlocks(4)
                     .defaultAttributes(IronGolemEntity::createIronGolemAttributes)
                     .entityFactory(owner_blood::new)
+                    .build();
+
+    public static final EntityType<cell_zombie> cell_zombie =
+            FabricEntityTypeBuilder.createLiving()
+                    .dimensions(EntityDimensions.changing(1,2))
+                    .trackRangeBlocks(10)
+                    .defaultAttributes(ZombieEntity::createZombieAttributes)
+                    .entityFactory(cell_zombie::new)
+                    .build();
+    public static final EntityType<nightmare_giant> nightmare_giant =
+            FabricEntityTypeBuilder.createLiving()
+                    .dimensions(EntityDimensions.changing(1.4F,2))
+                    .trackRangeBlocks(16)
+                    .defaultAttributes(com.moonfabric.Entity.nightmare_giant::addAttributes)
+                    .entityFactory(nightmare_giant::new)
+                    .build();
+
+    public static final EntityType<nig_test> nig_test =
+            FabricEntityTypeBuilder.createLiving()
+                    .dimensions(EntityDimensions.changing(1,1))
+                    .trackRangeBlocks(4)
+                    .defaultAttributes(WardenEntity::addAttributes)
+                    .entityFactory(nig_test::new)
+                    .build();
+
+    public static final EntityType<cell_giant> cell_giant =
+            FabricEntityTypeBuilder.createLiving()
+                    .dimensions(EntityDimensions.changing(1.5F,2))
+                    .trackRangeBlocks(16)
+                    .defaultAttributes(com.moonfabric.Entity.cell_giant::addAttributes)
+                    .entityFactory(cell_giant::new)
                     .build();
 }

@@ -629,27 +629,6 @@ public abstract class LivingEntityMixin {
                 livingEntity.getAttributes().removeModifiers(get());
             }
 
-            if (livingEntity instanceof PlayerEntity player) {
-                Vec3d vec3d = player.getPos();
-                int r = 8;
-                List<ItemEntity> list = player.getEntityWorld().getEntitiesByClass(ItemEntity.class, new Box(vec3d.x + r, vec3d.y + r, vec3d.z + r, vec3d.x - r, vec3d.y - r, vec3d.z - r), EntityPredicates.EXCEPT_SPECTATOR);
-                for (ItemEntity entity : list) {
-                    if (entity.getStack().getItem() instanceof ItemTir || entity.getStack().getItem() instanceof CottonCandy) {
-                        entity.getWorld().addParticle(MoonFabricMod.t, entity.getX(), entity.getY() + 0.35f, entity.getZ(), 0, MathHelper.nextFloat(Random.create(), 0.025f, 0.075f), 0);
-
-                        entity.getWorld().addParticle(MoonFabricMod.GOLD, entity.getX(), entity.getY() + 0.35f, entity.getZ(), 0, MathHelper.nextFloat(Random.create(), 0.01f, 0.03f), 0);
-                    }
-
-                    if (entity.getStack().getItem() instanceof doom) {
-
-                        entity.getWorld().addParticle(MoonFabricMod.FOLLOW, entity.getX(), entity.getY()+0.35f, entity.getZ(), 0, 0.15, 0);
-                    }
-
-                    if (entity.getStack().getItem() instanceof BloodE) {
-                        entity.getWorld().addParticle(MoonFabricMod.Origin, entity.getX(), entity.getY()+0.35f, entity.getZ(), 0, 0.3, 0);
-                    }
-                }
-            }
         }
     }
 }

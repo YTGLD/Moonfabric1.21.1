@@ -1,0 +1,15 @@
+{
+  "name": "细胞重生",
+  "icon": "moonfabric:giant",
+  "category": "moonfabric:necora",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "moonfabric:giant",
+      "title": "-细胞重生-",
+      "text":"这种基因片段只能佩戴僵尸病毒的情况下在箱子里发现，只有佩戴它才可以获得分段基因组,比较特殊的是，在佩戴这个物品后，将无法在重复获得$(br2)基因片段的概率是10%"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 package com.moonfabric.mixin;
 
+import com.moonfabric.item.TheNecora.putrefactive;
 import com.moonfabric.item.dna.dna;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
@@ -20,6 +21,6 @@ public class ItemStackMixin {
     private void moon$finishUsing(World world, LivingEntity user, CallbackInfoReturnable<ItemStack> cir){
         ItemStack stack =(ItemStack) (Object) this;
         dna.Finish(user,stack);
-
+        putrefactive.eat(stack,user);
     }
 }

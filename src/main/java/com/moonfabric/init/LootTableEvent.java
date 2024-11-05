@@ -12,6 +12,26 @@ import org.joml.Random;
 import java.util.List;
 
 public class LootTableEvent {
+    public static Item addLootNecora(LootContext context,
+                                     List<Item> itemList,
+                                     int gLvl,
+                                     Item mustHas,
+                                     Item butNoHas){
+        if (context.get(LootContextParameters.THIS_ENTITY) != null
+                && context.get(LootContextParameters.THIS_ENTITY)  instanceof PlayerEntity player) {
+            if (hasCurio.has(mustHas,player)&&!hasCurio.has(butNoHas,player)){
+                Random random = new Random();
+                int i = random.nextInt(itemList.size());
+                if (MathHelper.nextInt(net.minecraft.util.math.random.Random.create(), 1, 100) <= gLvl) {
+                    return itemList.get(i);
+                }
+            }
+        }
+        return ItemStack.EMPTY.getItem();
+    }
+
+
+
     public static Item addLoot(LootContext context,
                                List<Item> itemList,
                                int gLvl,

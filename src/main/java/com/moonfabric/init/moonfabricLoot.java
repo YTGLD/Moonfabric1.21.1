@@ -189,6 +189,11 @@ public class moonfabricLoot {
                     .bonusRolls(ConstantLootNumberProvider.create(1.0f))
                     .with(ItemEntry.builder(init.bloodtime)
                             .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
+            supplier.pool(LootPool.builder()
+                    .bonusRolls(ConstantLootNumberProvider.create(1.0f))
+
+                    .with(ItemEntry.builder(init.necora)
+                            .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
 
 
         }

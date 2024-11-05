@@ -102,6 +102,7 @@ public class aaa {
 
         c.add(new ItemStack(init.abook));
         c.add(new ItemStack(init.dna));
+        c.add(new ItemStack(init.necora));
 
 
         c.add(new ItemStack(DNAItems.atp_height));
@@ -132,6 +133,32 @@ public class aaa {
         c.add(new ItemStack(DNAItems.cell_sense));
         c.add(new ItemStack(DNAItems.cell_synthesis));
         c.add(new ItemStack(DNAItems.speed_metabolism));
+
+
+
+
+
+        c.add(new ItemStack(init.ambush));
+        c.add(new ItemStack(init.atpoverdose));
+        c.add(new ItemStack(init.autolytic));
+        c.add(new ItemStack(init.fermentation));
+        c.add(new ItemStack(init.putrefactive));
+        c.add(new ItemStack(init.regenerative));
+        c.add(new ItemStack(init.adrenaline));
+        c.add(new ItemStack(init.anaerobic_cell));
+        c.add(new ItemStack(init.bone_cell));
+        c.add(new ItemStack(init.cell));
+        c.add(new ItemStack(init.cell_blood));
+        c.add(new ItemStack(init.cell_boom));
+        c.add(new ItemStack(init.cell_calcification));
+        c.add(new ItemStack(init.cell_mummy));
+        c.add(new ItemStack(init.disgusting_cells));
+        c.add(new ItemStack(init.giant));
+        c.add(new ItemStack(init.giant_boom_cell));
+        c.add(new ItemStack(init.giant_nightmare));
+        c.add(new ItemStack(init.mother_cell));
+        c.add(new ItemStack(init.parasitic_cell));
+        c.add(new ItemStack(init.subspace_cell));
 
     }).build();
 }

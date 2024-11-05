@@ -20,6 +20,30 @@
     "moonfabric:pain_box",
     "moonfabric:pain_carrot",
     "moonfabric:mblock",
-    "moonfabric:dna"
+    "moonfabric:dna",
+
+    "moonfabric:ambush",
+    "moonfabric:atpoverdose",
+    "moonfabric:autolytic",
+    "moonfabric:fermentation",
+    "moonfabric:putrefactive",
+    "moonfabric:regenerative",
+    "moonfabric:necora",
+    "moonfabric:adrenaline",
+    "moonfabric:anaerobic_cell",
+    "moonfabric:bone_cell",
+    "moonfabric:cell",
+    "moonfabric:cell_blood",
+    "moonfabric:cell_boom",
+    "moonfabric:cell_calcification",
+    "moonfabric:cell_mummy",
+    "moonfabric:disgusting_cells",
+    "moonfabric:giant",
+    "moonfabric:giant_boom_cell",
+    "moonfabric:giant_nightmare",
+    "moonfabric:mother_cell",
+    "moonfabric:parasitic_cell",
+    "moonfabric:subspace_cell"
+
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "name": "僵尸病毒",
+  "icon": "moonfabric:necora",
+  "category": "moonfabric:necora",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "moonfabric:necora",
+      "title": "-僵尸病毒-",
+      "text":"这种病毒只会存在于远古城市的箱子当中，只有佩戴它才可以获得瘟疫物品(只存在在箱子里)$(br2)各种DNA的出现概率是15%$(br)基因片段的概率是35%"
+    }
+  ]
+}

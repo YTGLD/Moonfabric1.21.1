@@ -2,7 +2,7 @@ package com.moonfabric;
 
 import com.moonfabric.Effects.initEffect;
 import com.moonfabric.init.*;
-import com.moonfabric.item.dna.DNAItem;
+import com.moonfabric.item.Aevent;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.minecraft.entity.effect.StatusEffect;
@@ -183,8 +183,39 @@ public class MoonFabricMod implements ModInitializer {
 
 
 
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "ambush"), init.ambush);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "atpoverdose"), init.atpoverdose);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "autolytic"), init.autolytic);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "fermentation"), init.fermentation);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "putrefactive"), init.putrefactive);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "regenerative"), init.regenerative);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "necora"), init.necora);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "adrenaline"), init.adrenaline);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "anaerobic_cell"), init.anaerobic_cell);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "bone_cell"), init.bone_cell);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell"), init.cell);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_blood"), init.cell_blood);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_boom"), init.cell_boom);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_calcification"), init.cell_calcification);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "cell_mummy"), init.cell_mummy);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "disgusting_cells"), init.disgusting_cells);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "giant"), init.giant);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "giant_boom_cell"), init.giant_boom_cell);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "giant_nightmare"), init.giant_nightmare);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "mother_cell"), init.mother_cell);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "parasitic_cell"), init.parasitic_cell);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "subspace_cell"), init.subspace_cell);
 
 
+
+
+
+
+
+		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "nightmare_giant"), InItEntity.nightmare_giant);
+		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "cell_giant"), InItEntity.cell_giant);
+		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "cell_zombie"), InItEntity.cell_zombie);
+		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "nig_test"), InItEntity.nig_test);
 
 
 
