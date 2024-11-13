@@ -2,7 +2,7 @@ package com.moonfabric.item.nightmare;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.Data;
 import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.nightmare;
@@ -64,14 +64,14 @@ public class nightmareeye extends nightmare {
 
 
         float s = 0.25f;
-        if (hasCurio.has(init.nightmarecharm, player)){
+        if (HasCurio.has(init.nightmarecharm, player)){
             s -= 0.15f;
         }
 
-        if (hasCurio.has(init.nightmareanchor, player)){
+        if (HasCurio.has(init.nightmareanchor, player)){
             s -= 0.05f;
         }
-        if (hasCurio.has(init.nightmarerotten, player)){
+        if (HasCurio.has(init.nightmarerotten, player)){
             float a = Registries.ATTRIBUTE.size();
             a /= 100;
             a *= 1.1F;
@@ -92,10 +92,10 @@ public class nightmareeye extends nightmare {
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         tooltip.add(Text.literal(""));
-        tooltip.add(Text.translatable("item.nightmareeye.tool.string").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.nightmareeye.tool.string").formatted(Formatting.RED));
         tooltip.add(Text.literal(""));
-        tooltip.add(Text.translatable("item.nightmareeye.tool.string.1").formatted(Formatting.GRAY));
-        tooltip.add(Text.translatable("item.nightmareeye.tool.string.2").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.nightmareeye.tool.string.1").formatted(Formatting.RED));
+        tooltip.add(Text.translatable("item.nightmareeye.tool.string.2").formatted(Formatting.RED));
 
     }
 

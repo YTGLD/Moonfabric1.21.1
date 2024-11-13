@@ -2,7 +2,7 @@ package com.moonfabric.item.ectoplasm;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.ectoplasm;
 import dev.emi.trinkets.api.SlotReference;
@@ -26,7 +26,7 @@ public class ectoplasmhorseshoe extends ectoplasm {
 
 
     public static void ectoplasmhorseshoeHurt (LivingEntity me, DamageSource source, CallbackInfoReturnable<Float> cit){
-        if (hasCurio.has(init.ectoplasmhorseshoe,me)){
+        if (HasCurio.has(init.ectoplasmhorseshoe,me)){
            if (source.isOf(DamageTypes.FALL)){
                cit.setReturnValue(cit.getReturnValue() * 0.1f);
            }

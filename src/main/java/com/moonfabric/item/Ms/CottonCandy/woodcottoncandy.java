@@ -2,7 +2,7 @@ package com.moonfabric.item.Ms.CottonCandy;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.AttReg;
 import com.moonfabric.init.init;
 import dev.emi.trinkets.api.SlotReference;
@@ -24,18 +24,18 @@ public class woodcottoncandy extends CottonCandy{
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         boolean a = true;
         if (entity instanceof PlayerEntity player){
-            if (hasCurio.has(init.goldcottoncandy, player)){
+            if (HasCurio.has(init.goldcottoncandy, player)){
                 a = false;
             }
-            if (hasCurio.has(init.woodcottoncandy, player)){
+            if (HasCurio.has(init.woodcottoncandy, player)){
                 a = false;
             }
-            if (hasCurio.has(init.watercottoncandy, player)){
+            if (HasCurio.has(init.watercottoncandy, player)){
                 a = false;
             }
-            if (hasCurio.has(init.firecottoncandy, player)){
+            if (HasCurio.has(init.firecottoncandy, player)){
                 a = false;
-            }if (hasCurio.has(init.stonecottoncandy, player)){
+            }if (HasCurio.has(init.stonecottoncandy, player)){
                 a = false;
             }
 

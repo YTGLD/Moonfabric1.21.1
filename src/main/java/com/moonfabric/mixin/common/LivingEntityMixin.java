@@ -3,17 +3,13 @@ package com.moonfabric.mixin.common;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import com.moonfabric.Entity.flysword;
-import com.moonfabric.Ievent.IEntityDie;
-import com.moonfabric.Ievent.IEventHurt;
+import com.moonfabric.Ievent.old.IEntityDie;
+import com.moonfabric.Ievent.old.IEventHurt;
 import com.moonfabric.MoonFabricMod;
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.Data;
 import com.moonfabric.init.InItEntity;
 import com.moonfabric.init.init;
-import com.moonfabric.item.Ms.CottonCandy.CottonCandy;
-import com.moonfabric.item.Ms.extend.BloodE;
-import com.moonfabric.item.Ms.extend.ItemTir;
-import com.moonfabric.item.Ms.extend.doom;
 import com.moonfabric.item.common.CurseOrDoom.fissionreactor;
 import com.moonfabric.item.common.Mise.goldbox;
 import dev.emi.trinkets.api.TrinketsApi;
@@ -77,7 +73,7 @@ public abstract class LivingEntityMixin {
 
         if (livingEntity instanceof PlayerEntity player) {
             //在地狱或岩浆中：+50% 挖掘速度,速度,伤害,护甲,生命
-            if (hasCurio.has(init.firecottoncandy, player)) {
+            if (HasCurio.has(init.firecottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.firecottoncandy)) {
                    if (player.isInLava()){
                        cir.setReturnValue((int) (cir.getReturnValue() * 1.5));
@@ -89,7 +85,7 @@ public abstract class LivingEntityMixin {
 
 
             //增加35%在水中或雨中的伤害和护甲并获得增益BUFF
-            if (hasCurio.has(init.watercottoncandy, player)) {
+            if (HasCurio.has(init.watercottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.watercottoncandy)) {
                     if (player.isTouchingWaterOrRain()) {
                         cir.setReturnValue((int) (cir.getReturnValue() * 1.35));
@@ -98,7 +94,7 @@ public abstract class LivingEntityMixin {
             }
 
             //在阳光下：+35%速度，生命恢复，护甲
-            if (hasCurio.has(init.woodcottoncandy, player)) {
+            if (HasCurio.has(init.woodcottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.woodcottoncandy)) {
                     if (player.getWorld().isSkyVisible(player.getBlockPos()) || player.getWorld().isDay()) {
                         cir.setReturnValue((int) (cir.getReturnValue() * 1.35));
@@ -133,7 +129,7 @@ public abstract class LivingEntityMixin {
     private void mf$modifyAppliedDamage(DamageSource source, float amount, CallbackInfoReturnable<Float> cir) {
         LivingEntity livingEntity = (LivingEntity) (Object) this;
         if (livingEntity  instanceof PlayerEntity player){
-            if (hasCurio.has(init.sevensword,player)){
+            if (HasCurio.has(init.sevensword,player)){
                 if (!player.getItemCooldownManager().isCoolingDown(init.sevensword)){
                     for (int i = 0 ;i<7 ;i++){
                         float s  = (float) Math.sin(i);
@@ -151,12 +147,12 @@ public abstract class LivingEntityMixin {
             }
 
 
-            if (hasCurio.has(init.bloodtime, player)){
+            if (HasCurio.has(init.bloodtime, player)){
                 player.timeUntilRegen = (int) (player.timeUntilRegen * 1.3);
             }
 
 
-            if (hasCurio.has(init.nanocottoncandy, player)) {
+            if (HasCurio.has(init.nanocottoncandy, player)) {
                 TrinketsApi.getTrinketComponent(player).ifPresent((trinketComponent) -> {
                     trinketComponent.forEach((slotReference, itemStack) -> {
 
@@ -182,7 +178,7 @@ public abstract class LivingEntityMixin {
                 });
 
             }
-            if (hasCurio.has(init.nanocube, player)) {
+            if (HasCurio.has(init.nanocube, player)) {
                 if (this.beamTicks < this.getWarmupTime()) {
                     ++this.beamTicks;
                 }
@@ -215,7 +211,7 @@ public abstract class LivingEntityMixin {
             }
 
 
-            if (hasCurio.has(init.glodstone,player)){
+            if (HasCurio.has(init.glodstone,player)){
                 if (amount > (player.getMaxHealth() / 2)){
                     cir.setReturnValue(amount * 0.2f);
                     player.heal(4);
@@ -230,13 +226,13 @@ public abstract class LivingEntityMixin {
                     }
                 }
             }
-            if (hasCurio.has(init.gazer,player)){
+            if (HasCurio.has(init.gazer,player)){
                 if (amount > (player.getMaxHealth() / 3)){
                     cir.setReturnValue(amount * 0.3f);
                 }
             }
 
-            if (hasCurio.has(init.furybloodpearl,player)){
+            if (HasCurio.has(init.furybloodpearl,player)){
                 cir.setReturnValue((amount * 1.6f) + 1);
                 if (MathHelper.nextInt(Random.create(), 1 ,10) == 1){
                     player.getWorld().playSound(null,player.getX(), player.getY(),player.getZ(), SoundEvents.BLOCK_BEACON_ACTIVATE, SoundCategory.NEUTRAL,1.5F,1.5F);
@@ -258,7 +254,7 @@ public abstract class LivingEntityMixin {
                     }
                 }
             }
-            if (hasCurio.has(init.bloodcharm,player)){
+            if (HasCurio.has(init.bloodcharm,player)){
 
                 if (amount > (player.getMaxHealth() / 2)){
                     player.getItemCooldownManager().set(init.bloodcharm, 200);
@@ -284,7 +280,7 @@ public abstract class LivingEntityMixin {
 //__________________________________________________________________________________________________________________
 
         if (source != null && source.getAttacker() instanceof PlayerEntity player) {
-            if (hasCurio.has(init.bloodcharm, player)) {
+            if (HasCurio.has(init.bloodcharm, player)) {
                 if (player.getItemCooldownManager().isCoolingDown(init.bloodcharm)) {
                     cir.setReturnValue(amount * 1.3f);
                 }
@@ -293,7 +289,7 @@ public abstract class LivingEntityMixin {
         }
 
         if (livingEntity instanceof PlayerEntity player){
-            if (hasCurio.has(init.watercottoncandy, player)) {
+            if (HasCurio.has(init.watercottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.watercottoncandy)) {
                     //在陆地减少50%伤害,移速并增加100%受到伤害
                     if (player.isOnGround()){
@@ -301,7 +297,7 @@ public abstract class LivingEntityMixin {
                     }
                 }
             }
-            if (hasCurio.has(init.stonecottoncandy, player)) {
+            if (HasCurio.has(init.stonecottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.stonecottoncandy)) {
 
                     //增加40%伤害，攻速，生命值和30%抗性以及100%的击退抗性
@@ -317,7 +313,7 @@ public abstract class LivingEntityMixin {
             }
 
 
-            if (hasCurio.has(init.woodcottoncandy, player)) {
+            if (HasCurio.has(init.woodcottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.woodcottoncandy)) {
                     //受到伤害增加50%
                     cir.setReturnValue(cir.getReturnValue() * 1.5f);
@@ -330,7 +326,7 @@ public abstract class LivingEntityMixin {
                 }
             }
 
-            if (hasCurio.has(init.goldcottoncandy, player)) {
+            if (HasCurio.has(init.goldcottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.goldcottoncandy)) {
                     //着火时：-50%伤害和速度,以及增加50%的受到伤害
                     if (player.isOnFire()) {
@@ -339,7 +335,7 @@ public abstract class LivingEntityMixin {
                 }
             }
             //受到的火焰伤害增加100%
-            if (hasCurio.has(init.goldcottoncandy, player)){
+            if (HasCurio.has(init.goldcottoncandy, player)){
                 if (!player.getItemCooldownManager().isCoolingDown(init.goldcottoncandy)) {
                     if (source.isOf(DamageTypes.IN_FIRE)
                             || source.isOf(DamageTypes.ON_FIRE)
@@ -348,11 +344,11 @@ public abstract class LivingEntityMixin {
                     }
                 }
             }
-            if (hasCurio.has(init.twistedstone, player)){
+            if (HasCurio.has(init.twistedstone, player)){
                 cir.setReturnValue(cir.getReturnValue() * 2F);
             }
 
-            if (hasCurio.has(init.candle, player)){
+            if (HasCurio.has(init.candle, player)){
                 double aaa = (100 - ((player.getHealth() / player.getMaxHealth()) * 100)) / 100;
                 double a = aaa / 4;
                 cir.setReturnValue((float) (cir.getReturnValue() * (1 - a)));
@@ -360,7 +356,7 @@ public abstract class LivingEntityMixin {
         }
 
         if (source.getAttacker() instanceof PlayerEntity player){
-            if (hasCurio.has(init.firecottoncandy, player)) {
+            if (HasCurio.has(init.firecottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.firecottoncandy)) {
                     if  (player.isInLava()) {
                         cir.setReturnValue(cir.getReturnValue() * 1.5f);
@@ -369,7 +365,7 @@ public abstract class LivingEntityMixin {
                     }
                 }
             }
-            if (hasCurio.has(init.firecottoncandy, player)) {
+            if (HasCurio.has(init.firecottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.firecottoncandy)) {
                     //目标的护甲越高，你造成的伤害越多
                     int a = livingEntity.getArmor();
@@ -377,7 +373,7 @@ public abstract class LivingEntityMixin {
 
                 }
             }
-            if (hasCurio.has(init.watercottoncandy, player)) {
+            if (HasCurio.has(init.watercottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.watercottoncandy)) {
                     //在陆地减少50%伤害,移速并增加100%受到伤害
                     if (player.isOnGround()){
@@ -385,7 +381,7 @@ public abstract class LivingEntityMixin {
                     }
                 }
             }
-            if (hasCurio.has(init.goldcottoncandy, player)) {
+            if (HasCurio.has(init.goldcottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.goldcottoncandy)) {
                     //着火时：-50%伤害和速度,以及增加50%的受到伤害
                     if (player.isOnFire()) {
@@ -393,7 +389,7 @@ public abstract class LivingEntityMixin {
                     }
                 }
             }
-            if (hasCurio.has(init.firecottoncandy, player)) {
+            if (HasCurio.has(init.firecottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.firecottoncandy)) {
                     //攻击禁用目标的 海洋棉花糖，并额外造成50%的伤害
                     if (livingEntity instanceof PlayerEntity playerEntity) {
@@ -409,7 +405,7 @@ public abstract class LivingEntityMixin {
                 }
             }
 
-            if (hasCurio.has(init.stonecottoncandy, player)) {
+            if (HasCurio.has(init.stonecottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.stonecottoncandy)) {
                     //攻击禁用目标的 海洋棉花糖，并额外造成50%的伤害
                     if (livingEntity instanceof PlayerEntity playerEntity) {
@@ -424,7 +420,7 @@ public abstract class LivingEntityMixin {
                     }
                 }
             }
-            if (hasCurio.has(init.woodcottoncandy, player)) {
+            if (HasCurio.has(init.woodcottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.woodcottoncandy)) {
                     //攻击禁用目标的 石头棉花糖，并额外造成50%的伤害
                     if (livingEntity instanceof PlayerEntity playerEntity) {
@@ -439,7 +435,7 @@ public abstract class LivingEntityMixin {
                     }
                 }
             }
-            if (hasCurio.has(init.watercottoncandy, player)) {
+            if (HasCurio.has(init.watercottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.watercottoncandy)) {
                     //攻击禁用目标的 火焰棉花糖，并额外造成50%的伤害
                     if (livingEntity instanceof PlayerEntity playerEntity) {
@@ -455,7 +451,7 @@ public abstract class LivingEntityMixin {
                 }
             }
 
-            if (hasCurio.has(init.goldcottoncandy, player)){
+            if (HasCurio.has(init.goldcottoncandy, player)){
                 if (!player.getItemCooldownManager().isCoolingDown(init.goldcottoncandy)) {
                     //攻击禁用目标的 木头棉花糖，并额外造成50%的伤害
                     if (livingEntity instanceof PlayerEntity playerEntity) {
@@ -481,12 +477,12 @@ public abstract class LivingEntityMixin {
 
 
             float aaaaa = accc(player);
-            if (hasCurio.has(init.book, player)){
+            if (HasCurio.has(init.book, player)){
                 cir.setReturnValue(cir.getReturnValue() + aaaaa);
             }
 
 
-            if (hasCurio.has(init.candle, player)){
+            if (HasCurio.has(init.candle, player)){
                 double aaa = (100 - ((player.getHealth() / player.getMaxHealth()) * 100)) / 100;
                 double a = aaa / 4;
 
@@ -517,7 +513,7 @@ public abstract class LivingEntityMixin {
     private void mf$canWalkOnFluid(FluidState state, CallbackInfoReturnable<Boolean> cir) {
         LivingEntity livingEntity = (LivingEntity) (Object) this;
         if (livingEntity instanceof PlayerEntity player){
-            if (hasCurio.has(init.cursecandle, player)){
+            if (HasCurio.has(init.cursecandle, player)){
                  if (state.isOf(Fluids.LAVA)){
                      cir.setReturnValue(true);
                  }
@@ -528,7 +524,7 @@ public abstract class LivingEntityMixin {
     private void moon$drop(ServerWorld world, DamageSource source, CallbackInfo ci){
         LivingEntity livingEntity = (LivingEntity) (Object) this;
         if (source.getAttacker() instanceof PlayerEntity player){
-            if (hasCurio.has(init.doomtreasure, player)){
+            if (HasCurio.has(init.doomtreasure, player)){
                 if (livingEntity.getRandom().nextInt(3)== 1){
                     livingEntity.dropStack(new ItemStack(Items.EMERALD));
                 }
@@ -547,7 +543,7 @@ public abstract class LivingEntityMixin {
         LivingEntity li = (LivingEntity) (Object) this;
         IEntityDie.Break.invoker().die(li,damageSource);
         if (li instanceof PlayerEntity player){
-            if (hasCurio.has(init.doomsoul, player)){
+            if (HasCurio.has(init.doomsoul, player)){
                 Entity sou = damageSource.getAttacker();
                 if (sou instanceof LivingEntity living){
                     if (living.getHealth() > living.getMaxHealth() * 0.3f){
@@ -564,7 +560,7 @@ public abstract class LivingEntityMixin {
         if (entity instanceof PlayerEntity player) {
 
 
-            if (hasCurio.has(init.fissionreactor, player)) {
+            if (HasCurio.has(init.fissionreactor, player)) {
                 TrinketsApi.getTrinketComponent(player).ifPresent((trinketComponent) -> {
                     trinketComponent.forEach((slotReference, itemStack) -> {
                         if (itemStack.isOf(init.fissionreactor)) {
@@ -579,7 +575,7 @@ public abstract class LivingEntityMixin {
                 });
             }
 
-            if (hasCurio.has(init.twistedorb, player)){
+            if (HasCurio.has(init.twistedorb, player)){
                 LivingEntity living = (LivingEntity) (Object) this;
                 ItemEntity item = new ItemEntity(living.getWorld(),living.getX(),living.getY(), living.getZ(), new ItemStack(Items.NETHERRACK));
                 item.setNoGravity(true);
@@ -591,7 +587,7 @@ public abstract class LivingEntityMixin {
 
 
 
-            if (hasCurio.has(init.goldbox, player)){
+            if (HasCurio.has(init.goldbox, player)){
                 LivingEntity livingEntity = (LivingEntity) (Object) this;
                 TrinketsApi.getTrinketComponent(player).ifPresent((trinketComponent)->{
                     trinketComponent.forEach((slotReference, itemStack)->{
@@ -621,8 +617,6 @@ public abstract class LivingEntityMixin {
     private void mf$tick(CallbackInfo ci){
         LivingEntity livingEntity = (LivingEntity) (Object) this;
         if (livingEntity!= null) {
-
-
             if (livingEntity.hasStatusEffect(MoonFabricMod.blood)){
                 livingEntity.getAttributes().addTemporaryModifiers(get());
             }else{

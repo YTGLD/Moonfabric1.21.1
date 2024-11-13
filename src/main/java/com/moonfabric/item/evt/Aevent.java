@@ -1,4 +1,4 @@
-package com.moonfabric.item;
+package com.moonfabric.item.evt;
 
 import com.moonfabric.item.common.pain.pain_candle;
 import com.moonfabric.item.common.pain.pain_carrot;

@@ -2,7 +2,7 @@ package com.moonfabric.item.common.Mise;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.extend.ItemTir;
 import dev.emi.trinkets.api.SlotReference;
@@ -29,7 +29,7 @@ public class whiteorb extends ItemTir {
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity instanceof PlayerEntity player){
-            if (hasCurio.has(this,player)){
+            if (HasCurio.has(this,player)){
                 return false;
             }
         }
@@ -43,7 +43,7 @@ public class whiteorb extends ItemTir {
         float a = 0.15f;
 
         if (entity instanceof PlayerEntity p){
-            if (hasCurio.has(init.blackorb, p)){
+            if (HasCurio.has(init.blackorb, p)){
                 a *= 2;
             }
         }

@@ -1,8 +1,8 @@
 package com.moonfabric.item.common.pain;
 
 import com.google.common.collect.Multimap;
-import com.moonfabric.Ievent.IeventAttack;
-import com.moonfabric.hasCurio;
+import com.moonfabric.Ievent.old.IeventAttack;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.extend.ItemTir;
 import dev.emi.trinkets.api.SlotReference;
@@ -21,7 +21,7 @@ import java.util.List;
 public class pain_ring extends ItemTir {
     public static void pain(){
         IeventAttack.ON_HURT.register((living,source, size, stack) -> {
-            if (stack.isOf(init.pain_ring)&& hasCurio.has(init.pain_ring,living)){
+            if (stack.isOf(init.pain_ring)&& HasCurio.has(init.pain_ring,living)){
                 float as = living.getArmor();
                 if (as<0){
                     as=0;

@@ -96,6 +96,9 @@ public class aaa {
         c.add(new ItemStack(init.nightmareeye));
         c.add(new ItemStack(init.nightmarerotten));
         c.add(new ItemStack(init.nightmarestone));
+        c.add(new ItemStack(init.double_head));
+        c.add(new ItemStack(init.death_penalty));
+        c.add(new ItemStack(init.undead_head));
 
     }).build();
     public static final ItemGroup DNA = FabricItemGroup.builder().displayName(Text.translatable("tab.moonfabric_tab.dna")).icon(()->new ItemStack(init.abook)).entries((a, c)->{

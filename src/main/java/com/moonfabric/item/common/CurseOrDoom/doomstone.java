@@ -1,8 +1,8 @@
 package com.moonfabric.item.common.CurseOrDoom;
 
 import com.google.common.collect.Multimap;
-import com.moonfabric.Ievent.IEventHurt;
-import com.moonfabric.hasCurio;
+import com.moonfabric.Ievent.old.IEventHurt;
+import com.moonfabric.HasCurio;
 import com.moonfabric.item.Ms.extend.doom;
 import dev.emi.trinkets.api.SlotAttributes;
 import dev.emi.trinkets.api.SlotReference;
@@ -23,7 +23,7 @@ public class doomstone extends doom {
     public doomstone(){
         IEventHurt.ALLOW_DAMAGE.register((livingEntity, source, amt)->{
             if (livingEntity instanceof PlayerEntity player) {
-                if (hasCurio.has(this, player)) {
+                if (HasCurio.has(this, player)) {
                     if (amt <= 1){
                         return false;
                     }
@@ -43,7 +43,7 @@ public class doomstone extends doom {
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity instanceof PlayerEntity player){
-            if (hasCurio.has(this,player)){
+            if (HasCurio.has(this,player)){
                 return false;
             }
         }

@@ -1,0 +1,15 @@
+{
+  "name": "游戏设定-DNA序列",
+  "icon": "moonfabric:cell_darwin",
+  "category": "moonfabric:evt",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "moonfabric:cell_darwin",
+      "title": "-DNA序列-",
+      "text":"在战利品箱子里获取的基因物品具有难度之分，其难度取决于玩家世界的难度$(br2)它们也有加成：$(br2)普通的DNA序列：+0.25最大生命值$(br)复杂的DNA序列：+0.5最大生命值，+0.15伤害$(br)极度复杂的DNA序列：+0.75最大生命值，+0.25伤害$(br)类神的DNA序列：+1.0最大生命值，+0.35伤害"
+    }
+  ]
+}

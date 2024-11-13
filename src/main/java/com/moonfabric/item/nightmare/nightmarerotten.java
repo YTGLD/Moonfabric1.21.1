@@ -2,15 +2,12 @@ package com.moonfabric.item.nightmare;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
-import com.moonfabric.hasCurio;
 import com.moonfabric.init.Data;
-import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.nightmare;
 import dev.emi.trinkets.api.SlotReference;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.nbt.NbtCompound;
@@ -47,15 +44,7 @@ public class nightmarerotten extends nightmare {
             stack.get(Data.CUSTOM_DATA).putInt(nightmarerotten,s);
         }
     }
-    @Override
-    public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity instanceof PlayerEntity player){
-            if (hasCurio.has(init.nightmareeye,player)){
-                return true;
-            }
-        }
-        return false;
-    }
+
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         entity.getAttributes().removeModifiers(this.getModifiers(entity));
@@ -64,19 +53,19 @@ public class nightmarerotten extends nightmare {
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         tooltip.add(Text.translatable(""));
-        tooltip.add(Text.translatable("item.nightmarerotten.tool.string").formatted(Formatting.GRAY));
-        tooltip.add(Text.translatable("item.nightmarerotten.tool.string.1").formatted(Formatting.GRAY));
-        tooltip.add(Text.translatable("item.nightmarerotten.tool.string.2").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.nightmarerotten.tool.string").formatted(Formatting.RED));
+        tooltip.add(Text.translatable("item.nightmarerotten.tool.string.1").formatted(Formatting.RED));
+        tooltip.add(Text.translatable("item.nightmarerotten.tool.string.2").formatted(Formatting.RED));
         tooltip.add(Text.translatable(""));
         NbtCompound tag = stack.get(Data.CUSTOM_DATA);
         if (tag != null){
-            tooltip.add(Text.translatable("·now：" + ((float) (tag.getInt(nightmarerotten) * 1.1)) + "%").formatted(Formatting.GRAY));
+            tooltip.add(Text.translatable("·now：" + ((float) (tag.getInt(nightmarerotten) * 1.1)) + "%").formatted(Formatting.RED));
 
         }
         tooltip.add(Text.translatable(""));
 
-        tooltip.add(Text.translatable("item.nightmarerotten.tool.string.3").formatted(Formatting.GRAY));
-        tooltip.add(Text.translatable("item.nightmarerotten.tool.string.4").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.nightmarerotten.tool.string.3").formatted(Formatting.RED));
+        tooltip.add(Text.translatable("item.nightmarerotten.tool.string.4").formatted(Formatting.RED));
     }
 
 }

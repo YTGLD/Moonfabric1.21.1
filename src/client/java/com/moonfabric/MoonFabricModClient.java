@@ -10,6 +10,8 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.CoreShaderRegistrationCallback;
+import net.fabricmc.fabric.api.client.screen.v1.ScreenEvents;
+import net.fabricmc.fabric.impl.client.screen.ScreenEventFactory;
 import net.minecraft.client.render.VertexFormat;
 import net.minecraft.util.Identifier;
 
@@ -19,7 +21,6 @@ public class MoonFabricModClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 
-
 		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.Fly ,FlyEntityRenderer::new);
 		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.Line , LineRender::new);
 		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.ATTACK_BLOOD_ENTITY_TYPEttack_blood , AttackBloodRender::new);
@@ -28,6 +29,8 @@ public class MoonFabricModClient implements ClientModInitializer {
 		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.cell_giant , GiantEntityRenderer::new);
 		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.nightmare_giant , NigEntityRenderer::new);
 		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.nig_test , NigRenderer::new);
+		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.head , HeadAttackRenderer::new);
+		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.penalty , PenaltyRenderer::new);
 
 
 

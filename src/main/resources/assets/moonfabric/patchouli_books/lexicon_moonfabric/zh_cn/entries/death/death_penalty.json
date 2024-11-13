@@ -1,0 +1,15 @@
+{
+  "name": "酷刑者探灯",
+  "icon": "moonfabric:death_penalty",
+  "category": "moonfabric:death",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "moonfabric:death_penalty",
+      "title": "-酷刑者探灯-",
+      "text":"发现于地牢和猪灵堡垒$(br2)杀死生物产生灯油，它会自动飞向主人$(br)拾取后治疗10%生命值，并获得2秒无敌（可叠加）"
+    }
+  ]
+}

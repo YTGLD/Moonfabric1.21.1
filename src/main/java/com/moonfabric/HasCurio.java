@@ -1,13 +1,10 @@
 package com.moonfabric;
 
-import com.moonfabric.Entity.cell_giant;
 import com.moonfabric.init.init;
 import dev.emi.trinkets.api.TrinketsApi;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.*;
-import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.TameableEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
@@ -15,9 +12,8 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.MathHelper;
 
 import java.util.Optional;
-import java.util.function.Consumer;
 
-public class hasCurio {
+public class HasCurio {
     public static final String Giant_Time ="Giant_Time";
     public static final String Giant_Boom ="Giant_Boom";
     public static final String Subspace_Giant ="Subspace_Giant";
@@ -49,22 +45,22 @@ public class hasCurio {
                 if (mobEntity != null) {
                     mobEntity.setOwnerUuid(player.getUuid());
 
-                    if (hasCurio.has(init.anaerobic_cell, player)) {
+                    if (HasCurio.has(init.anaerobic_cell, player)) {
                         mobEntity.addCommandTag(Giant_Time);
                     }
-                    if (hasCurio.has(init.giant_boom_cell, player)) {
+                    if (HasCurio.has(init.giant_boom_cell, player)) {
                         mobEntity.addCommandTag(Giant_Boom);
                     }
-                    if (hasCurio.has(init.subspace_cell, player)) {
+                    if (HasCurio.has(init.subspace_cell, player)) {
                         mobEntity.addCommandTag(Subspace_Giant);
                     }
-                    if (hasCurio.has(init.bone_cell, player)) {
+                    if (HasCurio.has(init.bone_cell, player)) {
                         mobEntity.addCommandTag(Bone_Giant);
                     }
-                    if (hasCurio.has(init.parasitic_cell, player)) {
+                    if (HasCurio.has(init.parasitic_cell, player)) {
                         mobEntity.addCommandTag(Parasitic_cell_Giant);
                     }
-                    if (hasCurio.has(init.disgusting_cells, player)) {
+                    if (HasCurio.has(init.disgusting_cells, player)) {
                         mobEntity.addCommandTag(Disgusting__cell_Giant);
                     }
                     mobEntity.setPose(EntityPose.EMERGING);

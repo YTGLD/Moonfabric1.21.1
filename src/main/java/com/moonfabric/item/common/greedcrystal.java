@@ -1,6 +1,6 @@
 package com.moonfabric.item.common;
 
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.extend.ItemTir;
 import net.minecraft.entity.LivingEntity;
@@ -12,7 +12,7 @@ import java.util.List;
 
 public class greedcrystal extends ItemTir {
     public static int lvl (LivingEntity living){
-        if( hasCurio.has(init.greedcrystal,living)){
+        if( HasCurio.has(init.greedcrystal,living)){
             return 2;
         }else return 0;
     }

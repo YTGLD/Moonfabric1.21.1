@@ -1,8 +1,7 @@
 package com.moonfabric.Entity;
 
 import com.mojang.logging.LogUtils;
-import com.moonfabric.MoonFabricMod;
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.InItEntity;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
@@ -18,7 +17,6 @@ import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.mob.WardenBrain;
 import net.minecraft.entity.passive.PassiveEntity;
-import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.BlockStateParticleEffect;
@@ -112,7 +110,7 @@ public class nightmare_giant extends TameableZombie {
 
     @Override
     public void onDeath(DamageSource damageSource) {
-        if (this.getCommandTags().contains(hasCurio.Giant_Boom)){
+        if (this.getCommandTags().contains(HasCurio.Giant_Boom)){
             this.getWorld().createExplosion(this, this.getX(), this.getY(), this.getZ(), 12.5f, true, World.ExplosionSourceType.NONE);
         }
     }
@@ -121,7 +119,7 @@ public class nightmare_giant extends TameableZombie {
     public void tick() {
         time++;
 
-        if (!this.getCommandTags().contains(hasCurio.Giant_Time)) {
+        if (!this.getCommandTags().contains(HasCurio.Giant_Time)) {
             time += 3;
         }else {
             time+=2;

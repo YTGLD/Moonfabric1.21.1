@@ -1,14 +1,16 @@
 package com.moonfabric.mixin;
 
-import com.moonfabric.hasCurio;
+import com.moonfabric.Ievent.AllEvent;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.AttReg;
 import com.moonfabric.init.init;
-import com.moonfabric.item.AllZombie;
+import com.moonfabric.item.common.death_penalty;
+import com.moonfabric.item.common.double_head;
+import com.moonfabric.item.evt.AllZombie;
 import com.moonfabric.item.dna.dna;
 import com.moonfabric.item.ectoplasm.ectoplasmapple;
 import com.moonfabric.item.ectoplasm.ectoplasmhorseshoe;
 import com.moonfabric.item.ectoplasm.ectoplasmshild;
-import com.moonfabric.item.nightmare.nightmareanchor;
 import com.moonfabric.item.nightmare.nightmarestone;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
@@ -33,18 +35,26 @@ public abstract class LivingEntityMixinAll {
         AllZombie.evils(livingEntity, source,cir);
         dna.hurt(source,livingEntity,cir);
         nightmarestone.hurt(livingEntity,source);
+        AllEvent.doDifLootDamage(livingEntity,cir);
+        double_head.hurts(livingEntity, source);
+    }
+    @Inject(method = "getMaxHealth", at = @At(value = "RETURN"), cancellable = true)
+    private void getMaxHealth(CallbackInfoReturnable<Float> cir){
+        LivingEntity livingEntity = (LivingEntity) (Object) this;
+        AllEvent.doDifLootHealth(livingEntity,cir);
     }
     @Inject(method = "onDeath", at = @At(value = "RETURN"), cancellable = true)
     private void mf$modifyAppliedDamage_m(DamageSource damageSource, CallbackInfo ci){
         LivingEntity livingEntity = (LivingEntity) (Object) this;
         AllZombie.evil(livingEntity,damageSource);
         dna.dieD(livingEntity, damageSource);
+        death_penalty.hurts(livingEntity,damageSource);
 
     }
     @Inject(method = "canWalkOnFluid", at = @At(value = "RETURN"), cancellable = true)
     private void canWalkOnFluid(FluidState state, CallbackInfoReturnable<Boolean> cir){
         LivingEntity livingEntity = (LivingEntity) (Object) this;
-        if (hasCurio.has(init.ambush,livingEntity)){
+        if (HasCurio.has(init.ambush,livingEntity)){
             cir.setReturnValue(true);
         }
 

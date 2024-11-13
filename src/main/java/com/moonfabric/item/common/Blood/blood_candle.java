@@ -31,6 +31,10 @@ public class blood_candle extends TrinketItem {
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
+
+        if (stack.get(Data.CUSTOM_DATA)==null){
+            stack.set(Data.CUSTOM_DATA,new NbtCompound());
+        }
         if (stack.get(Data.CUSTOM_DATA)!=null){
             if (!stack.get(Data.CUSTOM_DATA).getBoolean(bloods)){
                 if (entity instanceof PlayerEntity player) {

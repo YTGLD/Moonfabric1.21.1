@@ -1,5 +1,6 @@
 package com.moonfabric.mixin;
 
+import com.moonfabric.Ievent.AllEvent;
 import com.moonfabric.init.DNAItems;
 import com.moonfabric.init.LootTableEvent;
 import com.moonfabric.init.init;
@@ -33,6 +34,7 @@ public abstract class LootTableMixin {
     @Inject(method = "generateLoot(Lnet/minecraft/loot/context/LootContext;)Lit/unimi/dsi/fastutil/objects/ObjectArrayList;", at = @At(value = "RETURN"), cancellable = true)
     private void generateLoot(LootContext context, CallbackInfoReturnable<ObjectArrayList<ItemStack>> cir){
         ObjectArrayList<ItemStack> objectArrayList = cir.getReturnValue();
+
 
         if (this.randomSequenceId.isPresent()){
 
@@ -136,6 +138,7 @@ public abstract class LootTableMixin {
         }
 
         cir.setReturnValue(objectArrayList);
+        AllEvent.doDifLoot(context,cir.getReturnValue());
 
     }
 

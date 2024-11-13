@@ -1,7 +1,7 @@
 package com.moonfabric.mixin.common;
 
-import com.moonfabric.Ievent.IFood;
-import com.moonfabric.hasCurio;
+import com.moonfabric.Ievent.old.IFood;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.Data;
 import com.moonfabric.init.init;
 import com.moonfabric.item.common.pain.pain_carrot;
@@ -41,7 +41,7 @@ public abstract class ItemStackMixin {
 
     @Inject(method = "usageTick", at = @At(value = "RETURN"))
     private void moon$finishUsing(World world, LivingEntity user, int remainingUseTicks, CallbackInfo ci) {
-        if (hasCurio.has(init.pain_book, user)){
+        if (HasCurio.has(init.pain_book, user)){
             ItemStack stack =(ItemStack) (Object) this;
             if (stack.isOf(Items.COPPER_BLOCK) || stack.isOf(Items.COPPER_INGOT)){
                 this.setHolder(user);
@@ -54,14 +54,14 @@ public abstract class ItemStackMixin {
         if (user instanceof PlayerEntity player){
             TrinketsApi.getTrinketComponent(player).ifPresent((trinketComponent) -> {
                 trinketComponent.forEach((slotReference, itemStack) -> {
-                    if (hasCurio.has(init.pain_carrot, player)){
+                    if (HasCurio.has(init.pain_carrot, player)){
                         if (itemStack.get(Data.CUSTOM_DATA)!=null) {
                             itemStack.get(Data.CUSTOM_DATA).putFloat(pain_carrot.eat, itemStack.get(Data.CUSTOM_DATA).getFloat(pain_carrot.eat) + 0.1f);
                         }
                     }
                 });
             });
-            if (hasCurio.has(init.pain_book, player)){
+            if (HasCurio.has(init.pain_book, player)){
                 player.addStatusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 200, 2));
                 ItemStack stack =(ItemStack) (Object) this;
                 if (stack.isOf(Items.COPPER_BLOCK)){
@@ -80,7 +80,7 @@ public abstract class ItemStackMixin {
             }
 
 
-            if (hasCurio.has(init.grail, player)){
+            if (HasCurio.has(init.grail, player)){
                 if (getUseAction() == UseAction.EAT)
                     IFood.Break.invoker().Food((ItemStack)(Object)this,world,user);{
                     player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 0));

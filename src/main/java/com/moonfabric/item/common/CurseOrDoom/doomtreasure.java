@@ -1,6 +1,6 @@
 package com.moonfabric.item.common.CurseOrDoom;
 
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.item.Ms.extend.doom;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketEnums;
@@ -17,7 +17,7 @@ public class doomtreasure extends doom {
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity instanceof PlayerEntity player){
-            if (hasCurio.has(this,player)){
+            if (HasCurio.has(this,player)){
                 return false;
             }
         }

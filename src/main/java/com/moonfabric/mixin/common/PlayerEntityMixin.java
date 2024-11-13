@@ -1,6 +1,6 @@
 package com.moonfabric.mixin.common;
 
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.init;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
@@ -37,14 +37,14 @@ public abstract class  PlayerEntityMixin {
     private void getHurtSound(DamageSource source, CallbackInfoReturnable<SoundEvent> cir){
 
         PlayerEntity player = (PlayerEntity) (Object) this;
-        if (hasCurio.has(init.nanoheart, player)){
+        if (HasCurio.has(init.nanoheart, player)){
             cir.setReturnValue(SoundEvents.ENTITY_WARDEN_HURT);
         }
     }
     @Inject(method = "getDeathSound", at = @At("RETURN"), cancellable = true)
     private void getDeathSound(CallbackInfoReturnable<SoundEvent> cir){
         PlayerEntity player = (PlayerEntity) (Object) this;
-        if (hasCurio.has(init.nanoheart, player)){
+        if (HasCurio.has(init.nanoheart, player)){
             cir.setReturnValue(SoundEvents.ENTITY_WARDEN_DEATH);
         }
     }
@@ -52,7 +52,7 @@ public abstract class  PlayerEntityMixin {
     private void moon$getBlockBreakingSpeed(BlockState block, CallbackInfoReturnable<Float> cir) {
         PlayerEntity player = (PlayerEntity) (Object) this;
 
-        if (hasCurio.has(init.firecottoncandy, player)) {
+        if (HasCurio.has(init.firecottoncandy, player)) {
             if (!player.getItemCooldownManager().isCoolingDown(init.firecottoncandy)) {
                 //在地狱或岩浆中：+50% 挖掘速度,速度,伤害,护甲,生命
                 if (player.isInLava()){
@@ -63,7 +63,7 @@ public abstract class  PlayerEntityMixin {
             }
         }
         float goldheart_speed = cir.getReturnValue();
-        if (hasCurio.has(init.goldheart, player)) {
+        if (HasCurio.has(init.goldheart, player)) {
             goldheart_speed = cir.getReturnValue() * 1.55f;
         }
         cir.setReturnValue(goldheart_speed);
@@ -72,13 +72,13 @@ public abstract class  PlayerEntityMixin {
     private void mf$getMovementSpeed(CallbackInfoReturnable<Float> cir) {
         LivingEntity livingEntity = (LivingEntity) (Object) this;
         if (livingEntity instanceof PlayerEntity player) {
-            if (hasCurio.has(init.pain_stone, player)){
+            if (HasCurio.has(init.pain_stone, player)){
                 cir.setReturnValue(cir.getReturnValue() * 1.35f);
 
             }
         }
         if (livingEntity instanceof PlayerEntity player){
-            if (hasCurio.has(init.firecottoncandy, player)) {
+            if (HasCurio.has(init.firecottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.firecottoncandy)) {
                     //在地狱或岩浆中：+50% 挖掘速度,速度,伤害,护甲,生命
                     if (player.isInLava()){
@@ -88,7 +88,7 @@ public abstract class  PlayerEntityMixin {
                     }
                 }
             }
-            if (hasCurio.has(init.watercottoncandy, player)) {
+            if (HasCurio.has(init.watercottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.watercottoncandy)) {
                     //在陆地减少50%伤害,移速并增加100%受到伤害
                     if (player.isOnGround()){
@@ -97,7 +97,7 @@ public abstract class  PlayerEntityMixin {
                 }
             }
             //在阳光下：+35%速度，生命恢复，护甲
-            if (hasCurio.has(init.woodcottoncandy, player)) {
+            if (HasCurio.has(init.woodcottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.woodcottoncandy)) {
                     if (player.getWorld().isSkyVisible(player.getBlockPos())||player.getWorld().isDay()) {
                         cir.setReturnValue(cir.getReturnValue() * 1.35f);
@@ -105,7 +105,7 @@ public abstract class  PlayerEntityMixin {
                 }
             }
 
-            if (hasCurio.has(init.goldcottoncandy, player)){
+            if (HasCurio.has(init.goldcottoncandy, player)){
                 if (!player.getItemCooldownManager().isCoolingDown(init.goldcottoncandy)) {
                     if (player.isOnFire()) {
                         cir.setReturnValue(cir.getReturnValue() * 0.5f);
@@ -120,7 +120,7 @@ public abstract class  PlayerEntityMixin {
     @Inject(method = "getMovementSpeed", at = @At("RETURN"), cancellable = true)
     private void moon$isOnSoulSpeedBlock(CallbackInfoReturnable<Float> cir) {
         PlayerEntity player = (PlayerEntity) (Object) this;
-        if (hasCurio.has(init.twistedsoul, player)) {
+        if (HasCurio.has(init.twistedsoul, player)) {
             cir.setReturnValue(cir.getReturnValue()*1.25f);
         }
     }
@@ -128,7 +128,7 @@ public abstract class  PlayerEntityMixin {
     @Inject(method = "isInvulnerableTo", at = @At("RETURN"), cancellable = true)
     private void moon$isInvulnerableTo(DamageSource damageSource, CallbackInfoReturnable<Boolean> cir) {
         PlayerEntity player = (PlayerEntity) (Object) this;
-        if (hasCurio.has(init.firecottoncandy, player)){
+        if (HasCurio.has(init.firecottoncandy, player)){
             if (!player.getItemCooldownManager().isCoolingDown(init.firecottoncandy)) {
                 if (damageSource.isOf(DamageTypes.IN_FIRE)
                         ||damageSource.isOf(DamageTypes.ON_FIRE)
@@ -140,7 +140,7 @@ public abstract class  PlayerEntityMixin {
         }
 
 
-        if (hasCurio.has(init.watercottoncandy, player)){
+        if (HasCurio.has(init.watercottoncandy, player)){
             if (!player.getItemCooldownManager().isCoolingDown(init.watercottoncandy)) {
                 if (damageSource.isOf(DamageTypes.MAGIC)
                         ||damageSource.isOf(DamageTypes.IN_FIRE)
@@ -151,7 +151,7 @@ public abstract class  PlayerEntityMixin {
                 }
             }
         }
-        if (hasCurio.has(init.twistedstone, player)) {
+        if (HasCurio.has(init.twistedstone, player)) {
             if (damageSource.isOf(DamageTypes.MAGIC)
                     ||damageSource.isOf(DamageTypes.FALL)
                     ||damageSource.isOf(DamageTypes.IN_FIRE)
@@ -175,7 +175,7 @@ public abstract class  PlayerEntityMixin {
                 && target instanceof LivingEntity;
 
         if (bl3) {
-            if (hasCurio.has(init.glodstone, player)){
+            if (HasCurio.has(init.glodstone, player)){
 
                 player.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 100, 0));
                 player.heal(2);
@@ -189,7 +189,7 @@ public abstract class  PlayerEntityMixin {
 
 
                 //造成暴击伤害时有20%的概削弱目标
-            if (hasCurio.has(init.goldcottoncandy, player)) {
+            if (HasCurio.has(init.goldcottoncandy, player)) {
                 if (!player.getItemCooldownManager().isCoolingDown(init.goldcottoncandy)) {
                     Random random = new Random();
                     int a = random.nextInt(100);
@@ -201,13 +201,13 @@ public abstract class  PlayerEntityMixin {
                     }
                 }
             }
-            if (hasCurio.has(init.redstone, player)) {
+            if (HasCurio.has(init.redstone, player)) {
                 player.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 100, 0));
             }
-            if (hasCurio.has(init.greenstone, player)) {
+            if (HasCurio.has(init.greenstone, player)) {
                player.heal(1);
             }
-            if (hasCurio.has(init.bluestone, player)) {
+            if (HasCurio.has(init.bluestone, player)) {
                 if (target instanceof LivingEntity livingEntity) {
                     livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 100, 2));
                     livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 100, 0));
@@ -219,7 +219,7 @@ public abstract class  PlayerEntityMixin {
     @Inject(method = "disableShield", at = @At("RETURN"), cancellable = true)
     private void moon$disableShield(CallbackInfo ci) {
         PlayerEntity player = (PlayerEntity) (Object) this;
-        if (hasCurio.has(init.curseshield, player)){
+        if (HasCurio.has(init.curseshield, player)){
             player.getEntityWorld().createExplosion(player,player.getX(), player.getY(), player.getZ(), 4.0f, false, World.ExplosionSourceType.NONE);
             Vec3d vec3d = player.getPos();
             int r = 10;

@@ -5,16 +5,14 @@ import com.moonfabric.item.Ms.CottonCandy.*;
 import com.moonfabric.item.Ms.block.*;
 import com.moonfabric.item.Ms.origincube;
 import com.moonfabric.item.TheNecora.*;
+import com.moonfabric.item.common.*;
 import com.moonfabric.item.common.Blood.*;
 import com.moonfabric.item.common.CurseOrDoom.*;
 import com.moonfabric.item.common.Mise.*;
 import com.moonfabric.item.common.NaNo.exc.thedoomeye_ui;
 import com.moonfabric.item.common.NaNo.exc.thedoomeye_ui1;
 import com.moonfabric.item.common.NaNo.*;
-import com.moonfabric.item.common.greedcrystal;
 import com.moonfabric.item.common.max.glodstone;
-import com.moonfabric.item.common.mblock;
-import com.moonfabric.item.common.meye;
 import com.moonfabric.item.common.pain.*;
 import com.moonfabric.item.dna.dna;
 import com.moonfabric.item.ectoplasm.*;
@@ -142,6 +140,9 @@ public class init  {
     public static final Item parasitic_cell = new parasitic_cell();
     public static final Item subspace_cell = new subspace_cell();
 
+    public static final Item double_head = new double_head();
+    public static final Item death_penalty = new death_penalty();
+    public static final Item undead_head = new undead_head();
 
 
     public static final Item pain_box_ui = new Item(new Item.Settings().maxCount(1));

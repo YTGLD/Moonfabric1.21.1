@@ -1,0 +1,15 @@
+{
+  "name": "双子头颅",
+  "icon": "moonfabric:double_head",
+  "category": "moonfabric:death",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "moonfabric:double_head",
+      "title": "-双子头颅-",
+      "text":"发现于地牢和猪灵堡垒$(br2)每次攻击都会由25%的概率召唤两个魔珠，这种魔珠会造成主人10%的生命值加10%攻击属性的伤害(br)最多存在10秒，消失后产生爆炸"
+    }
+  ]
+}

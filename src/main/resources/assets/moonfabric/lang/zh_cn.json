@@ -263,7 +263,7 @@
   "moonfabric.tooltip.nanoheart.4": "·并且你注视它们时，你将增加100%的速度",
   "item.moonfabric.nanofruit": "远古的纳米果实",
   "moonfabric.tooltip.nanofruit.1": "·坚守者将与你保持绝对友好",
-  "moonfabric.tooltip.nanofruit.2": "·免疫发光",
+  "moonfabric.tooltip.nanofruit.2": "·免疫黑暗",
   "item.moonfabric.nanoeye": "古遗眼眸",
   "moonfabric.tooltip.nanoeye.1": "·自动锁定并攻击附近的生物",
 
@@ -1431,6 +1431,8 @@
 
   "item.moonfabric.moon_stone":"月之石",
   "item.moon_stone.tool.string.1": "击中生物立即触发所有的斩杀效果，冷却20秒",
+  "item.moonfabric.double_head": "残酷双颅",
+  "moonfabric.tooltip.double_head": "·攻击有可能召唤双子魔球",
 
   "item.moonfabric.necora_baby":"腐败傀儡",
   "item.necora_baby.tool.string":"召唤一个腐败之魂",
@@ -1439,6 +1441,23 @@
   "item.necora_baby.tool.string.3":"腐败之魂死后也会将物品传送到你的边上",
   "moonfabric.tooltip.necora": "你必须参阅“模组指南书书”来理解设定",
 
+  "item.moonfabric.undead_head": "不灭头骨",
+  "item.undead_head.tool.string.1": "每损失1%的生命值：",
+  "item.undead_head.tool.string.2": "+1.25%治疗",
+  "item.undead_head.tool.string.3": "+0.8%速度",
+  "item.undead_head.tool.string.4": "+0.75%伤害",
+  "item.undead_head.tool.string.5": "+0.5%攻速",
+  "item.undead_head.tool.string.6": "+0.35%护甲",
+  "item.undead_head.tool.string.7": "现在",
+   "item.undead_head.tool.string.8": "治疗: ",
+   "item.undead_head.tool.string.9": "速度: ",
+  "item.undead_head.tool.string.10": "伤害: ",
+  "item.undead_head.tool.string.11": "攻速: ",
+  "item.undead_head.tool.string.12": "护甲: ",
+
+  "item.moonfabric.death_penalty": "死刑灯台",
+  "moonfabric.tooltip.death_penalty": "·杀死食生物会掉落灯油，它会自动飞向你",
+  "moonfabric.tooltip.death_penalty.1": "·拾取后恢复20%生命值和获得2秒无敌(叠加)",
   "moonfabric.curse.name.all.this": "这个物品被",
   "item.deceased_contract.tool.string": "你可以在箱子里找到被诅咒的饰品",
   "enchantment.moonfabric.malice": "恶意",

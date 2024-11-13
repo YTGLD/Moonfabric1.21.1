@@ -1,7 +1,7 @@
 package com.moonfabric.item.common.pain;
 
-import com.moonfabric.Ievent.IHurtSizeEvent;
-import com.moonfabric.hasCurio;
+import com.moonfabric.Ievent.old.IHurtSizeEvent;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.extend.ItemTir;
 import net.minecraft.item.ItemStack;
@@ -13,7 +13,7 @@ import java.util.List;
 public class pain_candle extends ItemTir {
     public static void  pain(){
         IHurtSizeEvent.ON_HURT.register((living, source, size, stack) -> {
-            if (stack.isOf(init.pain_candle)&& hasCurio.has(init.pain_candle,living)){
+            if (stack.isOf(init.pain_candle)&& HasCurio.has(init.pain_candle,living)){
                if (living.getHealth()>=living.getMaxHealth()){
                    return size*0.33f;
                }else {

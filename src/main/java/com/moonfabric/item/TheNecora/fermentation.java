@@ -21,12 +21,13 @@ import net.minecraft.util.Identifier;
 import java.util.List;
 
 public class fermentation extends TheNecoraIC {
-    @Override
+   @Override
     public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+        super.appendTooltip(stack, context, tooltip, type);
         tooltip.add(Text.translatable(""));
-        tooltip.add(Text.translatable("item.fermentation.tool.string").formatted(Formatting.GRAY));
-        tooltip.add(Text.translatable("item.fermentation.tool.string.1").formatted(Formatting.GRAY));
-        tooltip.add(Text.translatable("item.fermentation.tool.string.2").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.fermentation.tool.string").formatted(Formatting.RED));
+        tooltip.add(Text.translatable("item.fermentation.tool.string.1").formatted(Formatting.RED));
+        tooltip.add(Text.translatable("item.fermentation.tool.string.2").formatted(Formatting.RED));
         tooltip.add(Text.translatable(""));
     }
 

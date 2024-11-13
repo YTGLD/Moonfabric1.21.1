@@ -1,6 +1,6 @@
 package com.moonfabric.item.ectoplasm;
 
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.ectoplasm;
 import net.minecraft.entity.LivingEntity;
@@ -17,7 +17,7 @@ import java.util.List;
 
 public class ectoplasmapple extends ectoplasm {
     public static void hurt(LivingEntity me , DamageSource source){
-        if (hasCurio.has(init.ectoplasmapple,me)){
+        if (HasCurio.has(init.ectoplasmapple,me)){
             if (source.getSource() instanceof LivingEntity){
                 Vec3d vec3d = me.getPos();
                 int r = 10;

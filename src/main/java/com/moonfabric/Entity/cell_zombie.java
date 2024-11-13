@@ -3,8 +3,7 @@ package com.moonfabric.Entity;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import com.moonfabric.Ievent.AllEvent;
-import com.moonfabric.MoonFabricMod;
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.InItEntity;
 import com.moonfabric.init.init;
 import net.minecraft.entity.Entity;
@@ -17,11 +16,9 @@ import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.PassiveEntity;
-import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.predicate.entity.EntityPredicates;
-import net.minecraft.registry.Registries;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Identifier;
@@ -111,7 +108,7 @@ public class cell_zombie  extends TameableZombie {
     }
     private Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> calcificationMultimap(LivingEntity livingEntity){
        Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> modifierMultimap = HashMultimap.create();
-        if (hasCurio.has(init.cell, livingEntity) &&hasCurio.has(init.cell_calcification, livingEntity)) {
+        if (HasCurio.has(init.cell, livingEntity) && HasCurio.has(init.cell_calcification, livingEntity)) {
             modifierMultimap.put(EntityAttributes.GENERIC_ARMOR,new EntityAttributeModifier(Identifier.of("base_attack_damage"+"cell_armor"), livingEntity.getAttributeValue(EntityAttributes.GENERIC_ARMOR) / 2, EntityAttributeModifier.Operation.ADD_VALUE));
             modifierMultimap.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(Identifier.of("base_attack_damage"+"cell_health"), livingEntity.getAttributeValue(EntityAttributes.GENERIC_MAX_HEALTH) / 2, EntityAttributeModifier.Operation.ADD_VALUE));
         }
@@ -119,7 +116,7 @@ public class cell_zombie  extends TameableZombie {
     }
     private Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> modifierMultimap(LivingEntity livingEntity){
        Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> modifierMultimap = HashMultimap.create();
-        if (hasCurio.has(init.cell, livingEntity) &&hasCurio.has(init.adrenaline, livingEntity)) {
+        if (HasCurio.has(init.cell, livingEntity) && HasCurio.has(init.adrenaline, livingEntity)) {
             modifierMultimap.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(Identifier.of("base_attack_damage"+"cell_damage"), livingEntity.getAttributeValue(EntityAttributes.GENERIC_ATTACK_DAMAGE), EntityAttributeModifier.Operation.ADD_VALUE));
             modifierMultimap.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(Identifier.of("base_attack_damage"+"cell_speed"), livingEntity.getAttributeValue(EntityAttributes.GENERIC_MOVEMENT_SPEED), EntityAttributeModifier.Operation.ADD_VALUE));
         }

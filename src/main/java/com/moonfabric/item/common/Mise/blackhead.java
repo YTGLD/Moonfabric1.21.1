@@ -1,7 +1,7 @@
 package com.moonfabric.item.common.Mise;
 
-import com.moonfabric.Ievent.IEventHurt;
-import com.moonfabric.hasCurio;
+import com.moonfabric.Ievent.old.IEventHurt;
+import com.moonfabric.HasCurio;
 import com.moonfabric.item.Ms.extend.ItemTir;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketEnums;
@@ -17,7 +17,7 @@ public class blackhead extends ItemTir {
     public blackhead(){
         IEventHurt.ALLOW_DAMAGE.register((livingEntity, source, amt)->{
             if (livingEntity instanceof PlayerEntity player) {
-                if (hasCurio.has(this, player)) {
+                if (HasCurio.has(this, player)) {
                     if (!player.getItemCooldownManager().isCoolingDown(this)){
                         player.getItemCooldownManager().set(this, 140);
                         return false;
@@ -30,7 +30,7 @@ public class blackhead extends ItemTir {
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity instanceof PlayerEntity player){
-            if (hasCurio.has(this,player)){
+            if (HasCurio.has(this,player)){
                 return false;
             }
         }

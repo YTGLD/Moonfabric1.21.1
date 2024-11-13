@@ -1,6 +1,6 @@
 package com.moonfabric.mixin.common;
 
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.init;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.mob.WardenEntity;
@@ -18,7 +18,7 @@ public class WardenMixin {
 
         if (entity instanceof PlayerEntity player){
 
-            if (hasCurio.has(init.nanofruit, player)){
+            if (HasCurio.has(init.nanofruit, player)){
 
                 cir.setReturnValue(false);
             }

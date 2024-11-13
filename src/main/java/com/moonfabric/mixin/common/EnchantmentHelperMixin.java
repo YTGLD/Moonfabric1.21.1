@@ -1,6 +1,6 @@
 package com.moonfabric.mixin.common;
 
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.init;
 import net.minecraft.enchantment.EnchantmentLevelEntry;
 import net.minecraft.entity.player.PlayerEntity;
@@ -38,7 +38,7 @@ public abstract class EnchantmentHelperMixin {
     @Inject(method = "onButtonClick", at = @At("HEAD"), cancellable = true)
         private void moon$onButtonClick(PlayerEntity player, int id, CallbackInfoReturnable<Boolean> cir) {
         ItemStack itemStack = inventory.getStack(0);
-        if (hasCurio.has(init.rageorb, player)){
+        if (HasCurio.has(init.rageorb, player)){
             if (!itemStack.isOf(Items.BOOK)) {
                 EnchantmentScreenHandler handler = (EnchantmentScreenHandler) (Object) this;
                 context.run((world, pos) -> {

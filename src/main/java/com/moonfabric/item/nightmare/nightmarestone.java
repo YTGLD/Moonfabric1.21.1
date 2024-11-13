@@ -3,7 +3,7 @@ package com.moonfabric.item.nightmare;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Multimap;
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.nightmare;
 import dev.emi.trinkets.api.SlotReference;
@@ -33,7 +33,7 @@ public class nightmarestone extends nightmare {
 
 
     public static void hurt(LivingEntity entity, DamageSource source){
-        if (hasCurio.has(init.nightmarestone,entity)){
+        if (HasCurio.has(init.nightmarestone,entity)){
             if (source.getSource() != null) {
                 switch (MathHelper.nextInt(Random.create(), 1, 5)) {
                     case 1:
@@ -50,15 +50,7 @@ public class nightmarestone extends nightmare {
             }
         }
     }
-    @Override
-    public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity instanceof PlayerEntity player){
-            if (hasCurio.has(init.nightmareeye,player)){
-                return true;
-            }
-        }
-        return false;
-    }
+
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity instanceof PlayerEntity player){
@@ -100,18 +92,18 @@ public class nightmarestone extends nightmare {
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         tooltip.add(Text.translatable(""));
 
-        tooltip.add(Text.translatable("item.nightmarestone.tool.string").formatted(Formatting.GRAY));
-        tooltip.add(Text.translatable("item.nightmarestone.tool.string.1").formatted(Formatting.GRAY));
-        tooltip.add(Text.translatable("item.nightmarestone.tool.string.2").formatted(Formatting.GRAY));
-        tooltip.add(Text.translatable("item.nightmarestone.tool.string.3").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.nightmarestone.tool.string").formatted(Formatting.RED));
+        tooltip.add(Text.translatable("item.nightmarestone.tool.string.1").formatted(Formatting.RED));
+        tooltip.add(Text.translatable("item.nightmarestone.tool.string.2").formatted(Formatting.RED));
+        tooltip.add(Text.translatable("item.nightmarestone.tool.string.3").formatted(Formatting.RED));
         tooltip.add(Text.translatable(""));
-        tooltip.add(Text.translatable("item.nightmarestone.tool.string.7").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.nightmarestone.tool.string.7").formatted(Formatting.RED));
         tooltip.add(Text.translatable(""));
-        tooltip.add(Text.translatable("item.nightmarestone.tool.string.8").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.nightmarestone.tool.string.8").formatted(Formatting.RED));
 
         tooltip.add(Text.translatable(""));
-        tooltip.add(Text.translatable("item.nightmarestone.tool.string.9").formatted(Formatting.GRAY));
-        tooltip.add(Text.translatable("item.nightmarestone.tool.string.10").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.nightmarestone.tool.string.9").formatted(Formatting.RED));
+        tooltip.add(Text.translatable("item.nightmarestone.tool.string.10").formatted(Formatting.RED));
 
     }
 

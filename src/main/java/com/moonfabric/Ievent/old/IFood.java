@@ -1,4 +1,4 @@
-package com.moonfabric.Ievent;
+package com.moonfabric.Ievent.old;
 
 import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;

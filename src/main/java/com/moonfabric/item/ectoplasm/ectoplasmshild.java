@@ -1,7 +1,7 @@
 package com.moonfabric.item.ectoplasm;
 
 
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.Data;
 import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.ectoplasm;
@@ -24,7 +24,7 @@ public class ectoplasmshild extends ectoplasm {
     public static final String size = "HurtSize";
 
     public static void hurt (LivingEntity me, CallbackInfoReturnable<Float> cit){
-        if (hasCurio.has(init.ectoplasmshild,me)){
+        if (HasCurio.has(init.ectoplasmshild,me)){
             TrinketsApi.getTrinketComponent(me).ifPresent((trinketComponent) -> {
                 trinketComponent.forEach((slotReference, itemStack) -> {
                     if (itemStack.get(Data.CUSTOM_DATA)!= null){

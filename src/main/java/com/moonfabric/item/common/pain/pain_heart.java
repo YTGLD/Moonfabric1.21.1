@@ -1,8 +1,8 @@
 package com.moonfabric.item.common.pain;
 
 import com.google.common.collect.Multimap;
-import com.moonfabric.Ievent.IHurtSizeEvent;
-import com.moonfabric.hasCurio;
+import com.moonfabric.Ievent.old.IHurtSizeEvent;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.AttReg;
 import com.moonfabric.init.Data;
 import com.moonfabric.init.init;
@@ -35,7 +35,7 @@ public class pain_heart extends ItemTir {
 
     public static void  pain(){
         IHurtSizeEvent.ON_HURT.register((living, source, size,stack) -> {
-            if (stack.isOf(init.pain_heart)&& hasCurio.has(init.pain_heart,living)){
+            if (stack.isOf(init.pain_heart)&& HasCurio.has(init.pain_heart,living)){
                 if (stack.get(Data.CUSTOM_DATA) != null) {
                     stack.get(Data.CUSTOM_DATA).putInt(hurt, stack.get(Data.CUSTOM_DATA).getInt(hurt) + 1);
                     float get = (float) stack.get(Data.CUSTOM_DATA).getInt(hurt) / 33;

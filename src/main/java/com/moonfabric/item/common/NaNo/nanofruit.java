@@ -21,8 +21,8 @@ public class nanofruit extends doom {
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity.hasStatusEffect(StatusEffects.GLOWING)) {
-            entity.removeStatusEffect(StatusEffects.GLOWING);
+        if (entity.hasStatusEffect(StatusEffects.DARKNESS)) {
+            entity.removeStatusEffect(StatusEffects.DARKNESS);
         }
     }
 }

@@ -3,7 +3,7 @@ package com.moonfabric.item.dna;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import com.moonfabric.data.BundleContentsComponent;
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.AttReg;
 import com.moonfabric.init.DNAItems;
 import com.moonfabric.init.Data;
@@ -15,7 +15,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
@@ -45,7 +44,6 @@ import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.List;
-import java.util.Map;
 
 public class dna extends TrinketItem {
     public dna() {
@@ -54,7 +52,7 @@ public class dna extends TrinketItem {
     }
     public  static void Stater(LivingEntity  me ,ItemStack useStack,CallbackInfoReturnable<Integer> cir ){
         LivingEntity player =me;
-        if (hasCurio.has(init.dna, player)) {
+        if (HasCurio.has(init.dna, player)) {
             TrinketsApi.getTrinketComponent(player).ifPresent((trinketComponent) -> {
                 trinketComponent.forEach((slotReference, stack) -> {
                     if (stack.getItem() == (init.dna)){
@@ -78,7 +76,7 @@ public class dna extends TrinketItem {
     public  static void Finish(LivingEntity  me ,ItemStack useStack){
         LivingEntity kl = me;
         if (kl instanceof PlayerEntity player) {
-            if (hasCurio.has(init.dna, player)) {
+            if (HasCurio.has(init.dna, player)) {
                 TrinketsApi.getTrinketComponent(player).ifPresent((trinketComponent) -> {
                     trinketComponent.forEach((slotReference, stack) -> {
                         if (stack.getItem() == (init.dna)){
@@ -104,7 +102,7 @@ public class dna extends TrinketItem {
     public  static void hurt(DamageSource source, LivingEntity me, CallbackInfoReturnable<Float> cir){
         Entity p = me;
         if (p instanceof PlayerEntity player) {
-            if (hasCurio.has(init.dna, player)) {
+            if (HasCurio.has(init.dna, player)) {
                 TrinketsApi.getTrinketComponent(player).ifPresent((trinketComponent) -> {
                     trinketComponent.forEach((slotReference, stack) -> {
                         if (stack.getItem() == (init.dna)){
@@ -153,7 +151,7 @@ public class dna extends TrinketItem {
             }
         }
         if (source.getSource() instanceof PlayerEntity player) {
-            if (hasCurio.has(init.dna, player)) {
+            if (HasCurio.has(init.dna, player)) {
                 TrinketsApi.getTrinketComponent(player).ifPresent((trinketComponent) -> {
                     trinketComponent.forEach((slotReference, stack) -> {
                         if (stack.getItem() == (init.dna)){
@@ -191,7 +189,7 @@ public class dna extends TrinketItem {
     public  static void dieD(LivingEntity  me,DamageSource source){
         Entity p = source.getSource();
         if (p instanceof PlayerEntity player) {
-            if (hasCurio.has(init.dna, player)) {
+            if (HasCurio.has(init.dna, player)) {
                 TrinketsApi.getTrinketComponent(player).ifPresent((trinketComponent) -> {
                     trinketComponent.forEach((slotReference, stack) -> {
                         if (stack.getItem() == (init.dna)){

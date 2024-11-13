@@ -1,7 +1,7 @@
 package com.moonfabric.item.common.CurseOrDoom;
 
 import com.google.common.collect.Multimap;
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.item.Ms.extend.rage;
 import dev.emi.trinkets.api.SlotAttributes;
 import dev.emi.trinkets.api.SlotReference;
@@ -27,7 +27,7 @@ public class rageorb extends rage {
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity instanceof PlayerEntity player){
-            if (hasCurio.has(this,player)){
+            if (HasCurio.has(this,player)){
                 return false;
             }
         }

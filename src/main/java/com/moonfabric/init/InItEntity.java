@@ -69,4 +69,20 @@ public class InItEntity {
                     .defaultAttributes(com.moonfabric.Entity.cell_giant::addAttributes)
                     .entityFactory(cell_giant::new)
                     .build();
+
+    public static final EntityType<head> head =
+            FabricEntityTypeBuilder.createLiving()
+                    .dimensions(EntityDimensions.changing(0.5f,0.5f))
+                    .trackRangeBlocks(48)
+                    .defaultAttributes(com.moonfabric.Entity.cell_giant::addAttributes)
+                    .entityFactory(head::new)
+                    .build();
+
+    public static final EntityType<penalty> penalty =
+            FabricEntityTypeBuilder.createLiving()
+                    .dimensions(EntityDimensions.changing(0.5f,0.5f))
+                    .trackRangeBlocks(48)
+                    .defaultAttributes(com.moonfabric.Entity.cell_giant::addAttributes)
+                    .entityFactory(penalty::new)
+                    .build();
 }

@@ -1,0 +1,15 @@
+{
+  "name": "不死骷髅",
+  "icon": "moonfabric:undead_head",
+  "category": "moonfabric:death",
+  "priority": false,
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "moonfabric:undead_head",
+      "title": "-不死骷髅-",
+      "text":"发现于地牢和猪灵堡垒$(br2)损失的生命值和你的战斗力成正比"
+    }
+  ]
+}

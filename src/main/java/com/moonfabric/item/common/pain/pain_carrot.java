@@ -1,7 +1,7 @@
 package com.moonfabric.item.common.pain;
 
-import com.moonfabric.Ievent.IeventAttack;
-import com.moonfabric.hasCurio;
+import com.moonfabric.Ievent.old.IeventAttack;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.Data;
 import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.extend.ItemTir;
@@ -24,7 +24,7 @@ public class pain_carrot extends ItemTir {
 
     public static void str(){
         IeventAttack.ON_HURT.register(((living, source, size, stack) -> {
-            if (stack.isOf(init.pain_carrot)&& hasCurio.has(init.pain_carrot, living)){
+            if (stack.isOf(init.pain_carrot)&& HasCurio.has(init.pain_carrot, living)){
                 if (stack.get(Data.CUSTOM_DATA)!= null) {
                     float s = stack.get(Data.CUSTOM_DATA).getFloat(eat);
                     return size*(1+s);

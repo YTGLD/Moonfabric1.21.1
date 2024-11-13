@@ -1,7 +1,7 @@
 package com.moonfabric.mixin.TickMixin;
 
-import com.moonfabric.Ievent.IHurtSizeEvent;
-import com.moonfabric.Ievent.IeventAttack;
+import com.moonfabric.Ievent.old.IHurtSizeEvent;
+import com.moonfabric.Ievent.old.IeventAttack;
 import com.moonfabric.item.common.Blood.blood_amout;
 import dev.emi.trinkets.api.TrinketsApi;
 import net.minecraft.entity.LivingEntity;

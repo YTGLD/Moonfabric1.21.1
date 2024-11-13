@@ -1,7 +1,7 @@
 package com.moonfabric.Entity;
 
 import com.moonfabric.MoonFabricMod;
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.InItEntity;
 import com.moonfabric.init.init;
 import net.minecraft.entity.Entity;
@@ -72,7 +72,7 @@ public class owner_blood extends TameableEntity {
 
         if (this.getOwner() != null) {
             if (this.getOwner() instanceof PlayerEntity player){
-                if (!hasCurio.has(init.blood_candle, player)){
+                if (!HasCurio.has(init.blood_candle, player)){
                     this.discard();
                 }
             }

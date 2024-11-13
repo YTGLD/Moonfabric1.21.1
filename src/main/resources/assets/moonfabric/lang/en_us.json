@@ -1287,7 +1287,7 @@
 
   "item.moonfabric.nanofruit": "Nano fruit",
   "moonfabric.tooltip.nanofruit.1": "·Warden will maintain absolute friendship with you",
-  "moonfabric.tooltip.nanofruit.2": "·immune glowing",
+  "moonfabric.tooltip.nanofruit.2": "·immune darkness",
 
   "item.moonfabric.nanoeye": "Nano eye",
   "moonfabric.tooltip.nanoeye.1": "·Automatically lock and attack nearby creatures",
@@ -1435,6 +1435,24 @@
 
   "moonfabric.heal.attribute": "heal",
   "item.moonfabric.ectoplasmball": "ectoplasm ball",
+  "item.moonfabric.double_head": "double head",
+  "moonfabric.tooltip.double_head": "·Attack may summon Twin Magic Balls",
+  "item.moonfabric.death_penalty": "The Lamp of the Death Penalty",
+  "moonfabric.tooltip.death_penalty": "·Killing food eating creatures will drop lamp oil, which will automatically fly towards you",
+  "moonfabric.tooltip.death_penalty.1": "·After picking up, restore 20% health and gain 2 seconds of invincibility (stacked)",
+  "item.moonfabric.undead_head": "undead head",
+   "item.undead_head.tool.string.1": "For every 1% loss of health:",
+   "item.undead_head.tool.string.2": "+1.25% treatment",
+   "item.undead_head.tool.string.3": "+0.8% speed",
+   "item.undead_head.tool.string.4": "+0.75% damage",
+   "item.undead_head.tool.string.5": "+0.5% Attack Speed",
+   "item.undead_head.tool.string.6": "+0.35% armor",
+   "item.undead_head.tool.string.7": "Now",
+   "item.undead_head.tool.string.8": "treatment:",
+   "item.undead_head.tool.string.9": "speed:",
+  "item.undead_head.tool.string.10": "damage:",
+  "item.undead_head.tool.string.11": "Attack Speed:",
+  "item.undead_head.tool.string.12": "armor:",
 
   "item.moonfabric.ectoplasmhorseshoe": "ectoplasm horseshoe",
   "item.ectoplasmhorseshoe.tool.string": "·-90% fall damage",

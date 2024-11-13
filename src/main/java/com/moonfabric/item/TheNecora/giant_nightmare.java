@@ -10,11 +10,12 @@ import net.minecraft.util.Formatting;
 import java.util.List;
 
 public class giant_nightmare extends TheNecoraIC {
-    @Override
+   @Override
     public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+        super.appendTooltip(stack, context, tooltip, type);
         tooltip.add(Text.translatable(""));
-        tooltip.add(Text.translatable("item.giant_nightmare.tool.string").formatted(Formatting.GRAY));
-        tooltip.add(Text.translatable("item.giant_nightmare.tool.string.1").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.giant_nightmare.tool.string").formatted(Formatting.RED));
+        tooltip.add(Text.translatable("item.giant_nightmare.tool.string.1").formatted(Formatting.RED));
         tooltip.add(Text.translatable(""));
     }
 }

@@ -2,7 +2,7 @@ package com.moonfabric.item.common.NaNo;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.Data;
 import com.moonfabric.item.Ms.extend.doom;
 import dev.emi.trinkets.api.SlotReference;
@@ -95,7 +95,7 @@ public class nanoheart extends doom {
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity instanceof PlayerEntity player){
-            if (hasCurio.has(this,player)){
+            if (HasCurio.has(this,player)){
                 return false;
             }
         }

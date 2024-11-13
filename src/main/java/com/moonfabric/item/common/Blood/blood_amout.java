@@ -1,7 +1,7 @@
 package com.moonfabric.item.common.Blood;
 
 import com.moonfabric.Entity.line;
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.InItEntity;
 import com.moonfabric.init.init;
 import dev.emi.trinkets.api.TrinketItem;
@@ -25,7 +25,7 @@ public class blood_amout extends TrinketItem {
 
         if (me instanceof PlayerEntity player) {
 
-            if (source.getSource() != null && hasCurio.has(init.blood_amout, player)) {
+            if (source.getSource() != null && HasCurio.has(init.blood_amout, player)) {
 
                 if (!player.getItemCooldownManager().isCoolingDown(init.blood_amout)) {
                     line line = new line(InItEntity.Line, player.getEntityWorld());

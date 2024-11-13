@@ -24,10 +24,11 @@ public class regenerative extends TheNecoraIC {
     }
 
 
-    @Override
+   @Override
     public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+        super.appendTooltip(stack, context, tooltip, type);
         tooltip.add(Text.translatable(""));
-        tooltip.add(Text.translatable("item.regenerative.tool.string").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.regenerative.tool.string").formatted(Formatting.RED));
         tooltip.add(Text.translatable(""));
     }
 }

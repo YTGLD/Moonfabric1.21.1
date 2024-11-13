@@ -1,6 +1,6 @@
 package com.moonfabric.item.Ms.extend;
 
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.Data;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketItem;
@@ -18,7 +18,7 @@ public class doom  extends TrinketItem {
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity instanceof PlayerEntity player){
-            if (hasCurio.has(stack.getItem(),player)){
+            if (HasCurio.has(stack.getItem(),player)){
                 return false;
             }
         }

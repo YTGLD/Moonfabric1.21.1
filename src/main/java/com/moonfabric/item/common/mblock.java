@@ -1,6 +1,6 @@
 package com.moonfabric.item.common;
 
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.extend.ItemTir;
 import net.minecraft.entity.LivingEntity;
@@ -12,12 +12,12 @@ import java.util.List;
 
 public class mblock extends ItemTir {
     public static int Block(LivingEntity living){
-        if( hasCurio.has(init.mblock,living)){
+        if( HasCurio.has(init.mblock,living)){
             return 1;
         }else return 0;
     }
     public static int loot(LivingEntity living){
-        if( hasCurio.has(init.mblock,living)){
+        if( HasCurio.has(init.mblock,living)){
             return 1;
         }else return 0;
     }

@@ -1,7 +1,7 @@
 package com.moonfabric.Entity;
 
 import com.moonfabric.MoonFabricMod;
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.init;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -26,7 +26,7 @@ public class flysword extends ThrownItemEntity {
     protected void onEntityHit(EntityHitResult entityHitResult) {
         Entity entity = entityHitResult.getEntity();
         if (entity instanceof LivingEntity livingEntity){
-            if (hasCurio.has(init.sevensword, livingEntity)){
+            if (HasCurio.has(init.sevensword, livingEntity)){
                 this.discard();
 
             }else {

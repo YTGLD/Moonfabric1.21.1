@@ -25,11 +25,12 @@ public class cell extends TheNecoraIC {
         SlotAttributes.addSlotModifier(modifiers,"legs/belt",Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),1, EntityAttributeModifier.Operation.ADD_VALUE);
         return modifiers;
     }
-    @Override
+   @Override
     public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
-        tooltip.add(Text.translatable("moonfabric.tooltip.necora").formatted(Formatting.GRAY));
+        super.appendTooltip(stack, context, tooltip, type);
+        tooltip.add(Text.translatable("moonfabric.tooltip.necora").formatted(Formatting.RED));
         tooltip.add(Text.translatable(""));
-        tooltip.add(Text.translatable("item.cell.tool.string").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.cell.tool.string").formatted(Formatting.RED));
         tooltip.add(Text.translatable(""));
     }
 }

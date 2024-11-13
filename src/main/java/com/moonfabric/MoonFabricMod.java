@@ -2,7 +2,7 @@ package com.moonfabric;
 
 import com.moonfabric.Effects.initEffect;
 import com.moonfabric.init.*;
-import com.moonfabric.item.Aevent;
+import com.moonfabric.item.evt.Aevent;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.minecraft.entity.effect.StatusEffect;
@@ -207,6 +207,9 @@ public class MoonFabricMod implements ModInitializer {
 		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "subspace_cell"), init.subspace_cell);
 
 
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "double_head"), init.double_head);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "death_penalty"), init.death_penalty);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "undead_head"), init.undead_head);
 
 
 
@@ -217,6 +220,8 @@ public class MoonFabricMod implements ModInitializer {
 		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "cell_zombie"), InItEntity.cell_zombie);
 		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "nig_test"), InItEntity.nig_test);
 
+		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "head"), InItEntity.head);
+		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "penalty"), InItEntity.penalty);
 
 
 

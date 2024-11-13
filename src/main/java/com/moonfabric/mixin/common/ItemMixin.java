@@ -1,6 +1,6 @@
 package com.moonfabric.mixin.common;
 
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.init;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -23,7 +23,7 @@ public abstract class ItemMixin {
 
     @Inject(method = "getMaxUseTime", at = @At(value = "RETURN"), cancellable = true)
     private void getMaxUseTime(ItemStack stack, LivingEntity user, CallbackInfoReturnable<Integer> cir){
-        if (hasCurio.has(init.pain_book,user)){
+        if (HasCurio.has(init.pain_book,user)){
             if (stack.isOf(Items.COPPER_BLOCK) || stack.isOf(Items.COPPER_INGOT)) {
                 cir.setReturnValue(32);
             }
@@ -31,7 +31,7 @@ public abstract class ItemMixin {
     }
     @Inject(method = "getMaxUseTime", at = @At(value = "RETURN"), cancellable = true)
     private void eat(ItemStack stack, LivingEntity user, CallbackInfoReturnable<Integer> cir){
-        if (hasCurio.has(init.pain_book,user)){
+        if (HasCurio.has(init.pain_book,user)){
 
             if (stack.getUseAction() == UseAction.EAT){
                 cir.setReturnValue((int) (cir.getReturnValue() * 0.66));
@@ -41,7 +41,7 @@ public abstract class ItemMixin {
     }
     @Inject(method = "use", at = @At(value = "RETURN"), cancellable = true)
     private void use(World world, PlayerEntity user, Hand hand, CallbackInfoReturnable<TypedActionResult<ItemStack>> cir){
-        if (hasCurio.has(init.pain_book,user)){
+        if (HasCurio.has(init.pain_book,user)){
             Item stack =(Item) (Object) this;
             if (stack.getDefaultStack().isOf(Items.COPPER_BLOCK)||stack.getDefaultStack().isOf(Items.COPPER_INGOT)){
                 user.setCurrentHand(hand);
@@ -53,7 +53,7 @@ public abstract class ItemMixin {
     private void use(ItemStack stack, CallbackInfoReturnable<UseAction> cir){
        Entity living = stack.getHolder();
        if (living!=null &&living instanceof PlayerEntity user) {
-           if (hasCurio.has(init.pain_book, user)) {
+           if (HasCurio.has(init.pain_book, user)) {
                if (stack.isOf(Items.COPPER_BLOCK) || stack.isOf(Items.COPPER_INGOT)) {
                    cir.setReturnValue(UseAction.EAT);
 

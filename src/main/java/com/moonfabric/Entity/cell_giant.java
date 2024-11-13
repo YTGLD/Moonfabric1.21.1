@@ -3,8 +3,7 @@ package com.moonfabric.Entity;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import com.mojang.logging.LogUtils;
-import com.moonfabric.MoonFabricMod;
-import com.moonfabric.hasCurio;
+import com.moonfabric.HasCurio;
 import com.moonfabric.init.InItEntity;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
@@ -12,7 +11,6 @@ import net.minecraft.entity.*;
 import net.minecraft.entity.ai.brain.MemoryModuleType;
 import net.minecraft.entity.ai.brain.task.SonicBoomTask;
 import net.minecraft.entity.ai.goal.*;
-import net.minecraft.entity.ai.pathing.PathNodeType;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
@@ -23,13 +21,11 @@ import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.mob.WardenBrain;
 import net.minecraft.entity.passive.PassiveEntity;
-import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.BlockStateParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.predicate.entity.EntityPredicates;
-import net.minecraft.registry.Registries;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.server.network.DebugInfoSender;
 import net.minecraft.server.world.ServerWorld;
@@ -119,7 +115,7 @@ public class cell_giant extends TameableZombie {
     public  int time ;
     private Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> AttributeModifier(cell_giant cellGiant, LivingEntity living){
         Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier>  modifierMultimap = HashMultimap.create();
-        if (cellGiant.getCommandTags().contains(hasCurio.Bone_Giant)) {
+        if (cellGiant.getCommandTags().contains(HasCurio.Bone_Giant)) {
             modifierMultimap.put(EntityAttributes.GENERIC_ARMOR,new EntityAttributeModifier(Identifier.of("base_attack_damage"+"cell_armor"), living.getAttributeValue(EntityAttributes.GENERIC_ARMOR)* 0.7, EntityAttributeModifier.Operation.ADD_VALUE));
         }
         return modifierMultimap;
@@ -130,7 +126,7 @@ public class cell_giant extends TameableZombie {
         if (this.getOwner() instanceof PlayerEntity player) {
             this.getAttributes().addTemporaryModifiers(this.AttributeModifier(this,player));
         }
-        if (!this.getCommandTags().contains(hasCurio.Disgusting__cell_Giant)) {
+        if (!this.getCommandTags().contains(HasCurio.Disgusting__cell_Giant)) {
             time += 2;
         }else {
             time++;

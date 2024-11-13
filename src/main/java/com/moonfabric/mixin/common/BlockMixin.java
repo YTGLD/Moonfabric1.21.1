@@ -1,6 +1,6 @@
 package com.moonfabric.mixin.common;
 
-import com.moonfabric.Ievent.BlockBreakEvent;
+import com.moonfabric.Ievent.old.BlockBreakEvent;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;

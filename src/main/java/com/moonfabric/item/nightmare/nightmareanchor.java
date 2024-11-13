@@ -1,20 +1,14 @@
 package com.moonfabric.item.nightmare;
 
 import com.google.common.collect.Multimap;
-import com.moonfabric.hasCurio;
 import com.moonfabric.init.Data;
-import com.moonfabric.init.init;
 import com.moonfabric.item.Ms.nightmare;
 import dev.emi.trinkets.api.SlotAttributes;
 import dev.emi.trinkets.api.SlotReference;
-import dev.emi.trinkets.api.TrinketsApi;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.BowItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.nbt.NbtCompound;
@@ -43,15 +37,7 @@ public class nightmareanchor extends nightmare {
         }
     }
 
-    @Override
-    public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if (entity instanceof PlayerEntity player){
-            if (hasCurio.has(init.nightmareeye,player)){
-                return true;
-            }
-        }
-        return false;
-    }
+
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         user.setCurrentHand(hand);
@@ -61,11 +47,11 @@ public class nightmareanchor extends nightmare {
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         tooltip.add(Text.translatable(""));
-        tooltip.add(Text.translatable("item.nightmareanchor.tool.string.5").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.nightmareanchor.tool.string.5").formatted(Formatting.RED));
 
         tooltip.add(Text.translatable(""));
-        tooltip.add(Text.translatable("item.nightmareanchor.tool.string.6").formatted(Formatting.GRAY));
-        tooltip.add(Text.translatable("item.nightmareanchor.tool.string.7").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.nightmareanchor.tool.string.6").formatted(Formatting.RED));
+        tooltip.add(Text.translatable("item.nightmareanchor.tool.string.7").formatted(Formatting.RED));
         tooltip.add(Text.translatable(""));
 
 

@@ -10,10 +10,11 @@ import net.minecraft.util.Formatting;
 import java.util.List;
 
 public class mother_cell  extends TheNecoraIC {
-    @Override
+   @Override
     public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+        super.appendTooltip(stack, context, tooltip, type);
         tooltip.add(Text.translatable(""));
-        tooltip.add(Text.translatable("item.mother_cell.tool.string").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("item.mother_cell.tool.string").formatted(Formatting.RED));
         tooltip.add(Text.translatable(""));
     }
 }
