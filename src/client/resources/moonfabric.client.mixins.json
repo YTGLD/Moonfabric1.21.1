@@ -5,7 +5,8 @@
   "client": [
     "HandledScreenMixin",
     "LivingEntityRendererMixin",
-    "RenderLayersMixin"
+    "RenderLayersMixin",
+    "WorldRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

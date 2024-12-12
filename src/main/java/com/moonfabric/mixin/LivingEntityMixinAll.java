@@ -2,20 +2,23 @@ package com.moonfabric.mixin;
 
 import com.moonfabric.Ievent.AllEvent;
 import com.moonfabric.HasCurio;
+import com.moonfabric.Ievent.evt.LootOrBlockLuck;
 import com.moonfabric.init.AttReg;
 import com.moonfabric.init.init;
 import com.moonfabric.item.common.death_penalty;
 import com.moonfabric.item.common.double_head;
-import com.moonfabric.item.evt.AllZombie;
+import com.moonfabric.Ievent.evt.AllZombie;
 import com.moonfabric.item.dna.dna;
 import com.moonfabric.item.ectoplasm.ectoplasmapple;
 import com.moonfabric.item.ectoplasm.ectoplasmhorseshoe;
 import com.moonfabric.item.ectoplasm.ectoplasmshild;
 import com.moonfabric.item.nightmare.nightmarestone;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.Vec3d;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -50,6 +53,8 @@ public abstract class LivingEntityMixinAll {
         dna.dieD(livingEntity, damageSource);
         death_penalty.hurts(livingEntity,damageSource);
 
+        LootOrBlockLuck.dropLootItem(livingEntity,init.mblock,1,damageSource, EntityType.ZOMBIE);
+        LootOrBlockLuck.dropLootItem(livingEntity,init.greedcrystal,1,damageSource, EntityType.ZOMBIE);
     }
     @Inject(method = "canWalkOnFluid", at = @At(value = "RETURN"), cancellable = true)
     private void canWalkOnFluid(FluidState state, CallbackInfoReturnable<Boolean> cir){

@@ -1424,7 +1424,7 @@
   "moonfabric.difficulty.name.god_loot_c": "未知",
   "entity.moonfabric.sword_soul": "腐败之魂",
 
-  "item.moonfabric.abook": "模组指南书书",
+  "item.moonfabric.abook": "模组指南书",
 
   "enchantment.moonfabric.terror": "恐怖",
   "enchantment.moonfabric.threat": "威胁",
@@ -1439,7 +1439,7 @@
   "item.necora_baby.tool.string.1":"你可以给它植入基因片段",
   "item.necora_baby.tool.string.2":"如果腐败之魂死亡/丢失你可以重新装备此物品",
   "item.necora_baby.tool.string.3":"腐败之魂死后也会将物品传送到你的边上",
-  "moonfabric.tooltip.necora": "你必须参阅“模组指南书书”来理解设定",
+  "moonfabric.tooltip.necora": "你必须参阅或者佩戴“模组指南书书”来理解设定",
 
   "item.moonfabric.undead_head": "不灭头骨",
   "item.undead_head.tool.string.1": "每损失1%的生命值：",
@@ -1455,6 +1455,62 @@
   "item.undead_head.tool.string.11": "攻速: ",
   "item.undead_head.tool.string.12": "护甲: ",
 
+  "item.moonfabric.owner_blood_eye":"渎圣者",
+  "item.moonfabric.owner_blood_attack_eye":"血灵咒",
+  "item.moonfabric.owner_blood_speed_eye":"刻画者",
+  "item.moonfabric.owner_blood_boom_eye":"苦力",
+  "item.moonfabric.owner_blood_effect_eye":"判官",
+  "item.moonfabric.owner_blood_earth":"乾坤",
+  "item.moonfabric.owner_blood_vex": "鬼者",
+
+  "item.moonfabric.owner_blood_eye.tool": "减少20%血灵增生体的攻击间隔”",
+
+  "item.moonfabric.owner_blood_attack_eye.tool": "增加10%血灵增生体的攻击间隔",
+  "item.moonfabric.owner_blood_attack_eye.tool.1": "增加20%血灵伤害",
+
+  "item.moonfabric.owner_blood_speed_eye.tool": "减少50%血灵增生体的攻击间隔",
+  "item.moonfabric.owner_blood_speed_eye.tool.1": "增加300%血珠速度",
+  "item.moonfabric.owner_blood_speed_eye.tool.2": "但是发射的血珠不再会追踪生物",
+
+  "item.moonfabric.owner_blood_boom_eye.tool": "血球会在击中时爆炸",
+  "item.moonfabric.owner_blood_boom_eye.tool.1": "减少20%血珠速度",
+  "item.moonfabric.owner_blood_boom_eye.tool.2": "增加200%血灵增生体的攻击间隔",
+  "item.moonfabric.owner_blood_boom_eye.tool.3": "每次爆炸都相当于你发起了攻击",
+  "item.moonfabric.owner_blood_boom_eye.tool.4": "我觉得你应该穿点防爆的东西....",
+
+  "item.moonfabric.owner_blood_effect_eye.tool": "血球会在击中时附加大量的负面效果",
+  "item.moonfabric.owner_blood_effect_eye.tool.1": "减少50%血珠伤害",
+
+
+  "item.moonfabric.owner_blood_earth.tool": "血灵增生体不会再攻击",
+  "item.moonfabric.owner_blood_earth.tool.1": "但会变成一个超级磁铁，它不仅可以吸引生物和掉落物并且还可以吸引然后吞噬弹射物",
+  "item.moonfabric.owner_blood_earth.tool.2": "吞噬弹射物恢复主人生命值",
+  "item.moonfabric.owner_blood_earth.tool.3": "你可以用来运送村民或者干什么别的",
+
+
+  "item.moonfabric.owner_blood_vex.tool": "血珠击中后会恢复主人的生命值",
+  "item.moonfabric.owner_blood_vex.tool.1": "其数值取决于血灵增生体的伤害",
+  "item.moonfabric.owner_blood_vex.tool.2": "血灵增生体的伤害降低3点",
+
+  "moonfabric.tooltip.abook": "你可以佩戴它来理解某些物品的获取方式",
+
+  "book.moonfabric.dna": "这些物品发现在很多地方",
+  "book.moonfabric.dna.1": "像是常见的地牢，古城，村庄，发现概率极高",
+
+  "book.moonfabric.necora": "发现在古城",
+  "book.moonfabric.pain": "发现在试炼刷怪场的陶罐里",
+  "book.moonfabric.doom": "发现在末地",
+  "book.moonfabric.ectoplasm": "发现在古城,地牢，矿井等诸多地方",
+  "book.moonfabric.common": "发现在古城,地牢，矿井等诸多地方",
+  "book.moonfabric.death": "发现在地狱",
+  "book.moonfabric.desert": "发现在沙漠",
+
+
+  "book.moonfabric.necora.all": "这些物品必须在佩戴相关物品时才可以发现",
+  "book.moonfabric.necora.all.1": "例如细胞重生需要necora病毒",
+  "book.moonfabric.necora.all.2": "发现在常见的地牢，古城，村庄",
+  "book.moonfabric.nightmare": "这些物品必须在佩戴 深渊之眼 时才可以发现",
+  "book.moonfabric.nightmare.1": "发现在常见的地牢，古城，村庄",
   "item.moonfabric.death_penalty": "死刑灯台",
   "moonfabric.tooltip.death_penalty": "·杀死食生物会掉落灯油，它会自动飞向你",
   "moonfabric.tooltip.death_penalty.1": "·拾取后恢复20%生命值和获得2秒无敌(叠加)",

@@ -10,6 +10,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.CoreShaderRegistrationCallback;
+import net.fabricmc.fabric.api.client.rendering.v1.WorldRenderEvents;
 import net.fabricmc.fabric.api.client.screen.v1.ScreenEvents;
 import net.fabricmc.fabric.impl.client.screen.ScreenEventFactory;
 import net.minecraft.client.render.VertexFormat;
@@ -17,6 +18,8 @@ import net.minecraft.util.Identifier;
 
 @net.fabricmc.api.Environment(net.fabricmc.api.EnvType.CLIENT)
 public class MoonFabricModClient implements ClientModInitializer {
+	public static final Identifier POST = Identifier.of(MoonFabricMod.MODID,
+			"shaders/post/entity_outline.json");
 	@Environment(EnvType.CLIENT)
 	@Override
 	public void onInitializeClient() {
@@ -45,5 +48,9 @@ public class MoonFabricModClient implements ClientModInitializer {
 					context.register(Identifier.of(MoonFabricMod.MODID,"blood"), VertexFormat.builder().build(), MRender::setRenderTypeEndPortalProgram);
 				});
 
+		CoreShaderRegistrationCallback.EVENT.register(Identifier.of(MoonFabricMod.MODID,"blood_outline"),
+				(context)->{
+					context.register(Identifier.of(MoonFabricMod.MODID,"blood_outline"), VertexFormat.builder().build(), MRender::setRenderTypeEndPortalProgramOutLine);
+				});
 	}
 }

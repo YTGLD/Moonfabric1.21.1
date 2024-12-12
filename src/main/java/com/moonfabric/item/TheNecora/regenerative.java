@@ -1,5 +1,6 @@
 package com.moonfabric.item.TheNecora;
 
+import com.moonfabric.item.INecora;
 import com.moonfabric.item.Ms.TheNecoraIC;
 import dev.emi.trinkets.api.SlotReference;
 import net.minecraft.entity.LivingEntity;
@@ -12,7 +13,7 @@ import net.minecraft.util.Formatting;
 
 import java.util.List;
 
-public class regenerative extends TheNecoraIC {
+public class regenerative extends TheNecoraIC implements INecora {
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity instanceof PlayerEntity player) {
@@ -24,7 +25,7 @@ public class regenerative extends TheNecoraIC {
     }
 
 
-   @Override
+    @Override
     public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
         super.appendTooltip(stack, context, tooltip, type);
         tooltip.add(Text.translatable(""));

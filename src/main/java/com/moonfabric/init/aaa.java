@@ -100,6 +100,15 @@ public class aaa {
         c.add(new ItemStack(init.death_penalty));
         c.add(new ItemStack(init.undead_head));
 
+        c.add(new ItemStack(init.owner_blood_eye));
+        c.add(new ItemStack(init.owner_blood_attack_eye));
+        c.add(new ItemStack(init.owner_blood_speed_eye));
+        c.add(new ItemStack(init.owner_blood_effect_eye));
+        c.add(new ItemStack(init.owner_blood_boom_eye));
+        c.add(new ItemStack(init.owner_blood_vex));
+        c.add(new ItemStack(init.owner_blood_earth));
+
+
     }).build();
     public static final ItemGroup DNA = FabricItemGroup.builder().displayName(Text.translatable("tab.moonfabric_tab.dna")).icon(()->new ItemStack(init.abook)).entries((a, c)->{
 

@@ -90,8 +90,20 @@ public abstract class LootTableMixin {
                         init.nightmarerotten ,
                         init.nightmarestone
 
-                ),10,init.nightmareeye).getDefaultStack());
+                ),6,init.nightmareeye).getDefaultStack());
 
+                objectArrayList.add(LootTableEvent.addLoot(context,List.of(
+
+                        init.owner_blood_eye ,
+                        init.owner_blood_attack_eye ,
+                        init.owner_blood_speed_eye ,
+                        init.owner_blood_effect_eye ,
+                        init.owner_blood_boom_eye ,
+                        init.owner_blood_vex ,
+                        init.owner_blood_earth
+
+
+                        ),8,init.blood_candle).getDefaultStack());
 
                 objectArrayList.add(LootTableEvent.addLoot(context,List.of(
                         init.ambush,
@@ -102,7 +114,7 @@ public abstract class LootTableMixin {
                         init.regenerative
 
 
-                ),15,init.necora).getDefaultStack());
+                ),7,init.necora).getDefaultStack());
 
                 objectArrayList.add(LootTableEvent.addLootNecora(context,List.of(
                         init.cell
@@ -120,7 +132,7 @@ public abstract class LootTableMixin {
                         init.cell_blood,
                         init.adrenaline
 
-                ),20,init.cell).getDefaultStack());
+                ),10,init.cell).getDefaultStack());
 
                 objectArrayList.add(LootTableEvent.addLoot(context,List.of(
 
@@ -133,7 +145,7 @@ public abstract class LootTableMixin {
                         init.disgusting_cells,
                         init.bone_cell
 
-                ),15,init.giant).getDefaultStack());
+                ),7,init.giant).getDefaultStack());
             }
         }
 

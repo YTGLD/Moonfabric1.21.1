@@ -35,25 +35,14 @@ public class moonfabricLoot {
 
     public static final List<RegistryKey<LootTable>> WOODLAND_MANSION_CHEST =List.of(LootTables.WOODLAND_MANSION_CHEST);
 
-
-    public static final List<Identifier> betternether =List.of(Identifier.of("betternether:chests/city"));
-    public static final List<Identifier> betternetherc =List.of(Identifier.of("betternether:chests/city_common"));
-    public static final List<Identifier> betternethers =List.of(Identifier.of("betternether:chests/city_surprise"));
-
-
-
-    public static final List<Identifier> betterend =List.of(Identifier.of("betterend:chests/end_village_bonus_loot"));
-    public static final List<Identifier> betterendc =List.of(Identifier.of("betterend:chests/end_village_loot"));
-    public static final List<Identifier> betterends =List.of(Identifier.of("betterend:chests/end_village_template_loot"));
-
     public static void onLootTableLoad(RegistryKey<LootTable> id, LootTable.Builder supplier) {
 
         if (LOOTTABLES.contains(id)
                 || GRASS.contains(id)
                 ||ABANDONED_MINESHAFT_CHEST.contains(id)){
-            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmball).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.09f)))));
-            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmcloub).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.06f)))));
-            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmcube).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmball).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.2f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmcloub).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.1f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmcube).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.05f)))));
             supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmhorseshoe).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.01f)))));
             supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmapple).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.01f)))));
             supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.ectoplasmshild).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.01f)))));

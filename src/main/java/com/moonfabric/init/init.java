@@ -1,6 +1,6 @@
 package com.moonfabric.init;
 
-import com.moonfabric.item.Ms.ABook;
+import com.moonfabric.ABook;
 import com.moonfabric.item.Ms.CottonCandy.*;
 import com.moonfabric.item.Ms.block.*;
 import com.moonfabric.item.Ms.origincube;
@@ -144,6 +144,43 @@ public class init  {
     public static final Item death_penalty = new death_penalty();
     public static final Item undead_head = new undead_head();
 
+    public static final Item owner_blood_eye = new BooksItem(
+            "item.moonfabric.owner_blood_eye.tool"
+    );
+    public static final Item owner_blood_attack_eye = new BooksItem(
+            "item.moonfabric.owner_blood_attack_eye.tool"
+            , "item.moonfabric.owner_blood_attack_eye.tool.1");
+    public static final Item owner_blood_speed_eye = new BooksItem(
+
+            "item.moonfabric.owner_blood_speed_eye.tool",
+            "item.moonfabric.owner_blood_speed_eye.tool.1",
+            "item.moonfabric.owner_blood_speed_eye.tool.2"
+
+    );
+    public static final Item owner_blood_effect_eye = new BooksItem(
+
+            "item.moonfabric.owner_blood_effect_eye.tool",
+            "item.moonfabric.owner_blood_effect_eye.tool.1"
+    );
+    public static final Item owner_blood_boom_eye = new BooksItem(
+            "item.moonfabric.owner_blood_boom_eye.tool",
+            "item.moonfabric.owner_blood_boom_eye.tool.1",
+            "item.moonfabric.owner_blood_boom_eye.tool.2",
+            "item.moonfabric.owner_blood_boom_eye.tool.3",
+            "item.moonfabric.owner_blood_boom_eye.tool.4"
+    );
+    public static final Item owner_blood_vex = new BooksItem(
+            "item.moonfabric.owner_blood_vex.tool",
+            "item.moonfabric.owner_blood_vex.tool.1",
+            "item.moonfabric.owner_blood_vex.tool.2"
+    );
+    public static final Item owner_blood_earth = new BooksItem(
+            "item.moonfabric.owner_blood_earth.tool",
+            "item.moonfabric.owner_blood_earth.tool.1",
+            "item.moonfabric.owner_blood_earth.tool.2",
+            "item.moonfabric.owner_blood_earth.tool.3"
+
+    );
 
     public static final Item pain_box_ui = new Item(new Item.Settings().maxCount(1));
 
@@ -154,5 +191,6 @@ public class init  {
     public static final Block block_cube = new BlockCube();
     public static final Block cursecandleblock = new cursecandleblock();
     public static final Block blockbloodorb = new Blockbloodorb();
+
 
 }

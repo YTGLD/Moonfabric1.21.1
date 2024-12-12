@@ -2,6 +2,7 @@ package com.moonfabric.item.TheNecora;
 
 import com.moonfabric.HasCurio;
 import com.moonfabric.init.init;
+import com.moonfabric.item.INecora;
 import com.moonfabric.item.Ms.TheNecoraIC;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -15,17 +16,18 @@ import net.minecraft.util.UseAction;
 
 import java.util.List;
 
-public class putrefactive extends TheNecoraIC {
+public class putrefactive extends TheNecoraIC implements INecora {
 
-    public static void eat(ItemStack stack, LivingEntity entity){
-        if (HasCurio.has(init.putrefactive,entity)){
-            if (stack.getUseAction() == UseAction.EAT){
-                entity.heal(entity.getMaxHealth()/10);
-                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION,200,0));
+    public static void eat(ItemStack stack, LivingEntity entity) {
+        if (HasCurio.has(init.putrefactive, entity)) {
+            if (stack.getUseAction() == UseAction.EAT) {
+                entity.heal(entity.getMaxHealth() / 10);
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 0));
             }
         }
     }
-   @Override
+
+    @Override
     public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
         super.appendTooltip(stack, context, tooltip, type);
         tooltip.add(Text.translatable(""));

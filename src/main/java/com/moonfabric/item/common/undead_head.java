@@ -19,6 +19,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class undead_head extends TheNecoraIC {
@@ -105,11 +106,13 @@ public class undead_head extends TheNecoraIC {
             float attSpeed = 0.5f / 100f * lvl;
             float armor = 0.35f / 100f * lvl;
             tooltip.add(Text.translatable("item.undead_head.tool.string.7").formatted(Formatting.DARK_RED));
-            tooltip.add(Text.translatable("item.undead_head.tool.string.8").append(heal * 100 +"%").formatted(Formatting.DARK_RED));
-            tooltip.add(Text.translatable("item.undead_head.tool.string.9").append(speed * 100 +"%").formatted(Formatting.DARK_RED));
-            tooltip.add(Text.translatable("item.undead_head.tool.string.10").append(damage * 100 +"%").formatted(Formatting.DARK_RED));
-            tooltip.add(Text.translatable("item.undead_head.tool.string.11").append(attSpeed * 100 +"%").formatted(Formatting.DARK_RED));
-            tooltip.add(Text.translatable("item.undead_head.tool.string.12").append(armor * 100 +"%").formatted(Formatting.DARK_RED));
+            DecimalFormat df = new DecimalFormat("#.###");
+
+            tooltip.add(Text.translatable("item.undead_head.tool.string.8").append(df.format(heal * 100) +"%").formatted(Formatting.DARK_RED));
+            tooltip.add(Text.translatable("item.undead_head.tool.string.9").append(df.format(speed * 100) +"%").formatted(Formatting.DARK_RED));
+            tooltip.add(Text.translatable("item.undead_head.tool.string.10").append(df.format(damage * 100) +"%").formatted(Formatting.DARK_RED));
+            tooltip.add(Text.translatable("item.undead_head.tool.string.11").append(df.format(attSpeed * 100) +"%").formatted(Formatting.DARK_RED));
+            tooltip.add(Text.translatable("item.undead_head.tool.string.12").append(df.format(armor * 100) +"%").formatted(Formatting.DARK_RED));
         }
 
         tooltip.add(Text.literal(""));

@@ -1,8 +1,9 @@
 package com.moonfabric;
 
+import com.mojang.logging.LogUtils;
 import com.moonfabric.Effects.initEffect;
 import com.moonfabric.init.*;
-import com.moonfabric.item.evt.Aevent;
+import com.moonfabric.Ievent.evt.Aevent;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.minecraft.entity.effect.StatusEffect;
@@ -13,10 +14,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
+import org.slf4j.Logger;
 
 
 public class MoonFabricMod implements ModInitializer {
 
+	public static final Logger LOGGER = LogUtils.getLogger();
 	public static final String MODID = "moonfabric";
 
 	public static final SimpleParticleType t  =FabricParticleTypes.simple();
@@ -24,7 +27,6 @@ public class MoonFabricMod implements ModInitializer {
 	public static final SimpleParticleType  FOLLOW  =FabricParticleTypes.simple();
 	public static final SimpleParticleType  Origin  =FabricParticleTypes.simple();
 	public static final SimpleParticleType  S  =FabricParticleTypes.simple();
-
 	@Override
 	public void onInitialize() {
 
@@ -211,6 +213,13 @@ public class MoonFabricMod implements ModInitializer {
 		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "death_penalty"), init.death_penalty);
 		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "undead_head"), init.undead_head);
 
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "owner_blood_eye"), init.owner_blood_eye);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "owner_blood_attack_eye"), init.owner_blood_attack_eye);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "owner_blood_speed_eye"), init.owner_blood_speed_eye);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "owner_blood_effect_eye"), init.owner_blood_effect_eye);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "owner_blood_boom_eye"), init.owner_blood_boom_eye);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "owner_blood_vex"), init.owner_blood_vex);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "owner_blood_earth"), init.owner_blood_earth);
 
 
 

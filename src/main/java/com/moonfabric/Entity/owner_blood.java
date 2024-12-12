@@ -6,11 +6,13 @@ import com.moonfabric.init.InItEntity;
 import com.moonfabric.init.init;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.predicate.entity.EntityPredicates;
 import net.minecraft.registry.Registries;
@@ -25,6 +27,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import java.util.Vector;
 
 
 public class owner_blood extends TameableEntity {
@@ -40,6 +43,8 @@ public class owner_blood extends TameableEntity {
     public void tick() {
         super.tick();
         this.setNoGravity(true);
+
+        this.timeUntilRegen += 100;
 
         if (getOwner()==null){
             this.discard();
@@ -112,20 +117,99 @@ public class owner_blood extends TameableEntity {
                 this.setTarget(null);;
             }
         }
+        float s = 20;
+        if (this.getOwner()!= null &&this.getOwner() instanceof PlayerEntity player){
+            if (HasCurio.has(init.owner_blood_eye, player)){
+                s*=0.8f;
+            }
+            if (HasCurio.has(init.owner_blood_attack_eye, player)){
+                s*=1.1f;
+            }
+            if (HasCurio.has(init.owner_blood_speed_eye, player)){
+                s*=0.5f;
+            }
+            if (HasCurio.has(init.owner_blood_boom_eye, player)){
+                s*= 3;
+            }
+            if (HasCurio.has(init.owner_blood_earth, player)){
+                {
+                    Vec3d position = this.getPos();
+                    int is = 12;
+                    List<Entity> ess = this.getEntityWorld().getEntitiesByClass(Entity.class, new Box(position.x - is, position.y - is, position.z - is, position.x + is, position.y + is, position.z + is), EntityPredicates.EXCEPT_SPECTATOR);
+                    for (Entity es : ess) {
+                        Identifier entitys = Registries.ENTITY_TYPE.getId(es.getType());
+                        if (!entitys.getNamespace().equals(MoonFabricMod.MODID) && es != this.getOwner() && !(es ==this)) {
+                            if (es instanceof ItemEntity item) {
+                                Vec3d motion = position.subtract(item.getPos().add(0, item.getHeight() / 2, 0));
+                                if (Math.sqrt(motion.x * motion.x + motion.y * motion.y + motion.z * motion.z) > 1) {
+                                    motion = motion.normalize();
+                                }
+                                item.setVelocity(motion.multiply(1));
+                            }
+                            if (es instanceof LivingEntity item) {
+                                Vec3d motion = position.subtract(item.getPos().add(0, item.getHeight() / 2, 0));
+                                if (Math.sqrt(motion.x * motion.x + motion.y * motion.y + motion.z * motion.z) > 1) {
+                                    motion = motion.normalize();
+                                }
+                                item.setVelocity(motion.multiply(0.25));
+                            }
+                            if (es instanceof ProjectileEntity item) {
+                                Vec3d motion = position.subtract(item.getPos().add(0, item.getHeight() / 2, 0));
+                                if (Math.sqrt(motion.x * motion.x + motion.y * motion.y + motion.z * motion.z) > 1) {
+                                    motion = motion.normalize();
+                                }
+                                item.setVelocity(motion.multiply(3));
+                            }
+                        }
+                    }
+                }
+                {
+                    Vec3d added = this.getPos().add(0, 0.75, 0);
+                    int r = 1;
+                    List<ProjectileEntity> ss = this.getEntityWorld().getEntitiesByClass(ProjectileEntity.class, new Box(added.x - r, added.y - r, added.z - r, added.x + r, added.y + r, added.z + r), EntityPredicates.EXCEPT_SPECTATOR);
+                    for (ProjectileEntity entity : ss){
+                        entity.discard();
+                        player.heal(4);
+                    }
+                }
+            }
+        }
         if (this.getTarget()!=null){
-            if (this.age % 20 == 0) {
-                attack_blood attack_blood = new attack_blood(InItEntity.ATTACK_BLOOD_ENTITY_TYPEttack_blood, this.getEntityWorld());
-                attack_blood.setTarget(this.getTarget());
-                attack_blood.setPos(this.getX(),this.getY(),this.getZ());
-               if (this.getOwner() instanceof PlayerEntity player) {
-                   attack_blood.setOwner(player);
-               }
-                this.getEntityWorld().spawnEntity(attack_blood);
+            if (this.age % s == 0&&this.getOwner() instanceof PlayerEntity player) {
+                if (!HasCurio.has(init.owner_blood_earth, player)) {
+                    attack_blood attackBlood = new attack_blood(InItEntity.ATTACK_BLOOD_ENTITY_TYPEttack_blood, this.getEntityWorld());
+                    if (HasCurio.has(init.owner_blood_speed_eye, player)) {
+                        attackBlood.setCannotFollow(false);
+                        attackBlood.setSpeed(attackBlood.getSpeeds() * 4);
+                    }
+                    if (HasCurio.has(init.owner_blood_attack_eye, player)) {
+                        attackBlood.setDamage(attackBlood.getDamages() * 1.2f);
+                    }
+                    if (HasCurio.has(init.owner_blood_effect_eye, player)) {
+                        attackBlood.setEffect(true);
+                    }
+                    if (HasCurio.has(init.owner_blood_vex, player)) {
+                        attackBlood.setHeal(true);
+                        attackBlood.setDamage(attackBlood.getDamages() - 3);
+                    }
+                    if (HasCurio.has(init.owner_blood_boom_eye, player)) {
+                        attackBlood.setSpeed(attackBlood.getSpeeds() * 0.65f);
+                        attackBlood.setBoom(true);
+                    }
 
-                playRemoveOneSound(this);
+
+                    attackBlood.setNoGravity(true);
+                    attackBlood.setTarget(this.getTarget());
+                    attackBlood.setPos(this.getX(), this.getY(), this.getZ());
+                    attackBlood.setOwner(player);
+                    this.getEntityWorld().spawnEntity(attackBlood);
+
+                    playRemoveOneSound(this);
+                }
             }
         }
     }
+
     private void playRemoveOneSound(Entity p_186343_) {
         p_186343_.playSound(SoundEvents.BLOCK_RESPAWN_ANCHOR_DEPLETE.value(), 0.8F, 0.8F + p_186343_.getEntityWorld().getRandom().nextFloat() * 0.4F);
     }
@@ -178,12 +262,9 @@ public class owner_blood extends TameableEntity {
         this.goalSelector.add(1, new SwimGoal(this));
         this.goalSelector.add(2, new SitGoal(this));
         this.goalSelector.add(4, new PounceAtTargetGoal(this, 0.4F));
-        this.goalSelector.add(5, new MeleeAttackGoal(this, 1.0, true));
         this.goalSelector.add(6, new FollowOwnerGoal(this, 1.0, 10.0F, 2.0F));
         this.goalSelector.add(7, new AnimalMateGoal(this, 1.0));
         this.goalSelector.add(8, new WanderAroundFarGoal(this, 1.0));
-        this.goalSelector.add(10, new LookAtEntityGoal(this, PlayerEntity.class, 8.0F));
-        this.goalSelector.add(10, new LookAroundGoal(this));
         this.targetSelector.add(1, new TrackOwnerAttackerGoal(this));
         this.targetSelector.add(2, new AttackWithOwnerGoal(this));
         this.targetSelector.add(3, (new RevengeGoal(this, new Class[0])).setGroupRevenge(new Class[0]));

@@ -1,6 +1,6 @@
 package com.moonfabric.mixin;
 
-import com.moonfabric.item.evt.LootOrBlockLuck;
+import com.moonfabric.Ievent.evt.LootOrBlockLuck;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;

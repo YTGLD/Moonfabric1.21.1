@@ -22,6 +22,7 @@ public class necora extends ItemTir {
         tooltip.add(Text.translatable("moonfabric.tooltip.necora").formatted(Formatting.GRAY));
         tooltip.add(Text.translatable(""));
     }
+
     @Override
     public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, Identifier slotIdentifier){
         var modifiers = super.getModifiers(stack, slot, entity, slotIdentifier);

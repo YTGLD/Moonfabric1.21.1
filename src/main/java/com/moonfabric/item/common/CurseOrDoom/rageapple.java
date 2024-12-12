@@ -46,20 +46,25 @@ public class rageapple extends rage {
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity instanceof PlayerEntity player){
-
             player.getAttributes().removeModifiers(get(stack, player));
         }
     }
-    
+
+    @Override
+    public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
+        super.onEquip(stack, slot, entity);
+        if (entity instanceof PlayerEntity player) {
+            player.getAttributes().addTemporaryModifiers(get(stack, player));
+        }
+    }
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
+
         if (entity instanceof PlayerEntity player){
             if (stack.get(Data.CUSTOM_DATA)!= null){
                 aFloat = acc(player);
                 stack.get(Data.CUSTOM_DATA).putFloat(lvl, acc(player));
-
-                player.getAttributes().addTemporaryModifiers(get(stack, player));
             }
         }
     }

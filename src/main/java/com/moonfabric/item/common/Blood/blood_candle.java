@@ -1,17 +1,23 @@
 package com.moonfabric.item.common.Blood;
 
+import com.google.common.collect.Multimap;
 import com.moonfabric.Entity.owner_blood;
 import com.moonfabric.init.Data;
 import com.moonfabric.init.InItEntity;
+import dev.emi.trinkets.api.SlotAttributes;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketItem;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.attribute.EntityAttribute;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
 import java.util.List;
@@ -28,6 +34,15 @@ public class blood_candle extends TrinketItem {
             stack.get(Data.CUSTOM_DATA).putBoolean(bloods,false);
         }
     }
+    @Override
+    public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, Identifier slotIdentifier){
+        var modifiers = super.getModifiers(stack, slot, entity, slotIdentifier);
+
+        SlotAttributes.addSlotModifier(modifiers,"legs/belt",Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),2, EntityAttributeModifier.Operation.ADD_VALUE);
+
+        return modifiers;
+    }
+
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {

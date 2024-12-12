@@ -12,8 +12,10 @@ import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.RotationAxis;
 import net.minecraft.util.math.Vec3d;
 import org.jetbrains.annotations.NotNull;
+import org.joml.Vector3d;
 
 public class AttackBloodRender <T extends attack_blood> extends EntityRenderer<T> {
     public AttackBloodRender(EntityRendererFactory.Context context) {
@@ -31,6 +33,9 @@ public class AttackBloodRender <T extends attack_blood> extends EntityRenderer<T
                       VertexConsumerProvider vertexConsumers){
 
         matrices.push();
+        matrices.multiply(RotationAxis.NEGATIVE_Z.rotationDegrees(0));
+        matrices.multiply(RotationAxis.NEGATIVE_X.rotationDegrees(0));
+        matrices.multiply(RotationAxis.NEGATIVE_Y.rotationDegrees(0));
         for (int i = 1; i < entity.getTrailPositions().size(); i++){
             Vec3d prevPos = entity.getTrailPositions().get(i - 1);
             Vec3d currPos = entity.getTrailPositions().get(i);

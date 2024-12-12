@@ -89,20 +89,20 @@ public abstract class HandledScreenMixin <T extends ScreenHandler> extends Scree
         int j = y - 3;
         int k = width + 3 + 3;
         int l = height + 3 + 3;
-        renderHorizontalLine(RenderLayer.getGui(), context, i, j - 1, k, z, 0xffff4040);
-        renderHorizontalLine(RenderLayer.getGui(), context, i, j + l, k, z, 0xffff4040);
+        renderHorizontalLine(RenderLayer.getGui(), context, i, j - 1, k, z, 0xff8B2323);
+        renderHorizontalLine(RenderLayer.getGui(), context, i, j + l, k, z, 0xff8B2323);
         renderRectangle(layer, context, i, j, k, l, z, -267386864);
-        renderVerticalLine(RenderLayer.getGui(), context, i - 1, j, l, z, 0xffff0000);
-        renderVerticalLine(RenderLayer.getGui(), context, i + k, j, l, z, 0xffff0000);
+        renderVerticalLine(RenderLayer.getGui(), context, i - 1, j, l, z, 0xff8B2323);
+        renderVerticalLine(RenderLayer.getGui(), context, i + k, j, l, z, 0xff8B2323);
         renderBorder(context, i, j + 1, k, l, z, 1347420415, 1344798847);
     }
 
     @Unique
     private void renderBorder(DrawContext context, int x, int y, int width, int height, int z, int startColor, int endColor) {
-        renderVerticalLine(RenderLayer.getGui(), context, x, y, height - 2, z, 0xffff4040, 0xffff0000);
-        renderVerticalLine(RenderLayer.getGui(), context, x + width - 1, y, height - 2, z, 0xffff4040, 0xffff0000);
-        renderHorizontalLine(RenderLayer.getGui(), context, x, y - 1, width, z, 0xffff4040);
-        renderHorizontalLine(RenderLayer.getGui(), context, x, y - 1 + height - 1, width, z, 0xffff4040);
+        renderVerticalLine(RenderLayer.getGui(), context, x, y, height - 2, z, 0xff8B2323, 0xff8B2323);
+        renderVerticalLine(RenderLayer.getGui(), context, x + width - 1, y, height - 2, z, 0xff8B2323, 0xff8B2323);
+        renderHorizontalLine(RenderLayer.getGui(), context, x, y - 1, width, z, 0xff8B2323);
+        renderHorizontalLine(RenderLayer.getGui(), context, x, y - 1 + height - 1, width, z, 0xff8B2323);
     }
 
     @Unique

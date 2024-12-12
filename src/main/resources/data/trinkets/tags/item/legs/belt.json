@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "moonfabric:abook",
     "moonfabric:moonstone",
     "moonfabric:fallstone",
     "moonfabric:waterstone",
@@ -43,7 +44,16 @@
     "moonfabric:giant_nightmare",
     "moonfabric:mother_cell",
     "moonfabric:parasitic_cell",
-    "moonfabric:subspace_cell"
+    "moonfabric:subspace_cell",
+
+
+    "moonfabric:owner_blood_eye",
+    "moonfabric:owner_blood_attack_eye",
+    "moonfabric:owner_blood_speed_eye",
+    "moonfabric:owner_blood_effect_eye",
+    "moonfabric:owner_blood_boom_eye",
+    "moonfabric:owner_blood_vex",
+    "moonfabric:owner_blood_earth"
 
   ]
 }

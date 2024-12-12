@@ -1,14 +1,22 @@
 package com.moonfabric.mixin;
 
+import com.moonfabric.ABook;
 import com.moonfabric.item.TheNecora.putrefactive;
 import com.moonfabric.item.dna.dna;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.text.Text;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+
+import java.util.List;
+
 @Mixin(ItemStack.class)
 public class ItemStackMixin {
     @Inject(method = "getMaxUseTime", at = @At(value = "RETURN"), cancellable = true)
@@ -22,5 +30,11 @@ public class ItemStackMixin {
         ItemStack stack =(ItemStack) (Object) this;
         dna.Finish(user,stack);
         putrefactive.eat(stack,user);
+    }
+    @Inject(method = "getTooltip", at = @At(value = "RETURN"), cancellable = true)
+    private void getTooltip(Item.TooltipContext context, PlayerEntity player, TooltipType type, CallbackInfoReturnable<List<Text>> cir){
+        ItemStack stack =(ItemStack) (Object) this;
+
+        ABook.getTooltip(stack,context,player,type,cir);
     }
 }

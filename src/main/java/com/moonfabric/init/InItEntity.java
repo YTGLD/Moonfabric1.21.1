@@ -25,16 +25,15 @@ public class InItEntity {
                     .entityFactory(line::new)
                     .build();
     public static final EntityType<attack_blood> ATTACK_BLOOD_ENTITY_TYPEttack_blood =
-            FabricEntityTypeBuilder.createLiving()
+            FabricEntityTypeBuilder.create()
                     .dimensions(EntityDimensions.changing(0.1f,0.85f))
                     .trackRangeBlocks(4)
-                    .defaultAttributes(ZombieEntity::createZombieAttributes)
                     .entityFactory(attack_blood::new)
                     .build();
     public static final EntityType<owner_blood> OWNER_BLOOD_ENTITY_TYPE =
             FabricEntityTypeBuilder.createLiving()
                     .dimensions(EntityDimensions.changing(1,1))
-                    .trackRangeBlocks(4)
+                    .trackRangeBlocks(50)
                     .defaultAttributes(IronGolemEntity::createIronGolemAttributes)
                     .entityFactory(owner_blood::new)
                     .build();
