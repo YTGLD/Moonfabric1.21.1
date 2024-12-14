@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moonfabric:owner_blood_eye"
+    },
+    {
+      "item": "moonfabric:owner_blood_attack_eye"
+    },
+    {
+      "item": "moonfabric:owner_blood_earth"
+    },
+    {
+      "item": "moonfabric:owner_blood_boom_eye"
+    },
+    {
+      "item": "moonfabric:owner_blood_vex"
+    },
+    {
+      "item": "moonfabric:owner_blood_effect_eye"
+    },
+    {
+      "item": "moonfabric:owner_blood_speed_eye"
+    },
+    {
+      "item": "moonfabric:ectoplasmcube"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+
+  ],
+  "result": {
+    "id": "moonfabric:blood_candle",
+    "count": 1
+  }
+}

@@ -20,6 +20,7 @@ import com.moonfabric.item.necora;
 import com.moonfabric.item.nightmare.*;
 import com.moonfabric.item.sevensword;
 import net.minecraft.block.Block;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 
 public class init  {
@@ -143,6 +144,7 @@ public class init  {
     public static final Item double_head = new double_head();
     public static final Item death_penalty = new death_penalty();
     public static final Item undead_head = new undead_head();
+    public static final Item blood_stones = new blood_stones();
 
     public static final Item owner_blood_eye = new BooksItem(
             "item.moonfabric.owner_blood_eye.tool"

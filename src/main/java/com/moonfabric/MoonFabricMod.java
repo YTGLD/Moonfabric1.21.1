@@ -220,6 +220,7 @@ public class MoonFabricMod implements ModInitializer {
 		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "owner_blood_boom_eye"), init.owner_blood_boom_eye);
 		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "owner_blood_vex"), init.owner_blood_vex);
 		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "owner_blood_earth"), init.owner_blood_earth);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "blood_stones"), init.blood_stones);
 
 
 

@@ -5,6 +5,7 @@ import com.moonfabric.HasCurio;
 import com.moonfabric.Ievent.evt.LootOrBlockLuck;
 import com.moonfabric.init.AttReg;
 import com.moonfabric.init.init;
+import com.moonfabric.item.common.Blood.blood_stones;
 import com.moonfabric.item.common.death_penalty;
 import com.moonfabric.item.common.double_head;
 import com.moonfabric.Ievent.evt.AllZombie;
@@ -40,6 +41,7 @@ public abstract class LivingEntityMixinAll {
         nightmarestone.hurt(livingEntity,source);
         AllEvent.doDifLootDamage(livingEntity,cir);
         double_head.hurts(livingEntity, source);
+        blood_stones.hurt(livingEntity,source,cir);
     }
     @Inject(method = "getMaxHealth", at = @At(value = "RETURN"), cancellable = true)
     private void getMaxHealth(CallbackInfoReturnable<Float> cir){
@@ -52,7 +54,7 @@ public abstract class LivingEntityMixinAll {
         AllZombie.evil(livingEntity,damageSource);
         dna.dieD(livingEntity, damageSource);
         death_penalty.hurts(livingEntity,damageSource);
-
+        blood_stones.die(damageSource);
         LootOrBlockLuck.dropLootItem(livingEntity,init.mblock,1,damageSource, EntityType.ZOMBIE);
         LootOrBlockLuck.dropLootItem(livingEntity,init.greedcrystal,1,damageSource, EntityType.ZOMBIE);
     }

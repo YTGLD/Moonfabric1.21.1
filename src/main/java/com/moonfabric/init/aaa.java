@@ -107,6 +107,7 @@ public class aaa {
         c.add(new ItemStack(init.owner_blood_boom_eye));
         c.add(new ItemStack(init.owner_blood_vex));
         c.add(new ItemStack(init.owner_blood_earth));
+        c.add(new ItemStack(init.blood_stones));
 
 
     }).build();

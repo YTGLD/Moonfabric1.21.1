@@ -23,6 +23,7 @@ public class PenaltyRenderer <T extends penalty> extends EntityRenderer<T> {
     public void render(T persistentProjectileEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider
             vertexConsumerProvider, int i) {
         setT(matrixStack,persistentProjectileEntity,vertexConsumerProvider);
+        getBloodOutLine(matrixStack,vertexConsumerProvider,240,0.15f);
         renderSphere1(matrixStack,vertexConsumerProvider,240,0.15f);
         super.render(persistentProjectileEntity, f, g, matrixStack, vertexConsumerProvider, i);
     }
@@ -43,16 +44,17 @@ public class PenaltyRenderer <T extends penalty> extends EntityRenderer<T> {
 
             float alpha =1 - (float)(i) / (float)(entity.getTrailPositions().size());
 
-            Handler.renderLineColor(matrices, vertexConsumers, adjustedPrevPos, adjustedCurrPos, alpha, RenderLayer.getLightning(),0.15f,218 ,165  ,32);
+            Handler.renderLineColor(matrices, vertexConsumers, adjustedPrevPos, adjustedCurrPos, alpha, RenderLayer.getLightning(),0.15f,255 ,0  ,0);
 
         }
         matrices.pop();
 
     }
-    public void renderSphere1(@NotNull MatrixStack matrices, @NotNull VertexConsumerProvider vertexConsumers, int light, float s) {
+
+    public void getBloodOutLine(@NotNull MatrixStack matrices, @NotNull VertexConsumerProvider vertexConsumers, int light, float s) {
         int stacks = 20; // 垂直方向的分割数
         int slices = 20; // 水平方向的分割数
-        VertexConsumer vertexConsumer = vertexConsumers.getBuffer(MRender.getLightning());
+        VertexConsumer vertexConsumer = vertexConsumers.getBuffer(MRender.getBloodOutLine());
         for (int i = 0; i < stacks; ++i) {
             float phi0 = (float) Math.PI * ((i + 0) / (float) stacks);
             float phi1 = (float) Math.PI * ((i + 1) / (float) stacks);
@@ -77,10 +79,45 @@ public class PenaltyRenderer <T extends penalty> extends EntityRenderer<T> {
                 float y3 = s * (float) Math.cos(phi1);
                 float z3 = s * (float) Math.sin(phi1) * (float) Math.sin(theta0);
 
-                vertexConsumer.vertex(matrices.peek().getPositionMatrix(), x0, y0, z0).color(218 ,165 ,32, 255).color(218 ,165 ,32,255).overlay(OverlayTexture.DEFAULT_UV).light(light, light).normal(1, 0, 0);
-                vertexConsumer.vertex(matrices.peek().getPositionMatrix(), x1, y1, z1).color(218 ,165 ,32, 255).color(218 ,165 ,32,255).overlay(OverlayTexture.DEFAULT_UV).light(light, light).normal(1, 0, 0);
-                vertexConsumer.vertex(matrices.peek().getPositionMatrix(), x2, y2, z2).color(218 ,165 ,32, 255).color(218 ,165 ,32,255).overlay(OverlayTexture.DEFAULT_UV).light(light, light).normal(1, 0, 0);
-                vertexConsumer.vertex(matrices.peek().getPositionMatrix(), x3, y3, z3).color(218 ,165 ,32, 255).color(218 ,165 ,32,255).overlay(OverlayTexture.DEFAULT_UV).light(light, light).normal(1, 0, 0);
+                vertexConsumer.vertex(matrices.peek().getPositionMatrix(), x0, y0, z0).color(218 ,0 ,0, 255).color(218 ,0,0,255).overlay(OverlayTexture.DEFAULT_UV).light(light, light).normal(1, 0, 0);
+                vertexConsumer.vertex(matrices.peek().getPositionMatrix(), x1, y1, z1).color(218 ,0 ,0, 255).color(218 ,0,0,255).overlay(OverlayTexture.DEFAULT_UV).light(light, light).normal(1, 0, 0);
+                vertexConsumer.vertex(matrices.peek().getPositionMatrix(), x2, y2, z2).color(218 ,0 ,0, 255).color(218 ,0,0,255).overlay(OverlayTexture.DEFAULT_UV).light(light, light).normal(1, 0, 0);
+                vertexConsumer.vertex(matrices.peek().getPositionMatrix(), x3, y3, z3).color(218 ,0 ,0, 255).color(218 ,0,0,255).overlay(OverlayTexture.DEFAULT_UV).light(light, light).normal(1, 0, 0);
+            }
+        }
+    }
+    public void renderSphere1(@NotNull MatrixStack matrices, @NotNull VertexConsumerProvider vertexConsumers, int light, float s) {
+        int stacks = 20; // 垂直方向的分割数
+        int slices = 20; // 水平方向的分割数
+        VertexConsumer vertexConsumer = vertexConsumers.getBuffer(MRender.getBlood());
+        for (int i = 0; i < stacks; ++i) {
+            float phi0 = (float) Math.PI * ((i + 0) / (float) stacks);
+            float phi1 = (float) Math.PI * ((i + 1) / (float) stacks);
+
+            for (int j = 0; j < slices; ++j) {
+                float theta0 = (float) (2 * Math.PI) * ((j + 0) / (float) slices);
+                float theta1 = (float) (2 * Math.PI) * ((j + 1) / (float) slices);
+
+                float x0 = s * (float) Math.sin(phi0) * (float) Math.cos(theta0);
+                float y0 = s * (float) Math.cos(phi0);
+                float z0 = s * (float) Math.sin(phi0) * (float) Math.sin(theta0);
+
+                float x1 = s * (float) Math.sin(phi0) * (float) Math.cos(theta1);
+                float y1 = s * (float) Math.cos(phi0);
+                float z1 = s * (float) Math.sin(phi0) * (float) Math.sin(theta1);
+
+                float x2 = s * (float) Math.sin(phi1) * (float) Math.cos(theta1);
+                float y2 = s * (float) Math.cos(phi1);
+                float z2 = s * (float) Math.sin(phi1) * (float) Math.sin(theta1);
+
+                float x3 = s * (float) Math.sin(phi1) * (float) Math.cos(theta0);
+                float y3 = s * (float) Math.cos(phi1);
+                float z3 = s * (float) Math.sin(phi1) * (float) Math.sin(theta0);
+
+                vertexConsumer.vertex(matrices.peek().getPositionMatrix(), x0, y0, z0).color(218 ,0 ,0, 255).color(218 ,0,0,255).overlay(OverlayTexture.DEFAULT_UV).light(light, light).normal(1, 0, 0);
+                vertexConsumer.vertex(matrices.peek().getPositionMatrix(), x1, y1, z1).color(218 ,0 ,0, 255).color(218 ,0,0,255).overlay(OverlayTexture.DEFAULT_UV).light(light, light).normal(1, 0, 0);
+                vertexConsumer.vertex(matrices.peek().getPositionMatrix(), x2, y2, z2).color(218 ,0 ,0, 255).color(218 ,0,0,255).overlay(OverlayTexture.DEFAULT_UV).light(light, light).normal(1, 0, 0);
+                vertexConsumer.vertex(matrices.peek().getPositionMatrix(), x3, y3, z3).color(218 ,0 ,0, 255).color(218 ,0,0,255).overlay(OverlayTexture.DEFAULT_UV).light(light, light).normal(1, 0, 0);
             }
         }
     }

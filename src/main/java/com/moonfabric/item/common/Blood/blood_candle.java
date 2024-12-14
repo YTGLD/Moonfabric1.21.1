@@ -4,6 +4,7 @@ import com.google.common.collect.Multimap;
 import com.moonfabric.Entity.owner_blood;
 import com.moonfabric.init.Data;
 import com.moonfabric.init.InItEntity;
+import com.moonfabric.item.Ms.TheNecoraIC;
 import dev.emi.trinkets.api.SlotAttributes;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketItem;
@@ -22,10 +23,8 @@ import net.minecraft.util.Rarity;
 
 import java.util.List;
 
-public class blood_candle extends TrinketItem {
-    public blood_candle() {
-        super(new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON).fireproof());
-    }
+public class blood_candle extends TheNecoraIC {
+
     public static final String bloods= " hasBlood";
 
     @Override

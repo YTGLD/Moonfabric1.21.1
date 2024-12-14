@@ -4,6 +4,7 @@ import com.moonfabric.Entity.line;
 import com.moonfabric.HasCurio;
 import com.moonfabric.init.InItEntity;
 import com.moonfabric.init.init;
+import com.moonfabric.item.Ms.TheNecoraIC;
 import dev.emi.trinkets.api.TrinketItem;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
@@ -16,10 +17,7 @@ import net.minecraft.util.Rarity;
 
 import java.util.List;
 
-public class blood_amout extends TrinketItem {
-    public blood_amout() {
-        super(new Item.Settings().maxCount(1).rarity(Rarity.UNCOMMON).fireproof());
-    }
+public class blood_amout extends TheNecoraIC {
 
     public static void Hurt(LivingEntity me, DamageSource source) {
 

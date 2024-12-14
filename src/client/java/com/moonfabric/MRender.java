@@ -72,14 +72,14 @@ public class MRender extends RenderLayer {
             VertexFormat.DrawMode.QUADS,
             256,
             false,
-            false,
+            true,
             RenderLayer.MultiPhaseParameters.builder()
                     .program(BLOOD_PROGRAMOutLine)
                     .writeMaskState(RenderPhase.COLOR_MASK)
                     .transparency(LIGHTNING_TRANSPARENCY)
                     .target(setOutputState)
-                    .texture(Textures.create().add(Identifier.of(MoonFabricMod.MODID,"textures/gui/blood.png"),
-                            false, false).add(Identifier.of(MoonFabricMod.MODID,"textures/gui/blood.png"),
+                    .texture(Textures.create().add(Identifier.of(MoonFabricMod.MODID,"textures/gui/blood2.png"),
+                            false, false).add(Identifier.of(MoonFabricMod.MODID,"textures/gui/blood2.png"),
                             false, false).build()).build(false));
 
 

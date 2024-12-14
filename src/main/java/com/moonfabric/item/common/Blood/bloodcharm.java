@@ -1,5 +1,6 @@
 package com.moonfabric.item.common.Blood;
 
+import com.moonfabric.item.Ms.TheNecoraIC;
 import com.moonfabric.item.Ms.extend.BloodE;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketEnums;
@@ -10,7 +11,7 @@ import net.minecraft.util.Formatting;
 
 import java.util.List;
 
-public class bloodcharm extends BloodE {
+public class bloodcharm extends TheNecoraIC {
 
 
     @Override

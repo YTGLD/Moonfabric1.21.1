@@ -9,6 +9,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.*;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -35,6 +36,12 @@ public class owner_blood extends TameableEntity {
         super(p_21803_, p_21804_);
         this.setNoGravity(true);
     }
+
+    @Override
+    public boolean isInvulnerableTo(DamageSource damageSource) {
+        return true;
+    }
+
     private final List<Vec3d> trailPositions = new ArrayList<>();
     public List<Vec3d> getTrailPositions() {
         return trailPositions;

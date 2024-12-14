@@ -27,7 +27,7 @@ public class InItEntity {
     public static final EntityType<attack_blood> ATTACK_BLOOD_ENTITY_TYPEttack_blood =
             FabricEntityTypeBuilder.create()
                     .dimensions(EntityDimensions.changing(0.1f,0.85f))
-                    .trackRangeBlocks(4)
+                    .trackRangeBlocks(50)
                     .entityFactory(attack_blood::new)
                     .build();
     public static final EntityType<owner_blood> OWNER_BLOOD_ENTITY_TYPE =

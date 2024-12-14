@@ -1,8 +1,11 @@
 package com.moonfabric.mixin.TickMixin;
 
+import com.moonfabric.Effects.initEffect;
 import com.moonfabric.Entity.flysword;
+import com.moonfabric.MoonFabricMod;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.predicate.entity.EntityPredicates;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 import org.spongepowered.asm.mixin.Mixin;
@@ -18,6 +21,14 @@ public class TickMixin {
     @Inject(method = "tick", at = @At(value = "RETURN"), cancellable = true)
     private void mf$tick(CallbackInfo ci){
         LivingEntity livingEntity = (LivingEntity) (Object) this;
+        if (livingEntity.hasStatusEffect(MoonFabricMod.blood)){
+            if  (livingEntity.age%20==1) {
+                livingEntity.timeUntilRegen = 0;
+                livingEntity.damage(livingEntity.getDamageSources().generic(), 1);
+            }
+        }
+
+
         Vec3d vec3d = livingEntity.getPos().add(0,0.75,0);
         int r = 16;
         List<flysword> list = livingEntity.getEntityWorld().getEntitiesByClass(flysword.class,new Box(vec3d.x + r,vec3d.y + r,vec3d.z + r,vec3d.x - r,vec3d.y - r,vec3d.z - r), EntityPredicates.EXCEPT_SPECTATOR);

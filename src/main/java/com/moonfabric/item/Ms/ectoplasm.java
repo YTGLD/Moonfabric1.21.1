@@ -15,7 +15,7 @@ import net.minecraft.util.Rarity;
 public class ectoplasm extends TrinketItem {
     public ectoplasm() {
         super(new Item.Settings().maxCount(64).rarity(Rarity.RARE).fireproof()
-                .food(new FoodComponent.Builder().nutrition(10).alwaysEdible().saturationModifier(10).build()));
+                .food(new FoodComponent.Builder().nutrition(4).alwaysEdible().saturationModifier(0.2f).build()));
     }
 
     @Override

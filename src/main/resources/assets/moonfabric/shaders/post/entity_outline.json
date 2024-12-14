@@ -17,7 +17,7 @@
             "uniforms": [
                 {
                     "name": "BlurDir",
-                    "values": [ 4.75, 0.0 ]
+                    "values": [  10.0, 1.0 ]
                 }
             ]
         },
@@ -29,7 +29,7 @@
             "uniforms": [
                 {
                     "name": "BlurDir",
-                    "values": [ 0.0, 4.75 ]
+                    "values": [ 1.0, 10.0 ]
                 }
             ]
         },
@@ -41,7 +41,7 @@
             "uniforms": [
                 {
                     "name": "ColorScale",
-                    "values": [ 3.0,3.0, 3.0 ]
+                    "values": [ 18.0,18.0,18.0 ]
                 }
             ]
         },
@@ -53,7 +53,31 @@
             "uniforms": [
                 {
                     "name": "ColorScale",
-                    "values": [ 3.0,3.0, 3.0 ]
+                    "values": [ 18.0,18.0,18.0 ]
+                }
+            ]
+        },
+        {
+            "name": "box_blur",
+            "intarget": "final",
+            "outtarget": "swap",
+            "use_linear_filter": true,
+            "uniforms": [
+                {
+                    "name": "Radius",
+                    "values": [ 10.0 ]
+                }
+            ]
+        },
+        {
+            "name": "box_blur",
+            "intarget": "swap",
+            "outtarget": "final",
+            "use_linear_filter": true,
+            "uniforms": [
+                {
+                    "name": "Radius",
+                    "values": [ 10.0 ]
                 }
             ]
         },

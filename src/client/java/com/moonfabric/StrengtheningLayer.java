@@ -30,6 +30,8 @@ public class StrengtheningLayer<T extends LivingEntity, M extends EntityModel<T>
                        float animationProgress,
                        float headYaw,
                        float headPitch) {
+        new Sword(matrices, vertexConsumers, light, entity);
+
         if (entity instanceof nig_test){
             new CircleCubeBoom(matrices,vertexConsumers,240,entity);
         }

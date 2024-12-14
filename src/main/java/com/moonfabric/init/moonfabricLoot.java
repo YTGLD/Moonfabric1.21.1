@@ -185,6 +185,15 @@ public class moonfabricLoot {
                             .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
 
 
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.owner_blood_eye).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.05f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.owner_blood_attack_eye).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.05f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.owner_blood_earth).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.05f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.owner_blood_boom_eye).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.05f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.owner_blood_vex).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.05f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.owner_blood_effect_eye).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.05f)))));
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.owner_blood_speed_eye).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.05f)))));
+
+
         }
         if (FIRE.contains(id)||FIRE1.contains(id)||FIRE2.contains(id)||FIRE3.contains(id)||GRASS.contains(id)){
             supplier.pool(LootPool.builder()
@@ -282,6 +291,7 @@ public class moonfabricLoot {
                     .with(ItemEntry.builder(init.furybloodpearl)
                             .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
 
+            supplier.pool(LootPool.builder().bonusRolls(ConstantLootNumberProvider.create(1.0f)).with(ItemEntry.builder(init.blood_stones).apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(1, 0.03f)))));
         }
         if (FALL.contains(id)){
             supplier.pool(LootPool.builder()

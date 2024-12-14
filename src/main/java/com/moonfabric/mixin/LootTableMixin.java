@@ -93,19 +93,6 @@ public abstract class LootTableMixin {
                 ),6,init.nightmareeye).getDefaultStack());
 
                 objectArrayList.add(LootTableEvent.addLoot(context,List.of(
-
-                        init.owner_blood_eye ,
-                        init.owner_blood_attack_eye ,
-                        init.owner_blood_speed_eye ,
-                        init.owner_blood_effect_eye ,
-                        init.owner_blood_boom_eye ,
-                        init.owner_blood_vex ,
-                        init.owner_blood_earth
-
-
-                        ),8,init.blood_candle).getDefaultStack());
-
-                objectArrayList.add(LootTableEvent.addLoot(context,List.of(
                         init.ambush,
                         init.atpoverdose,
                         init.autolytic,

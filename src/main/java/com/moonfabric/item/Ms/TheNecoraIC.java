@@ -22,7 +22,7 @@ import java.util.List;
 
 public class TheNecoraIC  extends TrinketItem {
     public TheNecoraIC() {
-        super(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).fireproof());
+        super(new Item.Settings().maxCount(1).maxDamage(1000000000).rarity(Rarity.EPIC).fireproof());
     }
     @Override
     public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
