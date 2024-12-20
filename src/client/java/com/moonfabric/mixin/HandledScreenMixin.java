@@ -69,11 +69,17 @@ public abstract class HandledScreenMixin <T extends ScreenHandler> extends Scree
                     int n = vector2ic.x();
                     int o = vector2ic.y();
                     if (context.getMatrices()!=null) {
-                        if (itemStack.getItem() instanceof nightmare ||
-                                itemStack.getItem() instanceof TheNecoraIC) {
+                        if (itemStack.getItem() instanceof TheNecoraIC) {
                             context.getMatrices().push();
 
                             render(MRender.getBlood(), context, n, o, i, j, 400);
+
+                            context.getMatrices().pop();
+                        }
+                        if (itemStack.getItem() instanceof nightmare) {
+                            context.getMatrices().push();
+
+                            render(MRender.getBlood_common(), context, n, o, i, j, 400);
 
                             context.getMatrices().pop();
                         }

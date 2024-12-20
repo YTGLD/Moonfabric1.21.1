@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moonfabric:glodstone"
+    },
+    {
+      "item": "minecraft:beacon"
+    }
+  ],
+  "result": {
+    "id": "moonfabric:blood_stones",
+    "count": 1
+  }
+}

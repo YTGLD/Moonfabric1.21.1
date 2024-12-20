@@ -17,7 +17,7 @@
             "uniforms": [
                 {
                     "name": "BlurDir",
-                    "values": [  10.0, 1.0 ]
+                    "values": [ 2, 0.0 ]
                 }
             ]
         },
@@ -29,7 +29,82 @@
             "uniforms": [
                 {
                     "name": "BlurDir",
-                    "values": [ 1.0, 10.0 ]
+                    "values": [ 0.0, 2 ]
+                }
+            ]
+        },
+        {
+            "name": "box_blur",
+            "intarget": "final",
+            "outtarget": "swap",
+            "use_linear_filter": true,
+            "uniforms": [
+                {
+                    "name": "BlurDir",
+                    "values": [ 2, 0.0 ]
+                }
+            ]
+        },
+        {
+            "name": "box_blur",
+            "intarget": "swap",
+            "outtarget": "final",
+            "use_linear_filter": true,
+            "uniforms": [
+                {
+                    "name": "BlurDir",
+                    "values": [ 0.0, 2 ]
+                }
+            ]
+        }, {
+            "name": "box_blur",
+            "intarget": "final",
+            "outtarget": "swap",
+            "use_linear_filter": true,
+            "uniforms": [
+                {
+                    "name": "BlurDir",
+                    "values": [ 2, 0.0 ],
+                    "RadiusMultiplier" : 20
+                }
+            ]
+        },
+        {
+            "name": "box_blur",
+            "intarget": "swap",
+            "outtarget": "final",
+            "use_linear_filter": true,
+            "uniforms": [
+                {
+                    "name": "BlurDir",
+                    "values": [ 0.0, 2 ],
+                    "RadiusMultiplier" : 20
+                }
+            ]
+        },
+        {
+            "name": "box_blur",
+            "intarget": "final",
+            "outtarget": "swap",
+            "use_linear_filter": true,
+            "uniforms": [
+                {
+                    "name": "BlurDir",
+                    "values": [ 2, 0.0 ],
+                    "RadiusMultiplier" : 10
+                }
+            ]
+        },
+        {
+            "name": "box_blur",
+            "intarget": "swap",
+            "outtarget": "final",
+            "use_linear_filter": true,
+            "uniforms": [
+                {
+                    "name": "BlurDir",
+                    "values": [ 0.0, 2 ],
+                    "RadiusMultiplier" : 10
                 }
             ]
         },
@@ -41,7 +116,7 @@
             "uniforms": [
                 {
                     "name": "ColorScale",
-                    "values": [ 18.0,18.0,18.0 ]
+                    "values": [ 30.3,30.3,30.3 ]
                 }
             ]
         },
@@ -53,7 +128,7 @@
             "uniforms": [
                 {
                     "name": "ColorScale",
-                    "values": [ 18.0,18.0,18.0 ]
+                    "values": [ 30.3,30.3,30.3 ]
                 }
             ]
         },
@@ -65,7 +140,7 @@
             "uniforms": [
                 {
                     "name": "Radius",
-                    "values": [ 10.0 ]
+                    "values": [ 7.50 ]
                 }
             ]
         },
@@ -77,7 +152,7 @@
             "uniforms": [
                 {
                     "name": "Radius",
-                    "values": [ 10.0 ]
+                    "values": [ 7.5 ]
                 }
             ]
         },
@@ -86,5 +161,6 @@
             "intarget": "swap",
             "outtarget": "final"
         }
+
     ]
 }

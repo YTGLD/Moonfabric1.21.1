@@ -29,7 +29,7 @@ public class AttackBloodRender <T extends attack_blood> extends EntityRenderer<T
         MoonPost.renderEffectForNextTick(MoonFabricModClient.POST);
         setT(matrixStack,persistentProjectileEntity,vertexConsumerProvider);
         renderSphere1(matrixStack,vertexConsumerProvider,240,0.15f);
-        getBloodOutLine(matrixStack,vertexConsumerProvider,240,0.2f);
+        getBloodOutLine(matrixStack,vertexConsumerProvider,240,0.25f);
         super.render(persistentProjectileEntity, f, g, matrixStack, vertexConsumerProvider, i);
     }
     private void setT(MatrixStack matrices,

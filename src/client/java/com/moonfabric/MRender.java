@@ -84,10 +84,79 @@ public class MRender extends RenderLayer {
 
 
 
-    public static RenderLayer getBloodOutLine() {
+    public static RenderLayer  getBloodOutLine() {
         return BLOODOutLine;
     }
     public static void setRenderTypeEndPortalProgramOutLine(net.minecraft.client.gl.ShaderProgram renderTypeEndPortalProgram) {
         MRender.renderTypeEndPortalProgramOutLine = renderTypeEndPortalProgram;
     }
+    ///=-
+    ///=-
+    ///=-
+    ///=-
+    ///=-
+    ///=-
+
+    public static final ShaderProgram BLOOD_PROGRAMNIG = new ShaderProgram(MRender::getRenderTypeEndPortalProgramNIG);
+    @Nullable
+    public static net.minecraft.client.gl.ShaderProgram getRenderTypeEndPortalProgramNIG() {
+        return renderTypeEndPortalProgramNIG;
+    }
+    private static net.minecraft.client.gl.ShaderProgram renderTypeEndPortalProgramNIG;
+
+    private static final RenderLayer BLOODNIG =of(
+            "nig",
+            VertexFormats.POSITION,
+            VertexFormat.DrawMode.QUADS,
+            256,
+            false,
+            true,
+            RenderLayer.MultiPhaseParameters.builder()
+                    .program(BLOOD_PROGRAMNIG)
+                    .writeMaskState(RenderPhase.COLOR_MASK)
+                    .transparency(LIGHTNING_TRANSPARENCY)
+                    .target(setOutputState)
+                    .texture(Textures.create().add(Identifier.of(MoonFabricMod.MODID,"textures/gui/nig.png"),
+                            false, false).add(Identifier.of(MoonFabricMod.MODID,"textures/gui/nig.png"),
+                            false, false).build()).build(false));
+
+
+
+    public static RenderLayer getBloodNIG() {
+        return BLOODNIG;
+    }
+    public static void setRenderTypeEndPortalProgramNIG(net.minecraft.client.gl.ShaderProgram renderTypeEndPortalProgram) {
+        MRender.renderTypeEndPortalProgramNIG = renderTypeEndPortalProgram;
+    }
+    //--------------------------------------
+
+
+
+    public static final ShaderProgram BLOOD_PROGRAM_common = new ShaderProgram(MRender::getRenderTypeEndPortalProgram_common);
+    @Nullable
+    public static net.minecraft.client.gl.ShaderProgram getRenderTypeEndPortalProgram_common() {
+        return renderTypeEndPortalProgram_common;
+    }
+    private static net.minecraft.client.gl.ShaderProgram renderTypeEndPortalProgram_common;
+
+    private static final RenderLayer BLOOD_common =
+            of("blood",
+                    VertexFormats.POSITION,
+                    VertexFormat.DrawMode.QUADS,
+                    1536,
+                    false,
+                    false,
+                    RenderLayer.MultiPhaseParameters.builder().program(BLOOD_PROGRAM_common)
+                            .texture(Textures.create().add(Identifier.of(MoonFabricMod.MODID,"textures/gui/nig.png"),
+                                    false, false).add(Identifier.of(MoonFabricMod.MODID,"textures/gui/nig.png"),
+                                    false, false).build()).build(false));
+
+
+    public static RenderLayer getBlood_common() {
+        return BLOOD_common;
+    }
+    public static void setRenderTypeEndPortalProgram_common(net.minecraft.client.gl.ShaderProgram renderTypeEndPortalProgram) {
+        MRender.renderTypeEndPortalProgram_common = renderTypeEndPortalProgram;
+    }
+
 }

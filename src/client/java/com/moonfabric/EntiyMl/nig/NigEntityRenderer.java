@@ -19,6 +19,8 @@ public class NigEntityRenderer extends MobEntityRenderer<nightmare_giant, NigEnt
         this.addFeature(new NigFeatureRenderer<>(this, PULSATING_SPOTS_1_TEXTURE, (warden, tickDelta, animationProgress) -> {
             return Math.max(0.0F, MathHelper.cos(animationProgress * 0.045F) * 0.25F);
         }, NigEntityModel::getBodyHeadAndLimbs));
+
+
         this.addFeature(new NigFeatureRenderer<>(this, PULSATING_SPOTS_2_TEXTURE, (warden, tickDelta, animationProgress) -> {
             return Math.max(0.0F, MathHelper.cos(animationProgress * 0.045F + 3.1415927F) * 0.25F);
         }, NigEntityModel::getBodyHeadAndLimbs));

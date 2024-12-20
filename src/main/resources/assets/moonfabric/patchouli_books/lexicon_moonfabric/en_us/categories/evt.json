@@ -1,6 +1,6 @@
 {
-  "name": "游戏设定",
-  "description": "设定",
+  "name": "game ruler",
+  "description": "game ruler",
   "icon": "moonfabric:ectoplasmcloub",
   "sortnum": 0,
   "secret": false

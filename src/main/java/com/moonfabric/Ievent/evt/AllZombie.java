@@ -44,48 +44,43 @@ public class AllZombie {
         if (source.getSource() instanceof PlayerEntity player){
 
             if (HasCurio.has(init.giant, player)){
-                if (!player.getItemCooldownManager().isCoolingDown(init.giant)) {
-                    if (!HasCurio.has(init.giant_nightmare, player)) {
-                        if (player.getWorld() instanceof ServerWorld p_222881_) {
-                            if (MathHelper.nextInt(Random.create(), 1, 5) == 1) {
+                if (!HasCurio.has(init.giant_nightmare, player)) {
+                    if (player.getWorld() instanceof ServerWorld p_222881_) {
+                        if (MathHelper.nextInt(Random.create(), 1, 10) == 1) {
 
-                                HasCurio.trySpawnMob(player, InItEntity.cell_giant, SpawnReason.TRIGGERED, p_222881_, new BlockPos((int) me.getX(), (int) me.getY(), (int) me.getZ()), 10, 2, 3, LargeEntitySpawnHelper.Requirements.WARDEN);
-                                player.getWorld().playSound(null, player.getBlockPos(), SoundEvents.ENTITY_WARDEN_EMERGE, SoundCategory.NEUTRAL, 1.0F, 1.0F);
+                            HasCurio.trySpawnMob(player, InItEntity.cell_giant, SpawnReason.TRIGGERED, p_222881_, new BlockPos((int) me.getX(), (int) me.getY(), (int) me.getZ()), 10, 2, 3, LargeEntitySpawnHelper.Requirements.WARDEN);
+                            player.getWorld().playSound(null, player.getBlockPos(), SoundEvents.ENTITY_WARDEN_EMERGE, SoundCategory.NEUTRAL, 1.0F, 1.0F);
 
-                                if (HasCurio.has(init.mother_cell, player)) {
-                                    if (MathHelper.nextInt(Random.create(), 1, 2) == 1) {
-                                        HasCurio.trySpawnMob(player, InItEntity.cell_giant, SpawnReason.TRIGGERED, p_222881_, new BlockPos((int) me.getX(), (int) me.getY(), (int) me.getZ()), 10, 2, 3, LargeEntitySpawnHelper.Requirements.WARDEN);
-
-                                    }
-                                    for (int i = 0; i < 2; i++) {
-                                        cell_zombie cell_zombie = new cell_zombie(InItEntity.cell_zombie, player.getWorld());
-                                        cell_zombie.setOwnerUuid(player.getUuid());
-                                        cell_zombie.setOwner(player);
-                                        cell_zombie.setPos(player.getPos().x, player.getPos().y, player.getPos().z);
-                                        player.getWorld().spawnEntity(cell_zombie);
-
-                                    }
+                            if (HasCurio.has(init.mother_cell, player)) {
+                                if (MathHelper.nextInt(Random.create(), 1, 2) == 1) {
+                                    HasCurio.trySpawnMob(player, InItEntity.cell_giant, SpawnReason.TRIGGERED, p_222881_, new BlockPos((int) me.getX(), (int) me.getY(), (int) me.getZ()), 10, 2, 3, LargeEntitySpawnHelper.Requirements.WARDEN);
                                 }
+                                for (int i = 0; i < 2; i++) {
+                                    cell_zombie cell_zombie = new cell_zombie(InItEntity.cell_zombie, player.getWorld());
+                                    cell_zombie.setOwnerUuid(player.getUuid());
+                                    cell_zombie.setOwner(player);
+                                    cell_zombie.setPos(player.getPos().x, player.getPos().y, player.getPos().z);
+                                    player.getWorld().spawnEntity(cell_zombie);
 
+                                }
                             }
+
                         }
-                    } else {
-                        if (player.getWorld() instanceof ServerWorld p_222881_) {
-                            if (MathHelper.nextInt(Random.create(), 1, 2) == 1) {
-                                HasCurio.trySpawnMob(player, InItEntity.nightmare_giant, SpawnReason.TRIGGERED, p_222881_, new BlockPos((int) me.getX(), (int) me.getY(), (int) me.getZ()), 10, 2, 3, LargeEntitySpawnHelper.Requirements.WARDEN);
+                    }
+                } else {
+                    if (player.getWorld() instanceof ServerWorld p_222881_) {
+                        if (MathHelper.nextInt(Random.create(), 1, 10) == 1) {
+                            HasCurio.trySpawnMob(player, InItEntity.nightmare_giant, SpawnReason.TRIGGERED, p_222881_, new BlockPos((int) me.getX(), (int) me.getY(), (int) me.getZ()), 10, 2, 3, LargeEntitySpawnHelper.Requirements.WARDEN);
 
-                                player.damage(player.getDamageSources().dryOut(), player.getHealth() / 2);
-                                player.getWorld().playSound(null, player.getBlockPos(), SoundEvents.ENTITY_WARDEN_EMERGE, SoundCategory.NEUTRAL, 1.0F, 1.0F);
+                            player.damage(player.getDamageSources().dryOut(), player.getHealth() / 2);
+                            player.getWorld().playSound(null, player.getBlockPos(), SoundEvents.ENTITY_WARDEN_EMERGE, SoundCategory.NEUTRAL, 1.0F, 1.0F);
 
-                                if (HasCurio.has(init.subspace_cell, player)) {
-                                    for (int i = 0; i < 3; i++) {
-                                        HasCurio.trySpawnMob(player, InItEntity.cell_giant, SpawnReason.TRIGGERED, p_222881_, new BlockPos((int) me.getX(), (int) me.getY(), (int) me.getZ()), 10, 2, 3, LargeEntitySpawnHelper.Requirements.WARDEN);
-                                        player.getItemCooldownManager().set(init.giant,200);
-                                    }
+                            if (HasCurio.has(init.subspace_cell, player)) {
+                                for (int i = 0; i < 3; i++) {
+                                    HasCurio.trySpawnMob(player, InItEntity.cell_giant, SpawnReason.TRIGGERED, p_222881_, new BlockPos((int) me.getX(), (int) me.getY(), (int) me.getZ()), 10, 2, 3, LargeEntitySpawnHelper.Requirements.WARDEN);
                                 }
-                                player.getItemCooldownManager().set(init.giant,200);
-
                             }
+
                         }
                     }
                 }
@@ -114,7 +109,6 @@ public class AllZombie {
                             z.addCommandTag(cb_blood);
                         }
                         player.getWorld().spawnEntity(z);
-                        player.getItemCooldownManager().set(init.giant, 30);
                     }
                 }
             }

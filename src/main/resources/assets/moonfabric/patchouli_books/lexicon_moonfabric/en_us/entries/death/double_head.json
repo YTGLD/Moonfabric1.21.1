@@ -1,5 +1,5 @@
 {
-  "name": "双子头颅",
+  "name": "Gemini Skull",
   "icon": "moonfabric:double_head",
   "category": "moonfabric:death",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:double_head",
-      "title": "-双子头颅-",
-      "text":"发现于地牢和猪灵堡垒$(br2)每次攻击都会由25%的概率召唤两个魔珠，这种魔珠会造成主人10%的生命值加10%攻击属性的伤害(br)最多存在10秒，消失后产生爆炸"
+      "title": "-Gemini Skull-",
+      "text": "Found in dungeons and bastions of piglins $(br2) Each attack has a 25% chance to summon two magic orbs, which deal damage equal to 10% of the owner's health plus 10% of the attack attribute.(br) They last up to 10 seconds and explode after disappearing."
     }
   ]
 }

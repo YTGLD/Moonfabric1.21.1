@@ -224,6 +224,7 @@ public class MoonFabricMod implements ModInitializer {
 
 
 
+		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "ytgld"), InItEntity.ytgld_);
 
 		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "nightmare_giant"), InItEntity.nightmare_giant);
 		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "cell_giant"), InItEntity.cell_giant);

@@ -126,7 +126,7 @@ public class Sword {
             }
         }
         {
-            float radius = s; // 球体的半径
+            float radius = s*1.25f; // 球体的半径
             int stacks = 20; // 垂直方向的分割数
             int slices = 20; // 水平方向的分割数
             VertexConsumer vertexConsumer = vertexConsumers.getBuffer(MRender.getBloodOutLine());

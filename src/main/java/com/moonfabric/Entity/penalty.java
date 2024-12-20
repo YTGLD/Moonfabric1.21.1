@@ -105,7 +105,7 @@ public class penalty  extends TameableEntity {
 
         trailPositions.add(new Vec3d((float)this.getX(), (float)this.getY(),(float) this.getZ()));
 
-        if (trailPositions.size() > 15) {
+        if (trailPositions.size() > 5) {
             trailPositions.removeFirst();
         }
         this.setNoGravity(true);

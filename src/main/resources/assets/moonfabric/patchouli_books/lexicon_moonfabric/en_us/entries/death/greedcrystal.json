@@ -1,5 +1,5 @@
 {
-  "name": "贪婪水晶",
+  "name": "Greed Crystal",
   "icon": "moonfabric:greedcrystal",
   "category": "moonfabric:death",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:greedcrystal",
-      "title": "-贪婪水晶-",
-      "text":"发现于僵尸$(br2概率1%，不会在佩戴此物品的情况下再次获取"
+      "title": "-Greed Crystal-",
+      "text": "Found in zombies $(br2) 1% chance, will not be obtained again while wearing this item."
     }
   ]
 }

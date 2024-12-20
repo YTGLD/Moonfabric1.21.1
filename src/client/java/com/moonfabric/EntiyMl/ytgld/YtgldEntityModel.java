@@ -1,9 +1,9 @@
-package com.moonfabric.EntiyMl.nig;
+package com.moonfabric.EntiyMl.ytgld;
 
 import com.google.common.collect.ImmutableList;
-import com.moonfabric.Entity.cell_giant;
 import com.moonfabric.Entity.nightmare_giant;
-import net.minecraft.client.model.*;
+import com.moonfabric.Entity.ytgld;
+import net.minecraft.client.model.ModelPart;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.entity.animation.WardenAnimations;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
@@ -11,9 +11,7 @@ import net.minecraft.util.math.MathHelper;
 
 import java.util.List;
 
-public class NigEntityModel<T extends nightmare_giant> extends SinglePartEntityModel<T> {
-    private static final float field_38324 = 13.0F;
-    private static final float field_38325 = 1.0F;
+public class YtgldEntityModel<T extends ytgld> extends SinglePartEntityModel<T> {
     private final ModelPart root;
     public final ModelPart bone;
     public final ModelPart body;
@@ -31,7 +29,7 @@ public class NigEntityModel<T extends nightmare_giant> extends SinglePartEntityM
     private final List<ModelPart> headAndLimbs;
     private final List<ModelPart> bodyHeadAndLimbs;
 
-    public NigEntityModel(ModelPart root) {
+    public YtgldEntityModel(ModelPart root) {
         super(RenderLayer::getEntityCutoutNoCull);
         this.root = root;
         this.bone = root.getChild("bone");
@@ -69,6 +67,7 @@ public class NigEntityModel<T extends nightmare_giant> extends SinglePartEntityM
     private void setHeadAngle(float yaw, float pitch) {
         this.head.pitch = pitch * 0.017453292F;
         this.head.yaw = yaw * 0.017453292F;
+        this.head.pitch -= 35 * 0.017453292F;
     }
 
     private void setHeadAndBodyAngles(float animationProgress) {
@@ -103,6 +102,8 @@ public class NigEntityModel<T extends nightmare_giant> extends SinglePartEntityM
         this.leftArm.roll = 0.0F;
         this.rightArm.pitch = -(0.8F * i * f);
         this.rightArm.roll = 0.0F;
+
+        this.body.pitch += 35 * 0.017453292F;
         this.setArmPivots();
     }
 
@@ -115,6 +116,11 @@ public class NigEntityModel<T extends nightmare_giant> extends SinglePartEntityM
         this.rightArm.pivotZ = 1.0F;
         this.rightArm.pivotX = -13.0F;
         this.rightArm.pivotY = -13.0F;
+
+
+        this.rightArm.pitch -= 35 * 0.017453292F;
+        this.leftArm.pitch -= 35 * 0.017453292F;
+
     }
 
     private void setTendrilPitches(T warden, float animationProgress, float tickDelta) {

@@ -1,5 +1,5 @@
 {
-  "name": "不死骷髅",
+  "name": "Undead Skeleton",
   "icon": "moonfabric:undead_head",
   "category": "moonfabric:death",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:undead_head",
-      "title": "-不死骷髅-",
-      "text":"发现于地牢和猪灵堡垒$(br2)损失的生命值和你的战斗力成正比"
+      "title": "-Undead Skeleton-",
+      "text": "Found in dungeons and bastions of piglins$(br2)The loss of health is proportional to your combat power."
     }
   ]
 }

@@ -23,7 +23,7 @@ public class PenaltyRenderer <T extends penalty> extends EntityRenderer<T> {
     public void render(T persistentProjectileEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider
             vertexConsumerProvider, int i) {
         setT(matrixStack,persistentProjectileEntity,vertexConsumerProvider);
-        getBloodOutLine(matrixStack,vertexConsumerProvider,240,0.15f);
+        getBloodOutLine(matrixStack,vertexConsumerProvider,240,0.18f);
         renderSphere1(matrixStack,vertexConsumerProvider,240,0.15f);
         super.render(persistentProjectileEntity, f, g, matrixStack, vertexConsumerProvider, i);
     }

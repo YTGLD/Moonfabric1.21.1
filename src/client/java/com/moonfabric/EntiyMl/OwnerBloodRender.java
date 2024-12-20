@@ -25,7 +25,7 @@ public class OwnerBloodRender <T extends owner_blood> extends EntityRenderer<T> 
         MoonPost.renderEffectForNextTick(MoonFabricModClient.POST);
 
         setT(matrixStack,persistentProjectileEntity,vertexConsumerProvider);
-        renderSphere1(matrixStack,vertexConsumerProvider,240,0.525f);
+        renderSphere1(matrixStack,vertexConsumerProvider,240,0.55f);
         renderSphere1s(matrixStack,vertexConsumerProvider,240,0.5f);
 
         super.render(persistentProjectileEntity, f, g, matrixStack, vertexConsumerProvider, i);

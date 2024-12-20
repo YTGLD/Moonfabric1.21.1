@@ -1470,6 +1470,7 @@
   "item.moonfabric.owner_blood_vex.tool": "It is found in ancient cities, but requires wearing the Sealing Candelabra to be discovered.\n\nBlood Orbs will not disappear upon hitting and will penetrate entities.\nEach penetration increases damage and speed by 50%,\nbut reduces base speed and damage by 50%.",
   "item.moonfabric.owner_blood_earth.tool": "It is found in ancient cities, but requires wearing the Sealing Candelabra to be discovered.\n\nBlood Orbs' damage equals the owner's damage.\nBlood Orbs' speed equals the owner's speed.\nThe attack speed of Blood Spirit proliferators will be multiplied by the owner's attack speed.",
 
+  "item.moonfabric.blood_stones": "blood stones",
 
   "item.moonfabric.ectoplasmhorseshoe": "ectoplasm horseshoe",
   "item.ectoplasmhorseshoe.tool.string": "·-90% fall damage",
@@ -1510,6 +1511,11 @@
 
   "item.moonfabric.owner_blood_vex.tool.1": "The amount depends on the damage of Owner blood",
   "item.moonfabric.owner_blood_vex.tool.2": "Owner blood damage is reduced by 3 points",
+
+
+
+
+
 
   "book.moonfabric.necora.all": "These items can only be discovered when wearing related items",
   "book.moonfabric.necora.all.1": "For example, cellular regeneration requires the necora virus",

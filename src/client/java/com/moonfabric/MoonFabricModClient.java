@@ -3,6 +3,7 @@ package com.moonfabric;
 import com.moonfabric.EntiyMl.*;
 import com.moonfabric.EntiyMl.nig.NigEntityRenderer;
 import com.moonfabric.EntiyMl.nig.NigRenderer;
+import com.moonfabric.EntiyMl.ytgld.YtgldEntityRenderer;
 import com.moonfabric.PAT.*;
 import com.moonfabric.init.InItEntity;
 import net.fabricmc.api.ClientModInitializer;
@@ -10,9 +11,6 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.CoreShaderRegistrationCallback;
-import net.fabricmc.fabric.api.client.rendering.v1.WorldRenderEvents;
-import net.fabricmc.fabric.api.client.screen.v1.ScreenEvents;
-import net.fabricmc.fabric.impl.client.screen.ScreenEventFactory;
 import net.minecraft.client.render.VertexFormat;
 import net.minecraft.util.Identifier;
 
@@ -34,6 +32,7 @@ public class MoonFabricModClient implements ClientModInitializer {
 		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.nig_test , NigRenderer::new);
 		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.head , HeadAttackRenderer::new);
 		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.penalty , PenaltyRenderer::new);
+		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.ytgld_ , YtgldEntityRenderer::new);
 
 
 
@@ -51,6 +50,14 @@ public class MoonFabricModClient implements ClientModInitializer {
 		CoreShaderRegistrationCallback.EVENT.register(Identifier.of(MoonFabricMod.MODID,"blood_outline"),
 				(context)->{
 					context.register(Identifier.of(MoonFabricMod.MODID,"blood_outline"), VertexFormat.builder().build(), MRender::setRenderTypeEndPortalProgramOutLine);
+				});
+		CoreShaderRegistrationCallback.EVENT.register(Identifier.of(MoonFabricMod.MODID,"nig_outline"),
+				(context)->{
+					context.register(Identifier.of(MoonFabricMod.MODID,"nig_outline"), VertexFormat.builder().build(), MRender::setRenderTypeEndPortalProgramNIG);
+				});
+		CoreShaderRegistrationCallback.EVENT.register(Identifier.of(MoonFabricMod.MODID,"nig_common"),
+				(context)->{
+					context.register(Identifier.of(MoonFabricMod.MODID,"nig_common"), VertexFormat.builder().build(), MRender::setRenderTypeEndPortalProgram_common);
 				});
 	}
 }

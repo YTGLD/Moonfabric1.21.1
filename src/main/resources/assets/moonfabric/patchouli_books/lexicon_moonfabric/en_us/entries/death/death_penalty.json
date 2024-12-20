@@ -1,5 +1,5 @@
 {
-  "name": "酷刑者探灯",
+  "name": "Torturer's Lantern",
   "icon": "moonfabric:death_penalty",
   "category": "moonfabric:death",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:death_penalty",
-      "title": "-酷刑者探灯-",
-      "text":"发现于地牢和猪灵堡垒$(br2)杀死生物产生灯油，它会自动飞向主人$(br)拾取后治疗10%生命值，并获得2秒无敌（可叠加）"
+      "title": "-Torturer's Lantern-",
+      "text": "Found in dungeons and piglin bastions $(br2) Killing entities generates lamp oil, which will automatically fly to the owner $(br) Picking it up heals 10% of health and grants 2 seconds of invincibility (stackable)."
     }
   ]
 }

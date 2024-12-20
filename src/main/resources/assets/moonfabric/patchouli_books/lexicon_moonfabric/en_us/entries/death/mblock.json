@@ -1,5 +1,5 @@
 {
-  "name": "莫里斯方块",
+  "name": "Morris Block",
   "icon": "moonfabric:mblock",
   "category": "moonfabric:death",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:mblock",
-      "title": "-莫里斯方块-",
-      "text":"发现于僵尸$(br2概率1%，不会在佩戴此物品的情况下再次获取"
+      "title": "-Morris Block-",
+      "text": "Found in zombies$(br2)1% chance, will not be obtained again while wearing this item."
     }
   ]
 }
