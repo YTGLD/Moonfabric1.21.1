@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "The Apocalyptic obelisk ",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:doomcharm"
     },
     "title": "doom charm"

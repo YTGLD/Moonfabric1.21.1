@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "What is the price of eternity? ",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:twistedstone"
     },
     "title": "twisted stone"

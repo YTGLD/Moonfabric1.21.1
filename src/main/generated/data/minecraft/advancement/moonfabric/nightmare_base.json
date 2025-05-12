@@ -13,13 +13,12 @@
     }
   },
   "display": {
-    "announce_to_chat": true,
     "description": {
       "translate": "advancements.tooltip.nightmare_base.text"
     },
     "frame": "challenge",
-    "hidden": false,
-    "icon": {
+     "icon": {
+      "count": 1,
       "id": "moonfabric:nightmare_base"
     },
     "show_toast": true,

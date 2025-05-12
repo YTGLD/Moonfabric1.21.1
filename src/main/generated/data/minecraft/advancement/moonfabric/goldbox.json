@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "Open! ",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:goldbox"
     },
     "title": "gold box"

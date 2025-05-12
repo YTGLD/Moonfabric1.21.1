@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "I will watch it forever ",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:bluestone"
     },
     "title": "blue stone"

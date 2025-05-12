@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "Is this the price of flames?",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:firehead"
     },
     "title": "fire head"

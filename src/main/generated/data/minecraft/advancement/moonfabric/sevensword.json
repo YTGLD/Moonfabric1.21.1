@@ -15,8 +15,9 @@
   "display": {
     "description": "seven sword",
     "frame": "challenge",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:sevensword"
     },
     "title": "We! Nanos!"

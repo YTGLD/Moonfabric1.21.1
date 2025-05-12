@@ -15,8 +15,9 @@
   "display": {
     "description": "I have many eyes, like another piece of me...... ",
     "frame": "challenge",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:cube"
     },
     "title": "cube"

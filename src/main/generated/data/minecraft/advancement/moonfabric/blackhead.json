@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "Pure dark magic, but... What is the cost...",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:blackhead"
     },
     "title": "black head"

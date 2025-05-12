@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "pain ring",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:pain_ring"
     },
     "title": "Never die"

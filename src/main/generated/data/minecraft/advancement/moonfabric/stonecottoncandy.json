@@ -15,8 +15,9 @@
   "display": {
     "description": "I am greater than water ",
     "frame": "challenge",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:stonecottoncandy"
     },
     "title": "stone cotton candy"

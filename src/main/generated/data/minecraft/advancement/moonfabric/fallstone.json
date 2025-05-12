@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "Fall",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:fallstone"
     },
     "title": "fall stone"

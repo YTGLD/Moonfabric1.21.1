@@ -15,8 +15,9 @@
   "display": {
     "description": "I am greater than stone ",
     "frame": "challenge",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:woodcottoncandy"
     },
     "title": "wood cotton candy"

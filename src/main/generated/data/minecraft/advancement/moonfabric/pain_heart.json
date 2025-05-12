@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "pain heart",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:pain_heart"
     },
     "title": "Never stop"

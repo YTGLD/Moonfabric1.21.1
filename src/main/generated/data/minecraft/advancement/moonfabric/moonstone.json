@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "moonstone",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:moonstone"
     },
     "title": "moon stone"

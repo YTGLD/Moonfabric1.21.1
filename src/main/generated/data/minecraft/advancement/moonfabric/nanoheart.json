@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "nano heart",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:nanoheart"
     },
     "title": "Nanos"

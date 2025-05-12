@@ -15,8 +15,9 @@
   "display": {
     "description": "I am greater than fire ",
     "frame": "challenge",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:watercottoncandy"
     },
     "title": "water cotton candy"

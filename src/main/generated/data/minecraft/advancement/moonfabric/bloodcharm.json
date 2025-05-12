@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "The Rage ",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:bloodcharm"
     },
     "title": "bloodcharm"

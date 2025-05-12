@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "moonfabric:nightmare_base_stone_virus"
-            ]
+            "items": "moonfabric:nightmare_base_stone_virus"
           }
         ]
       },
@@ -15,19 +13,14 @@
     }
   },
   "display": {
-    "announce_to_chat": true,
-    "description": {
-      "translate": "advancements.tooltip.nightmare_base_stone_virus.text"
-    },
+    "description": {"translate": "advancements.tooltip.nightmare_base_stone_virus.text"},
     "frame": "challenge",
-    "hidden": false,
-    "icon": {
+     "icon": {
+      "count": 1,
       "id": "moonfabric:nightmare_base_stone_virus"
     },
     "show_toast": true,
-    "title": {
-      "translate": "advancements.tooltip.nightmare_base_stone_virus.hand"
-    }
+    "title": {"translate": "advancements.tooltip.nightmare_base_stone_virus.hand"}
   },
   "requirements": [
     [

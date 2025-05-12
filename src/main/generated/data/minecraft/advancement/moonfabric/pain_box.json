@@ -15,8 +15,9 @@
   "display": {
     "description": "pain box",
     "frame": "challenge",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:pain_box"
     },
     "title": "He looks very painful"

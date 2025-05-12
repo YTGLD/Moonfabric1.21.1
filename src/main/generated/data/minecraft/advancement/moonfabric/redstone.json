@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "I will destroy everything",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:redstone"
     },
     "title": "red stone"

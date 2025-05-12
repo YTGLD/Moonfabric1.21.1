@@ -15,8 +15,9 @@
   "display": {
     "description": "§6Sinful and disgusting",
     "frame": "challenge",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:bloodorb"
     },
     "title": "§6Your Heart Eye"

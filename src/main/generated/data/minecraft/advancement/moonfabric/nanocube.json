@@ -15,8 +15,9 @@
   "display": {
     "description": "nano cube",
     "frame": "challenge",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:nanocube"
     },
     "title": "the cube 2"

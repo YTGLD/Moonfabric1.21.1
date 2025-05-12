@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "The Mysterious Magic Cube of the Creator",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:origincube"
     },
     "title": "origin cube"

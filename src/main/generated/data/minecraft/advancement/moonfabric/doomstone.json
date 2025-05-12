@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "Doomsday Gambling ",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:doomstone"
     },
     "title": "doom stone"

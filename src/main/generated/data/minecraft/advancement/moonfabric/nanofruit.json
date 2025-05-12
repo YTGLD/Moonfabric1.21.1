@@ -15,8 +15,9 @@
   "display": {
     "description": "nano fruit",
     "frame": "challenge",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:nanofruit"
     },
     "title": "the fruit"

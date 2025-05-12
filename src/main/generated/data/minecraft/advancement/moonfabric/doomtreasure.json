@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "The Greedy Man of the Apocalypse ",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:doomtreasure"
     },
     "title": "doom treasure"

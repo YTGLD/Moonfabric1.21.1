@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "Stepping on the ashes, I will achieve the glory of the next generation",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:cursecandle"
     },
     "title": "curse candle"

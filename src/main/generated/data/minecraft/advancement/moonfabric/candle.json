@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "Blow it out ",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:candle"
     },
     "title": "candle"

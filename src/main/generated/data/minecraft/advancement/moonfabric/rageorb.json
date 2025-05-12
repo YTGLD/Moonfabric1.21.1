@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "I am very angry ",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:rageorb"
     },
     "title": "rage orb"

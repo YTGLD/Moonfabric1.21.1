@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "the live ",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:grassstone"
     },
     "title": "grass stone"

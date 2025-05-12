@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "Don't touch me! ",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:twistedsoul"
     },
     "title": "twisted soul"

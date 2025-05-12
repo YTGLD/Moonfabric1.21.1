@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "I will never cease to live ",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:greenstone"
     },
     "title": "green stone"

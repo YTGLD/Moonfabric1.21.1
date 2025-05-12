@@ -15,8 +15,9 @@
   "display": {
     "description": "pain candle",
     "frame": "challenge",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:pain_candle"
     },
     "title": "Cave candles"

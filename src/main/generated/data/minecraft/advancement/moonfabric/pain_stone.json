@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "pain stone",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:pain_stone"
     },
     "title": "When the wind blows through its hole, it makes a sharp sound"

@@ -15,8 +15,9 @@
   "display": {
     "description": "nano eye",
     "frame": "challenge",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:nanoeye"
     },
     "title": "the eye"

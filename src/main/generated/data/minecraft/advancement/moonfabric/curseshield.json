@@ -14,8 +14,9 @@
   },
   "display": {
     "description": "curse shield",
-    "icon": {
+     "icon": {
       "count": 1,
+
       "id": "moonfabric:curseshield"
     },
     "title": "curse shield"
