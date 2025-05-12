@@ -15,15 +15,62 @@ import com.moonfabric.item.common.NaNo.*;
 import com.moonfabric.item.common.max.glodstone;
 import com.moonfabric.item.common.pain.*;
 import com.moonfabric.item.dna.dna;
+import com.moonfabric.item.dna.medicinebox;
+import com.moonfabric.item.dna.med.*;
 import com.moonfabric.item.ectoplasm.*;
 import com.moonfabric.item.necora;
 import com.moonfabric.item.nightmare.*;
 import com.moonfabric.item.sevensword;
+import com.moonfabric.item.nightmare.super_nightmare.*;
 import net.minecraft.block.Block;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 
 public class init  {
+
+    public static final Item nightmare_base_black_eye = new  nightmare_base_black_eye();
+    public static final Item nightmare_base = new  nightmare_base();
+
+    public static final Item nightmare_base_black_eye_eye = new  nightmare_base_black_eye_eye();
+    public static final Item nightmare_base_black_eye_heart = new  nightmare_base_black_eye_heart();
+
+    public static final Item nightmare_base_black_eye_red = new  nightmare_base_black_eye_red();
+    public static final Item nightmare_base_stone = new  nightmare_base_stone();
+    public static final Item nightmare_base_stone_meet = new  nightmare_base_stone_meet();
+
+    public static final Item nightmare_base_stone_virus = new  nightmare_base_stone_virus();
+    public static final Item nightmare_base_stone_brain = new  nightmare_base_stone_brain();
+
+    public static final Item nightmare_virus = new  nightmare_virus();
+    public static final Item nightmare_base_reversal =new  nightmare_base_reversal();
+
+    public static final Item nightmare_base_reversal_orb =new  nightmare_base_reversal_orb();
+    public static final Item nightmare_base_reversal_card =new  nightmare_base_reversal_card();
+    public static final Item nightmare_base_reversal_mysterious =new  nightmare_base_reversal_mysterious();
+
+    public static final Item nightmare_base_redemption = new  nightmare_base_redemption();
+    public static final Item nightmare_base_redemption_deception = new  nightmare_base_redemption_deception();
+    public static final Item nightmare_base_redemption_degenerate = new  nightmare_base_redemption_degenerate();
+    public static final Item nightmare_base_redemption_down_and_out = new  nightmare_base_redemption_down_and_out();
+    public static final Item nightmare_base_fool = new  nightmare_base_fool();
+    public static final Item nightmare_base_fool_soul = new  nightmare_base_fool_soul();
+    public static final Item nightmare_base_fool_bone = new  nightmare_base_fool_bone();
+    public static final Item nightmare_base_fool_betray = new  nightmare_base_fool_betray();
+    public static final Item nightmare_base_insight = new  nightmare_base_insight();
+    public static final Item nightmare_base_insight_drug = new  nightmare_base_insight_drug();
+    public static final Item nightmare_base_insight_insane = new  nightmare_base_insight_insane();
+    public static final Item nightmare_base_insight_collapse = new  nightmare_base_insight_collapse();
+    public static final Item nightmare_base_start = new  nightmare_base_start();
+    public static final Item nightmare_base_start_pod = new  nightmare_base_start_pod();
+    public static final Item nightmare_base_start_egg = new  nightmare_base_start_egg();
+
+    public static final Item nightmare_base_start_power = new  nightmare_base_start_power();
+    public static final Item medicinebox =new  medicinebox();
+    public static final Item calcification = new  calcification();
+    public static final Item masticatory = new  masticatory();
+    public static final Item polyphagia = new  polyphagia();
+    public static final Item quadriceps = new  quadriceps();
+    public static final Item reanimation = new  reanimation();
 
     public static final Item Moonstone = new moonstone();
     public static final Item goldheart = new goldheart();

@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:moonfabric/book",
+  "criteria": {
+    "cube": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:cube"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "I have many eyes, like another piece of me...... ",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:cube"
+    },
+    "title": "cube"
+  },
+  "requirements": [
+    [
+      "cube"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

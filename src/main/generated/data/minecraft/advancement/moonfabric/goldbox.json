@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:moonfabric/root",
+  "criteria": {
+    "goldbox": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:goldbox"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Open! ",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:goldbox"
+    },
+    "title": "gold box"
+  },
+  "requirements": [
+    [
+      "goldbox"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

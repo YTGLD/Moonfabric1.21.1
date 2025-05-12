@@ -53,7 +53,44 @@
     "moonfabric:owner_blood_effect_eye",
     "moonfabric:owner_blood_boom_eye",
     "moonfabric:owner_blood_vex",
-    "moonfabric:owner_blood_earth"
+    "moonfabric:owner_blood_earth",
 
+
+    "moonfabric:calcification",
+    "moonfabric:masticatory",
+    "moonfabric:polyphagia",
+    "moonfabric:quadriceps",
+    "moonfabric:reanimation",
+
+    "moonfabric:nightmare_base",
+
+    "moonfabric:nightmare_base_black_eye",
+    "moonfabric:nightmare_base_black_eye_eye",
+    "moonfabric:nightmare_base_black_eye_heart",
+    "moonfabric:nightmare_base_black_eye_red",
+    "moonfabric:nightmare_base_fool",
+    "moonfabric:nightmare_base_fool_betray",
+    "moonfabric:nightmare_base_fool_bone",
+    "moonfabric:nightmare_base_fool_soul",
+    "moonfabric:nightmare_base_insight",
+    "moonfabric:nightmare_base_insight_collapse",
+    "moonfabric:nightmare_base_insight_drug",
+    "moonfabric:nightmare_base_insight_insane",
+    "moonfabric:nightmare_base_redemption",
+    "moonfabric:nightmare_base_redemption_deception",
+    "moonfabric:nightmare_base_redemption_degenerate",
+    "moonfabric:nightmare_base_redemption_down_and_out",
+    "moonfabric:nightmare_base_reversal",
+    "moonfabric:nightmare_base_reversal_card",
+    "moonfabric:nightmare_base_reversal_mysterious",
+    "moonfabric:nightmare_base_reversal_orb",
+    "moonfabric:nightmare_base_start",
+    "moonfabric:nightmare_base_start_egg",
+    "moonfabric:nightmare_base_start_pod",
+    "moonfabric:nightmare_base_start_power",
+    "moonfabric:nightmare_base_stone",
+    "moonfabric:nightmare_base_stone_brain",
+    "moonfabric:nightmare_base_stone_meet",
+    "moonfabric:nightmare_base_stone_virus"
   ]
 }

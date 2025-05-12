@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:moonfabric/rageorb",
+  "criteria": {
+    "doomtreasure": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:doomtreasure"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "The Greedy Man of the Apocalypse ",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:doomtreasure"
+    },
+    "title": "doom treasure"
+  },
+  "requirements": [
+    [
+      "doomtreasure"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

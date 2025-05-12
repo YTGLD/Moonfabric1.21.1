@@ -1,5 +1,5 @@
 {
-  "name": "神经递质抑制",
+  "name": "neurotransmitterInhibition",
   "icon": "moonfabric:cell_dna_suppression",
   "category": "moonfabric:dna",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:cell_dna_suppression",
-      "title": "-神经递质抑制-",
-      "text":"右键存入培养皿内$(br2)提高暴击伤害，其效果取决于培养皿内部的进化基因数量"
+      "title": "neurotransmitterInhibition",
+      "text":"Right-click $(br2) in a petri dish to increase critical damage, the effect depends on the number of evolutionary genes in the dish"
     }
   ]
 }

@@ -222,6 +222,47 @@ public class MoonFabricMod implements ModInitializer {
 		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "owner_blood_earth"), init.owner_blood_earth);
 		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "blood_stones"), init.blood_stones);
 
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_black_eye"), init.nightmare_base_black_eye);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base"), init.nightmare_base);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_black_eye_eye"), init.nightmare_base_black_eye_eye);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_black_eye_heart"), init.nightmare_base_black_eye_heart);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_black_eye_red"), init.nightmare_base_black_eye_red);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_stone"), init.nightmare_base_stone);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_stone_meet"), init.nightmare_base_stone_meet);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_stone_virus"), init.nightmare_base_stone_virus);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_stone_brain"), init.nightmare_base_stone_brain);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_virus"), init.nightmare_virus);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_reversal"), init.nightmare_base_reversal);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_reversal_orb"), init.nightmare_base_reversal_orb);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_reversal_card"), init.nightmare_base_reversal_card);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_reversal_mysterious"), init.nightmare_base_reversal_mysterious);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_redemption"), init.nightmare_base_redemption);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_redemption_deception"), init.nightmare_base_redemption_deception);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_redemption_degenerate"), init.nightmare_base_redemption_degenerate);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_redemption_down_and_out"), init.nightmare_base_redemption_down_and_out);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_fool"), init.nightmare_base_fool);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_fool_soul"), init.nightmare_base_fool_soul);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_fool_bone"), init.nightmare_base_fool_bone);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_fool_betray"), init.nightmare_base_fool_betray);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_insight"), init.nightmare_base_insight);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_insight_drug"), init.nightmare_base_insight_drug);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_insight_insane"), init.nightmare_base_insight_insane);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_insight_collapse"), init.nightmare_base_insight_collapse);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_start"), init.nightmare_base_start);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_start_pod"), init.nightmare_base_start_pod);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_start_egg"), init.nightmare_base_start_egg);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "nightmare_base_start_power"), init.nightmare_base_start_power);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "medicinebox"), init.medicinebox);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "calcification"), init.calcification);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "masticatory"), init.masticatory);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "polyphagia"), init.polyphagia);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "quadriceps"), init.quadriceps);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "reanimation"), init.reanimation);
+
+
+
+
+
 
 
 		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "ytgld"), InItEntity.ytgld_);

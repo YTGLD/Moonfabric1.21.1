@@ -1,5 +1,5 @@
 {
-  "name": "达尔文主义",
+  "name": "darwinism",
   "icon": "moonfabric:cell_darwin",
   "category": "moonfabric:dna",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:cell_darwin",
-      "title": "-达尔文主义-",
-      "text":"右键存入培养皿内$(br2)杀死生物会恢复或减少大量生命值，其效果取决于此进化基因的数量"
+      "title": "-darwinism-",
+      "text":"Right-clicking $(br2) in a Petri dish to kill a mob will restore or reduce a large amount of health, depending on the number of genes in this evolution"
     }
   ]
 }

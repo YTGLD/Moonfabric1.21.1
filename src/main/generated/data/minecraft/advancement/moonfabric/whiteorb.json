@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:moonfabric/bluestone",
+  "criteria": {
+    "whiteorb": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:whiteorb"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Magic of Light",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:whiteorb"
+    },
+    "title": "white orb"
+  },
+  "requirements": [
+    [
+      "whiteorb"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

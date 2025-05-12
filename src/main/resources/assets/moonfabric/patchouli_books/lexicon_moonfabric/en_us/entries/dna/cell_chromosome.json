@@ -1,5 +1,5 @@
 {
-  "name": "染色体结构变异",
+  "name": "chromosomal_structural_variation",
   "icon": "moonfabric:cell_chromosome",
   "category": "moonfabric:dna",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:cell_chromosome",
-      "title": "-染色体结构变异-",
-      "text":"右键存入培养皿内$(br2)增加安全摔落距离，其效果取决于培养皿内部的进化基因数量"
+      "title": "-chromosomal-structural-variation-",
+      "text":"Right-click and deposit $(br2) into the dish to increase the safe drop distance, the effect depends on the number of evolutionary genes inside the dish"
     }
   ]
 }

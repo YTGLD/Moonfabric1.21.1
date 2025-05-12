@@ -110,13 +110,52 @@ public class aaa {
         c.add(new ItemStack(init.blood_stones));
 
 
+        c.add(new ItemStack(init.nightmare_base_black_eye));
+        c.add(new ItemStack(init.nightmare_base));
+        c.add(new ItemStack(init.nightmare_base_black_eye_eye));
+        c.add(new ItemStack(init.nightmare_base_black_eye_heart));
+        c.add(new ItemStack(init.nightmare_base_black_eye_red));
+        c.add(new ItemStack(init.nightmare_base_stone));
+        c.add(new ItemStack(init.nightmare_base_stone_meet));
+        c.add(new ItemStack(init.nightmare_base_stone_virus));
+        c.add(new ItemStack(init.nightmare_base_stone_brain));
+        c.add(new ItemStack(init.nightmare_virus));
+        c.add(new ItemStack(init.nightmare_base_reversal));
+        c.add(new ItemStack(init.nightmare_base_reversal_orb));
+        c.add(new ItemStack(init.nightmare_base_reversal_card));
+        c.add(new ItemStack(init.nightmare_base_reversal_mysterious));
+        c.add(new ItemStack(init.nightmare_base_redemption));
+        c.add(new ItemStack(init.nightmare_base_redemption_deception));
+        c.add(new ItemStack(init.nightmare_base_redemption_degenerate));
+        c.add(new ItemStack(init.nightmare_base_redemption_down_and_out));
+        c.add(new ItemStack(init.nightmare_base_fool));
+        c.add(new ItemStack(init.nightmare_base_fool_soul));
+        c.add(new ItemStack(init.nightmare_base_fool_bone));
+        c.add(new ItemStack(init.nightmare_base_fool_betray));
+        c.add(new ItemStack(init.nightmare_base_insight));
+        c.add(new ItemStack(init.nightmare_base_insight_drug));
+        c.add(new ItemStack(init.nightmare_base_insight_insane));
+        c.add(new ItemStack(init.nightmare_base_insight_collapse));
+        c.add(new ItemStack(init.nightmare_base_start));
+        c.add(new ItemStack(init.nightmare_base_start_pod));
+        c.add(new ItemStack(init.nightmare_base_start_egg));
+        c.add(new ItemStack(init.nightmare_base_start_power));
+
+
+
+
     }).build();
     public static final ItemGroup DNA = FabricItemGroup.builder().displayName(Text.translatable("tab.moonfabric_tab.dna")).icon(()->new ItemStack(init.abook)).entries((a, c)->{
 
         c.add(new ItemStack(init.abook));
         c.add(new ItemStack(init.dna));
         c.add(new ItemStack(init.necora));
-
+        c.add(new ItemStack(init.medicinebox));
+        c.add(new ItemStack(init.calcification));
+        c.add(new ItemStack(init.masticatory));
+        c.add(new ItemStack(init.polyphagia));
+        c.add(new ItemStack(init.quadriceps));
+        c.add(new ItemStack(init.reanimation));
 
         c.add(new ItemStack(DNAItems.atp_height));
         c.add(new ItemStack(DNAItems.cell_acid));

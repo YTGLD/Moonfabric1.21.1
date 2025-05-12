@@ -1,5 +1,5 @@
 {
-  "name": "脑组织转移",
+  "name": "metastasesOfBrainTissue",
   "icon": "moonfabric:cell_cranial",
   "category": "moonfabric:dna",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:cell_cranial",
-      "title": "-脑组织转移-",
-      "text":"右键存入培养皿内$(br2)减少上方方块坠落的伤害和弹射物伤害，其效果取决于培养皿内部的进化基因数量"
+      "title": "-metastasesOfBrainTissue-",
+      "text":"Right-click and deposit $(br2) into the dish to reduce the damage of falling blocks above and the damage of projectiles, depending on the number of evolutionary genes inside the dish"
     }
   ]
 }

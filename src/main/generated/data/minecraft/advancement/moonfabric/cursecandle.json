@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:moonfabric/blackhead",
+  "criteria": {
+    "cursecandle": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:cursecandle"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Stepping on the ashes, I will achieve the glory of the next generation",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:cursecandle"
+    },
+    "title": "curse candle"
+  },
+  "requirements": [
+    [
+      "cursecandle"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

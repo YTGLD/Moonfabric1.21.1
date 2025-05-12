@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:moonfabric/redstone",
+  "criteria": {
+    "waterstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:waterstone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "the stone of water",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:waterstone"
+    },
+    "title": "water stone"
+  },
+  "requirements": [
+    [
+      "waterstone"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

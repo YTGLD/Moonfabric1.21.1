@@ -1,5 +1,5 @@
 {
-  "name": "致命基因压缩",
+  "name": "deadlyGeneCompression",
   "icon": "moonfabric:cell_compress",
   "category": "moonfabric:dna",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:cell_compress",
-      "title": "-致命基因压缩-",
-      "text":"右键存入培养皿内$(br2)反弹一定伤害给攻击者，其效果取决于培养皿内部的进化基因数量"
+      "title": "-deadlyGeneCompression-",
+      "text":"Right-click and deposit $(br2) into the dish to reflect a certain amount of damage to the attacker, and its effect depends on the number of evolutionary genes inside the dish"
     }
   ]
 }

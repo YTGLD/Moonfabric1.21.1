@@ -22,6 +22,19 @@ import net.minecraft.world.Difficulty;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 public class AllEvent {
+    public static String jump_size = "jump_size";
+    public static String hurt_size ="hurt_size";
+    public static String apple = "apple";
+
+    public static String spawn= "spawn";
+    public static String enchant= "enchant";
+
+    public static final String blood_hurt = "blood_hurt";
+    public static  final String blood_jump = "blood_jump";
+    public static  final String blood_eat = "blood_eat";
+    public static  final String blood_spawn = "blood_spawn";
+    public static  final String blood_enchant = "blood_enchant";
+
     public static String blood = "bloodgene";
     public static String rage = "ragegene";
     public static final String DamageCell = "DamageCell";

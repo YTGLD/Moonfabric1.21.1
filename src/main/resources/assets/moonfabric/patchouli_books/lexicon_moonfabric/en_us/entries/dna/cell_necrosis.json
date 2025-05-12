@@ -1,5 +1,5 @@
 {
-  "name": "液化性坏死",
+  "name": "liquefactionNecrosis",
   "icon": "moonfabric:cell_necrosis",
   "category": "moonfabric:dna",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:cell_necrosis",
-      "title": "-液化性坏死-",
-      "text":"右键存入培养皿内$(br2)提高治疗速度，其效果取决于培养皿内部的进化基因数量"
+      "title": "liquefiedNecrosis",
+      "text":"Right-click and deposit $(br2) into the dish to increase the healing speed, the effect depends on the number of evolutionary genes inside the dish"
     }
   ]
 }

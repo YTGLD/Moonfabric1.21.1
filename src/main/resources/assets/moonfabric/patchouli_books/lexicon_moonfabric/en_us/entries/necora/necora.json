@@ -1,5 +1,5 @@
 {
-  "name": "僵尸病毒",
+  "name": "zombieVirus",
   "icon": "moonfabric:necora",
   "category": "moonfabric:necora",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:necora",
-      "title": "-僵尸病毒-",
-      "text":"这种病毒只会存在于远古城市的箱子当中，只有佩戴它才可以获得瘟疫物品(只存在在箱子里)$(br2)各种DNA的出现概率是15%$(br)基因片段的概率是35%"
+      "title": "zombieVirus",
+      "text":"This virus only exists in chests in ancient cities, and only wearing it can obtain plague items (only in chests)$(br2)The chance of various DNA occurrences is 15%$(br)The probability of gene fragments is 35%"
     }
   ]
 }

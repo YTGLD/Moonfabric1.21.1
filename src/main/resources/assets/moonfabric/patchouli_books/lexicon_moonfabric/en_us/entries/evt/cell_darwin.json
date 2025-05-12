@@ -1,5 +1,5 @@
 {
-  "name": "游戏设定-DNA序列",
+  "name": "GameRuler-DNA",
   "icon": "moonfabric:cell_darwin",
   "category": "moonfabric:evt",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:cell_darwin",
-      "title": "-DNA序列-",
-      "text":"在战利品箱子里获取的基因物品具有难度之分，其难度取决于玩家世界的难度$(br2)它们也有加成：$(br2)普通的DNA序列：+0.25最大生命值$(br)复杂的DNA序列：+0.5最大生命值，+0.15伤害$(br)极度复杂的DNA序列：+0.75最大生命值，+0.25伤害$(br)类神的DNA序列：+1.0最大生命值，+0.35伤害"
+      "title": "-DNA-",
+      "text":"Genetic items obtained in loot chests have a difficulty level depending on the difficulty of the player's world $(br2) They also have bonuses: $(br2) Normal DNA sequence: +0.25 max health $ (br) Complex DNA sequence: +0.5 max health, +0.15 damage $ (br) Extremely complex DNA sequence: +0.75 max health, +0.25 damage $ (br) God-like DNA sequence: +1.0 max health, +0.35 damage"
     }
   ]
 }

@@ -1,11 +1,9 @@
 package com.moonfabric.mixin.TickMixin;
 
-import com.moonfabric.Effects.initEffect;
 import com.moonfabric.Entity.flysword;
 import com.moonfabric.MoonFabricMod;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.predicate.entity.EntityPredicates;
-import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 import org.spongepowered.asm.mixin.Mixin;

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:moonfabric/whiteorb",
+  "criteria": {
+    "blackorb": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:blackorb"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Dark Magic",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:blackorb"
+    },
+    "title": "black orb"
+  },
+  "requirements": [
+    [
+      "blackorb"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

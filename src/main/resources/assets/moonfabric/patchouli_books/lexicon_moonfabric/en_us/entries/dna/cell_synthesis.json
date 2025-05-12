@@ -1,5 +1,5 @@
 {
-  "name": "肽合成增强",
+  "name": "peptideSynthesisIsEnhanced",
   "icon": "moonfabric:cell_synthesis",
   "category": "moonfabric:dna",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:cell_synthesis",
-      "title": "-肽合成增强-",
-      "text":"右键存入培养皿内$(br2)增加攻击速度，其效果取决于培养皿内部的进化基因数量"
+      "title": "peptideSynthesisEnhancement",
+      "text":"Right-click $(br2) in a dish to increase attack speed, the effect of which depends on the number of Evolution Genes in the dish"
     }
   ]
 }

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:moonfabric/redstone",
+  "criteria": {
+    "bloodcharm": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:bloodcharm"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "The Rage ",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:bloodcharm"
+    },
+    "title": "bloodcharm"
+  },
+  "requirements": [
+    [
+      "bloodcharm"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

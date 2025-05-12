@@ -35,7 +35,11 @@ public class HasCurio {
     }
     public static <T extends TameableEntity> Optional<T> trySpawnMob(LivingEntity player, EntityType<T> entityType, SpawnReason reason, ServerWorld world, BlockPos pos, int tries, int horizontalRange, int verticalRange, LargeEntitySpawnHelper.Requirements requirements) {
         BlockPos.Mutable mutable = pos.mutableCopy();
+        TrinketsApi.getTrinketComponent(player).ifPresent((trinketComponent) -> {
+            trinketComponent.forEach((slotReference, stack) -> {
 
+            });
+        });
         for(int i = 0; i < tries; ++i) {
             int j = MathHelper.nextBetween(world.random, -horizontalRange, horizontalRange);
             int k = MathHelper.nextBetween(world.random, -horizontalRange, horizontalRange);

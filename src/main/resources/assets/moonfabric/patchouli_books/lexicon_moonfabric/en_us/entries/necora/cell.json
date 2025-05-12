@@ -1,5 +1,5 @@
 {
-  "name": "细胞重生",
+  "name": "cellRegeneration",
   "icon": "moonfabric:cell",
   "category": "moonfabric:necora",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:cell",
-      "title": "-细胞重生-",
-      "text":"这种基因片段只能佩戴僵尸病毒的情况下在箱子里发现，只有佩戴它才可以获得分段基因组,比较特殊的是，在佩戴这个物品后，将无法在重复获得$(br2)基因片段的概率是10%"
+      "title": "cellRegeneration",
+      "text":"This gene fragment can only be found in the chest when wearing the zombie virus, and only by wearing it can you get a segmented genome, and the special thing is that after wearing this item, the probability of not being able to get the $(br2) gene fragment in duplication is 10%"
     }
   ]
 }

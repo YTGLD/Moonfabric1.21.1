@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:moonfabric/nanoeye",
+  "criteria": {
+    "nanocube": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:nanocube"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "nano cube",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:nanocube"
+    },
+    "title": "the cube 2"
+  },
+  "requirements": [
+    [
+      "nanocube"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

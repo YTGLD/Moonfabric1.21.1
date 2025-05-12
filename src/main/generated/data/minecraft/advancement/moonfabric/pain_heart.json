@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:moonfabric/pain_candle",
+  "criteria": {
+    "pain_heart": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moonfabric:pain_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "pain heart",
+    "icon": {
+      "count": 1,
+      "id": "moonfabric:pain_heart"
+    },
+    "title": "Never stop"
+  },
+  "requirements": [
+    [
+      "pain_heart"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

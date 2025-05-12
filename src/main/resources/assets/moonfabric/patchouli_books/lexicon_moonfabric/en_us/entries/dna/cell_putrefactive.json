@@ -1,5 +1,5 @@
 {
-  "name": "热分解抑制",
+  "name": "thermalDecompositionInhibition",
   "icon": "moonfabric:cell_putrefactive",
   "category": "moonfabric:dna",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:cell_putrefactive",
-      "title": "-热分解抑制-",
-      "text":"右键存入培养皿内$(br2)降低火焰伤害和燃烧时间，其效果取决于培养皿内部的进化基因数量"
+      "title": "thermalDecompositionInhibition",
+      "text":"Right-click $(br2) in the dish to reduce fire damage and burn time, depending on the number of evolutionary genes inside the dish"
     }
   ]
 }

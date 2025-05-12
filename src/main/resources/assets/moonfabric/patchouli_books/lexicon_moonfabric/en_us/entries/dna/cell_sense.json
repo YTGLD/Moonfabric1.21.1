@@ -1,5 +1,5 @@
 {
-  "name": "感官系统强化",
+  "name": "sensorySystemIntensification",
   "icon": "moonfabric:cell_sense",
   "category": "moonfabric:dna",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:cell_sense",
-      "title": "-感官系统强化-",
-      "text":"右键存入培养皿内$(br2)提高水下挖掘速度和呼吸时长，其效果取决于培养皿内部的进化基因数量"
+      "title": "sensorySystemEnhancement",
+      "text":"Right-click $(br2) in the dish to increase underwater digging speed and breathing time, depending on the number of evolutionary genes in the dish"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "name": "代谢紊乱",
+  "name": "metabolicDisorders",
   "icon": "moonfabric:cell_disorder",
   "category": "moonfabric:dna",
   "priority": false,
@@ -8,8 +8,8 @@
     {
       "type": "spotlight",
       "item": "moonfabric:cell_disorder",
-      "title": "-代谢紊乱-",
-      "text":"右键存入培养皿内$(br2)每隔一段时间清除所有效果，其间隔时长取决于此进化基因的数量"
+      "title": "-metabolicDisorders-",
+      "text":"Right-click $(br2) in the dish to clear all effects at intervals, depending on the number of genes in this evolution"
     }
   ]
 }
