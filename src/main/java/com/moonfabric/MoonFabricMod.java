@@ -258,12 +258,15 @@ public class MoonFabricMod implements ModInitializer {
 		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "polyphagia"), init.polyphagia);
 		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "quadriceps"), init.quadriceps);
 		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "reanimation"), init.reanimation);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "fire_book"), init.fire_book);
+		Registry.register(Registries.ITEM, Identifier.of("moonfabric", "the_blood_book"), init.the_blood_book);
 
 
 
 
 
 
+		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "fire"), InItEntity.fire);
 
 		Registry.register(Registries.ENTITY_TYPE, Identifier.of("moonfabric", "ytgld"), InItEntity.ytgld_);
 

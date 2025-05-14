@@ -1,12 +1,17 @@
 package com.moonfabric;
 
+import com.moonfabric.Ievent.old.IFood;
 import com.moonfabric.init.init;
+import com.moonfabric.item.Ms.SNightmare;
+import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketsApi;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.*;
 import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.Pair;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.MathHelper;
@@ -24,6 +29,27 @@ public class HasCurio {
 
 
     public static boolean has(Item item , LivingEntity player){
+        if (player!= null && !(TrinketsApi.getEntitySlots(player) == null)) {
+            if (!TrinketsApi.getEntitySlots(player).isEmpty()) {
+                if (!hasNightmare(init.nightmare_base,player)){
+                    if (item instanceof SNightmare ) {
+                        return false;
+                    }
+                }
+                if (!hasNightmare(init.the_blood_book,player)){
+                    if (item == init.owner_blood_speed_eye || item == init.owner_blood_eye) {
+                        return true;
+                    }
+
+                }
+                if (TrinketsApi.getTrinketComponent(player).isPresent()) {
+                    return !TrinketsApi.getTrinketComponent(player).get().getEquipped(item).isEmpty();
+                }
+            }
+        }
+        return false;
+    }
+    public static boolean hasNightmare(Item item , LivingEntity player){
         if (player!= null && !(TrinketsApi.getEntitySlots(player) == null)) {
             if (!TrinketsApi.getEntitySlots(player).isEmpty()) {
                 if (TrinketsApi.getTrinketComponent(player).isPresent()) {

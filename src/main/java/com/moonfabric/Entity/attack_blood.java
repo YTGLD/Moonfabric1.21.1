@@ -39,6 +39,8 @@ public class attack_blood extends ThrownItemEntity {
     public boolean boom = false;
     public boolean effect = false;
     public float speeds = 0.125f;
+    public float maxTime = 200;
+    public boolean isPlayer = false;
     public LivingEntity target;
     public attack_blood(EntityType<? extends attack_blood> entityType, World level) {
         super(entityType, level);
@@ -80,7 +82,13 @@ public class attack_blood extends ThrownItemEntity {
                         if (slime){
                             player.heal(damages);
                         }
-                        entity.damage(this.getOwner().getDamageSources().dryOut(), damages + player.getMaxHealth() / 10);
+                        if (isPlayer){
+                            entity.damage(this.getOwner().getDamageSources().playerAttack(player), damages + player.getMaxHealth() / 10);
+
+                        }else {
+                            entity.damage(this.getOwner().getDamageSources().dryOut(), damages + player.getMaxHealth() / 10);
+                        }
+
                         this.discard();
                     }
                 }
@@ -92,7 +100,7 @@ public class attack_blood extends ThrownItemEntity {
                 this.setTarget(null);;
             }
         }
-        if (this.age > 200) {
+        if (this.age > maxTime) {
             this.discard();
         }
         if (getTarget() != null) {
@@ -192,6 +200,14 @@ public class attack_blood extends ThrownItemEntity {
 
     public void setSpeed(float speed) {
         speeds = speed;
+    }
+
+    public float getMaxTime() {
+        return maxTime;
+    }
+
+    public void setMaxTime(float maxTime) {
+        this.maxTime = maxTime;
     }
 
     public float getSpeeds() {

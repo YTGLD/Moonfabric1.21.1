@@ -1,0 +1,82 @@
+{
+  "targets": [
+    "swap",
+    "final"
+  ],
+  "passes": [
+    {
+      "name": "box_blur",
+      "intarget": "final",
+      "outtarget": "swap",
+      "use_linear_filter": true,
+      "uniforms": [
+        {
+          "name": "BlurDir",
+          "values": [ 5.0, 0.0 ]
+        }
+      ]
+    },
+    {
+      "name": "box_blur",
+      "intarget": "swap",
+      "outtarget": "final",
+      "use_linear_filter": true,
+      "uniforms": [
+        {
+          "name": "BlurDir",
+          "values": [ 0.0, 5.0 ]
+        }
+      ]
+    }, {
+      "name": "box_blur",
+      "intarget": "final",
+      "outtarget": "swap",
+      "use_linear_filter": true,
+      "uniforms": [
+        {
+          "name": "BlurDir",
+          "values": [ 5.0, 0.0 ],
+          "RadiusMultiplier" : 2.5
+        }
+      ]
+    },
+    {
+      "name": "box_blur",
+      "intarget": "swap",
+      "outtarget": "final",
+      "use_linear_filter": true,
+      "uniforms": [
+        {
+          "name": "BlurDir",
+          "values": [ 0.0, 5.0 ],
+          "RadiusMultiplier" : 2.5
+        }
+      ]
+    }, {
+      "name": "box_blur",
+      "intarget": "final",
+      "outtarget": "swap",
+      "use_linear_filter": true,
+      "uniforms": [
+        {
+          "name": "BlurDir",
+          "values": [ 5.0, 0.0 ],
+          "RadiusMultiplier" : 1.25
+        }
+      ]
+    },
+    {
+      "name": "box_blur",
+      "intarget": "swap",
+      "outtarget": "final",
+      "use_linear_filter": true,
+      "uniforms": [
+        {
+          "name": "BlurDir",
+          "values": [ 0.0, 5.0 ],
+          "RadiusMultiplier" : 1.25
+        }
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@ package com.moonfabric.init;
 import com.moonfabric.ABook;
 import com.moonfabric.item.Ms.CottonCandy.*;
 import com.moonfabric.item.Ms.block.*;
+import com.moonfabric.item.Ms.extend.ItemTir;
 import com.moonfabric.item.Ms.origincube;
 import com.moonfabric.item.TheNecora.*;
 import com.moonfabric.item.common.*;
@@ -25,8 +26,23 @@ import com.moonfabric.item.nightmare.super_nightmare.*;
 import net.minecraft.block.Block;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
+
+import java.util.List;
 
 public class init  {
+    public static final Item fire_book = new ItemTir(){
+        @Override
+        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+            super.appendTooltip(stack, context, tooltip, type);
+            tooltip.add(Text.translatable("item.fire_book.tool.string").formatted(Formatting.GOLD));
+
+        }
+    };
+    public static final Item the_blood_book = new  the_blood_book();
 
     public static final Item nightmare_base_black_eye = new  nightmare_base_black_eye();
     public static final Item nightmare_base = new  nightmare_base();

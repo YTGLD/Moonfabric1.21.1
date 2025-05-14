@@ -15,7 +15,12 @@ public class InItEntity {
                     .trackRangeBlocks(50)
                     .entityFactory(flysword::new)
                     .build();
-
+    public static final EntityType<fire> fire =
+            FabricEntityTypeBuilder.create()
+                    .dimensions(EntityDimensions.changing(0.25f,0.25f))
+                    .trackRangeBlocks(50)
+                    .<fire>entityFactory(fire::new) // 使用 lambda 表达式
+                    .build();
     public static final EntityType<line> Line =
             FabricEntityTypeBuilder.createLiving()
                     .dimensions(EntityDimensions.changing(0.1f,0.85f))

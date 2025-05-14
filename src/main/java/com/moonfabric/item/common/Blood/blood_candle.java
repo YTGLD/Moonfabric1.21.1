@@ -12,11 +12,14 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.inventory.StackReference;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.screen.slot.Slot;
 import net.minecraft.text.Text;
+import net.minecraft.util.ClickType;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
@@ -42,6 +45,21 @@ public class blood_candle extends TheNecoraIC {
         return modifiers;
     }
 
+    @Override
+    public boolean onClicked(ItemStack stack, ItemStack otherStack, Slot slot, ClickType clickType, PlayerEntity player, StackReference cursorStackReference) {
+        if (clickType == ClickType.RIGHT && slot.canTakeItems(player)) {
+            if (otherStack.isEmpty()&&stack.get(Data.CUSTOM_DATA)!=null) {
+                if (stack.get(Data.CUSTOM_DATA).getBoolean(bloods)) {
+                    stack.get(Data.CUSTOM_DATA).putBoolean(bloods,false);
+                    player.getItemCooldownManager().set(stack.getItem(), 20);
+
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
@@ -52,14 +70,16 @@ public class blood_candle extends TheNecoraIC {
         if (stack.get(Data.CUSTOM_DATA)!=null){
             if (!stack.get(Data.CUSTOM_DATA).getBoolean(bloods)){
                 if (entity instanceof PlayerEntity player) {
-                    owner_blood owner_blood = new owner_blood(InItEntity.OWNER_BLOOD_ENTITY_TYPE, entity.getEntityWorld());
-                    owner_blood.setOwner(player);
-                    owner_blood.setOwnerUuid(player.getUuid());
-                    owner_blood.setPos(player.getX(),player.getY(),player.getZ());
+                    if (!player.getItemCooldownManager().isCoolingDown(this)) {
+                        owner_blood owner_blood = new owner_blood(InItEntity.OWNER_BLOOD_ENTITY_TYPE, entity.getEntityWorld());
+                        owner_blood.setOwner(player);
+                        owner_blood.setOwnerUuid(player.getUuid());
+                        owner_blood.setPos(player.getX(), player.getY(), player.getZ());
 
-                    player.getWorld().spawnEntity(owner_blood);
+                        player.getWorld().spawnEntity(owner_blood);
 
-                    stack.get(Data.CUSTOM_DATA).putBoolean(bloods, true);
+                        stack.get(Data.CUSTOM_DATA).putBoolean(bloods, true);
+                    }
                 }
             }
 

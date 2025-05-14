@@ -1,18 +1,24 @@
 package com.moonfabric.item.nightmare.super_nightmare;
 
+import com.google.common.collect.Multimap;
 import com.moonfabric.Ievent.AdvancementEvt;
 import com.moonfabric.Ievent.AllEvent;
 import com.moonfabric.init.Data;
 import com.moonfabric.init.init;
+import dev.emi.trinkets.api.SlotAttributes;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketsApi;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.attribute.EntityAttribute;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
+import net.minecraft.util.Identifier;
 
 import java.util.List;
 
@@ -27,6 +33,12 @@ public class nightmare_base_insight extends com.moonfabric.item.Ms.SNightmare{
         }
         return false;    }
 
+    @Override
+    public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, Identifier slotIdentifier) {
+        var modifiers = super.getModifiers(stack, slot, entity, slotIdentifier);
+        SlotAttributes.addSlotModifier(modifiers,"legs/belt",Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),3, EntityAttributeModifier.Operation.ADD_VALUE);
+        return modifiers;
+    }
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
         TrinketsApi.getTrinketComponent(entity).ifPresent((trinketComponent) -> {

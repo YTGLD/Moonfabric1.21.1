@@ -21,20 +21,23 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Box;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
-import java.util.Vector;
+import java.util.*;
 
 
 public class owner_blood extends TameableEntity {
     public owner_blood(EntityType<? extends owner_blood> p_21803_, World p_21804_) {
         super(p_21803_, p_21804_);
         this.setNoGravity(true);
+        for (int i = 0; i < trailPositions.length; i++) {
+            trailPositions[i][0] = Vec3d.ZERO;
+            trailPositions[i][1] = Vec3d.ZERO;
+        }
     }
 
     @Override
@@ -42,15 +45,47 @@ public class owner_blood extends TameableEntity {
         return true;
     }
 
-    private final List<Vec3d> trailPositions = new ArrayList<>();
-    public List<Vec3d> getTrailPositions() {
-        return trailPositions;
+    public static final int max = 128;
+    private int trailPointer = -1;
+
+    private final Vec3d[][] trailPositions = new Vec3d[max][2];
+
+    public Vec3d getTrailPosition(int pointer, float partialTick) {
+        if (this.isRemoved()) {
+            partialTick = 1.0F;
+        }
+
+        int i = (this.trailPointer - pointer) & max-1;
+        int j = (this.trailPointer - pointer - 1) & max-1;
+
+        Vec3d d0 = this.trailPositions[j][0];
+        Vec3d d1 = this.trailPositions[i][0].subtract(d0);
+        return d0.add(d1.multiply(partialTick));
+    }
+    public Vec3d getHelmetPosition() {
+        return this.getPos();
+    }
+
+    public void tickVisual() {
+        Vec3d blue = getHelmetPosition();
+        this.trailPointer = (this.trailPointer + 1) % this.trailPositions.length;
+        this.trailPositions[this.trailPointer][0] = blue;
     }
     @Override
     public void tick() {
         super.tick();
         this.setNoGravity(true);
 
+        if (this.getOwner()!=null&&HasCurio.has(init.fire_book, this.getOwner())) {
+
+            fire fire = new fire(InItEntity.fire, this.getEntityWorld());
+            fire.setPos(this.getPos().x, this.getPos().y, this.getPos().z);
+            this.getEntityWorld().spawnEntity(fire);
+        }else {
+            if (getEntityWorld().isClient) {
+                tickVisual();
+            }
+        }
         this.timeUntilRegen += 100;
 
         if (getOwner()==null){
@@ -87,12 +122,11 @@ public class owner_blood extends TameableEntity {
                 if (!HasCurio.has(init.blood_candle, player)){
                     this.discard();
                 }
-            }
-        }
-        trailPositions.add(new Vec3d(this.getX(), this.getY(), this.getZ()));
+                if (player.getItemCooldownManager().isCoolingDown(init.blood_candle)){
+                    this.discard();
 
-        if (trailPositions.size() > 66) {
-            trailPositions.removeFirst();
+                }
+            }
         }
 
         if (this.getTarget() != null) {
@@ -194,6 +228,12 @@ public class owner_blood extends TameableEntity {
                     }
                     if (HasCurio.has(init.owner_blood_effect_eye, player)) {
                         attackBlood.setEffect(true);
+                    }
+                    if (HasCurio.has(init.the_blood_book, player)) {
+                        attackBlood.setSpeed(attackBlood.getSpeeds()*2f);
+                        attackBlood.setMaxTime(attackBlood.getMaxTime()*0.4f);
+                        attackBlood.setDamage(attackBlood.getDamages()*3f);
+                        attackBlood.isPlayer = true;
                     }
                     if (HasCurio.has(init.owner_blood_vex, player)) {
                         attackBlood.setHeal(true);

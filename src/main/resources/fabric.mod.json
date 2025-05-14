@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "moonfabric",
-	"version": "1.21-1.5.0",
+	"version": "1.21-1.5.9",
 	"name": "moonfabric mod",
 	"description": "Thank you for playing. I am YTGLD and I am determined to bring joy to everyone",
 	"authors": [
@@ -20,6 +20,10 @@
 		"main": [
 			"com.moonfabric.MoonFabricMod"
 		],
+		"jei_mod_plugin": [
+			"com.moonfabric.Ievent.JeiText"
+		],
+
 		"client": [
 			"com.moonfabric.MoonFabricModClient"
 		]

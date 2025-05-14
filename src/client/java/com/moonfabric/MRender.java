@@ -10,7 +10,11 @@ import net.minecraft.client.render.VertexFormat;
 import net.minecraft.client.render.VertexFormats;
 import net.minecraft.client.render.block.entity.EndPortalBlockEntityRenderer;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Util;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.function.Function;
+
 @Environment(EnvType.CLIENT)
 public class MRender extends RenderLayer {
     public MRender(String name, VertexFormat vertexFormat, VertexFormat.DrawMode drawMode, int expectedBufferSize, boolean hasCrumbling, boolean translucent, Runnable startAction, Runnable endAction) {
@@ -22,6 +26,7 @@ public class MRender extends RenderLayer {
         return renderTypeEndPortalProgram;
     }
     private static net.minecraft.client.gl.ShaderProgram renderTypeEndPortalProgram;
+    public static final RenderLayer LIGHTNING = RenderLayer.of("lightning", VertexFormats.POSITION_COLOR, VertexFormat.DrawMode.QUADS, 1536, false, true, MultiPhaseParameters.builder().program(LIGHTNING_PROGRAM).cull(DISABLE_CULLING).writeMaskState(ALL_MASK).transparency(LIGHTNING_TRANSPARENCY).target(WEATHER_TARGET).build(false));
 
     private static final RenderLayer BLOOD =
             of("blood",
@@ -42,8 +47,6 @@ public class MRender extends RenderLayer {
     public static void setRenderTypeEndPortalProgram(net.minecraft.client.gl.ShaderProgram renderTypeEndPortalProgram) {
         MRender.renderTypeEndPortalProgram = renderTypeEndPortalProgram;
     }
-
-
 
 
     protected static final RenderPhase.Target setOutputState = new RenderPhase.Target("set", () -> {
@@ -84,7 +87,7 @@ public class MRender extends RenderLayer {
 
 
 
-    public static RenderLayer  getBloodOutLine() {
+    public static RenderLayer getBloodOutLine() {
         return BLOODOutLine;
     }
     public static void setRenderTypeEndPortalProgramOutLine(net.minecraft.client.gl.ShaderProgram renderTypeEndPortalProgram) {
@@ -158,5 +161,27 @@ public class MRender extends RenderLayer {
     public static void setRenderTypeEndPortalProgram_common(net.minecraft.client.gl.ShaderProgram renderTypeEndPortalProgram) {
         MRender.renderTypeEndPortalProgram_common = renderTypeEndPortalProgram;
     }
+    public static final RenderLayer colorLight =
+            of("color_light",VertexFormats.POSITION_COLOR,
+                    VertexFormat.DrawMode.QUADS, 1536,
+                    false, true,
+                    RenderLayer.MultiPhaseParameters.builder()
+                            .program(LIGHTNING_PROGRAM)
+                            .writeMaskState(ALL_MASK)
+                            .transparency(LIGHTNING_TRANSPARENCY)
+                            .target(WEATHER_TARGET)
+                            .cull(RenderPhase.DISABLE_CULLING)
+                            .build(false));
+    public static final RenderLayer colorLightOutLine =
+            of("color_light",VertexFormats.POSITION_COLOR,
+                    VertexFormat.DrawMode.QUADS, 1536,
+                    false, true,
+                    RenderLayer.MultiPhaseParameters.builder()
+                            .program(LIGHTNING_PROGRAM)
+                            .writeMaskState(ALL_MASK)
+                            .transparency(LIGHTNING_TRANSPARENCY)
+                            .target(setOutputState)
+                            .cull(RenderPhase.DISABLE_CULLING)
+                            .build(false));
 
 }

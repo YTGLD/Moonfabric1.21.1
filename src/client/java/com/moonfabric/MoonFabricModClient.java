@@ -18,6 +18,7 @@ import net.minecraft.util.Identifier;
 public class MoonFabricModClient implements ClientModInitializer {
 	public static final Identifier POST = Identifier.of(MoonFabricMod.MODID,
 			"shaders/post/entity_outline.json");
+
 	@Environment(EnvType.CLIENT)
 	@Override
 	public void onInitializeClient() {
@@ -34,6 +35,7 @@ public class MoonFabricModClient implements ClientModInitializer {
 		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.penalty , PenaltyRenderer::new);
 		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.ytgld_ , YtgldEntityRenderer::new);
 
+		net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry.register(InItEntity.fire , FireRenderer::new);
 
 
 		ParticleFactoryRegistry.getInstance().register(MoonFabricMod.GOLD, Gold.CloudFactory::new);

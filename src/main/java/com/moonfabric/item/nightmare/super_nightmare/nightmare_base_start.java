@@ -4,6 +4,7 @@ import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import com.moonfabric.HasCurio;
 import com.moonfabric.init.init;
+import dev.emi.trinkets.api.SlotAttributes;
 import dev.emi.trinkets.api.SlotReference;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -33,6 +34,12 @@ public class nightmare_base_start extends com.moonfabric.item.Ms.SNightmare{
         return false;
     }
 
+    @Override
+    public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, Identifier slotIdentifier) {
+        var modifiers = super.getModifiers(stack, slot, entity, slotIdentifier);
+        SlotAttributes.addSlotModifier(modifiers,"legs/belt",Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),3, EntityAttributeModifier.Operation.ADD_VALUE);
+        return modifiers;
+    }
 
     public static void damage(DamageSource source , LivingEntity living, CallbackInfoReturnable<Float> cir){
         if (living instanceof PlayerEntity player) {

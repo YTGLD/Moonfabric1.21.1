@@ -1,5 +1,7 @@
 {
 
+"moonfabric.super_nightmare.name": "Only those who bear the curse of the Nightmare Base",
+  "moonfabric.super_nightmare.name.1": "This item can be used",
 
 
 
@@ -41,11 +43,14 @@
   "item.nightmare_base_black_eye_red.tool.string.1": "Up to a maximum increase of 50%",
   "item.nightmare_base_black_eye_red.tool.string.2": "These attributes will decrease over time",
 
+  "advancements.tooltip.nightmare_base.text": "获得这个物品",
+  "advancements.tooltip.nightmare_base.hand": "起始",
   "item.moonfabric.nightmare_base_black_eye_heart": "§4Heart of Despair",
   "item.nightmare_base_black_eye_heart.tool.string": "Nearby creatures take 25% more damage",
   "item.nightmare_base_black_eye_heart.tool.string.1": "They will restore health to you",
   "item.nightmare_base_black_eye_heart.tool.string.2": "And they will no longer receive any healing",
-
+"item.moonfabric.fire_book": "Your PC killer",
+  "item.fire_book.tool.string": "Ignite your Blood Soul Growth!" ,
 
 
   "advancements.tooltip.nightmare_base_stone.text": "获得死兆方尖碑",
@@ -94,19 +99,19 @@
   "item.nightmare_base_reversal_mysterious.tool.string": "Suppress the negative effects of the Nightmare Base at the cost of reducing all attributes by 10%",
 
 
-  "moonstone.jei.item.moonfabric.nightmare_base.all": ", requires wearing:",
+  "moonfabric.jei.item.moonfabric.nightmare_base.all": ", requires wearing:",
 
-  "moonstone.jei.item.moonfabric.nightmare_base_black_eye_heart": "Trigger the Undying Totem acquisition when the following conditions are met: Poisoned, Withering, Slowness, Darkness, Blindness, and on Fire",
-  "moonstone.jei.item.moonfabric.nightmare_base_black_eye_eye": "Kill the Guardian",
-  "moonstone.jei.item.moonfabric.nightmare_base_black_eye_red": "Found in Ancient Cities, about 5% chance",
+  "moonfabric.jei.item.moonfabric.nightmare_base_black_eye_heart": "Trigger the Undying Totem acquisition when the following conditions are met: Poisoned, Withering, Slowness, Darkness, Blindness, and on Fire",
+  "moonfabric.jei.item.moonfabric.nightmare_base_black_eye_eye": "Kill the Guardian",
+  "moonfabric.jei.item.moonfabric.nightmare_base_black_eye_red": "Found in Ancient Cities, about 5% chance",
 
-  "moonstone.jei.item.moonfabric.nightmare_base_stone_brain": "Kill Zombies to obtain materials, but only one of this material can be obtained",
-  "moonstone.jei.item.moonfabric.nightmare_base_stone_meet": "Kill the Ender Dragon",
-  "moonstone.jei.item.moonfabric.nightmare_base_stone_virus": "Triggered by receiving Withering damage to get an Undying Totem",
+  "moonfabric.jei.item.moonfabric.nightmare_base_stone_brain": "Kill Zombies to obtain materials, but only one of this material can be obtained",
+  "moonfabric.jei.item.moonfabric.nightmare_base_stone_meet": "Kill the Ender Dragon",
+  "moonfabric.jei.item.moonfabric.nightmare_base_stone_virus": "Triggered by receiving Withering damage to get an Undying Totem",
 
-  "moonstone.jei.item.moonfabric.nightmare_base_reversal_card": "Kill the Ender Dragon",
-  "moonstone.jei.item.moonfabric.nightmare_base_reversal_mysterious": "Open chests in Ancient Cities while wearing Reversal Orb, 100% chance, but can only obtain one",
-  "moonstone.jei.item.moonfabric.nightmare_base_reversal_orb": "Kill yourself with poison damage from the Reversal Object",
+  "moonfabric.jei.item.moonfabric.nightmare_base_reversal_card": "Kill the Ender Dragon",
+  "moonfabric.jei.item.moonfabric.nightmare_base_reversal_mysterious": "Open chests in Ancient Cities while wearing Reversal Orb, 100% chance, but can only obtain one",
+  "moonfabric.jei.item.moonfabric.nightmare_base_reversal_orb": "Kill yourself with poison damage from the Reversal Object",
 
   "item.moonfabric.nightmare_base_redemption":"§4'Redemption'",
   "item.nightmare_base_redemption.tool.string": "Increase 15% decay of Nightmare Base attributes",
@@ -133,9 +138,9 @@
   "advancements.tooltip.nightmare_base_redemption_down_and_out.text": "Obtain this item",
   "advancements.tooltip.nightmare_base_redemption_down_and_out.hand": "River of History",
 
-  "moonstone.jei.item.moonfabric.nightmare_base_redemption_deception": "Kill 100 Pillagers under an ominous sign",
-  "moonstone.jei.item.moonfabric.nightmare_base_redemption_degenerate": "Kill 100 Villagers under the Village Hero effect",
-  "moonstone.jei.item.moonfabric.nightmare_base_redemption_down_and_out": "Complete a failed raid",
+  "moonfabric.jei.item.moonfabric.nightmare_base_redemption_deception": "Kill 100 Pillagers under an ominous sign",
+  "moonfabric.jei.item.moonfabric.nightmare_base_redemption_degenerate": "Kill 100 Villagers under the Village Hero effect",
+  "moonfabric.jei.item.moonfabric.nightmare_base_redemption_down_and_out": "Complete a failed raid",
 
   "advancements.tooltip.nightmare_base_reversal_card.text": "Obtain this item",
   "advancements.tooltip.nightmare_base_reversal_card.hand": "Reversal Reversal",
@@ -188,9 +193,9 @@
   "advancements.tooltip.nightmare_base_fool_soul.text": "Obtain this item",
   "advancements.tooltip.nightmare_base_fool_soul.hand": "River of History",
 
-  "moonstone.jei.item.moonfabric.nightmare_base_fool_betray": "Kill the Ender Dragon",
-  "moonstone.jei.item.moonfabric.nightmare_base_fool_bone": "Kill the Guardian",
-  "moonstone.jei.item.moonfabric.nightmare_base_fool_soul": "Kill the Wither",
+  "moonfabric.jei.item.moonfabric.nightmare_base_fool_betray": "Kill the Ender Dragon",
+  "moonfabric.jei.item.moonfabric.nightmare_base_fool_bone": "Kill the Guardian",
+  "moonfabric.jei.item.moonfabric.nightmare_base_fool_soul": "Kill the Wither",
 
 
 
@@ -235,9 +240,9 @@
   "advancements.tooltip.nightmare_base_insight_collapse.text": "Obtain this item",
   "advancements.tooltip.nightmare_base_insight_collapse.hand": "Strength of Collapse",
 
-  "moonstone.jei.item.moonfabric.nightmare_base_insight_drug": "Complete all tasks in the medicine box",
-  "moonstone.jei.item.moonfabric.nightmare_base_insight_insane": "Kill any mob",
-  "moonstone.jei.item.moonfabric.nightmare_base_insight_collapse": "Kill the Ender Dragon",
+  "moonfabric.jei.item.moonfabric.nightmare_base_insight_drug": "Complete all tasks in the medicine box",
+  "moonfabric.jei.item.moonfabric.nightmare_base_insight_insane": "Kill any mob",
+  "moonfabric.jei.item.moonfabric.nightmare_base_insight_collapse": "Kill the Ender Dragon",
 
 
 
@@ -278,9 +283,9 @@
   "advancements.tooltip.nightmare_base_start_power.text": "Obtain this item",
   "advancements.tooltip.nightmare_base_start_power.hand": "Strength of Collapse",
 
-  "moonstone.jei.item.moonfabric.nightmare_base_start_power": "Kill the Guardian",
-  "moonstone.jei.item.moonfabric.nightmare_base_start_egg": "Kill the Sniffer",
-  "moonstone.jei.item.moonfabric.nightmare_base_start_pod": "Open dungeon chests, 25% chance, can only get one",
+  "moonfabric.jei.item.moonfabric.nightmare_base_start_power": "Kill the Guardian",
+  "moonfabric.jei.item.moonfabric.nightmare_base_start_egg": "Kill the Sniffer",
+  "moonfabric.jei.item.moonfabric.nightmare_base_start_pod": "Open dungeon chests, 25% chance, can only get one",
 
   "curios.modifiers.necora": "when necora",
   "key.moonfabric.category": "Moonstone",
@@ -1065,8 +1070,17 @@
 
   "item.blood_candle.tool.string.1": "",
 
+
   "item.moonfabric.the_blood_book": "Sealing Record",
-  "item.the_blood_book.tool.string": "It can be ignited twice ",
+  "item.the_blood_book.tool.string": "Blood Spirit Growth's damage is increased by 50%",
+  "item.the_blood_book.tool.string.1": "Blood Grower's blood bead speed is reduced by 50%",
+  "item.the_blood_book.tool.string.2": "The blood beads of the Blood Spirit Grower will explode",
+  "item.the_blood_book.tool.string.3": "Blood Grower's fire speed is increased by 30%",
+  "item.the_blood_book.tool.string.4": "Blood Spirit Grower's Lifespan is reduced by 60%",
+  "item.the_blood_book.tool.string.5": "Comes with all the features of the Graver and the Blasphemer",
+  "item.the_blood_book.tool.string.6": "Each hit of the Blood Soul Grower is equivalent to an attack from you",
+
+
   "item.blood.tool.string.evil": "evil",
   "item.blood.tool.string.evil.1": "There is a 33% chance that killing a creature will regenerate into a blood cell",
   "item.blood.tool.string.evil.2": "Harvest blood cells to restore 4 health points",
@@ -1213,7 +1227,7 @@
   "item.moonfabric.probability":"probability stone",
   "tab.moonfabric_tab": "Moonfabric",
   "tab.moonfabric_tab.dna": "Moonfabric:DNA",
-  "item.moonfabric.moonstone": "moonfabric",
+  "item.moonfabric.moonfabric": "moonfabric",
   "moonfabric.tooltip.moonfabric.1": "·+6 Armor",
   "moonfabric.tooltip.moonfabric.2": "Discovered in the Ancient cities",
   "item.moonfabric.goldheart": "gold heart",
@@ -1634,7 +1648,7 @@
 
   "item.moonfabric.blood_candle": "blood candle",
   "moonfabric.tooltip.blood_candle":   "Summon a giant Blood Spirit Hyperplasia to assist you in battle,",
-  "moonfabric.tooltip.blood_candle.1": "If lost/missing, please wear this item again,",
+  "moonfabric.tooltip.blood_candle.1": "If lost, right-click on the item",
   "moonfabric.tooltip.blood_candle.2": "The attack of Blood Spirit Hyperplasia will cause damage based on your maximum health,",
 
   "entity.moonfabric.attack_blood": "attack blood",
@@ -1744,13 +1758,14 @@
   "item.moonfabric.owner_blood_vex": "Wraith",
   "item.moonfabric.owner_blood_earth":"Qiankun",
 
-  "item.moonfabric.owner_blood_eye.tool": "It is found in ancient cities but requires wearing the Sealing Candelabra to be discovered.\n\nReduces the attack interval of Blood Spawn by 20%.",
-  "item.moonfabric.owner_blood_attack_eye.tool": "It is found in ancient cities but requires wearing the Sealing Candelabra to be discovered.\n\nIncreases the attack interval of Blood Spawn by 10%.\nIncreases Blood Damage by 20%.",
-  "item.moonfabric.owner_blood_speed_eye.tool": "It is found in ancient cities but requires wearing the Sealing Candelabra to be discovered.\n\nReduces the attack interval of Blood Spawn by 50%.\nIncreases Blood Orb speed by 300%.\nHowever, the launched Blood Orbs will no longer track entities.",
-  "item.moonfabric.owner_blood_boom_eye.tool": "It is found in ancient cities but requires wearing the Sealing Candelabra to be discovered.\n\nBlood Orbs will explode on impact.\nReduces Blood Orb speed by 20%.\nIncreases the attack interval of Blood Spawn by 200%.",
-  "item.moonfabric.owner_blood_effect_eye.tool": "It is found in ancient cities but requires wearing the Sealing Candelabra to be discovered.\n\nBlood Orbs will apply a large amount of negative effects upon impact.\nReduces Blood Damage by 50%.",
-  "item.moonfabric.owner_blood_vex.tool": "It is found in ancient cities, but requires wearing the Sealing Candelabra to be discovered.\n\nBlood Orbs will not disappear upon hitting and will penetrate entities.\nEach penetration increases damage and speed by 50%,\nbut reduces base speed and damage by 50%.",
-  "item.moonfabric.owner_blood_earth.tool": "It is found in ancient cities, but requires wearing the Sealing Candelabra to be discovered.\n\nBlood Orbs' damage equals the owner's damage.\nBlood Orbs' speed equals the owner's speed.\nThe attack speed of Blood Spirit proliferators will be multiplied by the owner's attack speed.",
+  "item.moonfabric.owner_blood_eye.tool": "Reduces the attack interval of Blood Spawn by 20%.",
+  "item.moonfabric.owner_blood_attack_eye.tool": "Increases the attack interval of Blood Spawn by 10%.\nIncreases Blood Damage by 20%.",
+  "item.moonfabric.owner_blood_speed_eye.tool": "Reduces the attack interval of Blood Spawn by 50%.\nIncreases Blood Orb speed by 300%.\nHowever, the launched Blood Orbs will no longer track entities.",
+  "item.moonfabric.owner_blood_boom_eye.tool": "Blood Orbs will explode on impact.\nReduces Blood Orb speed by 20%.\nIncreases the attack interval of Blood Spawn by 200%.",
+  "item.moonfabric.owner_blood_effect_eye.tool": "Blood Orbs will apply a large amount of negative effects upon impact.\nReduces Blood Damage by 50%.",
+  "item.moonfabric.owner_blood_vex.tool": "Blood Orbs will not disappear upon hitting and will penetrate entities.\nEach penetration increases damage and speed by 50%,\nbut reduces base speed and damage by 50%.",
+  "item.moonfabric.owner_blood_earth.tool": "Blood Orbs' damage equals the owner's damage.\nBlood Orbs' speed equals the owner's speed.\nThe attack speed of Blood Spirit proliferators will be multiplied by the owner's attack speed.",
+
 
   "item.moonfabric.blood_stones": "blood stones",
 
@@ -1793,6 +1808,58 @@
 
   "item.moonfabric.owner_blood_vex.tool.1": "The amount depends on the damage of Owner blood",
   "item.moonfabric.owner_blood_vex.tool.2": "Owner blood damage is reduced by 3 points",
+
+
+
+  "moonfabric.jei.ectoplasmstone": "One of the random amulets at the start of the game",
+  "moonfabric.jei.twistedstone": "One of the random amulets at the start of the game",
+
+  "moonfabric.jei.necora.all": "Requires wearing Necora virus to be found in dungeons and mines",
+  "moonfabric.jei.necora.treasure.all": "Requires wearing Necora virus to be found in treasure loot",
+  "moonfabric.jei.necora.giant_nightmare.all": "Requires wearing Nightmare Giant genetic fragment to be found in treasure loot",
+
+  "moonfabric.jei.necora.bnabush.all": "Requires wearing Necora virus to be found in treasure loot",
+
+  "moonfabric.jei.crafting_box": "使用大量DNA来构成模组内的重要物品",
+  "moonfabric.jei.cell.all": "Requires wearing Cell Rebirth gene to be found in treasure loot",
+  "moonfabric.jei.maulice.all": "Killing zombies may drop",
+  "moonfabric.jei.blood": "Requires wearing Blood Magic Box to acquire by killing creatures",
+
+  "moonfabric.jei.bloodvirus.all": "Requires wearing Shadow Plague to be found in dungeons and mines",
+  "moonfabric.jei.bloodvirus": "Requires wearing a medical kit that unlocks all medications and killing the Ender Dragon to obtain Shadow Gene, then using the Shadow Gene on Necora virus to get Shadow Plague",
+  "moonfabric.jei.bloodvirus.treasure.all": "Requires wearing Shadow Plague to be found in treasures",
+  "moonfabric.jei.ectoplasm.all": "Most ectoplasmic items can be eaten, recovering a large amount of hunger",
+  "moonfabric.jei.ectoplasm.ectoplasmcloub": "Can be obtained by killing creatures, or it can be crafted",
+  "moonfabric.jei.ectoplasm.ectoplasmball": "Can be obtained by killing creatures, there is a very high chance to find it in loot chests",
+  "moonfabric.jei.loot.all": "Has a chance to be found in loot chests",
+  "moonfabric.jei.maxamout": "Wear three colors of runes, then kill the Ancient Guardian",
+  "moonfabric.jei.pain.all": "Found in the Nether",
+  "moonfabric.jei.nanodoom.all": "Found in ancient cities",
+  "moonfabric.jei.wind_and_rain": "Wear Seven Swords of Asura and Sudden Rain, then touch dungeon/mines/treasures/city type chests",
+  "moonfabric.jei.calcification": ": Take 350 damage, requires wearing a medical kit",
+  "moonfabric.jei.masticatory": ": Die once, requires wearing a medical kit",
+  "moonfabric.jei.polyphagia": ": Eat an enchanted golden apple, requires wearing a medical kit",
+  "moonfabric.jei.quadriceps": ": Jump 500 times, requires wearing a medical kit",
+  "moonfabric.jei.reanimation": ": Eat 8 golden apples, requires wearing a medical kit",
+  "moonfabric.jei.blood.all": "： found in treasure",
+  "moonfabric.jei.nightmare": ": Requires wearing nightmare eye to be found in dungeons and mines",
+
+  "moonfabric.jei.fortunecrystal": "It can not only be crafted but also exchanged with the toolsmith villagers.",
+  "moonfabric.jei.mayhemcrystal": "It can not only be crafted but also exchanged with the weaponsmith villagers.",
+  "moonfabric.jei.treasure": "It is an item found in treasure loot chests.",
+  "moonfabric.jei.city": "It is an item that can not only be crafted but also found in ancient cities.",
+  "moonfabric.jei.deceased_contract": "“I think this is a curse, but its allure is truly hard to resist... Once the contract is signed, it will cling to you forever, but that's not the worst part; it will plunge you into suffering and slaughter, becoming a minion of hell.\nKilling creatures has a 10% chance to obtain their blood.\nCollecting blood restores 5% of maximum health.\n-20% damage\n-25% resistance\n-15% critical hit\n-30% healing\n\nHowever:\nKilling creatures has a 40% chance to summon a zombie.\nKilling creatures has a 20% chance to summon a giant zombie.\nAdditionally:\nSummoned zombies receive 50% of the summoner's damage, speed, defense, and maximum health bonuses.\nSummoned zombies gain all positive potion effects currently existing on the summoner.\n\nNecora virus and its associated items are nullified.\nShadow plague and its associated items are nullified.",
+  "moonfabric.jei.deceased_contract.all": "It is an item that can only be discovered in dungeons while wearing the Necromancer Contract.",
+  "moonfabric.jei.item.moonfabric.owner_blood_eye": "It is found in ancient cities but requires wearing the Sealing Candelabra to be discovered.\n\nReduces the attack interval of Blood Spawn by 20%.",
+
+  "moonfabric.jei.item.moonfabric.owner_blood_attack_eye": "It is found in ancient cities but requires wearing the Sealing Candelabra to be discovered.\n\nIncreases the attack interval of Blood Spawn by 10%.\nIncreases Blood Damage by 20%.",
+
+  "moonfabric.jei.item.moonfabric.owner_blood_speed_eye": "It is found in ancient cities but requires wearing the Sealing Candelabra to be discovered.\n\nReduces the attack interval of Blood Spawn by 50%.\nIncreases Blood Orb speed by 300%.\nHowever, the launched Blood Orbs will no longer track entities.",
+
+  "moonfabric.jei.item.moonfabric.owner_blood_boom_eye": "It is found in ancient cities but requires wearing the Sealing Candelabra to be discovered.\n\nBlood Orbs will explode on impact.\nReduces Blood Orb speed by 20%.\nIncreases the attack interval of Blood Spawn by 200%.",
+
+  "moonfabric.jei.item.moonfabric.owner_blood_effect_eye": "It is found in ancient cities but requires wearing the Sealing Candelabra to be discovered.\n\nBlood Orbs will apply a large amount of negative effects upon impact.\nReduces Blood Damage by 50%.",
+  "moonfabric.jei.item.moonfabric.owner_blood_vex": "It is found in ancient cities, but requires wearing the Sealing Candelabra to be discovered.\n\nBlood Orbs will not disappear upon hitting and will penetrate entities.\nEach penetration increases damage and speed by 50%,\nbut reduces base speed and damage by 50%.",
 
 
 

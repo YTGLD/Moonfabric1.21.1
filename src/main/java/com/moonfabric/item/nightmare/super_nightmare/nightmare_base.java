@@ -5,6 +5,7 @@ import com.google.common.collect.Multimap;
 import com.moonfabric.HasCurio;
 import com.moonfabric.init.Data;
 import com.moonfabric.init.init;
+import com.moonfabric.item.Ms.extend.ItemTir;
 import dev.emi.trinkets.api.SlotAttributes;
 import dev.emi.trinkets.api.SlotReference;
 import net.minecraft.entity.Entity;
@@ -28,12 +29,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class nightmare_base  extends com.moonfabric.item.Ms.SNightmare{
+public class nightmare_base  extends ItemTir {
 
     public int tick = 0;
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        entity.getAttributes().addTemporaryModifiers(gets(entity,stack));
+        entity.getAttributes().addTemporaryModifiers(gets(entity));
         tick = 100;
         if (stack.get(Data.CUSTOM_DATA)==null) {
             entity.getWorld().playSound(null, entity.getX(), entity.getY(), entity.getZ(), SoundEvents.ENTITY_ELDER_GUARDIAN_CURSE, SoundCategory.NEUTRAL, 1, 1);
@@ -66,7 +67,7 @@ public class nightmare_base  extends com.moonfabric.item.Ms.SNightmare{
     }
 
 
-    public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> gets(LivingEntity slotContext, ItemStack stack) {
+    public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> gets(LivingEntity slotContext) {
         Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> linkedHashMultimap = HashMultimap.create();
         float s= -0.3f;
         if (HasCurio.has(init.nightmare_base_reversal_mysterious, slotContext)){
@@ -84,11 +85,16 @@ public class nightmare_base  extends com.moonfabric.item.Ms.SNightmare{
         return linkedHashMultimap;
     }
 
+
     @Override
     public boolean canUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
+        if (entity instanceof PlayerEntity player){
+            if (player.isCreative()){
+                return true;
+            }
+        }
         return false;
     }
-
     @Override
     public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, Identifier slotIdentifier) {
         var modifiers = super.getModifiers(stack, slot, entity, slotIdentifier);

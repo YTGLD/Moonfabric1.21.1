@@ -1,8 +1,10 @@
 package com.moonfabric.mixin;
 
 import com.moonfabric.MRender;
+import com.moonfabric.item.Ms.SNightmare;
 import com.moonfabric.item.Ms.TheNecoraIC;
 import com.moonfabric.item.Ms.nightmare;
+import com.moonfabric.item.nightmare.super_nightmare.nightmare_base;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
@@ -77,6 +79,20 @@ public abstract class HandledScreenMixin <T extends ScreenHandler> extends Scree
                             context.getMatrices().pop();
                         }
                         if (itemStack.getItem() instanceof nightmare) {
+                            context.getMatrices().push();
+
+                            render(MRender.getBlood_common(), context, n, o, i, j, 400);
+
+                            context.getMatrices().pop();
+                        }
+                        if (itemStack.getItem() instanceof SNightmare) {
+                            context.getMatrices().push();
+
+                            render(MRender.getBlood_common(), context, n, o, i, j, 400);
+
+                            context.getMatrices().pop();
+                        }
+                        if (itemStack.getItem() instanceof nightmare_base) {
                             context.getMatrices().push();
 
                             render(MRender.getBlood_common(), context, n, o, i, j, 400);

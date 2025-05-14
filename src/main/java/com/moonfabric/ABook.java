@@ -3,6 +3,7 @@ package com.moonfabric;
 import com.google.common.collect.Multimap;
 import com.moonfabric.init.init;
 import com.moonfabric.item.INecora;
+import com.moonfabric.item.Ms.SNightmare;
 import com.moonfabric.item.Ms.ectoplasm;
 import com.moonfabric.item.Ms.extend.ItemTir;
 import com.moonfabric.item.Ms.nightmare;
@@ -33,10 +34,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import vazkii.patchouli.api.PatchouliAPI;
 
 import java.util.List;
+import java.util.Random;
 
 public class ABook extends ItemTir {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+
+
 
         if (user instanceof ServerPlayerEntity player) {
             if (FabricLoader.getInstance().isModLoaded("patchouli")) {
@@ -47,9 +51,89 @@ public class ABook extends ItemTir {
         }
         return super.use(world, user, hand);
     }
-
+    public static void TerNightmare(ItemStack stack, Item item, List<Text> texts, String string, String has){
+        if (stack.isOf(item)) {
+            texts.add(Text.translatable(string)
+                    .append(Text.translatable("moonstone.jei.item.moonfabric.nightmare_base.all"))
+                    .append(Text.translatable("item.moonfabric."+has)).setStyle(Style.EMPTY.withColor(TextColor.fromRgb(0XFFDB7093))));
+        }
+    }
+    public static void TerCommon(ItemStack stack, Item item, List<Text> texts, String string){
+        if (stack.isOf(item)) {
+            texts.add(Text.translatable(string)
+                    .setStyle(Style.EMPTY.withColor(TextColor.fromRgb(0XFFDB7093))));
+        }
+    }
     public static void getTooltip(ItemStack stack, Item.TooltipContext context, @Nullable PlayerEntity player, TooltipType type, CallbackInfoReturnable<List<Text>> cir){
-        if (player!=null&&HasCurio.has(init.abook,player)){
+
+        if (stack.getItem() instanceof SNightmare sNightmare){
+            if (!HasCurio.has(init.nightmare_base,player)){
+                List<Text> toolTip = cir.getReturnValue();
+                Random random = new Random();
+                for (int i = 0; i < toolTip.size(); i++) {
+                    int randomLength = random.nextInt(25) + 1;
+                    StringBuilder randomString = new StringBuilder();
+                    for (int j = 0; j < randomLength; j++) {
+                        randomString.append("§ka");
+                    }
+                    toolTip.set(i, Text.literal(randomString.toString()).formatted(Formatting.DARK_RED));
+                }
+
+                cir.getReturnValue().add(1, Text.literal(""));
+                cir.getReturnValue().add(1, Text.translatable("moonfabric.super_nightmare.name.1").setStyle(Style.EMPTY.withColor(TextColor.fromRgb(0XFFFF1493))));
+                cir.getReturnValue().add(1, Text.translatable("moonfabric.super_nightmare.name").setStyle(Style.EMPTY.withColor(TextColor.fromRgb(0XFFFF1493))));
+
+
+
+
+
+            }else {
+                cir.getReturnValue().add(1, Text.literal(""));
+                cir.getReturnValue().add(1, Text.translatable("moonfabric.super_nightmare.name.1").setStyle(Style.EMPTY.withColor(TextColor.fromRgb(0XFFCD853F))));
+                cir.getReturnValue().add(1, Text.translatable("moonfabric.super_nightmare.name").setStyle(Style.EMPTY.withColor(TextColor.fromRgb(0XFFCD853F))));
+            }
+
+
+        }
+        if (HasCurio.has(init.abook, player)){
+            {
+                List<Text> texts = cir.getReturnValue();
+                TerNightmare(stack, init.nightmare_base_black_eye_eye, texts, "moonstone.jei.item.moonfabric.nightmare_base_black_eye_eye", "nightmare_base_black_eye");
+                TerNightmare(stack, init.nightmare_base_black_eye_heart, texts, "moonstone.jei.item.moonfabric.nightmare_base_black_eye_heart", "nightmare_base_black_eye");
+                TerNightmare(stack, init.nightmare_base_black_eye_red, texts, "moonstone.jei.item.moonfabric.nightmare_base_black_eye_red", "nightmare_base_black_eye");
+
+                TerNightmare(stack, init.nightmare_base_fool_betray, texts, "moonstone.jei.item.moonfabric.nightmare_base_fool_betray", "nightmare_base_fool");
+                TerNightmare(stack, init.nightmare_base_fool_bone, texts, "moonstone.jei.item.moonfabric.nightmare_base_fool_bone", "nightmare_base_fool");
+                TerNightmare(stack, init.nightmare_base_fool_soul, texts, "moonstone.jei.item.moonfabric.nightmare_base_fool_soul", "nightmare_base_fool");
+
+                TerNightmare(stack, init.nightmare_base_insight_collapse, texts, "moonstone.jei.item.moonfabric.nightmare_base_insight_collapse", "nightmare_base_insight");
+                TerNightmare(stack, init.nightmare_base_insight_drug, texts, "moonstone.jei.item.moonfabric.nightmare_base_insight_drug", "nightmare_base_insight");
+                TerNightmare(stack, init.nightmare_base_insight_insane, texts, "moonstone.jei.item.moonfabric.nightmare_base_insight_insane", "nightmare_base_insight");
+
+                TerNightmare(stack, init.nightmare_base_redemption_deception, texts, "moonstone.jei.item.moonfabric.nightmare_base_redemption_deception", "nightmare_base_redemption");
+                TerNightmare(stack, init.nightmare_base_redemption_degenerate, texts, "moonstone.jei.item.moonfabric.nightmare_base_redemption_degenerate", "nightmare_base_redemption");
+                TerNightmare(stack, init.nightmare_base_redemption_down_and_out, texts, "moonstone.jei.item.moonfabric.nightmare_base_redemption_down_and_out", "nightmare_base_redemption");
+
+                TerNightmare(stack, init.nightmare_base_reversal_card, texts, "moonstone.jei.item.moonfabric.nightmare_base_reversal_card", "nightmare_base_reversal");
+                TerNightmare(stack, init.nightmare_base_reversal_mysterious, texts, "moonstone.jei.item.moonfabric.nightmare_base_reversal_mysterious", "nightmare_base_reversal");
+                TerNightmare(stack, init.nightmare_base_reversal_orb, texts, "moonstone.jei.item.moonfabric.nightmare_base_reversal_orb", "nightmare_base_reversal");
+
+                TerNightmare(stack, init.nightmare_base_start_egg, texts, "moonstone.jei.item.moonfabric.nightmare_base_start_egg", "nightmare_base_start");
+                TerNightmare(stack, init.nightmare_base_start_pod, texts, "moonstone.jei.item.moonfabric.nightmare_base_start_pod", "nightmare_base_start");
+                TerNightmare(stack, init.nightmare_base_start_power, texts, "moonstone.jei.item.moonfabric.nightmare_base_start_power", "nightmare_base_start");
+
+                TerNightmare(stack, init.nightmare_base_stone_brain, texts, "moonstone.jei.item.moonfabric.nightmare_base_stone_brain", "nightmare_base_stone");
+                TerNightmare(stack, init.nightmare_base_stone_meet, texts, "moonstone.jei.item.moonfabric.nightmare_base_stone_meet", "nightmare_base_stone");
+                TerNightmare(stack, init.nightmare_base_stone_virus, texts, "moonstone.jei.item.moonfabric.nightmare_base_stone_virus", "nightmare_base_stone");
+
+                TerCommon(stack, init.calcification, texts, "item.calcification.tool.string.2");
+                TerCommon(stack, init.masticatory, texts, "item.masticatory.tool.string.2");
+                TerCommon(stack, init.polyphagia, texts, "item.polyphagia.tool.string");
+                TerCommon(stack, init.quadriceps, texts, "item.quadriceps.tool.string.3");
+                TerCommon(stack, init.reanimation, texts, "item.reanimation.tool.string.4");
+
+
+            }
             if (stack.getItem() instanceof DNAItem){
                 List<Text> texts = cir.getReturnValue();
                 texts.add(Text.translatable("book.moonfabric.dna").setStyle(Style.EMPTY.withColor(TextColor.fromRgb(0XFFDB7093))));

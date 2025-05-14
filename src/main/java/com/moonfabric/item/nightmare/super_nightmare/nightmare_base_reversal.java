@@ -5,6 +5,7 @@ import com.google.common.collect.Multimap;
 import com.moonfabric.HasCurio;
 import com.moonfabric.init.Data;
 import com.moonfabric.init.init;
+import dev.emi.trinkets.api.SlotAttributes;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketsApi;
 import net.minecraft.entity.LivingEntity;
@@ -30,6 +31,12 @@ public class nightmare_base_reversal extends com.moonfabric.item.Ms.SNightmare{
     public static final String att= "Attrib";
 
 
+    @Override
+    public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, Identifier slotIdentifier) {
+        var modifiers = super.getModifiers(stack, slot, entity, slotIdentifier);
+        SlotAttributes.addSlotModifier(modifiers,"legs/belt",Identifier.of(String.valueOf(this.getOrCreateTranslationKey())),3, EntityAttributeModifier.Operation.ADD_VALUE);
+        return modifiers;
+    }
     @Override
     public boolean canUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity  instanceof PlayerEntity player){

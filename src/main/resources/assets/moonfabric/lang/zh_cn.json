@@ -1,5 +1,8 @@
 {
 
+  "moonfabric.super_nightmare.name": "只有承受噩梦基座诅咒的人",
+  "moonfabric.super_nightmare.name.1": "才可以使用此物品",
+
 
   "item.moonfabric.nightmare_base": "§4噩梦基座",
   "item.nightmare_base.tool.string": "攻击伤害,生命值,护甲减少15%",
@@ -67,19 +70,19 @@
   "item.nightmare_base_reversal_mysterious.tool.string": "以减少10%全属性的代价抑制噩梦基座的负面效果",
 
 
-  "moonstone.jei.item.moonfabric.nightmare_base.all": "，需要佩戴:",
+  "moonfabric.jei.item.moonfabric.nightmare_base.all": "，需要佩戴:",
 
-  "moonstone.jei.item.moonfabric.nightmare_base_black_eye_heart": "在同时满足下列条件时触发不死图腾获取：中毒,凋零,缓慢,黑暗,失明并且着火",
-  "moonstone.jei.item.moonfabric.nightmare_base_black_eye_eye": "杀死坚守者",
-  "moonstone.jei.item.moonfabric.nightmare_base_black_eye_red": "发现在古城，概率在5%左右",
+  "moonfabric.jei.item.moonfabric.nightmare_base_black_eye_heart": "在同时满足下列条件时触发不死图腾获取：中毒,凋零,缓慢,黑暗,失明并且着火",
+  "moonfabric.jei.item.moonfabric.nightmare_base_black_eye_eye": "杀死坚守者",
+  "moonfabric.jei.item.moonfabric.nightmare_base_black_eye_red": "发现在古城，概率在5%左右",
 
-  "moonstone.jei.item.moonfabric.nightmare_base_stone_brain": "杀死僵尸，获取材料，不过这种材料只能获得一个",
-  "moonstone.jei.item.moonfabric.nightmare_base_stone_meet": "杀死末影龙",
-  "moonstone.jei.item.moonfabric.nightmare_base_stone_virus": "被凋零攻击触发不死图腾",
+  "moonfabric.jei.item.moonfabric.nightmare_base_stone_brain": "杀死僵尸，获取材料，不过这种材料只能获得一个",
+  "moonfabric.jei.item.moonfabric.nightmare_base_stone_meet": "杀死末影龙",
+  "moonfabric.jei.item.moonfabric.nightmare_base_stone_virus": "被凋零攻击触发不死图腾",
 
-  "moonstone.jei.item.moonfabric.nightmare_base_reversal_card": "杀死末影龙",
-  "moonstone.jei.item.moonfabric.nightmare_base_reversal_mysterious": "在佩戴反转球体的情况下开古城的箱子，概率100%，但是只能获得一个",
-  "moonstone.jei.item.moonfabric.nightmare_base_reversal_orb": "使用颠倒之物的中毒扣血杀死自己",
+  "moonfabric.jei.item.moonfabric.nightmare_base_reversal_card": "杀死末影龙",
+  "moonfabric.jei.item.moonfabric.nightmare_base_reversal_mysterious": "在佩戴反转球体的情况下开古城的箱子，概率100%，但是只能获得一个",
+  "moonfabric.jei.item.moonfabric.nightmare_base_reversal_orb": "使用颠倒之物的中毒扣血杀死自己",
 
   "item.moonfabric.nightmare_base_redemption":"§4“救赎”",
   "item.nightmare_base_redemption.tool.string": "增加15%噩梦基座的属性衰败",
@@ -106,9 +109,9 @@
   "advancements.tooltip.nightmare_base_redemption_down_and_out.text": "获得这个物品",
   "advancements.tooltip.nightmare_base_redemption_down_and_out.hand": "历史长河",
 
-  "moonstone.jei.item.moonfabric.nightmare_base_redemption_deception": "在有不详之兆的情况下杀死100个掠夺者",
-  "moonstone.jei.item.moonfabric.nightmare_base_redemption_degenerate": "在有村庄英雄的情况下杀死100个村民",
-  "moonstone.jei.item.moonfabric.nightmare_base_redemption_down_and_out": "完成一次失败的袭击",
+  "moonfabric.jei.item.moonfabric.nightmare_base_redemption_deception": "在有不详之兆的情况下杀死100个掠夺者",
+  "moonfabric.jei.item.moonfabric.nightmare_base_redemption_degenerate": "在有村庄英雄的情况下杀死100个村民",
+  "moonfabric.jei.item.moonfabric.nightmare_base_redemption_down_and_out": "完成一次失败的袭击",
 
   "advancements.tooltip.nightmare_base_reversal_card.text": "获得这个物品",
   "advancements.tooltip.nightmare_base_reversal_card.hand": "反转再反转",
@@ -161,9 +164,9 @@
   "advancements.tooltip.nightmare_base_fool_soul.text": "获得这个物品",
   "advancements.tooltip.nightmare_base_fool_soul.hand": "历史长河",
 
-  "moonstone.jei.item.moonfabric.nightmare_base_fool_betray": "杀死末影龙",
-  "moonstone.jei.item.moonfabric.nightmare_base_fool_bone": "杀死坚守者",
-  "moonstone.jei.item.moonfabric.nightmare_base_fool_soul": "杀死凋灵",
+  "moonfabric.jei.item.moonfabric.nightmare_base_fool_betray": "杀死末影龙",
+  "moonfabric.jei.item.moonfabric.nightmare_base_fool_bone": "杀死坚守者",
+  "moonfabric.jei.item.moonfabric.nightmare_base_fool_soul": "杀死凋灵",
 
 
 
@@ -209,9 +212,9 @@
   "advancements.tooltip.nightmare_base_insight_collapse.text": "获得这个物品",
   "advancements.tooltip.nightmare_base_insight_collapse.hand": "崩解之力",
 
-  "moonstone.jei.item.moonfabric.nightmare_base_insight_drug": "完成医药箱的所有任务",
-  "moonstone.jei.item.moonfabric.nightmare_base_insight_insane": "杀死任意生物",
-  "moonstone.jei.item.moonfabric.nightmare_base_insight_collapse": "杀死末影龙",
+  "moonfabric.jei.item.moonfabric.nightmare_base_insight_drug": "完成医药箱的所有任务",
+  "moonfabric.jei.item.moonfabric.nightmare_base_insight_insane": "杀死任意生物",
+  "moonfabric.jei.item.moonfabric.nightmare_base_insight_collapse": "杀死末影龙",
 
 
 
@@ -253,9 +256,9 @@
   "advancements.tooltip.nightmare_base_start_power.text": "获得这个物品",
   "advancements.tooltip.nightmare_base_start_power.hand": "崩解之力",
 
-  "moonstone.jei.item.moonfabric.nightmare_base_start_power": "杀死坚守者",
-  "moonstone.jei.item.moonfabric.nightmare_base_start_egg": "杀死嗅探兽",
-  "moonstone.jei.item.moonfabric.nightmare_base_start_pod": "开地牢的箱子，概率25%，只能获取一个",
+  "moonfabric.jei.item.moonfabric.nightmare_base_start_power": "杀死坚守者",
+  "moonfabric.jei.item.moonfabric.nightmare_base_start_egg": "杀死嗅探兽",
+  "moonfabric.jei.item.moonfabric.nightmare_base_start_pod": "开地牢的箱子，概率25%，只能获取一个",
 
 
 
@@ -266,7 +269,8 @@
   "item.nightmare_base_black_eye_heart.tool.string.1": "他们恢复的生命值会到你身上",
   "item.nightmare_base_black_eye_heart.tool.string.2": "且他们不再会受到任何治疗",
 
-
+  "item.moonfabric.fire_book": "你的电脑杀手",
+  "item.fire_book.tool.string": "让你的血灵增生体燃起烈火！",
 
 
   "tab.moonfabric_tab": "Moonfabric",
@@ -595,7 +599,7 @@
   "item.moonfabric.blood_candle": "封魔烛台",
 
   "moonfabric.tooltip.blood_candle": "召唤一个巨型血灵增生体协助你作战",
-  "moonfabric.tooltip.blood_candle.1": "如果丢失/失踪，请重新佩戴此物品",
+  "moonfabric.tooltip.blood_candle.1": "如果丢失/失踪，请右键此物品",
   "moonfabric.tooltip.blood_candle.2": "血灵增生体的攻击会造成基于你最大生命值的伤害",
 
   "entity.moonfabric.attack_blood": "小血球",
@@ -1050,7 +1054,7 @@
   "item.necora.tool.string.15": "但是它的大部分基因结构仍然是未解之谜",
 
   "item.heathgene.tool.string": "+10 最大生命值",
-  "item.moonfabric.moonstone": "月之石",
+  "item.moonfabric.moonfabric": "月之石",
 
 
 

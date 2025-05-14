@@ -14,6 +14,8 @@ public class aaa {
         c.add(new ItemStack(init.woodcottoncandy));
 
         c.add(new ItemStack(init.abook));
+        c.add(new ItemStack(init.fire_book));
+        c.add(new ItemStack(init.the_blood_book));
         c.add(new ItemStack(init.Moonstone));
         c.add(new ItemStack(init.goldheart));
         c.add(new ItemStack(init.firehead));
